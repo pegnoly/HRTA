@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaObstaclesGroup ObjectRecordID="1">
+	<FixedObstacles>false</FixedObstacles>
+	<links>
+		<Item href="BigStone1.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="BigStone2.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="BigStone3.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="BigStone4.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="SmallStone3.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterBigWhite1.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterBigWhite2.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterBigWhite3.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterBigWhite4.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterHugWhite1.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterHugWhite2.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterHugWhite3.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterHugWhite4.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterHugWhite5.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ScatterHugWhite6.xdb#xpointer(/ArenaObstacle)"/>
+	</links>
+</ArenaObstaclesGroup>

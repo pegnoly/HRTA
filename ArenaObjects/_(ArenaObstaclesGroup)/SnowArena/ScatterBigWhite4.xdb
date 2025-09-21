@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaObstacle>
+	<Model/>
+	<blockedTiles>
+		<Item>
+			<x>0</x>
+			<y>0</y>
+		</Item>
+		<Item>
+			<x>0</x>
+			<y>-1</y>
+		</Item>
+		<Item>
+			<x>1</x>
+			<y>-1</y>
+		</Item>
+		<Item>
+			<x>1</x>
+			<y>0</y>
+		</Item>
+	</blockedTiles>
+	<Shared href="/MapObjects/Taiga/Scatter_Big_White_2x2_05.xdb#xpointer(/AdvMapStaticShared)"/>
+</ArenaObstacle>

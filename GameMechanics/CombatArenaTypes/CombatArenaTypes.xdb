@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CombatArenaTypes ObjectRecordID="1000000">
+	<arenas>
+		<Item>
+			<small>			
+			</small>
+			<large>			
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>
+					<Item href="/Scenes/CombatArenas/Dirt_Big_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Dirt_Big_02.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Dirt_Small_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Dirt_Small_02.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/persona_dino_bones.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/muokaarena6_dirt_graveyard.xdb#xpointer(/AdventureFlybyScene)"/>
+				</newArenas>
+				<waterArenas>		
+				</waterArenas>
+				<deepWaterArenas>	
+				</deepWaterArenas>
+			</average>
+		</Item>
+		<Item>
+			<small>				
+			</small>
+			<large>
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>
+					<Item href="/Scenes/CombatArenas/Grass_Big_02.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Grass_Small_02.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Grass_Small_03.xdb#xpointer(/AdventureFlybyScene)"/>	
+					<Item href="/Scenes/CombatArenas/Beach_Grass_Small_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Beach_Grass_Small_02.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/persona_grass_farm.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/muokaarena15_grass_fallenbridge.xdb#xpointer(/AdventureFlybyScene)"/>
+				</newArenas>
+				<waterArenas>
+				</waterArenas>
+				<deepWaterArenas>					
+				</deepWaterArenas>
+			</average>
+		</Item>
+		<Item>
+			<small>
+			</small>
+			<large>
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>							
+					<Item href="/Scenes/CombatArenas/Sand_Big_02.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Beach_Sand_Small_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/muokaarena4_sand_career.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/persona_sand_island.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/muokaarena12_sand_village.xdb#xpointer(/AdventureFlybyScene)"/>			
+					<Item href="/Scenes/CombatArenas/persona_reborn.xdb#xpointer(/AdventureFlybyScene)"/>
+				</newArenas>
+				<waterArenas>					
+				</waterArenas>
+				<deepWaterArenas>
+				</deepWaterArenas>
+			</average>
+		</Item>
+		<Item>
+			<small>
+			</small>
+			<large>
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>	
+					<Item href="/Scenes/CombatArenas/River_Snow_01.xdb#xpointer(/AdventureFlybyScene)"/>
+                    <Item href="/Scenes/CombatArenas/Beach_Snow_01.xdb#xpointer(/AdventureFlybyScene)"/>
+                    <Item href="/Scenes/CombatArenas/muokaarena2_snow_river.xdb#xpointer(/AdventureFlybyScene)"/>
+                    <Item href="/Scenes/CombatArenas/muokaarena14_snow_christmastree.xdb#xpointer(/AdventureFlybyScene)"/>
+                    <Item href="/Scenes/CombatArenas/persona_snow_whatliesinthesnow.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/persona_snow_bridge.xdb#xpointer(/AdventureFlybyScene)"/>
+				</newArenas>
+				<waterArenas>					
+				</waterArenas>
+				<deepWaterArenas>					
+				</deepWaterArenas>
+			</average>
+		</Item>
+		<Item>
+			<small>
+			</small>
+			<large>
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>
+					<!-- <Item href="/Scenes/CombatArenas/Lava_Big_01.xdb#xpointer(/AdventureFlybyScene)"/> -->
+					<Item href="/Scenes/CombatArenas/Lava_Small_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/River_Lava_Small_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Beach_Lava_Small_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/muokaarena13_inferno_gate.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/persona_lava_citadel.xdb#xpointer(/AdventureFlybyScene)"/>
+				</newArenas>
+				<waterArenas>
+				</waterArenas>
+				<deepWaterArenas>					
+				</deepWaterArenas>
+			</average>
+		</Item>
+		<Item>
+			<small>
+			</small>
+			<large>
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>	
+					<Item href="/Scenes/CombatArenas/Subterra_big_02.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Subterra_Small_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Subterra_Small_02.xdb#xpointer(/AdventureFlybyScene)"/>	
+					<Item href="/Scenes/CombatArenas/muokaarena9_subterra_village.xdb#xpointer(/AdventureFlybyScene)"/>
+				</newArenas>
+				<waterArenas>					
+				</waterArenas>
+				<deepWaterArenas>
+				</deepWaterArenas>
+			</average>
+		</Item>
+		<Item>
+			<small>
+			</small>
+			<large>
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>
+					<Item href="/Scenes/CombatArenas/Boat_Arena.xdb#xpointer(/AdventureFlybyScene)"/>
+				</newArenas>
+				<waterArenas/>
+				<deepWaterArenas/>
+			</average>
+		</Item>
+		<Item>
+			<small>
+			</small>
+			<large>
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>
+					<Item href="/Scenes/CombatArenas/Subterra_Dwarven_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Subterra_Dwarven_02.xdb#xpointer(/AdventureFlybyScene)"/>					
+					<Item href="/Scenes/CombatArenas/persona_gnomozavodsk.xdb#xpointer(/AdventureFlybyScene)"/>					
+				</newArenas>
+				<waterArenas>
+				</waterArenas>
+				<deepWaterArenas>					
+				</deepWaterArenas>
+			</average>
+		</Item>
+		<Item>
+			<small>
+			</small>
+			<large>
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>
+				<!-- <Item href="Orkish_Medium2.xdb#xpointer(/AdventureFlybyScene)"/> -->
+					<Item href="Orkish_Medium1.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="Orkish_Medium3.xdb#xpointer(/AdventureFlybyScene)"/> 
+					<Item href="River_Orkish_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="Beach_Orkish_01.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/muokaarena8_orcish_prison.xdb#xpointer(/AdventureFlybyScene)"/>	
+					<Item href="/Scenes/CombatArenas/persona_gorod_orcsk.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/persona_orcish_lesotsk.xdb#xpointer(/AdventureFlybyScene)"/>
+				</newArenas>
+				<waterArenas>					
+				</waterArenas>
+				<deepWaterArenas>					
+				</deepWaterArenas>
+			</average>
+		</Item>
+		<Item>
+			<small>
+			</small>
+			<large>
+			</large>
+			<average>
+				<OldArena/>
+				<newArenas>
+					( ? )
+				</newArenas>
+				<waterArenas>					
+				</waterArenas>
+				<deepWaterArenas>					
+				</deepWaterArenas>
+			</average>
+		</Item>
+	</arenas>
+</CombatArenaTypes>

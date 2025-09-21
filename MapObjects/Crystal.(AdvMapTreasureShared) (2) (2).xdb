@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapTreasureShared>
+	<Model href="/_(Model)/Buildings/Monolith_One_Way_Exit.xdb#xpointer(/Model)"/>
+	<AnimSet/>
+	<blockedTiles/>
+	<holeTiles/>
+	<activeTiles>
+		<Item>
+			<x>0</x>
+			<y>0</y>
+		</Item>
+	</activeTiles>
+	<passableTiles/>
+	<PossessionMarkerTile>
+		<x>0</x>
+		<y>0</y>
+	</PossessionMarkerTile>
+	<Effect href="/Effects/_(Effect)/Buildings/Monolith_One_Way_Entrance.(Effect).xdb#xpointer(/Effect)"/>
+	<EffectWhenOwned href="/Effects/_(Effect)/Buildings/Monolith_One_Way_Entrance.(Effect).xdb#xpointer(/Effect)"/>
+	<messagesFileRef/>
+	<WaterBased>false</WaterBased>
+	<ApplyHeroTrace>false</ApplyHeroTrace>
+	<SoundEffect href="/Sounds/_(Sound)/Interface/Ingame/Interact.xdb#xpointer(/Sound)"/>
+	<flybyMessageFileRef href=""/>
+	<ObjectTypeFileRef href="/Text/Visibility_Types/Treasures.txt"/>
+	<TerrainAligned>false</TerrainAligned>
+	<FlyPassable>true</FlyPassable>
+	<AdventureSoundEffect href="/Sounds/_(Sound)/Buildings/Monolith_OneWay_Exit.xdb#xpointer(/Sound)"/>
+	<RazedStatic/>
+	<Icon128/>
+	<Type>TREASURE_CRYSTAL</Type>
+	<MinResource>2</MinResource>
+	<MaxResource>4</MaxResource>
+</AdvMapTreasureShared>

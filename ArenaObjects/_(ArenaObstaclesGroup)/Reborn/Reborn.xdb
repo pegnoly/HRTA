@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaObstaclesGroup>
+	<FixedObstacles>false</FixedObstacles>
+	<links>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/Wagon.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/EyeOfMagi.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/IdolofFortune.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/Obelisk.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/RallyFlag.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/ShamanOfNommads.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/Sign.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/Stuff_05.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/Stuff_06.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/Wagon.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/SandArena/Cactus2.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="/ArenaObjects/_(ArenaObstaclesGroup)/Reborn/Brick_crash_small.xdb#xpointer(/ArenaObstacle)"/>
+	</links>
+</ArenaObstaclesGroup>

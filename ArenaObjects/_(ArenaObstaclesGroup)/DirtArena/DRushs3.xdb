@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaObstacle>
+	<Model/>
+	<blockedTiles/>
+	<Shared href="/MapObjects/Dirt/Bushs/DBushLeafs/DRushs03.xdb#xpointer(/AdvMapStaticShared)"/>
+</ArenaObstacle>

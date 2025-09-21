@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaObstaclesGroup ObjectRecordID="1000002">
+	<FixedObstacles>false</FixedObstacles>
+	<links>
+		<Item href="Cactus1.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Cactus2.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Cactus3.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Cactus4.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Cactus5.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Stone1.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Stone2.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Stone3.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Stone4.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Stone5.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Fern1.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Fern4.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Skeleton.xdb#xpointer(/ArenaObstacle)"/>
+	</links>
+</ArenaObstaclesGroup>

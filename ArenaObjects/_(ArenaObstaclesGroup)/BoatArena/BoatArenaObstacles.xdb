@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaObstaclesGroup ObjectRecordID="1000001">
+	<FixedObstacles>false</FixedObstacles>
+	<links>
+		<Item href="ob1.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ob2.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="ob3.xdb#xpointer(/ArenaObstacle)"/>
+	</links>
+</ArenaObstaclesGroup>

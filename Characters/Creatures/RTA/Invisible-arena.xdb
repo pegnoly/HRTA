@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimSet>
+	<animations/>
+	<ExpSrcScene href="/u.mb"/>
+	<ExpSrcClipFolder href="/Fonts/"/>
+	<ExpRootTransform>Global</ExpRootTransform>
+</AnimSet>

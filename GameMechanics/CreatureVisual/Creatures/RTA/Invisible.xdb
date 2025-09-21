@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreatureVisual ObjectRecordID="1001241">
+	<CreatureNameFileRef href="Invisible.txt"/>
+	<CreatureAbilitiesFileRef href="Invisible.txt"/>
+	<DescriptionFileRef href="Invisible.txt"/>
+	<Icon href="/Textures/HeroScreen/Feats/Necromancer/WarMachines_LastAid.(Texture).xdb#xpointer(/Texture)"/>
+	<Icon32/>
+	<Icon64/>
+	<Icon128/>
+	<AnimCharacter href="/Characters/Creatures/RTA/Invisible.(Character).xdb#xpointer(/Character)"/>
+	<DeadCharacter/>
+	<AnimShot/>
+	<SummoningEffect/>
+	<DamageEffect/>
+	<TeleportingMove>
+		<Use>false</Use>
+		<StartEffect/>
+		<FinishEffect/>
+	</TeleportingMove>
+	<Win3DView/>
+	<MountPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>-10</z>
+	</MountPoint>
+	<MountBone>hitPoint</MountBone>
+</CreatureVisual>

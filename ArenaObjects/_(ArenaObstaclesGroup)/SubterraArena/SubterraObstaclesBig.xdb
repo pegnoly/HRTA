@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaObstaclesGroup ObjectRecordID="1000003">
+	<FixedObstacles>false</FixedObstacles>
+	<links>
+		<Item href="Mushroom4.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Mushroom8.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Mushroom9.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Rock1.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Kolonna.xdb#xpointer(/ArenaObstacle)"/>
+		<Item href="Kolodec.xdb#xpointer(/ArenaObstacle)"/>
+	</links>
+</ArenaObstaclesGroup>
