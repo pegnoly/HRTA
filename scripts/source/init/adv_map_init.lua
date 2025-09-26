@@ -34,6 +34,7 @@ doFile('/scripts/source/event/touch/touch.lua')
 doFile('/scripts/source/event/map_common/events.lua')
 sleep()
 doFile('/scripts/source/iterators/list.lua')
+doFile('/scripts/source/iterators/range.lua')
 
 while not MapLoadingEvent do 
 	sleep()
@@ -53,15 +54,15 @@ end
 
 Trigger(OBJECTIVE_STATE_CHANGE_TRIGGER, 'HIDDEN', MCCS_FIRST_ACTIVE_PLAYER, 'CommonStart')
 
-GAME_RELOADEAD = 1
+-- GAME_RELOADEAD = 1
 
 --doFile('/scripts/NAF/global_load.lua')
-doFile('/scripts/source/event/map_common/post_combat_fix.lua')
-doFile('/scripts/source/event/map_common/map_reload_fix.lua')
+-- doFile('/scripts/source/event/map_common/post_combat_fix.lua')
+-- doFile('/scripts/source/event/map_common/map_reload_fix.lua')
 --doFile('/scripts/NHF_global_load.lua')
 
 function CommonStart()
-  consoleCmd("@GAME_RELOADEAD = 0")
+  -- consoleCmd("@GAME_RELOADEAD = 0")
 	doFile("/scripts/local_load.lua")
 	sleep()
 	startThread(CommonMapLoadingThread)
@@ -74,33 +75,33 @@ function CommonMapLoadingThread()
      startThread(MessageQueue.Run, player)
   end
   --
-  NewDayEvent.AddListener('MCCS_ai_gold_fix_event',
-  function(day)
-    for player = PLAYER_1, PLAYER_8 do
-      if GetPlayerState(player) == PLAYER_ACTIVE and (IsAIPlayer(player) == 1) then
-        SetPlayerResource(player, GOLD, 100000000)
-        print("Gold fix applied to player ", player)
-      end
-    end
-  end)
-  CombatResultsEvent.AddListener('MCCS_post_combat_fix_event',
-  function(fight_id)
-      local winner = GetSavedCombatArmyHero(fight_id, 1)
-      local loser = GetSavedCombatArmyHero(fight_id, 0)
-      -- после боев вручную в хотсите необходимо запускать сигнал на срабатывание PostCombatFix-ивентов, т.к. существует проблема, 
-      -- что при завершении боя в этом случае игра пытается запустить функции глобальной карты еще находясь в боевом режиме, не обнаруживает их и выдает ошибку
-      if winner then
-        local winner_owner = GetObjectOwner(winner)
-        consoleCmd("@if GetGameVar('"..winner_owner.."_combat_mode') == 'real' then SetGameVar('"..winner_owner.."_combat_mode', 'auto') SetGameVar('"..winner_owner.."_post_combat_fix_active', '"..winner.."') end")
-      end
-      if loser then
-        consoleCmd("@ local loser_owner = GetGameVar('"..loser.."_owner') if GetGameVar(loser_owner..'_combat_mode') == 'real' then SetGameVar(loser_owner..'_combat_mode', 'auto') SetGameVar(loser_owner..'_post_combat_fix_active', '"..loser.."')end")
-      end
-  end)
+  -- NewDayEvent.AddListener('MCCS_ai_gold_fix_event',
+  -- function(day)
+  --   for player = PLAYER_1, PLAYER_8 do
+  --     if GetPlayerState(player) == PLAYER_ACTIVE and (IsAIPlayer(player) == 1) then
+  --       SetPlayerResource(player, GOLD, 100000000)
+  --       print("Gold fix applied to player ", player)
+  --     end
+  --   end
+  -- end)
+  -- CombatResultsEvent.AddListener('MCCS_post_combat_fix_event',
+  -- function(fight_id)
+  --     local winner = GetSavedCombatArmyHero(fight_id, 1)
+  --     local loser = GetSavedCombatArmyHero(fight_id, 0)
+  --     -- после боев вручную в хотсите необходимо запускать сигнал на срабатывание PostCombatFix-ивентов, т.к. существует проблема, 
+  --     -- что при завершении боя в этом случае игра пытается запустить функции глобальной карты еще находясь в боевом режиме, не обнаруживает их и выдает ошибку
+  --     if winner then
+  --       local winner_owner = GetObjectOwner(winner)
+  --       consoleCmd("@if GetGameVar('"..winner_owner.."_combat_mode') == 'real' then SetGameVar('"..winner_owner.."_combat_mode', 'auto') SetGameVar('"..winner_owner.."_post_combat_fix_active', '"..winner.."') end")
+  --     end
+  --     if loser then
+  --       consoleCmd("@ local loser_owner = GetGameVar('"..loser.."_owner') if GetGameVar(loser_owner..'_combat_mode') == 'real' then SetGameVar(loser_owner..'_combat_mode', 'auto') SetGameVar(loser_owner..'_post_combat_fix_active', '"..loser.."')end")
+  --     end
+  -- end)
   --
   MapLoadingEvent.Invoke()
-  startThread(CustomAbility.EnableHeroAbility)
-  startThread(CustomAbility.EnableArtifactAbility)
+  -- startThread(CustomAbility.EnableHeroAbility)
+  -- startThread(CustomAbility.EnableArtifactAbility)
   --
   sleep()
   --
@@ -111,17 +112,17 @@ function CommonMapLoadingThread()
   startThread(PostCombatFixInit)
   --
   sleep()
-  CombatConnection.CreateCombatFunctionsList(CombatConnection.combat_scripts_paths)
+  -- CombatConnection.CreateCombatFunctionsList(CombatConnection.combat_scripts_paths)
 end
 
 function ReloadGame()
-    consoleCmd("@if GAME_RELOADEAD == 1 then startThread(MapReloadEvent.Invoke) else print('Game was not realoaded') end")
+    -- consoleCmd("@if GAME_RELOADEAD == 1 then startThread(MapReloadEvent.Invoke) else print('Game was not realoaded') end")
 end
 
-function GameReloaded()
-    print("Game was reloaded?")
-    startThread(MapReloadEvent.Invoke)
-end
+-- function GameReloaded()
+--     print("Game was reloaded?")
+--     startThread(MapReloadEvent.Invoke)
+-- end
 
 consoleCmd(
   "@if GetObjectiveState('HIDDEN', MCCS_FIRST_ACTIVE_PLAYER) == OBJECTIVE_UNKNOWN then "..
