@@ -109,7 +109,7 @@ function CommonMapLoadingThread()
   startThread(AdvMapThreads.RemoveHeroesThread)
   startThread(AdvMapThreads.CombatResultsThread)
   startThread(AdvMapThreads.NewDayThread)
-  startThread(PostCombatFixInit)
+  -- startThread(PostCombatFixInit)
   --
   sleep()
   -- CombatConnection.CreateCombatFunctionsList(CombatConnection.combat_scripts_paths)

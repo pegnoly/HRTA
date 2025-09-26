@@ -59,7 +59,7 @@ AdvMapThreads =
                       end
                       if not AdvMapHeroesInfo.alive_heroes[hero] then
                           AdvMapHeroesInfo.alive_heroes[hero] = HERO_CONDITION_ALIVE
-                          SetHeroCombatScript(hero, '/CheckScript.xdb#xpointer(/Script)')
+                          -- SetHeroCombatScript(hero, '/CheckScript.xdb#xpointer(/Script)')
                           startThread(Hero.Threads.LevelUp, hero)
                           startThread(Hero.Threads.XpTracker, hero)
                           startThread(AddHeroEvent.Invoke, hero)
