@@ -1,14 +1,14 @@
 ---------------------------------------------------------------------------------------------------
---  Условие запуска
+--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ---------------------------------------------------------------------------------------------------
 
--- всегда, когда вызван --
+-- пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ --
 
 ---------------------------------------------------------------------------------------------------
---  Общие функции
+--  пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ---------------------------------------------------------------------------------------------------
 
-consoleCmd('console_size 999')
+-- consoleCmd('console_size 999')
 
 doFile('/scripts/asha/combat_lib.lua')
 
@@ -40,7 +40,7 @@ HERO_2_TURN = 0
 
 GUARDIAN_ANGEL_ACTIVATE = 0
 
--- Статус активации спецы Крага
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 PLAYERS_KRAGH_STATUS = {
   [0] = nil,
   [1] = nil,
@@ -212,7 +212,7 @@ end
 
 
 ---------------------------------------------------------------------------------------------------
---  Управление боем
+--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 ---------------------------------------------------------------------------------------------------
 
 quroq_creatures = {}
@@ -240,19 +240,19 @@ num_turn = {0, 0, 0}   -- all, hero_att, hero_def
 spellpower_bonus = { 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 14, 16, 19, 21, 24, 28, 32, 36, 41, 46, 52, 58, 66, 74, 83, 93, 104, 117, 131, 150}
 zoltan_use = 0
 
--- Покровительство Асхи счетчик
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ASHA_COUNTER = {
   [0] = {miss = 0, triger = 0},
   [1] = {miss = 0, triger = 0},
 };
 
--- Таблица для отслеживания текущего значения восстановления маны для каждого игрока
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 MYSTICISM_MANA_PER_TURN_REGENERATION_COUNTER = {
-  [0] = 2, -- Начальное значение для первого игрока
-  [1] = 2  -- Начальное значение для второго игрока
+  [0] = 2, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  [1] = 2  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 }
 
--- Был ли использован Ангел-хранитель
+-- пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 PLAYER_USE_GUARDIAN_ANGEL = {
   [0] = nil,
   [1] = nil,
@@ -262,7 +262,7 @@ PLAYER_USE_GUARDIAN_ANGEL = {
 -- START NEW COMBAT HANDLER --
 ------------------------------
 
--- Данные боя для новых обработчиков
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 COMBAT_DATA = {
   prev = {
     activeUnit = nil,
@@ -273,7 +273,7 @@ COMBAT_DATA = {
   },
 };
 
--- Попытка фикса бага с перепризывом элементалей и метка некроманта
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function fixMarkOfNecromancyWithResummonElem(prevActiveUnit)
   print "fixMarkOfNecromancyWithResummonElem"
 
@@ -301,7 +301,7 @@ function fixMarkOfNecromancyWithResummonElem(prevActiveUnit)
   end;
 end;
 
--- Действия после хода предыдущего существа
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function HandleAfterMove(currentTurnUnit)
   print "HandleAfterMove"
 
@@ -316,13 +316,13 @@ function HandleAfterMove(currentTurnUnit)
 --  end;
 end;
 
--- Действия до хода существа
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function HandleBeforeMove(currentTurnUnit)
   print "HandleBeforeMove"
 
 end;
 
--- Действия до хода существа
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function PopulateCombatData(currentTurnUnit)
   print "PopulateCombatData"
 
@@ -338,7 +338,7 @@ function PopulateCombatData(currentTurnUnit)
 
 end;
 
--- Новый обработчик действий юнитов в бою
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ
 function NewUnitMoveHandler(currentTurnUnit)
   print "NewUnitMoveHandler"
 
@@ -360,78 +360,39 @@ function OnPrepare()
 end
 
 function OnStart()
-  print "OnStart"
+  -- print "OnStart"
 
-  consoleCmd('game_writelog 1')
+  -- consoleCmd('game_writelog 1')
 
   rage_sum_prev = 0
---  EnableDynamicBattleMode(3)
   for side = 0, 1 do
 		real_creatures[side] = extend({}, GetCreatures(side))
 		for i, creature in real_creatures[side] do
 			init_real_creatures_numbers[creature] = GetCreatureNumber(creature)
---			if GetHeroSkillMastery(GetHero(side), 101) > 0 then
---				if IsUnitUndead(creature) then
---					lord_of_undead[creature] = {maxnum = init_real_creatures_numbers[creature], phantom = creature .. '-phantom'}
---				end
---			end
-   --   if GetCreatureType(creature) == 77 or GetCreatureType(creature) == 141 then yawer = creature end
 		end
 		war_machines[side] = extend({}, GetWarMachines(side))
 		for i, wm in war_machines[side] do
 			war_machines_state[wm] = 1
 		end
---    print(real_creatures[0])
 	end
 	local disable_auto_finish = nil
 
 
 	for side, hero in {[0]=GetHero(0); GetHero(1)} do
 		HandleHeroesOnStart(hero, side)
---		if GetHeroSkillMastery(hero, 61) > 0 then
---			guardian_angel_uses[side] = 1
---			disable_auto_finish = 1
---		end
 	end
 
 
-	-- чародейская защита
   for side, hero in {[0]=GetHero(0); GetHero(1)} do
 
-    --специализация Рольфа
     if ( IsNamedHero(hero, 'Rolf') or IsNamedHero(hero, 'Rolf2') ) then
       RolfSpec(side, hero)
     end
 
- -- Чародейская защита
+ -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if GetHeroSkillMastery(hero, 176) > 0 then
       local countCastersHero = 1
       local countCastersEnemyhero = 1
-
-      -- Проверка сета для героя (отключено)
---      local heroArtSetValue
---      if HEROES_INFO[GetHeroName(GetHero(side))].ArtSet[3] == nil then
---          heroArtSetValue = 0
---      else
---          heroArtSetValue = HEROES_INFO[GetHeroName(GetHero(side))].ArtSet[3]
---      end
-
---      if heroArtSetValue > 1 then
---          countCastersHero = 1
---      end
-
-      -- Проверка сета для врага
---      local enemyArtSetValue
---      if HEROES_INFO[GetHeroName(GetHero(1-side))].ArtSet[3] == nil then
---          enemyArtSetValue = 0
---      else
---          enemyArtSetValue = HEROES_INFO[GetHeroName(GetHero(1-side))].ArtSet[3]
---      end
-
---      if enemyArtSetValue > 1 then
---          countCastersEnemyhero = 1
---      end
-
       local c1 = 'temp-buff'..side
       local x, y = SafePos()
       AddCreature(side, 900, countCastersHero, x, y, 1, c1)
@@ -450,68 +411,15 @@ function OnStart()
       removeUnit(c1)
   end
   end
-
-
---	if disable_auto_finish then
---		startThread(CombatFinishManualControl)
---	end
 	local init_atb = {}
 	for i, unit in GetAllUnits() do
 		local atb = GetUnitInitialATB(unit)
 		init_atb[unit] = atb
-
-    -- Файдаэн
---    if IsCreature(unit) then
---      print('0')
---      local type = GetCreatureType(unit)
---      print('1')
---      if type == 47 or type == 49 or type == 147 or type == 148 then
---        print('2')
---        local type = GetCreatureType(unit)
---        print('3')
---        local faidaen_enemy_side = EnemySide(GetUnitSide(unit))
---        print('4')
---        local dist = 20
---        faidaen_enemy_creatures = {}
---        print('5')
---        faidaen_enemy_creatures = extend({}, GetCreatures(faidaen_enemy_side))
---        print(faidaen_enemy_creatures)
---        for i, creature in faidaen_enemy_creatures do
---          if CheckDist(unit, creature) < dist then
---            print('7')
---            dist = CheckDist(unit, creature)
---            faidaen_purport = creature
---          end
---        end
---        print('8')
---        local x1, y1 = SafePos()
---        AddCreature(faidaen_enemy_side, 906, 1, x1, y1, 1, 'def-unit')
---        print('9')
---        local x2, y2 = SafePos()
---        AddCreature(GetUnitSide(unit), type, floor(0.5 * GetCreatureNumber(unit)), x2, y2, 1, 'att-unit')
---        print('10')
---        repeat sleep() until exist('att-unit')
---	  		displace('att-unit', 9, 50)
---        repeat sleep() until exist('def-unit')
-	--  		displace('def-unit', 100 * faidaen_enemy_side - 50, 7)
---        pcall(commandShot, unit, 'def-unit')
---        pcall(commandShot, 'att-unit', faidaen_purport)
---        removeUnit('def-unit')
---        removeUnit('att-unit')
---      end
---    end
-
     if IsCreature(unit) then
       local type = GetCreatureType(unit)
-
-      -- Инвиз ловчих
       if type == 166 or type == 93 then
         pcall(commandDoSpecial, unit, 317, pos(unit))
       end
-      -- сет регалии Сар-Иссы
---      if GetHeroArtSet(GetFriendlyHero(unit), 3) > 1 and GetUnitMaxManaPoints(unit) > 0 then
---        SetUnitManaPoints(unit, GetUnitMaxManaPoints(unit)/2)
---	  	end
     end
 	end
 	for unit, atb in init_atb do
@@ -535,21 +443,10 @@ function WarMachineDead(wm)
   if war_machines_state[wm] == 1 then
 		war_machines_state[wm] = 0
 	end
-  -- тележка с боеприпасами
---  if GetHeroSkillMastery(GetFriendlyHero(wm), 24) > 0  then
---    if index(GetWarMachines(we), NumberSideToText(we)..'-warmachine-WAR_MACHINE_AMMO_CART') then
---      local num = AMMO_CART_REPAIR / 5
---			local x, y = SafePos(we)
---			AddCreature(we, 902, num, x, y, 1, 'temp-catapult')
---			repeat sleep() until exist('temp-catapult')
---      pcall(commandDoSpecial, 'temp-catapult', 173, pos(wm))
---      removeUnit('temp-catapult')
---    end
---  end
 end
 
 function getHasBeenGuardianAngel()
-  print "getHasBeenGuardianAngel"
+  -- print "getHasBeenGuardianAngel"
 
   for _, hasBeen in HAS_BEEN_GUARDIAN_ANGEL do
     if hasBeen then
@@ -563,15 +460,12 @@ end;
 function CreatureDead(unit)
 	creature_dead[unit] = 1
 
-  -- сопереживание некроманта (удалено)
   local type = GetCreatureType(unit)
   for side, hero in {[0]=GetHero(0); GetHero(1)} do
     if GetHeroSkillMastery(hero, 170) > 0 and GetHeroSkillMastery(hero, 15) > 0 and type < 900 and (GetUnitSide(unit) ~= GetUnitSide(hero))  then
       combatSetPause(1)
 
       local creatures_necro = GetCreatures(side)
-      -- TODO: КАК ЗДЕСЬ МОЖЕТ ПОЛУЧИТЬСЯ length(creatures_necro)???
-      -- ПОТОМУ ЧТО
       local unit_get_move = random(length(creatures_necro) + 1) - 1
 
       if unit_get_move == (length(creatures_necro)) then
@@ -583,24 +477,8 @@ function CreatureDead(unit)
   	end
 	end
 
-	-- Ангел-хранитель (переделана механика, был баг с добитием в бдп или по другим непонятным причинам, когда стек не поднимался)
---  local sideAngel = GetUnitSide(unit)
---	if GetHeroSkillMastery(GetFriendlyHero(unit), 99) > 0 and (PLAYER_USE_GUARDIAN_ANGEL[sideAngel] ~= not nil) then
---    local type = GetCreatureType(unit)
 
---    if type == 13 or type == 66 or type == 112 then
---      PLAYER_USE_GUARDIAN_ANGEL[sideAngel] = not nil;
---      repeat sleep() until combatReadyPerson()
---      local x, y = SafePos()
---      AddCreature(GetUnitSide(unit), 900, 20, x, y, 1, 'arch-unit')
---      repeat sleep() until exist('arch-unit')
---      pcall(commandDoSpecial, 'arch-unit', SPELL_ABILITY_RESURRECT_ALLIES, pos(unit))
---      removeUnit('arch-unit')
 
---    end;
---	end;
-
-	-- Золтан --Aberrar Delete
   if IsNamedHero(GetFriendlyHero(unit), 'AberrarDelete') then
     local zoltan_side = GetUnitSide(unit)
     local zoltan_creatures_sum = 0
@@ -627,11 +505,9 @@ function CreatureDead(unit)
 
 end
 
---Обитаемые шахты
 function mineDeathATB()
-  print "mineDeathATB"
+  -- print "mineDeathATB"
 
-  -- условие запуска треда
   if (GetHeroSkillMastery(GetHero(0), 93) or 0) <= 0 and (GetHeroSkillMastery(GetHero(1), 93) or 0) <= 0 then
       return nil;
   end;
@@ -642,7 +518,6 @@ function mineDeathATB()
     local allUnits_1 = GetAllUnits()
 
     repeat sleep() until length(allUnits_1) ~= lengthAllUnits()
-    --если изменилось кол-во юнитов - создаем новый массив с новым списком юнитов
     local allUnits_2 = GetAllUnits()
     local allUnits_3 = {}
 
@@ -662,7 +537,7 @@ function mineDeathATB()
       if IsCreature(unit) then
         local unitId = (GetCreatureType(unit))
         if GetHeroSkillMastery(GetFriendlyHero(unit), 93) > 0 then
-          print("Есть навык")
+          -- print("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ")
 
           for key, value in init_real_creatures_numbers do
             if unit == key then
@@ -689,7 +564,6 @@ function mineDeathATB()
 end
 
 
--- Проверка, если был призван новый элементаль
 function CheckIfNewElemAdd(allUnits_1)
 --  print "CheckIfNewElemAdd"
 
@@ -726,10 +600,8 @@ function CheckIfNewElemAdd(allUnits_1)
   return newElemUnits
 end
 
-
--- Проверка, если был удален элементаль
 function CheckIfElemDelete(allUnits_1)
-  print("CheckIfElemDelete")
+  -- print("CheckIfElemDelete")
 
   local allUnitsInRealMoment = GetAllUnits();
 
@@ -765,10 +637,8 @@ function CheckIfElemDelete(allUnits_1)
 
 end;
 
-
---Обновление АТБ
 function refreshATB(side)
-  print "refreshATB"
+  -- print "refreshATB"
 
   combatSetPause(1)
   local c1 = 'temp-buff'..side
@@ -781,9 +651,8 @@ function refreshATB(side)
 end
 
 
--- Игрок перепризывает элементалей
 function CheckIfSideResummonElem(allUnitsLastTurn, prevHeroMana, side)
-  print "CheckIfSideResummonElem"
+  -- print "CheckIfSideResummonElem"
 
   local newElemList = CheckIfNewElemAdd(allUnitsLastTurn);
   local deletedElemList = CheckIfElemDelete(allUnitsLastTurn);
@@ -802,11 +671,9 @@ end;
 
 
 
---Элемы в 0.4 по АТБ Стихийное равновесие(Буйство стихий)
 function SummonATB()
-  print "SummonATB"
+  -- print "SummonATB"
 
--- условие запуска треда
   if (GetHeroSkillMastery(GetHero(0), 114) or 0) <= 0 and (GetHeroSkillMastery(GetHero(1), 114) or 0) <= 0 then
     return nil;
   end;
@@ -822,7 +689,6 @@ function SummonATB()
       sleep()
       newElem = CheckIfNewElemAdd(allUnits_1)
     until length(newElem) > 0
-    --если изменилось кол-во юнитов - создаем новый массив с новым списком юнитов
     for _, unit in newElem do
       if GetHeroSkillMastery(GetFriendlyHero(unit), 114) > 0 then
         local side = GetUnitSide(unit)
@@ -837,7 +703,6 @@ function SummonATB()
   until N ~= 0
 end
 
---? зачем-то нужна, но непонятно зачем дубль
 function lengthAllUnits()
   local lengthAll = length(GetAllUnits())
   return lengthAll
@@ -855,7 +720,7 @@ function GetUnitInitialATB(unit)
 --		elseif IsNamedHero(unit, 'Grok') then
 --			atb = 1
 --			auto_move[unit] = 1
-		if GetHeroSkillMastery(unit, 155) > 0 then -- острый ум
+		if GetHeroSkillMastery(unit, 155) > 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 			atb = atb + QUICKNESS_OF_MIND_ATB_BONUS
 		end
 
@@ -865,11 +730,11 @@ function GetUnitInitialATB(unit)
 		if IsNamedHero(hero, 'Linaas') then
 			atb = atb + GetHeroLevel(hero) * WYNGAAL_ATB_BONUS_PER_LEVEL
 		end
---		if GetHeroSkillMastery(hero, 1) > 0 then -- логистика
+--		if GetHeroSkillMastery(hero, 1) > 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 --			atb = atb + LOGISTICS_BONUS_PER_LEVEL * GetHeroSkillMastery(hero, 1)
 --		end
 --		if GetHeroSkillMastery(hero, 177) > 0 then
-		  --путь войны (старый)
+		  --пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ)
   --    atb = atb + PATH_OF_WAR_BONUS
 --      if atb <= 0 then
 --        atb = 0.0001 * random(100)
@@ -881,7 +746,7 @@ end
 
 function HandleHeroesOnStart(hero, side)
 
-  -- ловчие
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ
 --  for i, creature in real_creatures[side] do
 --    local type = GetCreatureType(creature)
 --    if type == 166 then
@@ -892,7 +757,7 @@ function HandleHeroesOnStart(hero, side)
 end
 
 function UnitMoveNonBlocking(unit)
-  print "UnitMoveNonBlocking"
+  -- print "UnitMoveNonBlocking"
 
   if current_turn[unit] then
 		if current_turn[unit] == 2 then
@@ -936,17 +801,17 @@ function UnitMoveNonBlocking(unit)
 	end
 
 
-  -- Первый ход любого существа
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	if num_turn[1] == 1 then
-   -- ЧЗ + Ловчие
+   -- пїЅпїЅ + пїЅпїЅпїЅпїЅпїЅпїЅ
 	end;
 
 
 
 	if IsHero(unit) then
-    -- Перемещаем Крага после первого удара в конец АТБ
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
    if IsNamedHero(unit, 'Hero1') then
-     -- Если у опа ЧЗ
+     -- пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅ
      local turnNumForSkip = GetHeroSkillMastery(enemy_hero, 176) > 0 and 2 or 1;
 
      if num_turn[1] == turnNumForSkip then
@@ -958,7 +823,7 @@ function UnitMoveNonBlocking(unit)
 
     --EnableDynamicBattleMode(nil)
 
-    -- фикс бага с баном гоблов
+    -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		if init_mana < 0 then
 			init_mana = 0
 			SetUnitManaPoints(unit, 0)
@@ -966,7 +831,7 @@ function UnitMoveNonBlocking(unit)
 
 
 
-		-- сотрясение земли
+		-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 --    if GetHeroSkillMastery(GetFriendlyHero(unit), 176) > 0 then
 --      local c = 'create-arcane-unit'..GetUnitSide(unit)
 --      local x, y = SafePos()
@@ -993,13 +858,13 @@ function UnitMoveNonBlocking(unit)
 
 	elseif IsCreature(unit) then
 
-    -- путь войны (древний)
+    -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 --		if GetHeroSkillMastery(ally_hero, 177) > 0 then     --177
 --      path_of_war_x1, path_of_war_y1 = pos(unit)
 --		end
 
 
-    -- Аргат --Hero2
+    -- пїЅпїЅпїЅпїЅпїЅ --Hero2
 --    if IsNamedHero(ally_hero, 'Quroq') or IsNamedHero(enemy_hero, 'Quroq') then   --name Hero2
 --      local arghat_side = 0
 --      if (IsNamedHero(ally_hero, 'Quroq') and we == 0) or (IsNamedHero(enemy_hero, 'Quroq') and we == 1) then arghat_side = 0 else arghat_side = 1 end
@@ -1025,7 +890,7 @@ function UnitMoveNonBlocking(unit)
 
 	end
 
-	-- ожидание конца хода юнита
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	while current_turn[unit] == 2 do
 		sleep()
 	end
@@ -1036,7 +901,7 @@ function UnitMoveNonBlocking(unit)
 	local unit_mana_spent = init_mana - GetUnitManaPoints(unit)
 	local cur_enemy_hero_mana = GetUnitManaPoints(enemy_hero)
 
-  -- Аргат --Hero2   закл накладывается при получении нового уровня крови
+  -- пїЅпїЅпїЅпїЅпїЅ --Hero2   пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 --  if IsNamedHero(ally_hero, 'Quroq') or IsNamedHero(enemy_hero, 'Quroq') then   --name Hero2
 --    local arghat_side = 0
 --    if (IsNamedHero(ally_hero, 'Quroq') and we == 0) or (IsNamedHero(enemy_hero, 'Quroq') and we == 1) then arghat_side = 0 else arghat_side = 1 end
@@ -1069,7 +934,7 @@ function UnitMoveNonBlocking(unit)
   local type = GetCreatureType(unit)
 
 
-  -- Спеца Аларика
+  -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if type == CREATURE_OBSIDIAN_GARGOYLE or type == CREATURE_ARCH_MAGI then
     local currentMana = GetUnitManaPoints(unit)
     local manaRestory = 1 + (GetCreatureNumber(unit)/10)
@@ -1096,13 +961,13 @@ function UnitMoveNonBlocking(unit)
 
 	elseif IsHero(unit) then
 
-    -- Курак специализация
+    -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     if init_mana ~=  GetUnitManaPoints(unit) and ( IsNamedHero(ally_hero, 'Quroq') or IsNamedHero(ally_hero, 'Quroq2') ) then
       local creaturesWhoCanGetCallOfBlood = {}
 
       for i, creature in GetCreatures(GetUnitSide(unit)) do
         local type = GetCreatureType(creature)
-        --проверка на виверн
+        --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         if type ~= 127 and  type ~= 128 and type ~= 178 and creature ~= QUROQ_LAST_UNIT then
           creaturesWhoCanGetCallOfBlood[length(creaturesWhoCanGetCallOfBlood)] = creature
         end;
@@ -1130,7 +995,7 @@ function UnitMoveNonBlocking(unit)
     end;
 
 
-		-- покровительство Асхи
+		-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 		if GetHeroSkillMastery(ally_hero, 80) > 0 and unit_mana_spent > 0 then
 
       local chanceProc = random(2)
@@ -1156,12 +1021,12 @@ function UnitMoveNonBlocking(unit)
 		end
 
 
-    -- Восполнение маны
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     if GetHeroSkillMastery(unit, 40) > 0 or GetHeroSkillMastery(unit, 213) > 0 then
       local max_mana = GetUnitMaxManaPoints(unit)
-      local side = GetUnitSide(unit) -- Получаем сторону юнита (игрока)
+      local side = GetUnitSide(unit) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ)
       if GetUnitManaPoints(unit) < max_mana then
-        -- Чередование между 2 и 3
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 2 пїЅ 3
         local new_mana = GetUnitManaPoints(unit) + MYSTICISM_MANA_PER_TURN_REGENERATION_COUNTER[side]
         if new_mana > max_mana then
             new_mana = max_mana
@@ -1169,7 +1034,7 @@ function UnitMoveNonBlocking(unit)
         SetUnitManaPoints(unit, new_mana)
         init_mana = new_mana
 
-        -- Переключение значения восстановления маны для текущего игрока
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         if MYSTICISM_MANA_PER_TURN_REGENERATION_COUNTER[side] == 2 then
             MYSTICISM_MANA_PER_TURN_REGENERATION_COUNTER[side] = 3
         else
@@ -1178,7 +1043,7 @@ function UnitMoveNonBlocking(unit)
       end
     end
 
-    -- тележка с боеприпасами
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 --    if GetHeroSkillMastery(ally_hero, 24) > 0  then
 --      if index(GetWarMachines(we), NumberSideToText(we)..'-warmachine-WAR_MACHINE_AMMO_CART') then
 --        local num = AMMO_CART_REPAIR / 5
@@ -1215,11 +1080,11 @@ function UnitMoveNonBlocking(unit)
 end
 
 
---Cпецы героев --
+--CпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ --
 
---Раилаг, не реализован
+--пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function RaelagA1Spec(side, mainHeroName)
-  print "RaelagA1Spec"
+  -- print "RaelagA1Spec"
 
   local summoningLevel = GetHeroSkillMastery(mainHeroName, 12);
 
@@ -1236,13 +1101,13 @@ function RaelagA1Spec(side, mainHeroName)
 
 end;
 
--- Спеца Рольфа
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function RolfSpec(side, mainHeroName)
-  print "RolfSpec"
+  -- print "RolfSpec"
 
   local summoningLevel = GetHeroSkillMastery(mainHeroName, 12);
 
-  -- Количество эллемов: 7 (20) 27 (36), 60(48), 130(60)/ 66(50), 18 (30)
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 7 (20) 27 (36), 60(48), 130(60)/ 66(50), 18 (30)
   numberSummon = {8, 19, 40, 90}
 
   local c1 = 'temp-buff'..side
@@ -1260,7 +1125,7 @@ end;
 
 
 function ReadyUnitThread()
-  print "ReadyUnitThread"
+  -- print "ReadyUnitThread"
 
 	while 1 do
 		repeat sleep() until combatReadyPerson()
@@ -1297,14 +1162,14 @@ function CombatFinishManualControl()
       looser = 1 - last_turn_player
     end
     if looser >= 0 then
-      consoleCmd('game_writelog 1')
-		  sleep(3)
-		  print('Hero1_ManaR: ', HERO_1_MANA)
-		  print('Hero1_Turns: ', HERO_1_TURN)
-		  print('Hero2_ManaR: ', HERO_2_MANA)
-		  print('Hero2_Turns: ', HERO_2_TURN)
-		  print('drop player ', looser)
-		  consoleCmd('game_writelog 0')
+      -- consoleCmd('game_writelog 1')
+		  -- sleep(3)
+		  -- print('Hero1_ManaR: ', HERO_1_MANA)
+		  -- print('Hero1_Turns: ', HERO_1_TURN)
+		  -- print('Hero2_ManaR: ', HERO_2_MANA)
+		  -- print('Hero2_Turns: ', HERO_2_TURN)
+		  -- print('drop player ', looser)
+		  -- consoleCmd('game_writelog 0')
 		  --consoleCmd([[@SetGameVar('hero1_mana', 'return {]] .. HERO_1_MANA .. [[}')]])
 		  finish = 1
     end
@@ -1339,7 +1204,7 @@ function CombatFinishManualControl()
 end
 
 ---------------------------------------------------------------------------------------------------
---  Обработчики событий
+--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ---------------------------------------------------------------------------------------------------
 
 NewHandler(HANDLERS.PREPARE, OnPrepare)
@@ -1351,5 +1216,5 @@ NewHandler(HANDLERS.DEATH.CREATURE, CreatureDead)
 
 
 ---------------------------------------------------------------------------------------------------
---  Конец файла
+--  пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 ---------------------------------------------------------------------------------------------------

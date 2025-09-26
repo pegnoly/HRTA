@@ -1609,8 +1609,10 @@ function runBattle()
 
   };
 
-	 composeHeroesDataBeforeFight(p1MainHeroName, p2MainHeroName);
-	 composeCustomData(customData);
+	--  composeHeroesDataBeforeFight(p1MainHeroName, p2MainHeroName);
+	--  composeCustomData(customData);
+  asha.CollectData()
+  asha.WriteData()
 --  Trigger(COMBAT_RESULTS_TRIGGER, 'composeDataAfterBattle');
   -- ASHA (���������)
 

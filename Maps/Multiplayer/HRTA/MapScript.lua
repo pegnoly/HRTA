@@ -1,4 +1,4 @@
--- Не запускаем скрипты, если в бою
+-- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ
 consoleCmd('@nde = 1')
 
 sleep(10)
@@ -6,24 +6,32 @@ if nde == 1 then
 	return
 end
 
--- Увеличиваем размер строк вывода в консоль
--- Запрещаем писать в файл
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
 consoleCmd('console_size 999')
 consoleCmd('game_writelog 0')
 sleep(1)
 
+doFile('/scripts/source/iterators/range.lua')
+doFile('/scripts/source/iterators/list.lua')
 doFile('/scripts/asha/lib.lua');
 doFile(GetMapDataPath()..'common.lua');
 doFile(GetMapDataPath()..'utils.lua');
 doFile(GetMapDataPath()..'constants.lua');
 doFile(GetMapDataPath()..'modules/modules.lua');
 
+while not asha do
+    sleep()
+end
+
+asha.AddGlobalField("DraftType", GetDifficulty() + 1)
+
 sleep(1)
 
 removeHeroMovePoints(Biara);
 removeHeroMovePoints(Djovanni);
 
--- Обработчик наступления нового дня
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 function handleNewDay()
   if GetDate(DAY) == 2 then
     doFile(GetMapDataPath().."day2/day2_scripts.lua");
@@ -54,7 +62,7 @@ function handleNewDay()
   end;
 end;
 
--- Корневые триггеры
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 Trigger (NEW_DAY_TRIGGER, 'handleNewDay');
 
 doFile(GetMapDataPath().."day1/day1_scripts.lua");

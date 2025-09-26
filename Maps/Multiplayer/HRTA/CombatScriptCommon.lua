@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
---  Условие запуска
+--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ---------------------------------------------------------------------------------------------------
 
 if GetHost(DEFENDER) == 1 then
@@ -7,10 +7,10 @@ if GetHost(DEFENDER) == 1 then
 end
 
 ---------------------------------------------------------------------------------------------------
---  Общие функции
+--  пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ---------------------------------------------------------------------------------------------------
 
-print('<color=FF008000>Combat script execution started')
+-- print('<color=FF008000>Combat script execution started')
 
 DIFF = GetDifficulty() + 1
 PATH = '/' .. GetMapDataPath()
@@ -23,17 +23,17 @@ function InitRandom()
 	local state
 	random, state = NewPRNG(seed)
 	local sd = GetPRNGSeed(state)
-	print('<color=blue>PRNG seed = '
-		.. hex(sd[1]) .. ':'
-		.. hex(sd[2]) .. ':'
-		.. hex(sd[3]) .. ':'
-		.. hex(sd[4]) .. ':'
-		.. hex(sd[5]) .. ':'
-		.. hex(sd[6]))
+	-- print('<color=blue>PRNG seed = '
+	-- 	.. hex(sd[1]) .. ':'
+	-- 	.. hex(sd[2]) .. ':'
+	-- 	.. hex(sd[3]) .. ':'
+	-- 	.. hex(sd[4]) .. ':'
+	-- 	.. hex(sd[5]) .. ':'
+	-- 	.. hex(sd[6]))
 end
 
 function InitScripts()
-  print "InitScripts"
+--   print "InitScripts"
 
 	doFile(PATH .. 'CombatScript.lua')
 end
@@ -77,7 +77,7 @@ function Callback(i, skip)
 end
 
 function SetATB(unit, atb)
-	print('<color=FF4080FF>' .. unit .. ' moved to position ' .. atb .. ' on ATB') 
+	-- print('<color=FF4080FF>' .. unit .. ' moved to position ' .. atb .. ' on ATB') 
 	setATB(unit, atb)
 end
 
@@ -170,7 +170,7 @@ end
 
 
 ---------------------------------------------------------------------------------------------------
---  Управление боем
+--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 ---------------------------------------------------------------------------------------------------
 
 NewHandler(HANDLERS.START, CommonDefaults)
@@ -181,5 +181,5 @@ if GetGameVar('execution_thread') == '1' then
 end
 
 ---------------------------------------------------------------------------------------------------
---  Конец файла
+--  пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 ---------------------------------------------------------------------------------------------------

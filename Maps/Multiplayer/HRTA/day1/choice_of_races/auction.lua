@@ -1,4 +1,4 @@
--- Объявляем глобальные переменные для хранения состояния игры
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 PLAYER_TURN = 'RED'
 PLAYER_1_GOLD = 10000
 PLAYER_2_GOLD = 10000
@@ -14,10 +14,10 @@ ACTION_OBJECT = {
     [PLAYER_2] = {'goldAuction500_Player2', 'goldAuction1000_Player2', 'goldAuction2000_Player2'},
 }
 
--- Функция для настройки объектов аукциона
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function setupAuctionObjects(hero, bids, agreement)
     print("setupAuctionObjects")
-    for i = 1, 3 do -- У нас всегда 3 ставки
+    for i = 1, 3 do -- пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 3 пїЅпїЅпїЅпїЅпїЅпїЅ
         local bid = bids[i]
 
         SetObjectEnabled(bid.name, nil)
@@ -26,7 +26,7 @@ function setupAuctionObjects(hero, bids, agreement)
 
         Trigger(OBJECT_TOUCH_TRIGGER, bid.name, 'playerBid("'..hero..'", "'..bid.name..'")')
 
-        -- Устанавливаем имя и описание для каждого объекта
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         OverrideObjectTooltipNameAndDescription(
             bid.name,
             PATH_TO_DAY1_MODULE.."choice_of_races/auction/"..bid.name.."_name.txt",
@@ -34,13 +34,13 @@ function setupAuctionObjects(hero, bids, agreement)
         )
     end
 
-    -- Устанавливаем объект согласия
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     SetObjectEnabled(agreement.name, nil)
     SetObjectPosition(agreement.name, agreement.x, agreement.y, GROUND)
     SetDisabledObjectMode(agreement.name, DISABLED_INTERACT)
     Trigger(OBJECT_TOUCH_TRIGGER, agreement.name, 'playerAgreement("'..hero..'")')
 
-    -- Устанавливаем имя и описание для объекта согласия
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     OverrideObjectTooltipNameAndDescription(
         agreement.name,
         PATH_TO_DAY1_MODULE.."choice_of_races/auction/"..agreement.name.."_name.txt",
@@ -49,7 +49,7 @@ function setupAuctionObjects(hero, bids, agreement)
 
 end
 
--- Инициализация объектов и установка начального состояния
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function initializeAuction()
     print("initializeAuction")
 
@@ -63,10 +63,10 @@ function initializeAuction()
     ShowFlyingSign({PATH_TO_DAY1_MODULE.."choice_of_races/auction/startAuction.txt"}, Biara, PLAYER_1, 5);
     ShowFlyingSign({PATH_TO_DAY1_MODULE.."choice_of_races/auction/startAuction.txt"}, Djovanni, PLAYER_2, 5);
 
-    -- Выводим информацию о паре фракций для каждого игрока
-    print("Выпали пары: ", SELECTED_RACE_ID_TABLE[1], " и ", SELECTED_RACE_ID_TABLE[2])
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    print("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ: ", SELECTED_RACE_ID_TABLE[1], " пїЅ ", SELECTED_RACE_ID_TABLE[2])
 
-    -- Настройка пьедесталов и ставок для игрока 1
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 1
     local player1Bids = {
         { name = 'goldAuction500_Player1', x = 34, y = 88 },
         { name = 'goldAuction1000_Player1', x = 35, y = 88 },
@@ -75,7 +75,7 @@ function initializeAuction()
     local player1Agreement = { name = 'spell_nabor1', x = 34, y = 86 }
     local player1InfoPedestal = { name = 'spell_nabor3', x = 36, y = 86 }
 
-    -- Настройка пьедесталов и ставок для игрока 2
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 2
     local player2Bids = {
         { name = 'goldAuction2000_Player2', x = 43, y = 23 },
         { name = 'goldAuction1000_Player2', x = 42, y = 23 },
@@ -84,14 +84,14 @@ function initializeAuction()
     local player2Agreement = { name = 'spell_nabor2', x = 41, y = 21 }
     local player2InfoPedestal = { name = 'spell_nabor4', x = 43, y = 21 }
 
-    -- Настройка объектов и триггеров
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     deleteAllDelimeters()
     moveDelimetersToRandomChoise()
     showRaces()
     setupAuctionObjects(Biara, player1Bids, player1Agreement)
     setupAuctionObjects(Djovanni, player2Bids, player2Agreement)
 
-    -- Настройка пьедесталов для отображения ставок
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     SetObjectEnabled(player1InfoPedestal.name, nil)
     SetObjectPosition(player1InfoPedestal.name, player1InfoPedestal.x, player1InfoPedestal.y, GROUND)
     SetDisabledObjectMode(player1InfoPedestal.name, DISABLED_INTERACT)
@@ -117,22 +117,22 @@ function initializeAuction()
         )
 end
 
---Отображение текущей ставки
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function showCurrentBids(triggeredHero)
     print("showCurrentBids")
 
     local playerId = GetPlayerFilter(GetObjectOwner(triggeredHero))
 
-    -- Определяем текущие названия фракций
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     local race1 = GetRaceName(SELECTED_RACE_ID_TABLE[1])
     local race2 = GetRaceName(SELECTED_RACE_ID_TABLE[2])
 
-    -- Вычисляем общие ставки для каждой фракции
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
         local gold1 = mod(COUNT_BID, 2) == 1 and -EXTRA_GOLD or EXTRA_GOLD
         local gold2 = mod(COUNT_BID, 2) == 0 and -EXTRA_GOLD or EXTRA_GOLD
 
-    -- Отобразите сообщение о текущей ставке игрока
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     ShowFlyingSign({
         PATH_TO_DAY1_MODULE.."choice_of_races/auction/whatBit.txt";
         raceName1 = race1,
@@ -144,11 +144,11 @@ end
 
 
 
--- Функция для обработки ставок игроков
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function playerBid(triggeredHero, auctionObject)
     print("playerBid")
     local playerId = GetPlayerFilter(GetObjectOwner(triggeredHero))
-    local bidAmount = getBidAmount(auctionObject) -- Получаем ставку на основе объекта аукциона
+    local bidAmount = getBidAmount(auctionObject) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     local playerGold = playerId == PLAYER_1 and PLAYER_1_GOLD or PLAYER_2_GOLD
 
     TURN = TURN + 1;
@@ -158,15 +158,15 @@ function playerBid(triggeredHero, auctionObject)
         playerGold = playerGold - bidAmount
         EXTRA_GOLD = EXTRA_GOLD + bidAmount
 
-        -- Определяем текущие названия фракций
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         local race1 = GetRaceName(SELECTED_RACE_ID_TABLE[1])
         local race2 = GetRaceName(SELECTED_RACE_ID_TABLE[2])
 
-        -- Вычисляем общие ставки для каждой фракции
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         local gold1 =  mod(COUNT_BID, 2) == 0 and -EXTRA_GOLD or EXTRA_GOLD
         local gold2 = mod(COUNT_BID, 2) == 1 and -EXTRA_GOLD or EXTRA_GOLD
 
-        -- Показать сообщение о повышении ставки
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         ShowFlyingSign({
             PATH_TO_DAY1_MODULE.."choice_of_races/auction/newBit.txt";
             eq = bidAmount,
@@ -185,38 +185,38 @@ function playerBid(triggeredHero, auctionObject)
             gold2 = gold2
         }, Djovanni, PLAYER_2, 8)
 
-        -- меняем фракции
+        -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         local swap = SELECTED_RACE_ID_TABLE[1]
         SELECTED_RACE_ID_TABLE[1] = SELECTED_RACE_ID_TABLE[2]
         SELECTED_RACE_ID_TABLE[2] = swap
 
-        -- Обновляем положение юнитов фракций
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         showRaces()
     end
 
-    -- Смена очереди хода
+    -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     reverseTurn()
 end
 
--- Функция для получения имени фракции на основе ID
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ID
 function GetRaceName(raceId)
     local raceNames = {
-        [0] = PATH_TO_DAY1_MODULE.."race_names/haven.txt",         -- Орден Порядка
-        [1] = PATH_TO_DAY1_MODULE.."race_names/inferno.txt",       -- Инферно
-        [2] = PATH_TO_DAY1_MODULE.."race_names/necropolis.txt",    -- Некрополис
-        [3] = PATH_TO_DAY1_MODULE.."race_names/sylvan.txt",        -- Лесной Союз
-        [4] = PATH_TO_DAY1_MODULE.."race_names/academy.txt",       -- Академия Волшебства
-        [5] = PATH_TO_DAY1_MODULE.."race_names/dungeon.txt",       -- Лига Теней
-        [6] = PATH_TO_DAY1_MODULE.."race_names/fortress.txt",      -- Северные Кланы
-        [7] = PATH_TO_DAY1_MODULE.."race_names/stronghold.txt",    -- Великая Орда
+        [0] = PATH_TO_DAY1_MODULE.."race_names/haven.txt",         -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        [1] = PATH_TO_DAY1_MODULE.."race_names/inferno.txt",       -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        [2] = PATH_TO_DAY1_MODULE.."race_names/necropolis.txt",    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        [3] = PATH_TO_DAY1_MODULE.."race_names/sylvan.txt",        -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+        [4] = PATH_TO_DAY1_MODULE.."race_names/academy.txt",       -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        [5] = PATH_TO_DAY1_MODULE.."race_names/dungeon.txt",       -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        [6] = PATH_TO_DAY1_MODULE.."race_names/fortress.txt",      -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        [7] = PATH_TO_DAY1_MODULE.."race_names/stronghold.txt",    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     }
     return raceNames[raceId]
 end
 
--- Функция для получения суммы ставки на основе объекта аукциона
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function getBidAmount(auctionObject)
     print("getBidAmount")
-    -- Предположим, что объекты аукциона названы в зависимости от размера ставки
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     if auctionObject == 'goldAuction500_Player1' or auctionObject == 'goldAuction500_Player2' then
         return 500
     elseif auctionObject == 'goldAuction1000_Player1' or auctionObject == 'goldAuction1000_Player2' then
@@ -228,7 +228,7 @@ function getBidAmount(auctionObject)
     end
 end
 
--- Функция для обработки согласия игрока
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function playerAgreement(triggeredHero)
     print("playerAgreement")
     local playerId = GetPlayerFilter(GetObjectOwner(triggeredHero))
@@ -261,11 +261,11 @@ function playerAgreement(triggeredHero)
         SELECTED_PAIR = playerId
         finalizeAuction()
     else
-        print("Пара уже выбрана игроком ", SELECTED_PAIR)
+        print("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ ", SELECTED_PAIR)
     end
 end
 
--- Показывать рассовых юнитов
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function showRaces()
     print("showRaces")
 
@@ -296,7 +296,7 @@ function showRaces()
 
 end;
 
--- Смена хода
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function reverseTurn()
     print("reverseTurn")
 
@@ -313,7 +313,7 @@ function reverseTurn()
 
 end;
 
--- Убрали препятствия
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function deleteAllDelimetersAuction()
   print "deleteAllDelimetersAuction"
 
@@ -329,7 +329,7 @@ function deleteAllDelimetersAuction()
   SetObjectPosition('spell_nabor4', 1, 1);
 end;
 
--- Убрали расовых существ
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function deleteAllRaces()
     print("deleteAllRaces")
 
@@ -346,7 +346,7 @@ function deleteAllRaces()
     end
 end;
 
--- Регионы блокировки выкл
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function unblockedRegion()
   print("unblockedRegion")
 
@@ -381,7 +381,7 @@ function blockedRegionAuction()
   SetRegionBlocked ('auction7', 1);
   SetRegionBlocked ('auction8', 1);
   
-  --они мешают перезаписи
+  --пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   SetRegionBlocked ('Fast_ma_1', 1);
   SetRegionBlocked ('Fast_ma_2', 1);
 
@@ -391,11 +391,11 @@ end;
 
 
 
--- Обработка завершения торгов
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function finalizeAuction()
     print("finalizeAuction")
 
-    -- Определяем, кто победил, а кто проиграл
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     if SELECTED_PAIR == PLAYER_1 then
         PLAYER_1_GOLD = 0 - EXTRA_GOLD
         PLAYER_2_GOLD = 0 + EXTRA_GOLD
@@ -405,7 +405,9 @@ function finalizeAuction()
         PLAYER_2_GOLD = 0 - EXTRA_GOLD
     end
 
-    -- Удаляем объекты и переходим к следующему этапу
+    asha.AddGlobalField("BargainsWinner", SELECTED_PAIR)
+    asha.AddGlobalField("BargainsAmount", EXTRA_GOLD)
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     deleteAllRaces()
     deleteAllDelimeters()
     deleteAllDelimetersAuction()
