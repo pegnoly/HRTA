@@ -83,7 +83,7 @@ asha = {
             asha.player_fields[player]["Artifacts"] = "["..list_iterator.Concat(
                 range_generator.FromTop(ARTIFACT_SWORD_OF_RUINS, ARTIFACT_PRINCESS, function (artifact)
                     local h = %hero
-                    if HasArtefact(hero, artifact, 1) then
+                    if HasArtefact(h, artifact, 1) then
                         return 1
                     end
                     return nil

@@ -35,13 +35,15 @@ doFile('/scripts/source/event/map_common/events.lua')
 sleep()
 doFile('/scripts/source/iterators/list.lua')
 doFile('/scripts/source/iterators/range.lua')
+sleep()
+doFile('/scripts/asha/lib.lua')
 
 while not MapLoadingEvent do 
 	sleep()
 end
 startThread(Creature.Sorting.Init)
 startThread(Art.Distribution.Init)
---doFile("/scripts/global_load.lua")
+doFile("/scripts/global_load.lua")
 
 MCCS_FIRST_ACTIVE_PLAYER = -1
 
