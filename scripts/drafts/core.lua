@@ -127,10 +127,9 @@ drafts_core = {
     function (day)
         if day == DRAFTS_SKIP_DAY then
             asha.AddGlobalField("DraftType", drafts_core.GetDraftType())
-            print("Asha: ", asha)
             for player = PLAYER_1, PLAYER_2 do
                 local hero = GetPlayerHeroes(player)[0]
-                ChangeHeroStat(hero, STAT_MOVE_POINTS, -99999)
+                unlim_moves_threads.UpdateMoveThreadType(hero, MOVE_THREAD_TYPE_NO_MOVES)
                 MessageQueue.AddMessage(player, drafts_core.path.."skip_day.txt", hero, 7.0)
             end
         end

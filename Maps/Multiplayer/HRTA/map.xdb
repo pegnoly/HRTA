@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AdvMapDesc>
-	<CustomGameMap>true</CustomGameMap>
+	<CustomGameMap>false</CustomGameMap>
 	<Version>3</Version>
 	<TileX>96</TileX>
 	<TileY>96</TileY>
@@ -4915,3048 +4915,6 @@
 				<ScalePercent>100</ScalePercent>
 			</AdvMapStatic>
 		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_85716323-66D4-456C-9DF8-DDFCD3876B83">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28318</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_1_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_5AA1C1EE-6478-4E7C-8CBF-5287250B628C">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28318</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_2_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_7604C031-0CC2-4206-BBAB-34DC367CD6E2">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28318</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_3_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (3).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_0D03021F-A2CC-44B1-BCB5-10CD6C33E7EB">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_4_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (4).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_3F4A3F01-1812-4FF8-9450-1A65DFD9201F">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_5_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (5).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_74B42D4C-2694-46FC-B53C-D6A7202E2384">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_6_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (6).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_C1371122-216B-4358-B1E5-14DEA6ED8201">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_7_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (7).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_DAF731F8-D887-4AF1-9E0C-DEB223B4CBAC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_8_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (8).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_4976C442-9209-4119-8B8B-3D4214BE339D">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_9_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (9).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_9F692959-CE65-4AA8-9329-46E70040FD7B">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_10_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (10).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_60F6B4B6-9A1D-499D-BD6E-19DDC46CA9B9">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_11_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (11).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_87F71A4B-2DD4-419E-8A51-CA96576A3269">
-			<AdvMapTreasure>
-				<Pos>
-					<x>9</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_12_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (12).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_454A6D00-DE8A-459F-86BB-90D4E3FA7F1A">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_1_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (13).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_B68B2BFE-7F62-4859-BA62-31316C9298B3">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_2_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (14).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_A0BC1428-B6C4-484B-9F31-DFC82C4FBA0D">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_3_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (15).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_68A854EA-D897-42AA-A09A-07F6D914E306">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_4_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (16).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_941B5C7D-2C1A-4001-BC87-98E4C014DADA">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_5_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (17).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_D66EF71F-A73B-4C0D-84E3-46EEFF72AD60">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_6_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (18).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_EA8A141E-925F-4425-90B3-E25471B086FE">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_7_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (19).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_4501D69E-419E-4C82-9C03-99FD947F7D49">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_8_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (20).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_9AF43250-D9F1-47E3-9FD2-9FC3F2401900">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_9_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (21).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_F3596DF2-08AC-4F90-BD9A-7080A954104E">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_10_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (22).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_964EA837-37D0-48B9-91BE-A1226BBC30A3">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_11_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (23).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_3F1007B4-7EF0-4703-A492-E4E479F52004">
-			<AdvMapTreasure>
-				<Pos>
-					<x>11</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_12_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (24).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_C6354A07-F116-456B-ACF0-78017A75FE4E">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_1_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (25).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_40DB3B60-3CF8-4FAA-A470-0A674D7A7CA6">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_2_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (26).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_C88C2A59-234D-4243-98BB-6F03F34C0A0D">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_3_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (27).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_A3009554-CC4A-4BF3-84EC-8C365401665B">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_4_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (28).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_E90FFDDD-5215-4C6B-AEAE-E6EA89DA0E85">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_5_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (29).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_115A40E7-EF0B-48E9-806F-47ACA8271B9C">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_6_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (30).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_578EF88C-58F6-473B-9517-ABFADF2007FF">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_7_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (31).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_5F6F9396-95A3-45E5-9E5A-8BB2533E83CA">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_8_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (32).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_7B4E16AB-5873-4DD7-87DF-C7C62C4F6322">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_9_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (33).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_C34AFB09-9914-4128-A909-2316E4FA533F">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_10_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (34).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_3A9A208B-08D4-453D-A20C-D82EC29965CB">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_11_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (35).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_42EF180F-D9C9-49CE-94E6-FC96508DDFEC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>13</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_12_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (36).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_CCD02FFC-2AAC-427D-9C26-1FCE5383512F">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_1_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (37).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_8AD53A78-4C00-48CF-BB5F-E7219708C75B">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_2_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (38).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_AADFC335-A710-4520-882B-1F6D70EBA8F5">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_3_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (39).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_4432B84D-3F06-4BEF-87CD-351B4BDD3FD9">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_4_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (40).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_727A2963-58A1-4AF0-8CC7-2A49F39650BF">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_5_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (41).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_3F839FCE-C288-49F3-AC0C-D857AC93CACB">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_6_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (42).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_86668EAB-E45F-4862-AE09-3D511D938B75">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_7_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (43).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_533DE5FD-DBD8-42B7-AA8E-BFA9B7CD7B48">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_8_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (44).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_B3C40B73-0391-4F2A-B71F-EC1496D82CCF">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_9_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (45).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_CEB2741B-43D8-4BB3-AB8E-71CAC2C27B44">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_10_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (46).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_5BC951DF-7E35-4467-B7AA-87CE59CB9E13">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_11_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (47).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_0A67695A-E900-4A23-B718-942EDD2FF6A2">
-			<AdvMapTreasure>
-				<Pos>
-					<x>15</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_12_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (48).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_7B16C427-07DC-463D-9378-54FCB703D0C8">
-			<AdvMapTreasure>
-				<Pos>
-					<x>7</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_1_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_AE3B83A4-BC79-43B3-A928-BA86A1E92BDC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>6</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_2_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_27779950-4404-4B44-94D5-27DAB2BFC202">
-			<AdvMapTreasure>
-				<Pos>
-					<x>7</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_3_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (3).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_CFE2E2DA-64BD-47E7-A266-D5DC747F83BC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>6</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_4_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (4).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_78FAE450-6574-4DA0-95F3-1B45D738E2A5">
-			<AdvMapTreasure>
-				<Pos>
-					<x>7</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_5_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (5).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_17CBCC4B-DACD-47A8-B443-7BD6978BAC4A">
-			<AdvMapTreasure>
-				<Pos>
-					<x>6</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_6_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (6).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_B049F9A5-D97B-46F4-9C75-DB8807385D41">
-			<AdvMapTreasure>
-				<Pos>
-					<x>7</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_7_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (7).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_899B3358-E6DD-4989-BA86-10D1F4DB7ABD">
-			<AdvMapTreasure>
-				<Pos>
-					<x>6</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_8_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (8).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_1FE19AA9-77DD-47DB-95A1-6B15CBB62B5D">
-			<AdvMapTreasure>
-				<Pos>
-					<x>7</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_9_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (9).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_9C7BF7F5-8F1B-44FB-ACD0-BC93DEEB9E5C">
-			<AdvMapTreasure>
-				<Pos>
-					<x>6</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_10_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (10).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_E9D7CF8B-ADEB-4B33-9E24-4BA4A48E19A2">
-			<AdvMapTreasure>
-				<Pos>
-					<x>7</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_1_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_58EB14D0-8479-4E96-A01B-BE78D5695DA3">
-			<AdvMapTreasure>
-				<Pos>
-					<x>6</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_2_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_9C3B17A9-EC37-43B5-AC06-DCE65435FDDA">
-			<AdvMapTreasure>
-				<Pos>
-					<x>7</x>
-					<y>81</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_3_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (3).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_1C594B67-5E22-4134-A991-F610B9D4E582">
-			<AdvMapTreasure>
-				<Pos>
-					<x>6</x>
-					<y>81</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_4_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (4).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_F0A50E1C-5F2C-45CA-B5F1-43996ACD0A30">
-			<AdvMapTreasure>
-				<Pos>
-					<x>7</x>
-					<y>83</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_5_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (5).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_16C9140C-FEB0-48AF-BDE9-BFCE0F56DD3F">
-			<AdvMapTreasure>
-				<Pos>
-					<x>6</x>
-					<y>83</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_6_1</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (6).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_8E5674B6-37C6-4E63-BADC-4F2C246096AD">
-			<AdvMapTreasure>
-				<Pos>
-					<x>21</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_3_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (3).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_BD3AEEFB-9FA0-444F-BB1A-DE49CDB3BF13">
-			<AdvMapTreasure>
-				<Pos>
-					<x>20</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_4_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (4).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_4441F9DE-D987-4A8D-BBC9-A525E2451497">
-			<AdvMapTreasure>
-				<Pos>
-					<x>21</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_5_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (5).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_A6D8F814-BEAC-4A39-BA99-220D9879C8BE">
-			<AdvMapTreasure>
-				<Pos>
-					<x>20</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_6_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (6).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_0844BA2F-1705-4771-9A27-17880D3D6CCF">
-			<AdvMapTreasure>
-				<Pos>
-					<x>21</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_7_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (7).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_450E0A0A-6E82-40C6-8914-274BEF40C803">
-			<AdvMapTreasure>
-				<Pos>
-					<x>20</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_8_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (8).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_78327B47-4698-4651-AC2D-BE54972F9FD2">
-			<AdvMapTreasure>
-				<Pos>
-					<x>21</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_9_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (9).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_3A90F583-FCFD-4DAA-9FF6-8B03BFCFD68B">
-			<AdvMapTreasure>
-				<Pos>
-					<x>20</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_10_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (10).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_F2D3B644-0DBB-4252-B725-005390170CB3">
-			<AdvMapTreasure>
-				<Pos>
-					<x>21</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_1_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_22D21CE6-317D-422E-BA16-1F19E22AA20D">
-			<AdvMapTreasure>
-				<Pos>
-					<x>20</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_2_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_F703ACE9-2245-483C-B8DF-423CF8A7CB71">
-			<AdvMapTreasure>
-				<Pos>
-					<x>21</x>
-					<y>81</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_3_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (3).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_AE407C79-14C6-4F7E-B514-1EAC674F53C1">
-			<AdvMapTreasure>
-				<Pos>
-					<x>20</x>
-					<y>81</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_4_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (4).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_5AA2C840-51BC-4E39-A494-74EBC546899A">
-			<AdvMapTreasure>
-				<Pos>
-					<x>21</x>
-					<y>83</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_5_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (5).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_45070208-BC32-445C-AA1A-E4DFD5192A94">
-			<AdvMapTreasure>
-				<Pos>
-					<x>20</x>
-					<y>83</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_6_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (6).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_3A02D4A9-3BAE-4052-A730-DA0E4C1BDFC3">
-			<AdvMapTreasure>
-				<Pos>
-					<x>21</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_1_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_A1931F87-6317-4E4B-8BA5-1AA5B0A7785A">
-			<AdvMapTreasure>
-				<Pos>
-					<x>20</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_2_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_6C71A72C-E2DB-45EC-BEAF-7F10EF462648">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_2_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_D41CEAD9-4E38-400D-B5B0-8CA76B17A56B">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_3_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (3).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_076428BA-F9D8-4F47-B7E3-B16A4EFB8E84">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_4_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (4).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_910611E3-9E84-465D-A6B1-736E9F23034A">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_6_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (6).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_02284CE5-973D-4B8C-8548-128EBD1CFED0">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_7_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (7).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_252D6BDE-D0A3-4194-8ACB-2C2378C07FCB">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_8_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (8).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_B9E9CB48-9916-4BB4-8236-817B11A54EC2">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_9_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (9).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_546DF1D0-D274-4D21-8DF0-90F1F505D4A9">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_10_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (10).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_5E6BED0F-F03D-4697-8323-C093ECD84D24">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_11_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (11).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_5E34462D-3532-4D65-967D-4694E8DAECAC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_12_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (12).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_266E42A6-EF19-4569-9568-4D1845A738A3">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_5_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (5).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_BF0BFECD-8D60-4CFD-A016-8BDE8F08BEE6">
-			<AdvMapTreasure>
-				<Pos>
-					<x>23</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_1_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_02F93B2E-23AE-4E1F-B324-116576E8E29C">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_12_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (24).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_12673680-BA61-432A-A7C6-CC995740CAB1">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_1_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (13).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_AD3082AA-62AE-4F6B-A468-7E6D59999797">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_10_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (22).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_1E82359D-8AA5-4BBC-B62D-9409B7062F66">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_11_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (23).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_A0B6B577-8F83-4862-A4B1-868AE6700A70">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_9_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (21).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_8D92054B-E9D6-4191-9179-3F78850569D5">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_7_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (19).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_8EB014A8-98E6-43FB-9A98-161BE94BC98A">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_6_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (18).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_564835C3-A8B6-4C85-B450-CFB9ACA2C955">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_5_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (17).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_84C2FA14-E487-45D2-AEAB-5583E052013D">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_4_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (16).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_85397B5E-D737-42D9-8333-A2CB7BA6DF76">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_2_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (14).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_6772D24B-A232-42A7-979D-F09559712660">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_3_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (15).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_7E2E8514-B12B-4AD4-BAA9-B23329030EE7">
-			<AdvMapTreasure>
-				<Pos>
-					<x>25</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_8_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (20).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_FEA12015-ADF4-41AB-A367-BB256462BCB2">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_12_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (36).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_D9573A61-4251-4E09-8721-7BAD9498E9F2">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_12_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (48).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_BB9C0363-F2C7-4B45-B599-D1DB91D2289C">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_1_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (25).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_3D1F36B3-C027-4A94-9824-665913CD598B">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_11_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (35).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_63125267-5946-4798-BC43-67A2C405BCD0">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_10_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (34).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_F8C29A52-5C36-4AEE-B9C3-BF5D6B85F6A1">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_9_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (33).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_80495F50-F6FE-404A-BA35-79687768EF7D">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_8_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (32).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_C35B5DED-2F16-4DF9-9AB6-60E8882E43BF">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_7_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (31).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_E81B127B-7CF7-4513-96E3-B13F19CE4EEC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_6_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (30).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_981408A5-A2E1-40BD-A059-A1695FDB2D8F">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_5_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (29).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_C9686B71-E512-446D-9C37-2345270BFAA1">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_4_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (28).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_EA230487-0DF4-48A7-86C3-DF5AEA699D75">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_3_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (27).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_E42EBAB4-48B4-4C9D-B066-A8412D396BBE">
-			<AdvMapTreasure>
-				<Pos>
-					<x>27</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_2_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (26).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_B799089C-7E8D-48BB-B4E1-7047C8BAB861">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_11_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (47).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_A3195B92-6C41-4FDF-AA3E-9B7BE10987E9">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_1_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (37).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_1C915CDF-5BD5-4C70-A572-065F7ACF9EB0">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_10_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (46).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_749D4B4D-ECD5-41D7-B86A-1BDA4BFEF220">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_9_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (45).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_C159C0E5-9A9A-48F8-B6C2-EB539077AF2E">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_8_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (44).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_CF56117D-B3FC-4F35-8601-B8949E67A138">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_7_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (43).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_D5949FE2-3E2F-4F58-8F5F-2DDB8D8829E8">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_6_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (42).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_F6800C40-4362-4C1B-84F1-CC3531F64544">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_5_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (41).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_6832EC07-81EE-4CCF-BF0C-10EA3325D003">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_4_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (40).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_7B26F25B-31EC-480F-99C5-04D9106D7663">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_2_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (38).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_A4049E8E-F211-4C60-82BB-FBEF48652126">
-			<AdvMapTreasure>
-				<Pos>
-					<x>29</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.1416</Rot>
-				<Floor>1</Floor>
-				<Name>spell_4_3_2</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (39).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_330CA0C2-F008-4ED1-87F2-4F561C5F6E70">
-			<AdvMapTreasure>
-				<Pos>
-					<x>35</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_3_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (3).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_FDD907F9-4183-4158-9FF4-028E439AF92C">
-			<AdvMapTreasure>
-				<Pos>
-					<x>34</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_4_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (4).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_D03469D1-C031-40FB-AEE1-B516FAEEBB5E">
-			<AdvMapTreasure>
-				<Pos>
-					<x>35</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_5_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (5).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_CB91D07C-FBA1-4C9F-844B-DA644D1B02CC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>34</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_6_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (6).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_73330A7B-D67C-40A6-BF15-1C2B094D9CE5">
-			<AdvMapTreasure>
-				<Pos>
-					<x>35</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_7_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (7).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_6D4F9227-D5F6-4261-949D-F07647AD26EA">
-			<AdvMapTreasure>
-				<Pos>
-					<x>34</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_8_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (8).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_AE9252A2-CE99-4CA6-B0D6-5FD737199500">
-			<AdvMapTreasure>
-				<Pos>
-					<x>35</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_9_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (9).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_6782AC6D-724E-4087-9078-DAF1B5D6D326">
-			<AdvMapTreasure>
-				<Pos>
-					<x>34</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_10_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (10).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_E01B527E-6EF6-4F3E-A0B7-BFB228FA4BF7">
-			<AdvMapTreasure>
-				<Pos>
-					<x>35</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_1_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_206BF752-DE8F-4A10-AE70-B76300556E62">
-			<AdvMapTreasure>
-				<Pos>
-					<x>34</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_2_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_A08FF75C-07A1-4322-8A03-F54EFC6E9C71">
-			<AdvMapTreasure>
-				<Pos>
-					<x>35</x>
-					<y>81</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_3_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (3).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_3852153D-C308-4317-936D-3B4D41EBDA7A">
-			<AdvMapTreasure>
-				<Pos>
-					<x>34</x>
-					<y>81</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_4_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (4).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_EE4326E5-CE58-4E54-9DFE-DE99E76ACB68">
-			<AdvMapTreasure>
-				<Pos>
-					<x>35</x>
-					<y>83</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_5_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (5).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_15DECB17-534C-4368-B4D6-9A7771F2ACE6">
-			<AdvMapTreasure>
-				<Pos>
-					<x>34</x>
-					<y>83</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_6_6_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (50) (6).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_1465C686-C0AF-4463-AD7B-A2EE6CA8D2F9">
-			<AdvMapTreasure>
-				<Pos>
-					<x>35</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_1_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_318A5B7B-4871-4259-8FFE-4388CBF203AC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>34</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_5_2_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (49) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_8D9FD6B1-68EF-4EBB-B87A-1148091571E2">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_2_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_5836F19E-81B0-4238-9F70-E344642777CC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_3_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (3).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_78338690-7A56-4742-9EB9-BF1DE3B0E70D">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_4_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (4).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_7FE0512A-B293-4561-9B0E-7016DCF2101E">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_6_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (6).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_E4538691-F0CF-4160-ACD8-1F931A778147">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_7_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (7).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_DA082B19-BFE2-41FB-B8E4-741C342CB0AD">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_8_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (8).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_8479CC6E-C769-4630-9C16-AB42405E0E5C">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_9_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (9).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_71E7D27F-FEFA-41E9-BB6F-83D26743EA17">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_10_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (10).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_CA931D09-5DCA-4094-867E-1F668382774C">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_11_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (11).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_8DF9112C-EA4D-4228-9892-53ECCC0D1DBD">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_12_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (12).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_B2A8BEDF-58AD-4469-BB4A-C42B8A809850">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_5_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (5).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_9E86A68B-19FE-4A82-A636-1B74A4E2A750">
-			<AdvMapTreasure>
-				<Pos>
-					<x>37</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_1_1_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_2A6DDD89-EF88-4EF6-869C-386CADDD1CDB">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_12_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (24).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_2CD9A9C9-CCEA-442D-9838-C96C7FBB90EF">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_1_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (13).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_EFA29723-5BE3-4928-942F-EB42D4E0938D">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_10_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (22).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_EEAE4926-4D63-41C9-8F5E-02C13D2EB02E">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_11_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (23).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_EC40E478-47F7-4D0F-8D79-2187975CC887">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_9_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (21).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_80FB0540-92DB-4B49-B046-E8547E112EC5">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_7_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (19).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_327B8AD6-26FC-40D6-9B1C-8AE4B4F67161">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_6_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (18).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_1735E9B0-574A-4C5B-9984-C124C3CBB125">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_5_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (17).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_DFE625BE-9C4B-4191-B743-F986C81EC584">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>0</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_4_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (16).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_3004123D-174B-4E8F-9414-B11E49B9D6E4">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_2_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (14).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_E4E26339-88DA-4B45-823F-59A91CB580E7">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_3_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (15).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_B24AE47E-EC72-47B7-A1B6-BB0B88C55771">
-			<AdvMapTreasure>
-				<Pos>
-					<x>39</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_2_8_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (20).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_21841303-99AD-4754-A77B-6C1B049C9C37">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>79</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_12_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (36).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
 		<Item href="#n:inline(AdvMapTreasure)" id="item_98CD4F4B-C92A-49CF-83D0-F60249EBB137">
 			<AdvMapTreasure>
 				<Pos>
@@ -7970,204 +4928,6 @@
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (48).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_E483FD36-0498-4F59-ADB6-853681D5D82F">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>68</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_1_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (25).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_57264043-52F0-404C-A147-4D63397F8E56">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>78</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_11_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (35).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_83689CD9-A143-4E43-BB92-B732F7B932E9">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>77</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_10_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (34).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_453AEEA4-CB52-465F-8911-1B097CBB5E3F">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>76</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_9_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (33).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_815D6091-FCB0-4606-A66D-73A021B4A7AC">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>75</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_8_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (32).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_063BFC43-C0D2-46A0-936E-12D0A14096AF">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>74</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_7_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (31).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_BB91664A-6F75-48A5-8323-B3FBB179F28F">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>73</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_6_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (30).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_CCD29EDD-11EE-443A-B6F3-9AF688B37F74">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>72</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_5_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (29).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_8F2E55EE-6C89-4D08-82AE-78F4E72F80F2">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>71</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_4_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (28).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_AA3EA114-16F7-40A0-8490-E00B5EF2F08C">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>70</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_3_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (27).xdb#xpointer(/AdvMapTreasureShared)"/>
-				<IsCustom>false</IsCustom>
-				<Amount>0</Amount>
-				<MessageFileRef href=""/>
-			</AdvMapTreasure>
-		</Item>
-		<Item href="#n:inline(AdvMapTreasure)" id="item_49CAB125-623B-43CC-A6C5-BDC29912E7DA">
-			<AdvMapTreasure>
-				<Pos>
-					<x>41</x>
-					<y>69</y>
-					<z>0</z>
-				</Pos>
-				<Rot>6.28319</Rot>
-				<Floor>1</Floor>
-				<Name>spell_3_2_3</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Gold.(AdvMapTreasureShared) (2) (26).xdb#xpointer(/AdvMapTreasureShared)"/>
 				<IsCustom>false</IsCustom>
 				<Amount>0</Amount>
 				<MessageFileRef href=""/>
@@ -48413,6 +45173,636 @@
 				</Action>
 			</ExitTrigger>
 		</Item>
+		<Item>
+			<Floor>0</Floor>
+			<Rect>
+				<x1>18</x1>
+				<y1>84</y1>
+				<x2>18</x2>
+				<y2>84</y2>
+			</Rect>
+			<Name>unnamed 0</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>4</x1>
+				<y1>91</y1>
+				<x2>4</x2>
+				<y2>91</y2>
+			</Rect>
+			<Name>5draft_p1_p1_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>6</x1>
+				<y1>91</y1>
+				<x2>6</x2>
+				<y2>91</y2>
+			</Rect>
+			<Name>5draft_p1_p1_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>4</x1>
+				<y1>89</y1>
+				<x2>4</x2>
+				<y2>89</y2>
+			</Rect>
+			<Name>5draft_p2_p1_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>6</x1>
+				<y1>89</y1>
+				<x2>6</x2>
+				<y2>89</y2>
+			</Rect>
+			<Name>5draft_p2_p1_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>4</x1>
+				<y1>87</y1>
+				<x2>4</x2>
+				<y2>87</y2>
+			</Rect>
+			<Name>5draft_p3_p1_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>6</x1>
+				<y1>87</y1>
+				<x2>6</x2>
+				<y2>87</y2>
+			</Rect>
+			<Name>5draft_p3_p1_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>4</x1>
+				<y1>85</y1>
+				<x2>4</x2>
+				<y2>85</y2>
+			</Rect>
+			<Name>5draft_p4_p1_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>6</x1>
+				<y1>85</y1>
+				<x2>6</x2>
+				<y2>85</y2>
+			</Rect>
+			<Name>5draft_p4_p1_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>4</x1>
+				<y1>83</y1>
+				<x2>4</x2>
+				<y2>83</y2>
+			</Rect>
+			<Name>5draft_p5_p1_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>6</x1>
+				<y1>83</y1>
+				<x2>6</x2>
+				<y2>83</y2>
+			</Rect>
+			<Name>5draft_p5_p1_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>9</x1>
+				<y1>91</y1>
+				<x2>9</x2>
+				<y2>91</y2>
+			</Rect>
+			<Name>5draft_p1_p2_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>11</x1>
+				<y1>91</y1>
+				<x2>11</x2>
+				<y2>91</y2>
+			</Rect>
+			<Name>5draft_p1_p2_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>9</x1>
+				<y1>89</y1>
+				<x2>9</x2>
+				<y2>89</y2>
+			</Rect>
+			<Name>5draft_p2_p2_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>11</x1>
+				<y1>89</y1>
+				<x2>11</x2>
+				<y2>89</y2>
+			</Rect>
+			<Name>5draft_p2_p2_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>9</x1>
+				<y1>87</y1>
+				<x2>9</x2>
+				<y2>87</y2>
+			</Rect>
+			<Name>5draft_p3_p2_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>11</x1>
+				<y1>87</y1>
+				<x2>11</x2>
+				<y2>87</y2>
+			</Rect>
+			<Name>5draft_p3_p2_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>9</x1>
+				<y1>85</y1>
+				<x2>9</x2>
+				<y2>85</y2>
+			</Rect>
+			<Name>5draft_p4_p2_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>11</x1>
+				<y1>85</y1>
+				<x2>11</x2>
+				<y2>85</y2>
+			</Rect>
+			<Name>5draft_p4_p2_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>9</x1>
+				<y1>83</y1>
+				<x2>9</x2>
+				<y2>83</y2>
+			</Rect>
+			<Name>5draft_p5_p2_u1</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
+		<Item>
+			<Floor>1</Floor>
+			<Rect>
+				<x1>11</x1>
+				<y1>83</y1>
+				<x2>11</x2>
+				<y2>83</y2>
+			</Rect>
+			<Name>5draft_p5_p2_u2</Name>
+			<Color>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Color>
+			<EnterAndStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterAndStopTrigger>
+			<EnterWithoutStopTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</EnterWithoutStopTrigger>
+			<ExitTrigger>
+				<Action>
+					<FunctionName/>
+				</Action>
+			</ExitTrigger>
+		</Item>
 	</regions>
 	<GroundTerrainFileName href="GroundTerrain.bin"/>
 	<UndergroundTerrainFileName href="UndergroundTerrain.bin"/>
@@ -72182,21 +69572,21 @@
 				<Objectives>
 					<Item>
 						<Name>HIDDEN</Name>
-						<CaptionFileRef href="" />
-						<ObscureCaptionFileRef href="" />
-						<DescriptionFileRef href="" />
-						<ProgressCommentsFileRef />
+						<CaptionFileRef href=""/>
+						<ObscureCaptionFileRef href=""/>
+						<DescriptionFileRef href=""/>
+						<ProgressCommentsFileRef/>
 						<Kind>OBJECTIVE_KIND_MANUAL</Kind>
-						<Parameters />
+						<Parameters/>
 						<Timeout>-1</Timeout>
 						<Holdout>-1</Holdout>
 						<CheckDelay>-1</CheckDelay>
-						<Dependencies />
+						<Dependencies/>
 						<InstantVictory>false</InstantVictory>
 						<TargetGlance>
 							<Target>
 								<Type>ADV_TARGET_NONE</Type>
-								<Name />
+								<Name/>
 								<Coords>
 									<FloorID>0</FloorID>
 									<cell>
@@ -72246,12 +69636,12 @@
 						<NeedComplete>false</NeedComplete>
 						<StateChangeTrigger>
 							<Action>
-								<FunctionName />
+								<FunctionName/>
 							</Action>
 						</StateChangeTrigger>
-						<SoundActivated />
-						<SoundComplete />
-						<SoundFailed />
+						<SoundActivated/>
+						<SoundComplete/>
+						<SoundFailed/>
 						<AllowMultipleActivations>true</AllowMultipleActivations>
 						<AllowMultipleCompletions>true</AllowMultipleCompletions>
 					</Item>

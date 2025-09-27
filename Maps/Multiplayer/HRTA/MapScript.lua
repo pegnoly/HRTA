@@ -63,3 +63,5 @@
 -- Trigger (NEW_DAY_TRIGGER, 'handleNewDay');
 
 -- doFile(GetMapDataPath().."day1/day1_scripts.lua");
+OpenCircleFog(0, 0, 0, 999, 1)
+OpenCircleFog(0, 0, 1, 999, 1)
