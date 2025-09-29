@@ -93,7 +93,7 @@ end
 ---@param x number координата X
 ---@param y number координата Y
 ---@param floor MapLevel уровень карты
----@param rot integer угол поворота(кратен 90)
+---@param rot integer? угол поворота(кратен 90)
 function CreateDwelling(name, town, tier, owner, x, y, floor, rot)
 end
 
@@ -141,7 +141,7 @@ end
 ---@param x number координата X
 ---@param y number координата Y
 ---@param floor MapLevel уровень карты
----@param rot number угол поворота
+---@param rot number? угол поворота
 function CreateTreasure(name, type, amount, x, y, floor, rot)
 end
 

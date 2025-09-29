@@ -1,9 +1,16 @@
 players_utils = {
     default_heroes = {},
+    races = {},
     
     GetPlayerDefaultHero = 
     function (player)
         local result = players_utils.default_heroes[player]
+        return result
+    end,
+
+    GetPlayerSelectedRace = 
+    function (player)
+        local result = players_utils.races[player]
         return result
     end
 }

@@ -6,7 +6,7 @@ Touch =
     --- Выключает монстра на карте приключений
     ---@param monster string скриптовое имя монстра
     ---@param cursor ObjectInteractionCursorType тип курсора при наведении на монстра
-    ---@param selection integer тип выделения монстра
+    ---@param selection integer? тип выделения монстра
     ---@param name string? путь к файлу с новым именем монстра
     function(monster, cursor, selection, name)
       SetObjectEnabled(monster, nil)

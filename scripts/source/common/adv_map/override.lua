@@ -75,7 +75,7 @@ do
   local oldQuestionBoxForPlayers = QuestionBoxForPlayers
   --- Адаптированный QuestionBox для мультиплеера
   ---@param player PlayerID номер игрока
-  ---@param msg string путь к сообщению
+  ---@param msg string | table путь к сообщению
   ---@return boolean is_ok было нажато ок/отмена
   function MCCS_QuestionBoxForPlayers(player, msg)
     qbox_answer_for_player[player] = -1
@@ -83,7 +83,7 @@ do
     while qbox_answer_for_player[player] == -1 do
       sleep()
     end
-    print("Here: ", qbox_answer_for_player[player])
+    -- print("Here: ", qbox_answer_for_player[player])
     return qbox_answer_for_player[player] == 1
   end
   --- NHF-адаптированный QuestionBox

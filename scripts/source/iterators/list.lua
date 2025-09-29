@@ -133,5 +133,25 @@ list_iterator = {
             end
         end
         return answer
+    end,
+
+    Take = 
+    function (t, count)
+        local count = count <= length(t) and length(t) or count
+        local result, n = {}, 0
+        while n ~= count do
+            local value = Random.FromTable(t)
+            n = n + 1
+            result[n] = value
+            t = list_iterator.Filter(t, function (v)
+                local result = %result
+                if not contains(result, v) then
+                    return 1
+                end
+                return nil
+            end)
+            sleep()
+        end
+        return result
     end
 }

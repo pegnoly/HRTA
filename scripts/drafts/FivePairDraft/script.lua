@@ -1,4 +1,4 @@
-while not drafts_core do
+while not drafts_core and PORTRAIT_DISPLACE_REASON_BAN do
     sleep()
 end
 
@@ -171,8 +171,8 @@ five_pair_draft = {
         while not (IsObjectExists(pair_first_creature_name) and IsObjectExists(pair_second_creature_name)) do
             sleep()
         end
-        Touch.DisableMonster(pair_first_creature_name, DISABLED_INTERACT, 0)
-        Touch.DisableMonster(pair_second_creature_name, DISABLED_INTERACT, 0)
+        Touch.DisableMonster(pair_first_creature_name, DISABLED_INTERACT)
+        Touch.DisableMonster(pair_second_creature_name, DISABLED_INTERACT)
         sleep()
     end,
 
@@ -263,8 +263,24 @@ five_pair_draft = {
 
     FinishDraft = 
     function ()
+        print"Draft finished"
+        local selected_pair_index = range_generator.FromTop(1, 5, function (index)
+            if not contains(five_pair_draft.removed_pairs, index) then
+                return 1
+            end
+            return nil
+        end)[1]
+        local selected_pair = five_pair_draft.generated_pairs_data[selected_pair_index]
+        Object.RemoveTable(selected_pair[PLAYER_1])
+        Object.RemoveTable(selected_pair[PLAYER_2])
         asha.AddGlobalField("RemovedMatchups", "["..list_iterator.Concat(five_pair_draft.removed_pairs, ",").."]")
-        print("Asha current data: ", asha.global_fields);
+        if five_pair_draft.voted_bargains_type == BARGAINS_TYPE_WITH_BARGAINS then
+            -- go to bargains
+        else
+            players_utils.races[PLAYER_1] = selected_pair.first_race
+            players_utils.races[PLAYER_2] = selected_pair.second_race
+            startThread(single_heroes_draft.Init)
+        end
     end
 }
 
@@ -278,16 +294,15 @@ end)
 NewDayEvent.AddListener("HRTA_five_pair_draft_start_listener",
 function (day)
     if day == DRAFTS_START_DAY then
+        startThread(map_utils.RemoveDraftsPlaceCrystals)
         startThread(five_pair_draft.CheckPlayerBargainsVote)
         for player = PLAYER_1, PLAYER_2 do
             startThread(
             function (p)
                 if MCCS_QuestionBoxForPlayers(p, five_pair_draft.path.."question_auction.txt") then
                     five_pair_draft.players_bargains_votes[p] = PLAYER_BARGAINS_VOTE_YES
-                    print("First voted yes")
                 else
                     five_pair_draft.players_bargains_votes[p] = PLAYER_BARGAINS_VOTE_NO
-                    print("Second voted yes")
                 end
             end, player)
         end
