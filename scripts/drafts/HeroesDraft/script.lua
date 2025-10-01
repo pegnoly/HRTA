@@ -1,3 +1,9 @@
+while not drafts_core do
+    sleep()
+end
+
+consoleCmd("game_writelog 1")
+
 single_heroes_draft = {
 
     path = "/Text/HRTA/drafts/SingleHeroDraft/",
@@ -102,7 +108,12 @@ single_heroes_draft = {
     function ()
         for player = PLAYER_1, PLAYER_2 do
             for race = TOWN_HEAVEN, TOWN_STRONGHOLD do
-                single_heroes_draft.pregenerated_sets[race][player] = list_iterator.TakeRandom(drafts_core.heroes_pool[race], single_heroes_draft.heroes_count)
+                startThread(
+                function ()
+                    local race = %race
+                    local player = %player
+                    single_heroes_draft.pregenerated_sets[race][player] = list_iterator.TakeRandom(drafts_core.heroes_pool[race], single_heroes_draft.heroes_count)
+                end)
             end
         end
     end,
@@ -179,7 +190,7 @@ single_heroes_draft = {
             PlayVisualEffect(effect, hero_data.player_portait, player_fx, 0, 0, 0.2)
             PlayVisualEffect(effect, hero_data.opponent_portrait, opp_fx, 0, 0, 0.2)
         else
-            print"Portrait movement requested cause of ban"
+            --!TODO Перемещения портретов забаненных героев
             Object.RemoveSelection(hero_data.player_portait, hero_data.opponent_portrait)
         end
     end,
@@ -374,5 +385,25 @@ NewDayEvent.AddListener("HRTA_single_heroes_draft_generate_portaits_listener",
 function (day)
     if day == DRAFTS_SKIP_DAY then
         startThread(single_heroes_draft.PregenerateSets)
+    end
+end)
+
+NewDayEvent.AddListener("HRTA_test_heroes_generation_listener",
+function (day)
+    if day == DRAFTS_SKIP_DAY and IS_TEST_MODE == 1 then
+        while not single_heroes_draft.pregenerated_sets[TOWN_STRONGHOLD][PLAYER_2] do
+            sleep()
+        end
+        for player = PLAYER_1, PLAYER_2 do
+            local race = Random.FromTable(range_generator.FromTop(TOWN_HEAVEN, TOWN_STRONGHOLD))
+            players_utils.races[player] = race
+            local heroes = list_iterator.TakeRandom(single_heroes_draft.pregenerated_sets[race][player], 2)
+            prepare_stage_core.heroes_by_player[player] = heroes
+            TransformTown("player_"..player.."_main_town", race)
+        end
+        PREPARE_STAGE_LEVELING_DAY = 2
+        PREPARE_STAGE_SPECIAL_DAY = 3
+        PREPARE_STAGE_PREFIGHT_DAY = 4
+        PREPARE_STAGE_FIGHT_DAY = 5
     end
 end)

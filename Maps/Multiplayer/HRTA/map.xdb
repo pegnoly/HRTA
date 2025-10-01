@@ -395,10 +395,10 @@
 				</Pos>
 				<Rot>6.51683e-007</Rot>
 				<Floor>0</Floor>
-				<Name>RANDOMTOWN1</Name>
+				<Name>player_1_main_town</Name>
 				<CombatScript/>
 				<pointLights/>
-				<Shared href="/MapObjects/Heaven.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
+				<Shared href="/MapObjects/RandomTown.xdb#xpointer(/AdvMapTownShared)"/>
 				<PlayerID>PLAYER_NONE</PlayerID>
 				<CaptureTrigger>
 					<Action>
@@ -620,10 +620,10 @@
 				</Pos>
 				<Rot>3.1416</Rot>
 				<Floor>0</Floor>
-				<Name>RANDOMTOWN2</Name>
+				<Name>player_2_main_town</Name>
 				<CombatScript/>
 				<pointLights/>
-				<Shared href="/MapObjects/Necromancy.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
+				<Shared href="/MapObjects/RandomTown.xdb#xpointer(/AdvMapTownShared)"/>
 				<PlayerID>PLAYER_NONE</PlayerID>
 				<CaptureTrigger>
 					<Action>
@@ -44972,9 +44972,9 @@
 		<Item>
 			<Floor>0</Floor>
 			<Rect>
-				<x1>42</x1>
+				<x1>43</x1>
 				<y1>79</y1>
-				<x2>42</x2>
+				<x2>43</x2>
 				<y2>79</y2>
 			</Rect>
 			<Name>player_1_hero_2_spawn</Name>

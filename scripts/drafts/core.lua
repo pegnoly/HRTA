@@ -126,6 +126,7 @@ drafts_core = {
     ---@param day number
     function (day)
         if day == DRAFTS_SKIP_DAY then
+            startThread(map_utils.RemoveDraftsPlaceCrystals)
             asha.AddGlobalField("DraftType", drafts_core.GetDraftType())
             for player = PLAYER_1, PLAYER_2 do
                 local hero = GetPlayerHeroes(player)[0]

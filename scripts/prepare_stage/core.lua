@@ -13,9 +13,9 @@ prepare_stage_core = {
     ---@type table<PlayerID, string>
     tavern_heroes_by_player = {},
 
-    SpawnHeroes = 
+    SpawnHeroes =
     function (player)
-        for i, hero in prepare_stage_core.heroes_by_player do
+        for i, hero in prepare_stage_core.heroes_by_player[player] do
             local name = player == PLAYER_2 and hero.."2" or hero
             local region = "player_"..player.."_hero_"..i.."_spawn"
             DeployReserveHero(name, RegionToPoint(region))
@@ -38,11 +38,13 @@ prepare_stage_core = {
     end
 }
 
-NewDayEvent.AddListener("HRTA_prepare_stage_init_listener", 
+NewDayEvent.AddListener("HRTA_prepare_stage_init_listener",
 function (day)
     if day == PREPARE_STAGE_LEVELING_DAY then
         for player = PLAYER_1, PLAYER_2 do
+            SetObjectOwner("player_"..player.."_main_town", player)
             startThread(prepare_stage_core.SpawnHeroes, player)
+            unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(player), MOVE_THREAD_TYPE_UNLIM)
         end
-    end    
+    end
 end)

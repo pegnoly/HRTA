@@ -1,3 +1,5 @@
+doFile('/scripts/testing/core.lua')
+
 -- Технические функции
 doFile('/scripts/utils/unlim_moves_threads.lua')
 doFile('/scripts/utils/player.lua')

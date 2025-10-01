@@ -1,4 +1,4 @@
-while not drafts_core and PORTRAIT_DISPLACE_REASON_BAN do
+while not drafts_core do
     sleep()
 end
 
@@ -293,8 +293,7 @@ end)
 
 NewDayEvent.AddListener("HRTA_five_pair_draft_start_listener",
 function (day)
-    if day == DRAFTS_START_DAY then
-        startThread(map_utils.RemoveDraftsPlaceCrystals)
+    if day == DRAFTS_START_DAY and IS_TEST_MODE == 0 then
         startThread(five_pair_draft.CheckPlayerBargainsVote)
         for player = PLAYER_1, PLAYER_2 do
             startThread(
