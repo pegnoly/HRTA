@@ -135,9 +135,9 @@ list_iterator = {
         return answer
     end,
 
-    Take = 
+    TakeRandom = 
     function (t, count)
-        local count = count <= length(t) and length(t) or count
+        local count = count >= length(t) and length(t) or count
         local result, n = {}, 0
         while n ~= count do
             local value = Random.FromTable(t)

@@ -8,8 +8,8 @@ SINGLE_HERO_DRAFT_PHASE_PICK = 2
 ---@field owner PlayerID
 ---@field player_portait string
 ---@field opponent_portrait string
----@field picked fun(initiator: string)
----@field banned fun(initiator: string)
+---@field picked fun()
+---@field banned fun()
 PlayerDraftableHero = {}
 
 ---@alias DraftActionType
@@ -28,8 +28,14 @@ HERO_PICKED_FOR_OPP = 4
 ---@field hero string
 CompletedDraftAction = {}
 
----@alias PortraitDisplaceReason
----|`PORTRAIT_DISPLACE_REASON_PICK`
----|`PORTRAIT_DISPLACE_REASON_BAN`
-PORTRAIT_DISPLACE_REASON_PICK = 1
-PORTRAIT_DISPLACE_REASON_BAN = 2
+---@alias DraftActionReason
+---|`DRAFT_ACTION_REASON_PICK`
+---|`DRAFT_ACTION_REASON_BAN`
+DRAFT_ACTION_REASON_PICK = 1
+DRAFT_ACTION_REASON_BAN = 2
+
+---@alias DraftFinishReason
+---|`DRAFT_FINISH_REASON_ALL_PICKED` 
+---|`DRAFT_FINISH_REASON_NOONE_TO_BAN` 
+DRAFT_FINISH_REASON_ALL_PICKED = 1 -- Завершение драфта для стороны, если достаточное число героев выбрано
+DRAFT_FINISH_REASON_NOONE_TO_BAN = 2 -- Завершение драфта для стороны, если больше некого банить

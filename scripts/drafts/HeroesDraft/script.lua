@@ -6,6 +6,10 @@ single_heroes_draft = {
     ---@type number
     heroes_count = 7,
 
+    -- число героев, которые должны быть в наличии у игроков для завершения черка
+    ---@type number
+    heroes_count_to_finish = 4,
+
     -- технически, наборы героев генерируются на 1 день, т.к. это не моментальный процесс и вызывает задержку, если вызывать непосредственно перед черком
     ---@type table<TownType, table<PlayerID, string[]>>
     pregenerated_sets = {
@@ -68,26 +72,42 @@ single_heroes_draft = {
         [PLAYER_2] = {}
     },
 
+    -- Герои, не пикнутые и не забаненные на момент текущей стадии драфта
+    ---@type table<PlayerID, string []>
+    heroes_left_in_set = {
+        [PLAYER_1] = {},
+        [PLAYER_2] = {}
+    },
+
+    -- Действия, разрешенные игроку на данной стадии драфта
+    ---@type table<DraftActionType, number>
+    this_phase_allowed_actions = {
+        [HERO_PICKED_FOR_OPP] = 1,
+        [HERO_SELF_PICKED] = 1
+    },
+
     -- Последовательность банов/пиков
     ---@type CompletedDraftAction []
     draft_actions_queue = {},
 
-    Init = 
+    Init =
     function ()
+        single_heroes_draft.heroes_left_in_set[PLAYER_1] = single_heroes_draft.pregenerated_sets[players_utils.GetPlayerSelectedRace(PLAYER_1)][PLAYER_1]
+        single_heroes_draft.heroes_left_in_set[PLAYER_2] = single_heroes_draft.pregenerated_sets[players_utils.GetPlayerSelectedRace(PLAYER_2)][PLAYER_2]
         startThread(single_heroes_draft.GeneratePortraits, PLAYER_1, players_utils.GetPlayerSelectedRace(PLAYER_1))
         startThread(single_heroes_draft.GeneratePortraits, PLAYER_2, players_utils.GetPlayerSelectedRace(PLAYER_2))
     end,
 
-    PregenerateSets = 
+    PregenerateSets =
     function ()
         for player = PLAYER_1, PLAYER_2 do
             for race = TOWN_HEAVEN, TOWN_STRONGHOLD do
-                single_heroes_draft.pregenerated_sets[race][player] = list_iterator.Take(drafts_core.heroes_pool[race], single_heroes_draft.heroes_count)
+                single_heroes_draft.pregenerated_sets[race][player] = list_iterator.TakeRandom(drafts_core.heroes_pool[race], single_heroes_draft.heroes_count)
             end
         end
     end,
 
-    GeneratePortraits = 
+    GeneratePortraits =
     --- Генерирует портреты героев игрока
     ---@param player PlayerID Игрок, для которого производится генерация
     ---@param race TownType Фракция игрока
@@ -98,7 +118,7 @@ single_heroes_draft = {
         end
     end,
 
-    SetupHeroPortraits = 
+    SetupHeroPortraits =
     --- Сетапит эффекты и триггеры для портретов конкретного героя
     ---@param hero string Скриптовое имя героя
     ---@param player PlayerID Игрок, набору которого принадлежит герой
@@ -122,45 +142,35 @@ single_heroes_draft = {
         SetObjectPosition(opponent_side_placeholder, opponent_side_pos.x + index, opponent_side_pos.y + 3, GROUND, 0)
         PlayVisualEffect(effect, player_side_placeholder, player_side_placeholder.."_fx", 0, 0, 0.2)
         PlayVisualEffect(effect, opponent_side_placeholder, opponent_side_placeholder.."_fx", 0, 0, 0.2)
-        
+
         single_heroes_draft.generated_heroes_data[hero] = {
             owner = player,
             player_portait = player_side_placeholder,
             opponent_portrait = opponent_side_placeholder,
-            picked = function (initiator)
-                local h = %hero
-                startThread(single_heroes_draft.PickHero, h, initiator)
-            end,
-            banned = function (initiator)
-                local h = %hero
-                startThread(single_heroes_draft.BanHero, h, initiator)
-            end
+            picked = function () local h = %hero startThread(single_heroes_draft.PickHero, h) end,
+            banned = function () local h = %hero startThread(single_heroes_draft.BanHero, h) end
         }
     end,
 
     DisplacePortraitsOnAction =
-    ---comment
-    ---@param hero string
-    ---@param reason PortraitDisplaceReason
-    ---@param action_type DraftActionType
-    function (hero, reason, action_type)
+    --- Управляет перемещениями портретов героев при действиях игроков в ходе драфта
+    ---@param hero string Скриптовое имя героя
+    ---@param reason DraftActionReason Причина, по которой было активировано перемещение
+    function (hero, reason)
         local hero_data = single_heroes_draft.generated_heroes_data[hero]
-
         local effect = single_heroes_draft.effects_by_heroes[hero]
         local player_fx = hero_data.player_portait.."_fx"
         local opp_fx = hero_data.opponent_portrait.."_fx"
+
         StopVisualEffects(player_fx)
         StopVisualEffects(opp_fx)
-        
-        if reason == PORTRAIT_DISPLACE_REASON_PICK then
-            local player_shift, opp_shift
-            if action_type == HERO_SELF_PICKED then
-                player_shift = -1
-                opp_shift = 1
-            else
-                player_shift = 1
-                opp_shift = -1
-            end
+        Touch.RemoveFunctions(hero_data.player_portait)
+        Touch.RemoveFunctions(hero_data.opponent_portrait)
+        Touch.ResetTrigger(hero_data.player_portait)
+        Touch.ResetTrigger(hero_data.opponent_portrait)
+
+        if reason == DRAFT_ACTION_REASON_PICK then
+            local player_shift, opp_shift = -1, 1
             local x1, y1, f1 = GetObjectPosition(hero_data.player_portait)
             SetObjectPosition(hero_data.player_portait, x1, y1 + player_shift, f1, 0)
             local x2, y2, f2 = GetObjectPosition(hero_data.opponent_portrait)
@@ -169,60 +179,198 @@ single_heroes_draft = {
             PlayVisualEffect(effect, hero_data.player_portait, player_fx, 0, 0, 0.2)
             PlayVisualEffect(effect, hero_data.opponent_portrait, opp_fx, 0, 0, 0.2)
         else
-            -- ban move logic
+            print"Portrait movement requested cause of ban"
+            Object.RemoveSelection(hero_data.player_portait, hero_data.opponent_portrait)
         end
     end,
 
-    PickHero = 
-    ---comment
-    ---@param hero string
-    function (hero, initiator)
+    RemoveHeroFromSet =
+    --- Удаляет героя из набора игрока
+    ---@param hero string Скриптовое имя героя
+    ---@param owner PlayerID Игрок, из набора которого удаляется герой
+    ---@return table set_after_remove Набор героев после удаления
+    function (hero, owner)
+        local set_after_remove = list_iterator.Filter(single_heroes_draft.heroes_left_in_set[owner],
+            function (v)
+                local h = %hero
+                if h == v then
+                    return nil
+                end
+                return 1
+            end)
+        return set_after_remove
+    end,
+
+    PickHero =
+    ---Вызывается, если клик на портрет был совершен в фазе пика героев
+    ---@param hero string Герой, на портрет которого кликнул игрок
+    function (hero)
         local hero_data = single_heroes_draft.generated_heroes_data[hero]
-        local drafter = single_heroes_draft.current_drafter
-        local draft_action_type = HERO_SELF_PICKED
-        if drafter ~= hero_data.owner then
-            draft_action_type = HERO_PICKED_FOR_OPP
-        end
-        if MCCS_QuestionBoxForPlayers(drafter, {
+        local draft_action_type = single_heroes_draft.current_drafter ~= hero_data.owner and HERO_PICKED_FOR_OPP or HERO_SELF_PICKED
+        if MCCS_QuestionBoxForPlayers(single_heroes_draft.current_drafter, {
             single_heroes_draft.path..single_heroes_draft.draft_action_messages[draft_action_type]..".txt"; hero_name = Hero.Params.Name(hero)})
         then
-            local queue_len = length(single_heroes_draft.draft_actions_queue)
-            single_heroes_draft.draft_actions_queue[queue_len + 1] = {
-                made_by = drafter,
-                type = draft_action_type,
-                hero = hero
-            }
+            table.push(single_heroes_draft.draft_actions_queue, { made_by = single_heroes_draft.current_drafter, type = draft_action_type, hero = hero })
             if draft_action_type == HERO_SELF_PICKED then
-                single_heroes_draft.picked_heroes[drafter][length(single_heroes_draft.picked_heroes[drafter]) + 1] = hero
+                table.push(single_heroes_draft.picked_heroes[single_heroes_draft.current_drafter], hero)
+                single_heroes_draft.heroes_left_in_set[single_heroes_draft.current_drafter] = single_heroes_draft.RemoveHeroFromSet(hero, single_heroes_draft.current_drafter)
             else
-                single_heroes_draft.picked_heroes[hero_data.owner][length(single_heroes_draft.picked_heroes[hero_data.owner]) + 1] = hero
+                table.push(single_heroes_draft.picked_heroes[hero_data.owner], hero)
+                single_heroes_draft.heroes_left_in_set[hero_data.owner] = single_heroes_draft.RemoveHeroFromSet(hero, hero_data.owner)
             end
-            single_heroes_draft.DisplacePortraitsOnAction(hero, PORTRAIT_DISPLACE_REASON_PICK, draft_action_type)
-            -- move to the next drafter
+            single_heroes_draft.DisplacePortraitsOnAction(hero, DRAFT_ACTION_REASON_PICK)
+            single_heroes_draft.MoveToNextTurn()
         end
     end,
 
-    BanHero = 
-    --- Мейн функция для бана героев
-    ---@param hero string
-    function (hero, initiator)
-
-    end,
-
-    TouchPortait = 
-    function (initiator, portrait)
-        local current_phase = single_heroes_draft.current_phase
-        local hero = single_heroes_draft.heroes_by_portraits[portrait]
+    BanHero =
+    --- Вызывается, если клик на портрет был совершен в фазе бана героев
+    ---@param hero string Герой, на портрет которого кликнул игрок
+    function (hero)
         local hero_data = single_heroes_draft.generated_heroes_data[hero]
-        if current_phase == SINGLE_HERO_DRAFT_PHASE_PICK then
-            hero_data.picked(initiator)
-        else
-            hero_data.banned(initiator)
+        local draft_action_type = single_heroes_draft.current_drafter ~= hero_data.owner and HERO_BANNED_FOR_OPP or HERO_SELF_BANNED
+        if MCCS_QuestionBoxForPlayers(single_heroes_draft.current_drafter, {
+            single_heroes_draft.path..single_heroes_draft.draft_action_messages[draft_action_type]..".txt"; hero_name = Hero.Params.Name(hero)})
+        then
+            table.push(single_heroes_draft.draft_actions_queue, { made_by = single_heroes_draft.current_drafter, type = draft_action_type, hero = hero })
+            if draft_action_type == HERO_SELF_BANNED then
+                table.push(single_heroes_draft.banned_heroes[single_heroes_draft.current_drafter], hero)
+                single_heroes_draft.heroes_left_in_set[single_heroes_draft.current_drafter] = single_heroes_draft.RemoveHeroFromSet(hero, single_heroes_draft.current_drafter)
+            else
+                table.push(single_heroes_draft.banned_heroes[hero_data.owner], hero)
+                single_heroes_draft.heroes_left_in_set[hero_data.owner] = single_heroes_draft.RemoveHeroFromSet(hero, hero_data.owner)
+            end
+            single_heroes_draft.DisplacePortraitsOnAction(hero, DRAFT_ACTION_REASON_BAN)
+            single_heroes_draft.MoveToNextTurn()
         end
+    end,
+
+    TouchPortait =
+    --- Вызывается при любом клике на активный портрет героя
+    ---@param _ any
+    ---@param portrait string Скриптовое имя портрета
+    function (_, portrait)
+        local hero_data = single_heroes_draft.generated_heroes_data[single_heroes_draft.heroes_by_portraits[portrait]]
+        if single_heroes_draft.current_phase == SINGLE_HERO_DRAFT_PHASE_PICK then
+            hero_data.picked()
+        else
+            hero_data.banned()
+        end
+    end,
+
+    MoveToNextTurn =
+    --- Вызывается при завершении каждого действия в ходе драфта, определяет следующее действие
+    function ()
+        for action, _ in single_heroes_draft.this_phase_allowed_actions do
+            single_heroes_draft.this_phase_allowed_actions[action] = nil
+        end
+        local prev_drafter = single_heroes_draft.current_drafter
+        local new_drafter = PLAYER_3 - single_heroes_draft.current_drafter
+        single_heroes_draft.current_phase = 3 - single_heroes_draft.current_phase
+
+        local draft_finished_for_curr_drafter = single_heroes_draft.CheckDraftCanBeContinuedForSide(new_drafter)
+        local draft_finished_for_prev_drafter = single_heroes_draft.CheckDraftCanBeContinuedForSide(prev_drafter)
+
+        if not (draft_finished_for_curr_drafter or draft_finished_for_prev_drafter) then -- драфт закончен для обеих сторон
+            startThread(single_heroes_draft.CompleteDraftStage)
+            return
+        else
+            single_heroes_draft.current_drafter = new_drafter
+            unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(prev_drafter), MOVE_THREAD_TYPE_NO_MOVES)
+            unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(new_drafter), MOVE_THREAD_TYPE_UNLIM)
+        end
+    end,
+
+    CheckDraftCanBeContinuedForSide =
+    --- Проверяет, может ли драфт считаться оконченным для заданного игрока.
+    --- Есть 2 условия завершения - либо пикнуто достаточное число героев, либо число пикнутых + число оставшихся в пуле равно достаточному
+    ---@param drafter PlayerID Игрок, для которого производится проверка
+    ---@return 1|nil can_be_continued Драфт может продолжаться/нет
+    function (drafter)
+        local heroes_picked = length(single_heroes_draft.picked_heroes[drafter])
+        local heroes_left = length(single_heroes_draft.heroes_left_in_set[drafter])
+        if heroes_picked == single_heroes_draft.heroes_count_to_finish then
+            startThread(single_heroes_draft.FinishDraftForSideWithReason, drafter, DRAFT_FINISH_REASON_ALL_PICKED)
+            return nil
+        else
+            if (heroes_picked + heroes_left) == single_heroes_draft.heroes_count_to_finish then
+                startThread(single_heroes_draft.FinishDraftForSideWithReason, drafter, DRAFT_FINISH_REASON_NOONE_TO_BAN)
+                return nil
+            end
+        end
+        return 1
+    end,
+
+    FinishDraftForSideWithReason =
+    -- Завершает стадию драфта для конкретного игрока(иначе говоря, делает невозможным пикать/банить героев из его набора)
+    ---@param drafter PlayerID Игрок, для которого завершается драфт
+    ---@param reason DraftFinishReason Причина завершения драфта
+    function (drafter, reason)
+        if reason == DRAFT_FINISH_REASON_ALL_PICKED then
+            for _, hero in single_heroes_draft.heroes_left_in_set[drafter] do
+                if hero then
+                    local hero_data = single_heroes_draft.generated_heroes_data[hero]
+                    StopVisualEffects(hero_data.player_portait.."_fx")
+                    StopVisualEffects(hero_data.opponent_portrait.."_fx")
+                    Object.RemoveSelection(hero_data.player_portait, hero_data.opponent_portrait)
+                end
+            end
+        else
+            for _, hero in single_heroes_draft.heroes_left_in_set[drafter] do
+                if hero then
+                    single_heroes_draft.picked_heroes[drafter][length(single_heroes_draft.picked_heroes[drafter]) + 1] = hero
+                    startThread(
+                        single_heroes_draft.DisplacePortraitsOnAction,
+                        hero,
+                        DRAFT_ACTION_REASON_PICK,
+                        drafter == single_heroes_draft.current_drafter and HERO_SELF_PICKED or HERO_PICKED_FOR_OPP
+                    )
+                end
+            end
+        end
+    end,
+
+    CompleteDraftStage =
+    -- Завершает стадию драфта, рандомит героев для игроков, определяет последовательность дней для следующих действий.
+    -- Записывает инфу о порядке действий в драфте в Асху.
+    function ()
+        unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(PLAYER_1), MOVE_THREAD_TYPE_NO_MOVES)
+        unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(PLAYER_2), MOVE_THREAD_TYPE_NO_MOVES)
+
+        PREPARE_STAGE_LEVELING_DAY = GetDate(DAY) + 1
+        PREPARE_STAGE_SPECIAL_DAY = GetDate(DAY) + 2
+        PREPARE_STAGE_PREFIGHT_DAY = GetDate(DAY) + 3
+        PREPARE_STAGE_FIGHT_DAY = GetDate(DAY) + 4
+        
+        for player = PLAYER_1, PLAYER_2 do
+            local selected_heroes = list_iterator.TakeRandom(single_heroes_draft.picked_heroes[player], prepare_stage_core.active_heroes_count)
+            prepare_stage_core.heroes_by_player[player] = selected_heroes
+            if players_utils.GetPlayerSelectedRace(player) ~= players_utils.GetPlayerSelectedRace(PLAYER_3 - player) then
+                local heroes_left = list_iterator.Filter(single_heroes_draft.picked_heroes[player], function (hero)
+                    local sh = %selected_heroes
+                    if contains(sh, hero) then
+                        return nil
+                    end
+                    return 1
+                end)
+                prepare_stage_core.tavern_heroes_by_player[player] = Random.FromTable(heroes_left)
+            end
+        end
+
+        asha.AddGlobalField("DraftActions", "["..list_iterator.Concat(
+            list_iterator.FilterMap(single_heroes_draft.draft_actions_queue,
+                ---@param a CompletedDraftAction
+                function (a)
+                    local result = '{"MadeBy": '..a.made_by..', "Type": '..a.type..', "Hero": '..a.hero..'}'
+                    return result
+                end),
+                ","
+            )
+        )
     end
 }
 
-NewDayEvent.AddListener("HRTA_single_heroes_draft_generate_portaits_listener", 
+NewDayEvent.AddListener("HRTA_single_heroes_draft_generate_portaits_listener",
 function (day)
     if day == DRAFTS_SKIP_DAY then
         startThread(single_heroes_draft.PregenerateSets)
