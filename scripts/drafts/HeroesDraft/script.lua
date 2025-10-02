@@ -368,6 +368,8 @@ single_heroes_draft = {
             end
         end
 
+        startThread(towns_setup.Init)
+
         asha.AddGlobalField("DraftActions", "["..list_iterator.Concat(
             list_iterator.FilterMap(single_heroes_draft.draft_actions_queue,
                 ---@param a CompletedDraftAction
@@ -399,7 +401,7 @@ function (day)
             players_utils.races[player] = race
             local heroes = list_iterator.TakeRandom(single_heroes_draft.pregenerated_sets[race][player], 2)
             prepare_stage_core.heroes_by_player[player] = heroes
-            TransformTown("player_"..player.."_main_town", race)
+            startThread(towns_setup.Init)
         end
         PREPARE_STAGE_LEVELING_DAY = 2
         PREPARE_STAGE_SPECIAL_DAY = 3
