@@ -32,7 +32,7 @@
 	<Icon128/>
 	<InternalName>Orlando</InternalName>
 	<Class>HERO_CLASS_DEMON_LORD</Class>
-	<Specialization>HERO_SPEC_NONE</Specialization>
+	<Specialization>HERO_SPEC_DEVILS</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_GATING</SkillID>

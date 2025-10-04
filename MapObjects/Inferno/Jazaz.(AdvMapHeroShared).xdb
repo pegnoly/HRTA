@@ -60,6 +60,7 @@
 		<spellIDs>
 		</spellIDs>
 		<Ballista>false</Ballista>
+		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
 		<FavoriteEnemies/>

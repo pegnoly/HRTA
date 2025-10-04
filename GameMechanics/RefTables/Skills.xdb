@@ -5322,9 +5322,8 @@
 					<Item>
 						<Class>HERO_CLASS_RANGER</Class>
 						<dependenciesIDs>
-							<Item>HERO_SKILL_FRENZY</Item>
+							<Item>HERO_SKILL_FOREST_RAGE</Item>
 							<Item>HERO_SKILL_FOREST_GUARD_EMBLEM</Item>
-							<Item>HERO_SKILL_MULTISHOT</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
@@ -6604,14 +6603,12 @@
 						<Class>HERO_CLASS_DEMON_LORD</Class>
 						<dependenciesIDs>
 							<Item>HERO_SKILL_DEMONIC_STRIKE</Item>
-							<Item>HERO_SKILL_FRENZY</Item>
 						</dependenciesIDs>
 					</Item>
 					<Item>
 						<Class>HERO_CLASS_BARBARIAN</Class>
 						<dependenciesIDs>
 							<Item>HERO_SKILL_POWERFULL_BLOW</Item>
-							<Item>HERO_SKILL_FRENZY</Item>
 						</dependenciesIDs>
 					</Item>
 				</SkillPrerequisites>

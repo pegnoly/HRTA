@@ -8,7 +8,7 @@
 	<Speed>4</Speed>
 	<Initiative>12</Initiative>
 	<Flying>false</Flying>
-	<Health>42</Health>
+	<Health>35</Health>
 	<KnownSpells>
 		<Item>
 			<Spell>SPELL_ABILITY_SACRIFICE_GOBLIN</Spell>

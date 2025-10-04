@@ -12,7 +12,7 @@
 	<MagicSchool>MAGIC_SCHOOL_LIGHT</MagicSchool>
 	<RequiredHeroLevel>0</RequiredHeroLevel>
 	<IsAimed>true</IsAimed>
-	<TrainedCost>12</TrainedCost>
+	<TrainedCost>10</TrainedCost>
 	<damage>
 		<Item>
 			<Base>15</Base>

@@ -185,7 +185,7 @@
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Staff_of_Vexings.xdb#xpointer(/Texture)"/>
-				<CostOfGold>13000</CostOfGold>
+				<CostOfGold>14000</CostOfGold>
 				<AIValue>500</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
 				<HeroStatsModif>
@@ -535,7 +535,7 @@
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Ring_of_Life.xdb#xpointer(/Texture)"/>
-				<CostOfGold>8500</CostOfGold>
+				<CostOfGold>8000</CostOfGold>
 				<AIValue>900</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
 				<HeroStatsModif>
@@ -835,7 +835,7 @@
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>SHOULDERS</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Cloak_of_Mourning.xdb#xpointer(/Texture)"/>
-				<CostOfGold>16500</CostOfGold>
+				<CostOfGold>17000</CostOfGold>
 				<AIValue>1300</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
 				<HeroStatsModif>
@@ -1485,7 +1485,7 @@
 				<Type>ARTF_CLASS_RELIC</Type>
 				<Slot>FINGER</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Ring_of_Celerity.xdb#xpointer(/Texture)"/>
-				<CostOfGold>12000</CostOfGold>
+				<CostOfGold>13000</CostOfGold>
 				<AIValue>1000</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
 				<HeroStatsModif>
@@ -2132,14 +2132,14 @@
 				<NameFileRef href="/Text/Game/Artifacts/Dwarven_Smithy_Hammer/Name.txt"/>
 				<DescriptionFileRef href="/Text/Game/Artifacts/Dwarven_Smithy_Hammer/Description.txt"/>
 				<Model href="/_(Model)/Artefacts/H5Addon1/DwarvenSmythyHummer.xdb#xpointer(/Model)"/>
-				<Type>ARTF_CLASS_MAJOR</Type>
+				<Type>ARTF_CLASS_MINOR</Type>
 				<Slot>PRIMARY</Slot>
 				<Icon href="/UI/H5A1/Icons/Artefacts/128x128/Dwarven_Smithy_Hammer.(Texture).xdb#xpointer(/Texture)"/>
-				<CostOfGold>10000</CostOfGold>
+				<CostOfGold>6000</CostOfGold>
 				<AIValue>1100</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
 				<HeroStatsModif>
-					<Attack>3</Attack>
+					<Attack>1</Attack>
 					<Defence>0</Defence>
 					<Knowledge>0</Knowledge>
 					<SpellPower>0</SpellPower>

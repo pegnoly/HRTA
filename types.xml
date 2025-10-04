@@ -24693,6 +24693,14 @@
 					<Name>ABILITY_DESTRUCTION_MAGIC_MAGNETISM</Name>
 					<Value>174</Value>
 				</Item>
+				<Item>
+					<Name>ABILITY_SPEC_GATING_DEVILS</Name>
+					<Value>175</Value>
+				</Item>
+				<Item>
+					<Name>ABILITY_SPEC_RADIANT</Name>
+					<Value>176</Value>
+				</Item>
 			</Entries>
 			<Attributes>
 				<__ClassTypeID>270064327</__ClassTypeID>
@@ -41546,6 +41554,18 @@
 				<Item>
 					<Name>HERO_SPEC_INFERNAL_MACHINE</Name>
 					<Value>83</Value>
+				</Item>
+				<Item>
+					<Name>HERO_SPEC_ALARIC</Name>
+					<Value>85</Value>
+				</Item>
+				<Item>
+					<Name>HERO_SPEC_DEVILS</Name>
+					<Value>86</Value>
+				</Item>
+				<Item>
+					<Name>HERO_SPEC_DJALIB</Name>
+					<Value>87</Value>
 				</Item>
 			</Entries>
 			<Attributes/>

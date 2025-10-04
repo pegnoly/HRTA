@@ -14,7 +14,7 @@ function HasBorderguardKey(player, key)
 end
 
 --- Проверяет наличие навыка у героя
----@param hero string скриптовое имя героя
+---@param hero string|nil скриптовое имя героя
 ---@param skill HeroSkillType id навыка
 ---@return boolean has имеется скилл/нет
 function HasHeroSkill(hero, skill)

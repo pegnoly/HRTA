@@ -1,6 +1,8 @@
 --- Мейн скрипт настройки зданий в городах игроков
 
 towns_setup = {
+    -- Здания, которые необходимо построить в городах конкретных фрак, кроме двеллов
+    ---@type table<TownType, table<TownBuildingType, number>>
     additional_buildings_to_upgrade = {
         [TOWN_ACADEMY] = {
             [TOWN_BUILDING_ACADEMY_ARTIFACT_MERCHANT] = 1,
@@ -34,6 +36,8 @@ towns_setup = {
         }
     },
 
+    -- Здания, которые необходимо запретить в городах
+    ---@type table<TownType | 'common', table<TownBuildingType, number>>
     additional_buildings_to_set_limit = {
         common = {
             [TOWN_BUILDING_TOWN_HALL] = 1,
@@ -85,7 +89,8 @@ towns_setup = {
         }
     },
 
-    Init = 
+    Init =
+    --- Входная точка настройки городов
     function ()
         for player = PLAYER_1, PLAYER_2 do
             local town = "player_"..player.."_main_town"
@@ -95,6 +100,9 @@ towns_setup = {
     end,
 
     SetupTown = 
+    --- Настраивает постройки в конкретном городе
+    ---@param town string Скриптовое имя города
+    ---@param race TownType Фракция города
     function (town, race)
         if GetTownRace(town) ~= race then
             TransformTown(town, race)

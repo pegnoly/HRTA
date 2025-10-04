@@ -55,7 +55,7 @@
 						<Crystal>0</Crystal>
 						<Sulfur>0</Sulfur>
 						<Gem>0</Gem>
-						<Gold>3000</Gold>
+						<Gold>2500</Gold>
 					</Cost>
 					<CombatSize>2</CombatSize>
 					<flybySequence/>
@@ -76,16 +76,16 @@
 						<Item>15</Item>
 					</Defense>
 					<MinDamageFactor>
+						<Item>3</Item>
+						<Item>3</Item>
 						<Item>4</Item>
-						<Item>5</Item>
-						<Item>5</Item>
 						<Item>5</Item>
 						<Item>5</Item>
 					</MinDamageFactor>
 					<MaxDamageFactor>
+						<Item>3</Item>
+						<Item>3</Item>
 						<Item>4</Item>
-						<Item>5</Item>
-						<Item>5</Item>
 						<Item>5</Item>
 						<Item>5</Item>
 					</MaxDamageFactor>

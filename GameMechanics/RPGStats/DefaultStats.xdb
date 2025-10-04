@@ -742,7 +742,7 @@
 							<Bonus1>
 								<Item>
 									<Type>DEMON_RAGE_BONUS_INITIATIVE</Type>
-									<IntParam>2</IntParam>
+									<IntParam>3</IntParam>
 									<FloatParam>0</FloatParam>
 									<Spells/>
 									<Abilities/>
@@ -1264,7 +1264,7 @@
 						<Item>42</Item>
 						<Item>46</Item>
 					</DamageAbsorbtionPerHeroSkill>
-					<HealthToRageTransferCoef>1200</HealthToRageTransferCoef>
+					<HealthToRageTransferCoef>1400</HealthToRageTransferCoef>
 				</DemonRage>
 				<VenomDuration>3</VenomDuration>
 				<VenomDamagePerPower>10</VenomDamagePerPower>
@@ -1353,7 +1353,7 @@
 					<ManaCost>5</ManaCost>
 				</DemonicFire>
 				<ConsumeCorpseHPForOneMana>50</ConsumeCorpseHPForOneMana>
-				<CriticalStrike_ChanceToWork>100</CriticalStrike_ChanceToWork>
+				<CriticalStrike_ChanceToWork>0</CriticalStrike_ChanceToWork>
 			</DemonLord>
 			<Necromancer>
 				<Necromancy>
@@ -1913,7 +1913,7 @@
 				</DeathTread>
 				<SpiritLink_HPForOneMana>75</SpiritLink_HPForOneMana>
 				<DeathScream_MoralePenalty>2</DeathScream_MoralePenalty>
-				<DeathScream_InitiativePenalty>0.05</DeathScream_InitiativePenalty>
+				<DeathScream_InitiativePenalty>0.15</DeathScream_InitiativePenalty>
 				<DarkEissary_DeathScreamMultiplier>1.5</DarkEissary_DeathScreamMultiplier>
 			</Necromancer>
 			<Warlock>
@@ -1961,7 +1961,7 @@
 			<Barbarian>
 				<PowerfullBlow_ChanceToCritical>0</PowerfullBlow_ChanceToCritical>
 				<PathOfWar_MovePointsBonus>250</PathOfWar_MovePointsBonus>
-				<LuckOfTheBarbarian_MagicProofPerLuck>0.05</LuckOfTheBarbarian_MagicProofPerLuck>
+				<LuckOfTheBarbarian_MagicProofPerLuck>0.06</LuckOfTheBarbarian_MagicProofPerLuck>
 				<StunningBlow_ATBDrop>0.3</StunningBlow_ATBDrop>
 				<DefendUsAll_CreatureToCount>CREATURE_ORC_WARRIOR</DefendUsAll_CreatureToCount>
 				<DefendUsAll_CreatureCountMultiplier>2</DefendUsAll_CreatureCountMultiplier>
@@ -6131,7 +6131,7 @@
 		<Necromancers_2_EnemyCreature_DeSpeed>0</Necromancers_2_EnemyCreature_DeSpeed>
 		<Necromancers_2Necromancer_BansheeWhail_DeMorale>1</Necromancers_2Necromancer_BansheeWhail_DeMorale>
 		<Necromancers_2Necromancer_BansheeWhail_DeLuck>1</Necromancers_2Necromancer_BansheeWhail_DeLuck>
-		<Necromancers_2Necromancer_BansheeWhail_DeInitiativeMultiplier>1</Necromancers_2Necromancer_BansheeWhail_DeInitiativeMultiplier>
+		<Necromancers_2Necromancer_BansheeWhail_DeInitiativeMultiplier>3</Necromancers_2Necromancer_BansheeWhail_DeInitiativeMultiplier>
 		<Necromancers_2Necromancer_BansheeWhail_ATBLessPercents>0</Necromancers_2Necromancer_BansheeWhail_ATBLessPercents>
 		<Necromancers_4_EnemyCreature_BadMoralePenaltyToAttackDefencePercents>20</Necromancers_4_EnemyCreature_BadMoralePenaltyToAttackDefencePercents>
 		<Necromancers_4Necromancer_NecromancyBonusPercents>20</Necromancers_4Necromancer_NecromancyBonusPercents>

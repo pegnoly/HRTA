@@ -20,7 +20,7 @@
 		</Item>
 		<Item>
 			<Spell>SPELL_STONESKIN</Spell>
-			<Mastery>MASTERY_ADVANCED</Mastery>
+			<Mastery>MASTERY_EXPERT</Mastery>
 		</Item>
 	</KnownSpells>
 	<SpellPoints>12</SpellPoints>

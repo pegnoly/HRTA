@@ -123,7 +123,7 @@ end
 ---@param x number координата X
 ---@param y number координата Y
 ---@param floor MapLevel уровень карты(по умолчанию равен -1, что означает тот же уровень)
----@param fx integer Только для героев! Задаёт номер эффекта телепортации (-1 = по-умолчанию, 0 - выключен, 1 - warp, 2 - teleport, 3 - dimension door, 4 - town portal
+---@param fx integer? Только для героев! Задаёт номер эффекта телепортации (-1 = по-умолчанию, 0 - выключен, 1 - warp, 2 - teleport, 3 - dimension door, 4 - town portal
 function SetObjectPosition(obejct, x, y, floor, fx)
 end
 

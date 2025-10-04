@@ -30,7 +30,7 @@
 	<Icon128/>
 	<InternalName>Ferigl2</InternalName>
 	<Class>HERO_CLASS_WARLOCK</Class>
-	<Specialization>HERO_SPEC_NONE</Specialization>
+	<Specialization>HERO_SPEC_RIDERS</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_INVOCATION</SkillID>
