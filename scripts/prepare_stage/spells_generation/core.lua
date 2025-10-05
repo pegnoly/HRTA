@@ -1,3 +1,15 @@
+---@alias MagicLineType
+---|`FIRST_MAGIC_LINE`
+---|`SECOND_MAGIC_LINE`
+---|`THIRD_MAGIC_LINE`
+---|`FOURTH_MAGIC_LINE`
+---|`ADDITIONAL_MAGIC_LINE`
+FIRST_MAGIC_LINE = 1
+SECOND_MAGIC_LINE = 2
+THIRD_MAGIC_LINE = 3
+FOURTH_MAGIC_LINE = 4
+ADDITIONAL_MAGIC_LINE = 5
+
 spells_generation_core = {
     allowed_spells = {
         [MAGIC_SCHOOL_DESTRUCTIVE] = {
@@ -25,6 +37,55 @@ spells_generation_core = {
             SPELL_PHANTOM, SPELL_BLADE_BARRIER,
             SPELL_SUMMON_HIVE, SPELL_CONJURE_PHOENIX,
             SPELL_CELESTIAL_SHIELD
-        }
-    }
+        },
+        [MAGIC_SCHOOL_RUNIC] = range_generator.FromTop(SPELL_RUNE_OF_CHARGE, SPELL_RUNE_OF_DRAGONFORM),
+        [MAGIC_SCHOOL_WARCRIES] = range_generator.FromTop(SPELL_WARCRY_RALLING_CRY, SPELL_WARCRY_SHOUT_OF_MANY)
+    },
+
+    ---@type table<TownType, table<MagicLineType, SpellSchoolType>>
+    lines_by_races = {
+        [TOWN_HEAVEN] = {
+            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_LIGHT,
+            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DARK
+        },
+        [TOWN_INFERNO] = {
+            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
+            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
+        },
+        [TOWN_INFERNO] = {
+            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
+            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
+        },
+        [TOWN_INFERNO] = {
+            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
+            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
+        },
+        [TOWN_INFERNO] = {
+            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
+            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
+        },
+        [TOWN_INFERNO] = {
+            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
+            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
+        },
+        [TOWN_INFERNO] = {
+            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
+            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
+        },
+        [TOWN_INFERNO] = {
+            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
+            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
+        },
+    },
+
+
+    GenerateMainMagicLine = 
+    function (race, line_type)
+        
+    end,
+
+    GenerateAdditionalMagicLine =
+    function (line_type, spells_count)
+        
+    end
 }

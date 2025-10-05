@@ -1,60 +1,60 @@
--- Не запускаем скрипты, если в бою
-consoleCmd('@nde = 1')
+-- -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ
+-- consoleCmd('@nde = 1')
 
-sleep(10)
-if nde == 1 then
-	return
-end
+-- sleep(10)
+-- if nde == 1 then
+-- 	return
+-- end
 
--- Увеличиваем размер строк вывода в консоль
--- Запрещаем писать в файл
-consoleCmd('console_size 999')
-consoleCmd('game_writelog 0')
-sleep(1)
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
+-- consoleCmd('console_size 999')
+-- consoleCmd('game_writelog 0')
+-- sleep(1)
 
-doFile('/scripts/asha/lib.lua');
-doFile(GetMapDataPath()..'common.lua');
-doFile(GetMapDataPath()..'utils.lua');
-doFile(GetMapDataPath()..'constants.lua');
-doFile(GetMapDataPath()..'modules/modules.lua');
+-- doFile('/scripts/asha/lib.lua');
+-- doFile(GetMapDataPath()..'common.lua');
+-- doFile(GetMapDataPath()..'utils.lua');
+-- doFile(GetMapDataPath()..'constants.lua');
+-- doFile(GetMapDataPath()..'modules/modules.lua');
 
-sleep(1)
+-- sleep(1)
 
-removeHeroMovePoints(Biara);
-removeHeroMovePoints(Djovanni);
+-- removeHeroMovePoints(Biara);
+-- removeHeroMovePoints(Djovanni);
 
--- Обработчик наступления нового дня
-function handleNewDay()
-  if GetDate(DAY) == 2 then
-    doFile(GetMapDataPath().."day2/day2_scripts.lua");
-  end;
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+-- function handleNewDay()
+--   if GetDate(DAY) == 2 then
+--     doFile(GetMapDataPath().."day2/day2_scripts.lua");
+--   end;
 
-  if GetDate(DAY) == 3 then
-    sleep(5);
-    doFile(GetMapDataPath().."day3/day3_scripts.lua");
-  end;
+--   if GetDate(DAY) == 3 then
+--     sleep(5);
+--     doFile(GetMapDataPath().."day3/day3_scripts.lua");
+--   end;
 
-  if GetDate(DAY) == 4 then
-    for _, playerId in PLAYER_ID_TABLE do
-      SetPlayerResource (playerId, GOLD, 0);
-    end;
+--   if GetDate(DAY) == 4 then
+--     for _, playerId in PLAYER_ID_TABLE do
+--       SetPlayerResource (playerId, GOLD, 0);
+--     end;
 
-    sleep(5);
-    doFile(GetMapDataPath().."day4/day4_scripts.lua");
-  end;
+--     sleep(5);
+--     doFile(GetMapDataPath().."day4/day4_scripts.lua");
+--   end;
 
-  if GetDate(DAY) == 5 then
-    sleep(5);
-    doFile(GetMapDataPath().."day5/day5_scripts.lua");
-  end;
+--   if GetDate(DAY) == 5 then
+--     sleep(5);
+--     doFile(GetMapDataPath().."day5/day5_scripts.lua");
+--   end;
 
-  if GetDate(DAY) == 6 then
-    sleep(5);
-    doFile(GetMapDataPath().."day6/day6_scripts.lua");
-  end;
-end;
+--   if GetDate(DAY) == 6 then
+--     sleep(5);
+--     doFile(GetMapDataPath().."day6/day6_scripts.lua");
+--   end;
+-- end;
 
--- Корневые триггеры
-Trigger (NEW_DAY_TRIGGER, 'handleNewDay');
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- Trigger (NEW_DAY_TRIGGER, 'handleNewDay');
 
-doFile(GetMapDataPath().."day1/day1_scripts.lua");
+-- doFile(GetMapDataPath().."day1/day1_scripts.lua");
