@@ -929,8 +929,13 @@ function questionRunesReset(strPlayerId)
     return nil;
   end;
 
-  local hero = PLAYERS_MAIN_HERO_PROPS[playerId].name
-  local message = HasHeroSkill(hero, HERO_SKILL_REFRESH_RUNE) and "change_rune_with_refresh.txt" or "question_change_runes.txt"
+  local message = "question_change_runes.txt"
+  if PLAYERS_MAIN_HERO_PROPS[playerId] then
+      local hero = PLAYERS_MAIN_HERO_PROPS[playerId].name
+      if hero and HasHeroSkill(hero, HERO_SKILL_REFRESH_RUNE) then
+        message = "change_rune_with_refresh.txt"
+      end
+  end
 
   QuestionBoxForPlayers(
     playerId,
@@ -980,8 +985,14 @@ function toogleRuneList(strPlayerId)
   print "toogleRuneList"
   local playerId = strPlayerId + 0;
   local playerGold = GetPlayerResource(playerId, GOLD);
-  local hero = PLAYERS_MAIN_HERO_PROPS[playerId].name
-  local spellResetCost = HasHeroSkill(hero, HERO_SKILL_REFRESH_RUNE) and 0 or 5000;
+  local spellResetCost = 5000
+  if PLAYERS_MAIN_HERO_PROPS[playerId] then
+    local hero = PLAYERS_MAIN_HERO_PROPS[playerId].name
+    if hero and HasHeroSkill(hero, HERO_SKILL_REFRESH_RUNE) then
+      spellResetCost = 0
+    end
+  end
+  
   local countResetRunes = PLAYERS_GENERATED_SPELLS[playerId].countResetRunes;
 
   -- �������������� ����� ���������� ������ ���� ���
