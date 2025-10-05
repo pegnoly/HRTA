@@ -30,13 +30,14 @@
 			<average>
 				<OldArena/>
 				<newArenas>
-					<Item href="/Scenes/CombatArenas/Grass_Big_02.xdb#xpointer(/AdventureFlybyScene)"/>
+					<!-- <Item href="/Scenes/CombatArenas/Grass_Big_02.xdb#xpointer(/AdventureFlybyScene)"/>
 					<Item href="/Scenes/CombatArenas/Grass_Small_02.xdb#xpointer(/AdventureFlybyScene)"/>
 					<Item href="/Scenes/CombatArenas/Grass_Small_03.xdb#xpointer(/AdventureFlybyScene)"/>	
 					<Item href="/Scenes/CombatArenas/Beach_Grass_Small_01.xdb#xpointer(/AdventureFlybyScene)"/>
 					<Item href="/Scenes/CombatArenas/Beach_Grass_Small_02.xdb#xpointer(/AdventureFlybyScene)"/>
 					<Item href="/Scenes/CombatArenas/persona_grass_farm.xdb#xpointer(/AdventureFlybyScene)"/>
-					<Item href="/Scenes/CombatArenas/muokaarena15_grass_fallenbridge.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/muokaarena15_grass_fallenbridge.xdb#xpointer(/AdventureFlybyScene)"/> -->
+					<Item href="/Scenes/CombatArenas/Kartoshka_Grass_1.(AdventureFlybyScene).xdb#xpointer(/AdventureFlybyScene)"/>		
 				</newArenas>
 				<waterArenas>
 				</waterArenas>
@@ -149,8 +150,10 @@
 				<OldArena/>
 				<newArenas>
 					<Item href="/Scenes/CombatArenas/Subterra_Dwarven_01.xdb#xpointer(/AdventureFlybyScene)"/>
-					<Item href="/Scenes/CombatArenas/Subterra_Dwarven_02.xdb#xpointer(/AdventureFlybyScene)"/>					
-					<Item href="/Scenes/CombatArenas/persona_gnomozavodsk.xdb#xpointer(/AdventureFlybyScene)"/>					
+					<!-- <Item href="/Scenes/CombatArenas/Subterra_Dwarven_02.xdb#xpointer(/AdventureFlybyScene)"/>					 -->
+					<Item href="/Scenes/CombatArenas/persona_gnomozavodsk.xdb#xpointer(/AdventureFlybyScene)"/>
+					<Item href="/Scenes/CombatArenas/Kartoshka_Dungeon_1.(AdventureFlybyScene).xdb#xpointer(/AdventureFlybyScene)"/>			
+					<Item href="/Scenes/CombatArenas/Kartoshka_Dungeon_2.(AdventureFlybyScene).xdb#xpointer(/AdventureFlybyScene)"/>	
 				</newArenas>
 				<waterArenas>
 				</waterArenas>

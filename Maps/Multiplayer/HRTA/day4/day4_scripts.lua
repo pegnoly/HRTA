@@ -518,8 +518,8 @@ function giveRuneResources(playerId)
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   local dictHeroName = getDictionaryHeroName(mainHeroName);
 
-  local countLowRes = 6;
-  local countHighRes = 6;
+  local countLowRes = 5;
+  local countHighRes = 5;
 
   -- Бранд
   if dictHeroName == HEROES.BRAND then
@@ -855,6 +855,32 @@ function replaceUnitInHero(heroName, targetUnitId, replaceUnitId)
   end;
 end;
 
+-- Замена обычных существ на существ с рташными особенностями
+-- Тут такие приколы с ID существ накручено, мое увожение >_<
+function replaceCommonUnitOnSpecial(playerId)
+  print "replaceCommonUnitOnSpecial"
+
+  local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
+  local dictHeroName = getDictionaryHeroName(mainHeroName);
+
+  -- Джалиб
+  if dictHeroName == HEROES.TAN then
+
+    replaceUnitInHero(mainHeroName, CREATURE_GENIE, CREATURE_RAKSHASA_RUKH);
+    replaceUnitInHero(mainHeroName, CREATURE_DJINN_VIZIER, CREATURE_TITAN);
+
+    for _, posibleHeroName in RESULT_HERO_LIST[playerId].heroes do
+      replaceUnitInHero(posibleHeroName, CREATURE_GENIE, CREATURE_RAKSHASA_RUKH);
+      replaceUnitInHero(posibleHeroName, CREATURE_DJINN_VIZIER, CREATURE_TITAN);
+    end;
+
+    replaceUnitInTown(MAP_PLAYER_TO_TOWNNAME[playerId], playerId, CREATURE_GENIE,CREATURE_RAKSHASA_RUKH)
+    replaceUnitInTown(MAP_PLAYER_TO_TOWNNAME[playerId], playerId, CREATURE_DJINN_VIZIER,CREATURE_TITAN)
+
+  end;
+
+end;
+
 -- Замена существ в городе
 function replaceUnitInTown(townName, playerId, targetUnitId, replaceUnitId)
   print "replaceUnitInTown"
@@ -920,6 +946,8 @@ function day4_scripts()
 
   for _, playerId in PLAYER_ID_TABLE do
     local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
+
+    replaceCommonUnitOnSpecial(playerId);
 
     showDay4InfoMessage(playerId);
 

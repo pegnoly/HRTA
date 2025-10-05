@@ -637,7 +637,7 @@ ALL_ARTS_LIST = {
   { id = 58, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 8000 }, -- лунный клинок
 
   -- { id = 35, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BODY,   price = 6500 }, -- кольчуга просвещенности
-  { id = 9,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 9000 }, -- ледяной щит
+  { id = 9,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 10000 }, -- ледяной щит
   { id = 88, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.HEAD,      price = 9000 }, -- корона лидерства
   { id = 41, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.HEAD,      price = 9500 }, -- шлем дракона
   { id = 39, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BACK,      price = 9500 }, -- мантия дракона

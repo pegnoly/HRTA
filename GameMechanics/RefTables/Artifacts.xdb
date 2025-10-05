@@ -235,7 +235,7 @@
 				<Type>ARTF_CLASS_MAJOR</Type>
 				<Slot>SECONDARY</Slot>
 				<Icon href="/Textures/HeroScreen/Artifacts/Icberg_Shield.xdb#xpointer(/Texture)"/>
-				<CostOfGold>9000</CostOfGold>
+				<CostOfGold>10000</CostOfGold>
 				<AIValue>1000</AIValue>
 				<CanBeGeneratedToSell>true</CanBeGeneratedToSell>
 				<HeroStatsModif>

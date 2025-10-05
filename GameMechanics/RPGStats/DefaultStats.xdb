@@ -294,9 +294,9 @@
 				<ChanceToMissToIncorporeal>0.5</ChanceToMissToIncorporeal>
 				<LifeDrainIntensity>0.5</LifeDrainIntensity>
 				<DeathWailRange>3</DeathWailRange>
-				<DeathWailDamageCoef>2</DeathWailDamageCoef>
+				<DeathWailDamageCoef>3</DeathWailDamageCoef>
 				<DeathWailDamageArgument>2</DeathWailDamageArgument>
-				<DeathWailDamageConst>15</DeathWailDamageConst>
+				<DeathWailDamageConst>9</DeathWailDamageConst>
 				<WeakeningAuraMoraleDec>1</WeakeningAuraMoraleDec>
 				<WeakeningAuraOffenceDec>3</WeakeningAuraOffenceDec>
 				<WeakeningAuraDeffenceDec>2</WeakeningAuraDeffenceDec>

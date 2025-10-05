@@ -404,9 +404,9 @@ function OnStart()
     end
 
     --специализация Джалиб. Стартовая мана джинов
-    if ( IsNamedHero(hero, 'Tan') or IsNamedHero(hero, 'Tan2') ) then
-      TanSpec(side, hero)
-    end
+--    if ( IsNamedHero(hero, 'Tan') or IsNamedHero(hero, 'Tan2') ) then
+--      TanSpec(side, hero)
+--    end
 
  -- Чародейская защита
   if GetHeroSkillMastery(hero, 176) > 0 then
