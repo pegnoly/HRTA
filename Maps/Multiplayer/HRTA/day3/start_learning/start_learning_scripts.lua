@@ -1661,6 +1661,11 @@ function getRemovedUnremovableSkillId(playerId)
   if HasHeroSkill(playerMainHero, HERO_SKILL_PATH_OF_WAR) == nil and PLAYERS_USE_PATH_OF_WAR_STATUS[playerId] ~= nil then
     return HERO_SKILL_PATH_OF_WAR;
   end;
+  
+  -- Обновленная руна
+  if HasHeroSkill(playerMainHero, HERO_SKILL_REFRESH_RUNE) == nil and PLAYERS_USE_REFRESH_RUNE_STATUS[playerId] ~= nil then
+    return HERO_SKILL_REFRESH_RUNE;
+  end;
 
   return nil;
 end;

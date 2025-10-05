@@ -2113,9 +2113,9 @@
 					<PerDividedLevel>1</PerDividedLevel>
 				</MasterOfElements_SpellpowerBonus>
 				<MasterOfElements_NumElementals>
-					<Base>1</Base>
-					<LevelDivisor>20</LevelDivisor>
-					<PerDividedLevel>1</PerDividedLevel>
+					<Base>0</Base>
+					<LevelDivisor>40</LevelDivisor>
+					<PerDividedLevel>0</PerDividedLevel>
 				</MasterOfElements_NumElementals>
 				<Inexhaustible_ManaRestorePerTurn>
 					<Base>1</Base>
@@ -6131,7 +6131,7 @@
 		<Necromancers_2_EnemyCreature_DeSpeed>0</Necromancers_2_EnemyCreature_DeSpeed>
 		<Necromancers_2Necromancer_BansheeWhail_DeMorale>1</Necromancers_2Necromancer_BansheeWhail_DeMorale>
 		<Necromancers_2Necromancer_BansheeWhail_DeLuck>1</Necromancers_2Necromancer_BansheeWhail_DeLuck>
-		<Necromancers_2Necromancer_BansheeWhail_DeInitiativeMultiplier>3</Necromancers_2Necromancer_BansheeWhail_DeInitiativeMultiplier>
+		<Necromancers_2Necromancer_BansheeWhail_DeInitiativeMultiplier>1.5</Necromancers_2Necromancer_BansheeWhail_DeInitiativeMultiplier>
 		<Necromancers_2Necromancer_BansheeWhail_ATBLessPercents>0</Necromancers_2Necromancer_BansheeWhail_ATBLessPercents>
 		<Necromancers_4_EnemyCreature_BadMoralePenaltyToAttackDefencePercents>20</Necromancers_4_EnemyCreature_BadMoralePenaltyToAttackDefencePercents>
 		<Necromancers_4Necromancer_NecromancyBonusPercents>20</Necromancers_4Necromancer_NecromancyBonusPercents>

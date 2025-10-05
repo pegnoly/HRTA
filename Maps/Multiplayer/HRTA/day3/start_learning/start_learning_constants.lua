@@ -574,6 +574,11 @@ PLAYERS_USE_PATH_OF_WAR_STATUS = {
   [PLAYER_2] = nil,
 };
 
+PLAYERS_USE_REFRESH_RUNE_STATUS = {
+  [PLAYER_1] = nil,
+  [PLAYER_2] = nil,
+};
+
 -- ����� ������ "���� �����"
 PLAYERS_USE_PATH_OF_WAR_BONUS = {
   [PLAYER_1] = nil,

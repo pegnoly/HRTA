@@ -1242,7 +1242,7 @@ function RolfSpec(side, mainHeroName)
   local summoningLevel = GetHeroSkillMastery(mainHeroName, 12);
 
   -- Количество эллемов: 7 (20) 27 (36), 60(48), 130(60)/ 66(50), 18 (30)
-  numberSummon = {8, 19, 40, 90}
+  numberSummon = {5, 13, 26, 50}
 
   local c1 = 'temp-buff'..side
   local x, y = SafePos()

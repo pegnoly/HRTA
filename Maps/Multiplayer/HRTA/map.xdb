@@ -30941,8 +30941,8 @@
 		<Item href="#n:inline(AdvMapArtifact)" id="item_DD9321D4-9ADD-4210-BD00-4896A78F1F44">
 			<AdvMapArtifact>
 				<Pos>
-					<x>14</x>
-					<y>87</y>
+					<x>15</x>
+					<y>86</y>
 					<z>0</z>
 				</Pos>
 				<Rot>0</Rot>
@@ -34101,8 +34101,8 @@
 		<Item href="#n:inline(AdvMapArtifact)" id="item_3930D4B6-9123-4352-8402-E378B653EE98">
 			<AdvMapArtifact>
 				<Pos>
-					<x>15</x>
-					<y>86</y>
+					<x>16</x>
+					<y>85</y>
 					<z>0</z>
 				</Pos>
 				<Rot>0</Rot>
@@ -44603,8 +44603,8 @@
 		<Item href="#n:inline(AdvMapArtifact)" id="item_1609B4D7-90AB-4359-928B-61D1D20C16F9">
 			<AdvMapArtifact>
 				<Pos>
-					<x>13</x>
-					<y>88</y>
+					<x>14</x>
+					<y>87</y>
 					<z>0</z>
 				</Pos>
 				<Rot>0</Rot>
@@ -44827,8 +44827,8 @@
 		<Item href="#n:inline(AdvMapArtifact)" id="item_9CEE48CD-38CA-4168-A2A1-C7E482B894BA">
 			<AdvMapArtifact>
 				<Pos>
-					<x>16</x>
-					<y>85</y>
+					<x>13</x>
+					<y>88</y>
 					<z>0</z>
 				</Pos>
 				<Rot>0</Rot>

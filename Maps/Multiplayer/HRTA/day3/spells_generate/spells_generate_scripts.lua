@@ -1000,6 +1000,7 @@ function toogleRuneList(strPlayerId)
 
   PLAYERS_GENERATED_SPELLS[playerId].countResetRunes = PLAYERS_GENERATED_SPELLS[playerId].countResetRunes + 1;
 
+  PLAYERS_USE_REFRESH_RUNE_STATUS[playerId] = not nil;
   -- ���������� ����� �����
   showPlayerRunesList(playerId);
 
