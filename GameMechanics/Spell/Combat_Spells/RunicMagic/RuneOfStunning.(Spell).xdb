@@ -52,7 +52,7 @@
 	<sSpellCost>
 		<Wood>1</Wood>
 		<Ore>0</Ore>
-		<Mercury>1</Mercury>
+		<Mercury>0</Mercury>
 		<Crystal>0</Crystal>
 		<Sulfur>0</Sulfur>
 		<Gem>0</Gem>
