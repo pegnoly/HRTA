@@ -1,15 +1,15 @@
--- Устанавливаем голема и навешиваем триггер
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function showGolem()
   print "showGolem"
 
   SetObjectEnabled('golem', nil);
   SetObjectPosition('red10', 1, 1, UNDERGROUND);
-  SetObjectPosition('golem', 35, 83);
+  SetObjectPosition('golem', 35, 83, GROUND);
   SetDisabledObjectMode('golem', DISABLED_INTERACT);
-  Trigger(OBJECT_TOUCH_TRIGGER, 'golem', 'questionAuctionMode');
+  Trigger(OBJECT_TOUCH_TRIGGER, 'golem', 'game_modes_core.TouchActivator');
 end;
 
--- Вопрос выбора нового режима - Торги
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅ
 function questionAuctionMode()
   print "questionAuctionMode"
 
@@ -17,21 +17,21 @@ function questionAuctionMode()
   QuestionBoxForPlayers(GetPlayerFilter(PLAYER_1), PATH_TO_DAY1_MODULE.."choice_of_races/game_mode/question_auction_mode.txt", 'prepareForAuctionMode', 'questionPickHeroOnlyMode');
 end;
 
--- Вопрос выбора режима выбора только героя
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function questionPickHeroOnlyMode()
   print "questionPickHeroOnlyMode"
 
   QuestionBoxForPlayers(GetPlayerFilter(PLAYER_1), PATH_TO_DAY1_MODULE.."choice_of_races/game_mode/question_enable_game_mode_only_pick_hero.txt", 'prepareForPickHeroOnlyMode', 'questionTroubledTime');
 end;
 
--- Вопрос выбора режима Смутного времени
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function questionTroubledTime()
   print "questionTroubledTime"
 
   QuestionBoxForPlayers(GetPlayerFilter(PLAYER_1), PATH_TO_DAY1_MODULE.."choice_of_races/game_mode/question_troubled_time_mode.txt", 'prepareForTroubledTimeVar2', 'questionRandomPickHeroModeNoMentor');
 end;
 
--- Вопрос выбора режима случайного выбора героя без наставника
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function questionRandomPickHeroModeNoMentor()
   print "questionRandomPickHeroModeNoMentor"
 
@@ -40,7 +40,7 @@ end;
 
 
 
--- Подготовка к режиму Аукцион
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function prepareForAuctionMode()
   print "prepareForAuctionMode"
 
@@ -52,15 +52,15 @@ function prepareForAuctionMode()
 
 end;
 
--- Подготовка к моду Смутное время
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function prepareForTroubledTime()
   print "prepareForTroubledTime"
 
   SetObjectPosition('golem', 19, 45);
   SetObjectPosition('red10', 35, 83, GROUND);
 
-  -- Установка настройки для нового режима
-  CUSTOM_GAME_MODE_TROUBLED_TIME = 2;  -- Смещение номера на 2
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  CUSTOM_GAME_MODE_TROUBLED_TIME = 2;  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 2
   CUSTOM_GAME_MODE_TROUBLED_TIME_TIER = 1 + random(7);
   CUSTOM_GAME_MODE_ONLY_CHERK_SINGLE_HEROES = 1;
 
@@ -83,15 +83,15 @@ function showFlyingTroubledTime()
 
 end;
 
--- Подготовка к моду Смутное время (вариант 2)
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2)
 function prepareForTroubledTimeVar2()
   print "prepareForTroubledTimeVar2"
 
   SetObjectPosition('golem', 19, 45);
   SetObjectPosition('red10', 35, 83, GROUND);
 
-  -- Установка настройки для нового режима
-  CUSTOM_GAME_MODE_TROUBLED_TIME = 2;  -- Смещение номера на 2
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  CUSTOM_GAME_MODE_TROUBLED_TIME = 2;  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 2
   CUSTOM_GAME_MODE_TROUBLED_TIME_TIER = 1 + random(7);
   CUSTOM_GAME_MODE_ONLY_CHERK_SINGLE_HEROES = 1;
 
@@ -119,7 +119,7 @@ function showFlyingTroubledTimeVar2()
 
 end;
 
--- Подготовка к режиму случайного выбора героя без ментора
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function prepareForRandomPickHeroMode()
   print "prepareForRandomPickHeroMode"
 
@@ -129,7 +129,7 @@ function prepareForRandomPickHeroMode()
   CUSTOM_GAME_MODE_ONLY_CHERK_SINGLE_HEROES = 1;
 end;
 
--- Подготовка к режиму выбора только героя
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function prepareForPickHeroOnlyMode()
   print "prepareForPickHeroOnlyMode"
 
@@ -140,7 +140,7 @@ function prepareForPickHeroOnlyMode()
   ShowFlyingSign(PATH_TO_DAY1_MODULE.."choice_of_races/game_mode/onlySingleCherkHero.txt", Djovanni, PLAYER_2, 5.0);
 end;
 
--- Перемещение магов и грелина для режима Без ментора
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function moveDelimetersToFirstMode()
   print "moveDelimetersToFirstMode"
 
