@@ -2,9 +2,7 @@ while not astrology_core do
     sleep()
 end
 
-astrology_arhydevi_mode = {
-
-}
+astrology_arhydevi_mode = {}
 
 NewDayEvent.AddListener("HRTA_astrology_arhydevi_mode_show_selected_listener",
 function (day)

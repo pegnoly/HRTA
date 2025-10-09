@@ -34,8 +34,8 @@ astrology_core = {
         if random(1000) == 765 then
             return ASTROLOGY_WEEK_VERY_RARE
         end
-        local result = Random.FromSelection(ASTROLOGY_WEEK_NARGOTT, ASTROLOGY_WEEK_SITHIS, ASTROLOGY_WEEK_AUOTOR)
-        -- local result = Random.FromSelection(ASTROLOGY_WEEK_AUOTOR)
+        local result = Random.FromSelection(ASTROLOGY_WEEK_NARGOTT, ASTROLOGY_WEEK_SITHIS, ASTROLOGY_WEEK_AUOTOR, ASTROLOGY_WEEK_ARHYDEVI)
+        -- local result = Random.FromSelection(ASTROLOGY_WEEK_ARHYDEVI)
         return result
     end
 }

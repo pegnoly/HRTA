@@ -1363,6 +1363,7 @@ function handleHeroRemoveSkill(triggerHero, skill)
 
   MENTOR_HELPER_REMOVED_SKILL[playerId] = skill;
   MENTOR_USAGE_COUNTER.iterate(playerId);
+
   mentorCashback(playerId, skill);
 
   -- ���� �� ������ ������� �����, �� ���������� ������� ���������� ��������
@@ -1559,6 +1560,10 @@ function mentorCashback(playerId, removedSkillId)
 
   -- ���� ��� ����� � ������� ���������
   if mainHeroName == nil then
+    if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_ARHYDEVI then
+        SetPlayerResource(playerId, GOLD, GetPlayerResource(playerId, GOLD) + 500)
+        return nil
+    end
     local currentCountFirstLeveDiscount = PLAYERS_FIRST_LEVEL_DISCOUNT_ON_REMOVE_SKILLS[playerId];
 
     if currentCountFirstLeveDiscount > 0 then
@@ -1586,6 +1591,16 @@ function mentorCashback(playerId, removedSkillId)
       return nil;
     end;
   end;
+
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_ARHYDEVI then
+    if mainHeroLevel >= FREE_LEARNING_LEVEL then
+      SetPlayerResource(playerId, GOLD, GetPlayerResource(playerId, GOLD) + 2500);
+      return nil;
+    elseif mainHeroLevel > HALF_FREE_LEARNING_LEVEL then
+      SetPlayerResource(playerId, GOLD, GetPlayerResource(playerId, GOLD) + 1500);
+      return nil;
+    end;
+  end
 
   -- ���� ���� ������ ������� �������� � ������ ������� ������
 --  if mainHeroLevel <= FREE_LEARNING_LEVEL then

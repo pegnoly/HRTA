@@ -4,6 +4,8 @@ end
 
 astrology_auotor_mode = {
 
+    start_gold = 25000,
+
     town_initial_positions = {},
 
     town_move_positions = {

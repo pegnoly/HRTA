@@ -21,6 +21,11 @@ function setInitialResources()
         if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_NARGOTT then
             resValue = astrology_nargott_mode.generated_gold
         end
+        -- #6 установка стартового золота при активной неделе Аутора в моде "Астрология"
+        if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+            resValue = astrology_auotor_mode.start_gold
+        end
+        --
         if bonus == STARTED_BONUSES.GOLD then
           local randomStartGold = 4000;
           resValue = resValue + randomStartGold;

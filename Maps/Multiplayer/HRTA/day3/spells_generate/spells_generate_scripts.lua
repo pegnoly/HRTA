@@ -702,6 +702,10 @@ function questionSpellReset(triggerHero)
   local countResetSpells = PLAYERS_GENERATED_SPELLS[playerId].countResetSpells;
   local countResetRunes = PLAYERS_GENERATED_SPELLS[playerId].countResetRunes;
   local spellResetCost = raceId == RACES.STRONGHOLD and 5000 or 6000;
+
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_ARHYDEVI then
+    spellResetCost = 0
+  end
   
   if raceId == RACES.FORTRESS then
     if countResetSpells == 0 then
@@ -825,6 +829,10 @@ function toogleSpellList(strPlayerId)
   local countResetSpells = PLAYERS_GENERATED_SPELLS[playerId].countResetSpells;
   local playerGold = GetPlayerResource(playerId, GOLD);
   
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_ARHYDEVI then
+    spellResetCost = 0
+  end
+
   if countResetSpells == 0 then
     if spellResetCost > playerGold then
       MessageBoxForPlayers(playerId, {PATH_TO_SPELLS_GENERATE_MESSAGES.."no_money.txt"; eq = spellResetCost - playerGold});
@@ -930,6 +938,9 @@ function questionRunesReset(strPlayerId)
   end;
 
   local message = "question_change_runes.txt"
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_ARHYDEVI then
+    message = "question_change_runes_arhydevi.txt"
+  end
   if PLAYERS_MAIN_HERO_PROPS[playerId] then
       local hero = PLAYERS_MAIN_HERO_PROPS[playerId].name
       if hero and HasHeroSkill(hero, HERO_SKILL_REFRESH_RUNE) then
@@ -991,6 +1002,10 @@ function toogleRuneList(strPlayerId)
     if hero and HasHeroSkill(hero, HERO_SKILL_REFRESH_RUNE) then
       spellResetCost = 0
     end
+  end
+
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_ARHYDEVI then
+    spellResetCost = 0
   end
   
   local countResetRunes = PLAYERS_GENERATED_SPELLS[playerId].countResetRunes;
