@@ -47,11 +47,11 @@ LEVEL_DISCOUNT_BY_ENL = {
   [3] = 0,
 
 };
--- ���������� �������, ��������������� ������ ��� �������� ���������
-FREE_LEARNING_LEVEL = 18;
 
--- �������� ���������� �������, ��������������� ������ ��� �������� ���������
-HALF_FREE_LEARNING_LEVEL = 8;
+--#6 настройка уровней для прокачки в зависимости от текущего мода и недели
+FREE_LEARNING_LEVEL = (game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_SITHIS) and 25 or 18
+
+HALF_FREE_LEARNING_LEVEL = (game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_SITHIS) and 12 or 8
 
 -- ���� ��������� ������ ��� ������ �������
 DROP_STAT_PERCENT_BY_RACE = {

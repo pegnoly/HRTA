@@ -35,7 +35,7 @@ astrology_core = {
             return ASTROLOGY_WEEK_VERY_RARE
         end
         -- local result = Random.FromSelection(ASTROLOGY_WEEK_NARGOTT, ASTROLOGY_WEEK_SITHIS, ASTROLOGY_WEEK_AUOTOR, ASTROLOGY_WEEK_ARHYDEVI)
-        local result = Random.FromSelection(ASTROLOGY_WEEK_NARGOTT)
+        local result = Random.FromSelection(ASTROLOGY_WEEK_SITHIS)
         return result
     end
 }
