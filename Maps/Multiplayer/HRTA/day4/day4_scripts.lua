@@ -559,6 +559,10 @@ function runRaceAbility(playerId)
     while not astrology_auotor_mode.special_day_transfer_status[playerId] do
       sleep()
     end
+
+    -- if raceId == RACES.SYLVAN or raceId == RACES.ACADEMY or raceId == RACES.HAVEN then
+    --   teleportMainHeroToNearTown(playerId)
+    -- end
   end
 
   if raceId == RACES.SYLVAN then
@@ -662,7 +666,9 @@ function additionalDayBeforeSelectBattlefield()
     local raceId = RESULT_HERO_LIST[playerId].raceId;
 
     if raceId == RACES.SYLVAN or raceId == RACES.ACADEMY or raceId == RACES.HAVEN then
-      teleportMainHeroToNearTown(playerId);
+      if not (game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR) then
+        teleportMainHeroToNearTown(playerId);
+      end
     else
       preliminaryTeleportHeroToSelectBattlefield(playerId);
     end;
