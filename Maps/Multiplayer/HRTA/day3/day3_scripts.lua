@@ -91,12 +91,13 @@ function addHeroesToPlayers()
       
       local coords = INITIAL_HERO_COORDINATES[playerId][indexHero];
 
-      
-      -- ����� ����������������� ������ ��� �������
-      local reservedHeroName = getReservedHeroName(playerId, heroName);
+            local reservedHeroName = getReservedHeroName(playerId, heroName);
 
       print(reservedHeroName)
       DeployReserveHero(reservedHeroName, coords.x, coords.y, GROUND);
+      if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+        astrology_auotor_mode.heroes_coordinates[playerId][reservedHeroName] = { x = coords.x, y = coords.y }
+      end
     end;
   end;
 end;

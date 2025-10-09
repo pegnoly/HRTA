@@ -1,4 +1,4 @@
--- Скрипты запускающиеся на 4 день
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 4 пїЅпїЅпїЅпїЅ
 
 PATH_TO_DAY4_SCRIPTS = GetMapDataPath().."day4/";
 PATH_TO_DAY4_MESSAGES = PATH_TO_DAY4_SCRIPTS.."messages/";
@@ -6,15 +6,15 @@ PATH_TO_DAY4_MESSAGES = PATH_TO_DAY4_SCRIPTS.."messages/";
 doFile(PATH_TO_DAY4_SCRIPTS.."day4_constants.lua");
 sleep(1);
 
--- Соотношение игроков на Id гарнизонов для выноса армии из города
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ Id пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 MAP_GARNISON_FOR_TOWN_STASHE = {
   [PLAYER_1] = 'Garrison3',
   [PLAYER_2] = 'Garrison4',
 };
 
--- Соотношение существ к их грейдам
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 MAP_CREATURES_ON_GRADE = {
-  -- Стандартные существа из замка
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   [CREATURE_PRIEST] = CREATURE_ZEALOT,
   [CREATURE_CAVALIER] = CREATURE_CHAMPION,
   [CREATURE_ANGEL] = CREATURE_SERAPH,
@@ -48,11 +48,11 @@ MAP_CREATURES_ON_GRADE = {
   [CREATURE_WYVERN] = CREATURE_WYVERN_PAOKAI,
   [CREATURE_CYCLOP] = CREATURE_CYCLOP_BLOODEYED,
 
-  -- Специальные существа, замененные навыками или или специализациями
-  [CREATURE_ROYAL_GRIFFIN] = CREATURE_BATTLE_GRIFFIN, -- Гриффоны без бага?
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  [CREATURE_ROYAL_GRIFFIN] = CREATURE_BATTLE_GRIFFIN, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ?
 };
 
--- Отключение всех кастомных способностей
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function disableCustomAbilities(heroName)
   print "disableCustomAbilities"
 
@@ -68,7 +68,7 @@ function disableCustomAbilities(heroName)
   end;
 end;
 
--- Уничтожаем в городе все постройки существ, исключая возможность менять их грейд
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function downgradeTown(playerId)
   print "downgradeTown"
 
@@ -94,7 +94,7 @@ function downgradeTown(playerId)
   end;
 end;
 
--- Блокировка всех прочих построек игрока
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function disableAllOtherBuildings(playerId)
   print "disableAllOtherBuildings"
 
@@ -106,7 +106,7 @@ function disableAllOtherBuildings(playerId)
   SetObjectEnabled(PLAYERS_MARKET[playerId], nil);
 end;
 
--- Удаление всех очков передвижения у всех героев игрока
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function removeAllHeroMovePoints(playerId)
   print "removeAllHeroMovePoints"
 
@@ -123,7 +123,7 @@ function removeAllHeroMovePoints(playerId)
   removeHeroMovePoints(hero);
 end;
 
--- Перенос всех артефактов от побочных героев главному
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function transferAllArtsToMainHero(playerId)
   print "transferAllArtsToMainHero"
 
@@ -139,7 +139,7 @@ function transferAllArtsToMainHero(playerId)
   end;
 end;
 
--- Перенос всех фракционных войск, забытых в городе или прочих героях
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function transferAllArmyToMain(playerId)
   print "transferAllArmyToMain"
 
@@ -150,7 +150,7 @@ function transferAllArmyToMain(playerId)
 
   if not IsHeroInTown(mainHeroName, townName, 0, 1) then
 
-      -- Если есть существа в городе
+      -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     local hasArmyIsTown = nil;
 
     for _, unitData in UNITS[raceId] do
@@ -179,7 +179,7 @@ function transferAllArmyToMain(playerId)
   end;
 
 
-  -- Если доступные существа в дополнительных героях
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   for _, heroName in heroes do
     local reservedHeroName = getReservedHeroName(playerId, heroName);
 
@@ -200,7 +200,7 @@ function transferAllArmyToMain(playerId)
   end;
 end;
 
--- Подготовка к выбору заклятых врагов
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function prepareForChoiceEnemy(playerId)
   print "prepareForChoiceEnemy"
 
@@ -212,13 +212,13 @@ function prepareForChoiceEnemy(playerId)
   local opponentMainHeroName = PLAYERS_MAIN_HERO_PROPS[opponentPlayerId].name;
   local opponentRaceId = RESULT_HERO_LIST[opponentPlayerId].raceId;
 
-  -- Выдаем караваны на нейтралам
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local NEUTRAL_PLAYERS = {
     [PLAYER_1] = PLAYER_3,
     [PLAYER_2] = PLAYER_4,
   };
 
-  -- Временно перекидываем армию героя в караван
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local stash = {};
   local tempCaravanName = "caravan"..playerId;
 
@@ -241,15 +241,15 @@ function prepareForChoiceEnemy(playerId)
     end;
   end;
 
-  -- Формируем из существ оппонента пробивочную армию для эльфа
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   local stashEnemies = {};
   local tempOpponentCaravanName = "caravan"..opponentPlayerId;
   local avengerCaravan = "avenger"..playerId;
 
-  -- Для красного 1 1 коорды, для синего 2 2
+  -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1 1 пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 2 2
   CreateCaravan(avengerCaravan, NEUTRAL_PLAYERS[playerId], UNDERGROUND, 1, 1, UNDERGROUND, 1, 1);
 
-  -- Со смертельным выстрелом формируем пробивку из армии оппонента
+  -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, PERK_SNIPE_DEAD) then
     if IsObjectExists(tempOpponentCaravanName) then
       stashEnemies[8], stashEnemies[9], stashEnemies[10], stashEnemies[11], stashEnemies[12], stashEnemies[13], stashEnemies[14] = GetObjectCreaturesTypes(tempOpponentCaravanName);
@@ -274,21 +274,21 @@ function prepareForChoiceEnemy(playerId)
     end;
   end;
 
-  -- Без смертельного выстрела формируем из всех возможных юнитов
+  -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if not HasHeroSkill(mainHeroName, PERK_SNIPE_DEAD) then
     for _, enemyData in ELF_ENEMY_GARNISONS[opponentRaceId] do
       AddObjectCreatures(avengerCaravan, enemyData.id, enemyData.kol);
     end;
   end;
 
-  -- Запрещаем получать опыт
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   sleep();
   SetHeroesExpCoef(0);
   MakeHeroInteractWithObject(mainHeroName, avengerCaravan)
   sleep();
   UpgradeTownBuilding(townName, TOWN_BUILDING_PRESERVE_AVENGERS_BROTHERHOOD);
 
-  -- Возвращаем армию героя на следующий день
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   startThread(function ()
     while GetDate(DAY) ~= 5 do sleep() end;
 
@@ -304,7 +304,7 @@ function prepareForChoiceEnemy(playerId)
   end)
 end;
 
--- Получение количества ресурсов, получаемых для изготовки миниартефактов
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function getCountResourcesForMiniArts(playerId)
   print "getCountResourcesForMiniArts"
 
@@ -323,7 +323,7 @@ function getCountResourcesForMiniArts(playerId)
   return result;
 end;
 
--- Подготовка к крафту миниартефактов
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function prepareForCraftMiniArtifacts(playerId)
   print "prepareForCraftMiniArtifacts"
 
@@ -340,7 +340,7 @@ function prepareForCraftMiniArtifacts(playerId)
   end;
 end;
 
--- Бонус к некромантии
+-- пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function getNecromancyCoef(heroName)
 
   local coef = 1;
@@ -349,7 +349,7 @@ function getNecromancyCoef(heroName)
 
   local extraLvl = 0;
 
-  -- Бонус к некромантии для Маркела
+  -- пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.BEREIN then
     local MARKEL_KOEF = 0.0185;
     if HasHeroSkill(heroName,HERO_SKILL_MENTORING) then
@@ -440,7 +440,7 @@ function prepareSelectNecromancy(playerId)
 
   local countTakedUnits = 0;
 
-  local noRestForTheWickedTaken = nil;  -- Переменная для отслеживания использования "вечного рабства"
+  local noRestForTheWickedTaken = nil;  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
 
   while countTakedUnits < countAllowStack do
@@ -450,28 +450,28 @@ function prepareSelectNecromancy(playerId)
         local diffUnits = stashedArmy.kol - currentCountUnits;
         local extraLvl = 0;
 
-        -- учитывая Менторство
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         if HasHeroSkill(mainHeroName,HERO_SKILL_MENTORING) then
           extraLvl = 6;
         end;
-        -- формула рабства
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         local slaveUnits = diffUnits/getNecromancyCoef(mainHeroName) * floor((0.6 + 0.05 * (GetHeroLevel(mainHeroName) + extraLvl)) * 100 + 0.5) / 100
 
-        -- Если появилась разница в количестве войск - значит ее взял игрок
+        -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         if diffUnits > 0 then
           countTakedUnits = countTakedUnits + 1;
 
           stashedArmy.kol = 0;
 
-          -- Если игрок отделил часть юнитов - считаем, что он использовал на них некромантию
+          -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
           if currentCountUnits > 0 then
             RemoveObjectCreatures(garnisonName, stashedArmy.id, currentCountUnits);
           end;
 
-  -- Если есть вечное рабство и оно еще не использовано
-  -- Проверка использования "вечного рабства"
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
   if HasHeroSkill(mainHeroName, PERK_NO_REST_FOR_THE_WICKED) and noRestForTheWickedTaken == nil then
-    -- Если взяли обычный грейд существ
+    -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     local resultGradeId;
     
     if MAP_NECRO_UNIT_ON_GRADE_UNIT[stashedArmy.id] ~= nil then
@@ -486,14 +486,14 @@ function prepareSelectNecromancy(playerId)
       AddHeroCreatures(mainHeroName, resultGradeId, slaveUnits);
       RemoveObjectCreatures(garnisonName, resultGradeId, GetObjectCreatures(garnisonName, resultGradeId));
 
-      -- Убираем всех существ альтернативного грейда, если их забрали через вечное рабство
+      -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       for _, stash in garnisonStash do
         if stash.id == resultGradeId then
           stash.kol = 0;
         end;
       end;
 
-      noRestForTheWickedTaken = 1;  -- Помечаем, что вечное рабство использовано
+      noRestForTheWickedTaken = 1;  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     end;
   end;
           end;
@@ -503,7 +503,7 @@ function prepareSelectNecromancy(playerId)
       sleep(1);
     end;
 
-    -- Забираем все оставшиеся войска из гарнизона
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     for _, stashedArmy in garnisonStash do
       if stashedArmy.kol > 0 then
         RemoveObjectCreatures(garnisonName, stashedArmy.id, stashedArmy.kol);
@@ -511,7 +511,7 @@ function prepareSelectNecromancy(playerId)
   end;
 end;
 
--- Выдача гному ресурсов в соответствии с его навыками
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function giveRuneResources(playerId)
   print "giveRuneResources"
 
@@ -521,9 +521,9 @@ function giveRuneResources(playerId)
   local countLowRes = 5;
   local countHighRes = 5;
 
-  -- Бранд
+  -- пїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.BRAND then
-    -- Количество уровней для увеличения ресурсов на 1
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 1
     local BRAND_LEVEL_BY_RUNE = 6;
     local brandResCount = floor(GetHeroLevel(mainHeroName)/BRAND_LEVEL_BY_RUNE);
 
@@ -531,7 +531,7 @@ function giveRuneResources(playerId)
     countHighRes = countHighRes + brandResCount;
   end;
 
-  -- Завершенка дает по 3 каждого ресурса
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ 3 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, HERO_SKILL_FINE_RUNE) then
     countLowRes = countLowRes + 2;
     countHighRes = countHighRes + 2;
@@ -548,33 +548,38 @@ end;
 
 ACTIVE_TRAINING_STATUS = nil;
 
--- Запуск фракционных плюшек
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function runRaceAbility(playerId)
   print "runRaceAbility"
 
   local raceId = RESULT_HERO_LIST[playerId].raceId;
 
-  -- Отправляем на выбор заклятых
+  -- #6 РЅР° РЅРµРґРµР»Рµ РђСѓС‚РѕСЂР° РЅРµРѕР±С…РѕРґРёРјРѕ РѕС‚РґРµР»СЊРЅРѕ РїРѕРґРѕР¶РґР°С‚СЊ РїРѕРєР° РіРѕСЂРѕРґР° Р±СѓРґСѓС‚ РєРѕСЂСЂРµРєС‚РЅРѕ РїРµСЂРµРјРµС‰РµРЅС‹
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+    while not astrology_auotor_mode.special_day_transfer_status[playerId] do
+      sleep()
+    end
+  end
+
   if raceId == RACES.SYLVAN then
     startThread(prepareForChoiceEnemy, playerId);
   end;
 
-  -- Отправляем на крафт миников
   if raceId == RACES.ACADEMY then
     startThread(prepareForCraftMiniArtifacts, playerId);
   end;
 
-  -- Предлагаем выбрать существ с некромантии
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if raceId == RACES.NECROPOLIS then
     startThread(prepareSelectNecromancy, playerId);
   end;
 
-  -- Гному даем ресурсы на руны
+  -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
   if raceId == RACES.FORTRESS then
     giveRuneResources(playerId);
   end;
 
-  -- Хумов радуем новым тренингом
+  -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if raceId == RACES.HAVEN and not ACTIVE_TRAINING_STATUS then
     ACTIVE_TRAINING_STATUS = not nil;
 
@@ -582,7 +587,7 @@ function runRaceAbility(playerId)
   end
 end;
 
--- Показ игроку информацию о необходимых действиях на текущий день
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function showDay4InfoMessage(playerId)
   print "showDay4InfoMessage"
 
@@ -624,9 +629,15 @@ function showDay4InfoMessage(playerId)
   end;
 end;
 
--- Телепорт главного героя перед городом
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function teleportMainHeroToNearTown(playerId)
   print "teleportMainHeroToNearTown"
+
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+    while not astrology_auotor_mode.special_day_transfer_status[playerId] do
+      sleep()
+    end
+  end
 
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   local position = PLAYERS_TELEPORT_NEAR_TOWN_POSITION[playerId];
@@ -643,7 +654,7 @@ function teleportMainHeroToNearTown(playerId)
   addHeroMovePoints(mainHeroName);
 end;
 
--- Телепортируем героев в их места на карте
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function additionalDayBeforeSelectBattlefield()
   print "additionalDayBeforeSelectBattlefield"
 
@@ -659,14 +670,14 @@ function additionalDayBeforeSelectBattlefield()
 end;
 
 
--- Передача всего имеющегося у героя новому
--- В этой функции ваще влом избавляться от магических цифр
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function replaceMainHero(playerId, newHeroName)
   print "replaceMainHero"
 
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
 
-  -- Навыки
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ
   local stashSkills = {};
 
   for indexSkill, skillId in ALL_SKILLS_TABLE do
@@ -681,7 +692,7 @@ function replaceMainHero(playerId, newHeroName)
     stashSkills[indexSkill] = masteryLvl;
   end;
 
-  -- Умения
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ
   local mainHeroPerksTable = {};
 
   for _, perkId in ALL_PERKS_TABLE do
@@ -690,7 +701,7 @@ function replaceMainHero(playerId, newHeroName)
     end;
   end;
 
-  -- Артефакты
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local mainHeroArtsTable = {};
 
   for _, artData in ALL_ARTS_LIST do
@@ -699,7 +710,7 @@ function replaceMainHero(playerId, newHeroName)
     end;
   end;
 
-  -- Существа
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local stashUnits = {
     { id = 0, kol = 0},
     { id = 0, kol = 0},
@@ -718,7 +729,7 @@ function replaceMainHero(playerId, newHeroName)
     end;
   end;
 
-  -- Машинки
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local warMachinesTable = {};
 
   for machineId = 1, 4 do
@@ -727,7 +738,7 @@ function replaceMainHero(playerId, newHeroName)
     end;
   end;
 
-  -- Показываем фокусы с заменой героя
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   local x, y = GetObjectPosition(mainHeroName);
   local heroExp = GetHeroStat(mainHeroName, STAT_EXPERIENCE);
 
@@ -742,7 +753,7 @@ function replaceMainHero(playerId, newHeroName)
   Trigger(HERO_ADD_SKILL_TRIGGER, newHeroName, 'noop');
   WarpHeroExp(newHeroName, heroExp);
 
-  -- Обучаем навыкам
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   for skillId, skillMastery in stashSkills do
     if skillMastery > 0 then
       for i = 1, skillMastery do
@@ -751,7 +762,7 @@ function replaceMainHero(playerId, newHeroName)
     end;
   end;
 
-  -- Обучаем умениям
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local allPerkExist = not nil
   while allPerkExist do
     allPerkExist = nil
@@ -769,7 +780,7 @@ function replaceMainHero(playerId, newHeroName)
     end;
   end;
 
-  -- Передаем армию
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   for index, unit in stashUnits do
     if unit.id > 0 then
       AddHeroCreatures(newHeroName, unit.id, unit.kol);
@@ -782,30 +793,30 @@ function replaceMainHero(playerId, newHeroName)
     end;
   end;
 
-  -- Передаем арты
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   for _, artId in mainHeroArtsTable do
     GiveArtefact(newHeroName, artId);
   end;
 
-  -- Машинки
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   for _, machineId in warMachinesTable do
     GiveHeroWarMachine(newHeroName, machineId);
   end;
 
-  -- Производим подмену в свойствах
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   PLAYERS_MAIN_HERO_PROPS[playerId].name = newHeroName;
 
   refreshMainHeroStats(playerId);
 end;
 
--- Замена обычного героя на героя с рташными особенностями
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function replaceHeroOnSpecial(playerId)
   print "replaceHeroOnSpecial"
 
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   local dictHeroName = getDictionaryHeroName(mainHeroName);
 
-  -- Аларон
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.ILDAR then
     local lightMagicLevel = GetHeroSkillMastery(mainHeroName, SKILL_LIGHT_MAGIC);
 
@@ -824,7 +835,7 @@ function replaceHeroOnSpecial(playerId)
     end;
   end;
 
-  -- Илайя
+  -- пїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.SHADWYN then
     local invocationLevel = GetHeroSkillMastery(mainHeroName, SKILL_INVOCATION);
 
@@ -845,7 +856,7 @@ function replaceHeroOnSpecial(playerId)
 
 end;
 
--- Замена определенного существа в герое на другое
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function replaceUnitInHero(heroName, targetUnitId, replaceUnitId)
   print "replaceUnitInHero"
   local creatureCount = GetHeroCreatures(heroName, targetUnitId);
@@ -855,15 +866,15 @@ function replaceUnitInHero(heroName, targetUnitId, replaceUnitId)
   end;
 end;
 
--- Замена обычных существ на существ с рташными особенностями
--- Тут такие приколы с ID существ накручено, мое увожение >_<
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ ID пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ >_<
 function replaceCommonUnitOnSpecial(playerId)
   print "replaceCommonUnitOnSpecial"
 
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   local dictHeroName = getDictionaryHeroName(mainHeroName);
 
-  -- Джалиб
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.TAN then
 
     replaceUnitInHero(mainHeroName, CREATURE_GENIE, CREATURE_RAKSHASA_RUKH);
@@ -881,7 +892,7 @@ function replaceCommonUnitOnSpecial(playerId)
 
 end;
 
--- Замена существ в городе
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function replaceUnitInTown(townName, playerId, targetUnitId, replaceUnitId)
   print "replaceUnitInTown"
 
@@ -902,7 +913,7 @@ function replaceUnitInTown(townName, playerId, targetUnitId, replaceUnitId)
 end;
 
 
--- Точка входа
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function day4_scripts()
   print "day4_scripts"
 
@@ -914,16 +925,16 @@ function day4_scripts()
   local isNeedPostponeBattle = needPostponeBattle()
 
   if isNeedPostponeBattle then
-    -- Объявляем промежуточный день для фракционных плюшек
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     additionalDayBeforeSelectBattlefield();
   end;
   
   if not isNeedPostponeBattle then
-    -- Отправляем на выбор поляны
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     selectBattlefield();
   end;
   
-  -- Если у расы игроков есть действия на 4 день - вызываем их
+  -- пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 4 пїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
   for _, playerId in PLAYER_ID_TABLE do
     local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
 
@@ -958,5 +969,5 @@ function day4_scripts()
   
 end;
 
--- Точка входа
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 day4_scripts();
