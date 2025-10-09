@@ -1,12 +1,9 @@
--- Скрипты установки начальных значений ресурсов для игроков
-
--- Путь до сообщений этого модуля
 PATH_TO_SET_INIT_RESOURCES_MESSAGES = GetMapDataPath().."day3/set_initial_resources/messages/"
 
 doFile(GetMapDataPath().."day3/set_initial_resources/set_initial_resources_constants.lua");
 sleep(1);
 
--- Точка входа
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function setInitialResources()
   print "setInitialResources"
 
@@ -19,8 +16,11 @@ function setInitialResources()
     for resourceId, resourceValue in INITIAL_RESOURCES[raceId] do
       resValue = resourceValue;
 
-      -- Для золота учитываем стартовый бонус и изменения от торгов
       if resourceId == GOLD then
+        -- #6 СѓСЃС‚Р°РЅРѕРІРєР° СЃС‚Р°СЂС‚РѕРІРѕРіРѕ Р·РѕР»РѕС‚Р° РїСЂРё Р°РєС‚РёРІРЅРѕР№ РЅРµРґРµР»Рµ РќР°СЂРіРѕС‚С‚Р° РІ РјРѕРґРµ "РђСЃС‚СЂРѕР»РѕРіРёСЏ"
+        if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_NARGOTT then
+            resValue = astrology_nargott_mode.generated_gold
+        end
         if bonus == STARTED_BONUSES.GOLD then
           local randomStartGold = 4000;
           resValue = resValue + randomStartGold;
@@ -29,7 +29,6 @@ function setInitialResources()
         end;
 
         if CUSTOM_GAME_MODE_AUCTION == 1 then
-        -- Устанавливаем золото с учетом торгов
           if playerId == PLAYER_1 then
             resValue = resValue - PLAYER_1_GOLD
           elseif playerId == PLAYER_2 then
@@ -43,5 +42,4 @@ function setInitialResources()
   end;
 end;
 
--- Точка входа
 setInitialResources();

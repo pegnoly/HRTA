@@ -27,3 +27,7 @@ doFile('/scripts/game_modes/core.lua')
 -- Астрология
 doFile('/scripts/game_modes/astrology/types.lua')
 doFile('/scripts/game_modes/astrology/core.lua')
+doFile('/scripts/game_modes/astrology/nargott/script.lua')
+doFile('/scripts/game_modes/astrology/sithis/script.lua')
+doFile('/scripts/game_modes/astrology/auotor/script.lua')
+doFile('/scripts/game_modes/astrology/arhydevi/script.lua')
