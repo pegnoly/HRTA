@@ -40,10 +40,10 @@ MAP_OPTION_COUNT_UNIT = {
   3,
   5,
   10,
-  25, -- вместо 25 используется тренинг на все очки. Но чтобы не переписывать сильно логику, оставил.
+  25, -- пїЅпїЅпїЅпїЅпїЅпїЅ 25 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 };
 
--- Соотношение уровня существа к уровню получаемого
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 MAP_TIER_TO_TRAINED_TIER = {
   [1] = 2,
   [2] = 3,
@@ -51,7 +51,7 @@ MAP_TIER_TO_TRAINED_TIER = {
   [5] = 6,
 }
 
--- Соотношение уровня к существам
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 MAP_TIER_TO_UNIT_NAME = {
   [1] = { CREATURE_PEASANT, CREATURE_LANDLORD },
   [2] = { CREATURE_ARCHER, CREATURE_LONGBOWMAN },
@@ -67,7 +67,7 @@ MAP_TIER_TO_TRAINING_POINTS = {
   [5] = 35,
 };
 
--- Очки тренинга игроков
+-- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 PLAYERS_TRAINING_POINTS = {
   [PLAYER_1] = 0,
   [PLAYER_2] = 0,
@@ -100,7 +100,7 @@ function calculatePlayerTrainingPoints(playerId)
   ShowFlyingSign({PATH_TO_TRAINING_MODULES..'n_left_points.txt'; eq=PLAYERS_TRAINING_POINTS[playerId]}, mainHeroName, playerId, 5);
 end;
 
--- Наблюдатель отслеживания взятия существ из гарнизона
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function garrisonWatcherTread(playerId)
   print "garrisonWatcherTread"
 
@@ -126,7 +126,7 @@ function garrisonWatcherTread(playerId)
   end
 end;
 
--- Обработчик выбора опции тренинга
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function handleSelectTrainingOption(strPlayerId, strTier, strCountUnits)
   print "handleSelectTrainingOption"
 
@@ -137,7 +137,7 @@ function handleSelectTrainingOption(strPlayerId, strTier, strCountUnits)
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   local currentPoints = PLAYERS_TRAINING_POINTS[playerId];
 
-  -- Если выбрана опция 25, то рассчитать максимальное количество возможных тренировок
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 25, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if countUnits == 25 then
     local trainingPointsPerUnit = MAP_TIER_TO_TRAINING_POINTS[tierLvl];
     countUnits = floor(currentPoints / trainingPointsPerUnit);
@@ -145,7 +145,7 @@ function handleSelectTrainingOption(strPlayerId, strTier, strCountUnits)
 
   local needPoints = countUnits * MAP_TIER_TO_TRAINING_POINTS[tierLvl];
 
-  -- Если очков недостаточно даже после пересчета, уведомить и выйти
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
   if needPoints > currentPoints then
     ShowFlyingSign(
       {GetMapDataPath()..'day4/modules/not_enough_point.txt'; eq1=needPoints, eq2=currentPoints},
@@ -160,7 +160,7 @@ function handleSelectTrainingOption(strPlayerId, strTier, strCountUnits)
     if GetHeroCreatures(mainHeroName, creatureId) >= countUnits then
       local garrisonName = PLAYERS_TRAINING_GARRISONS[playerId];
 
-      -- Добавляем оба грейда в гарнизон, чтобы игрок выбрал нужный
+      -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
       for _, trainedCreatureId in MAP_TIER_TO_UNIT_NAME[MAP_TIER_TO_TRAINED_TIER[tierLvl]] do
         AddObjectCreatures(garrisonName, trainedCreatureId, countUnits);
       end;
@@ -189,7 +189,7 @@ function handleSelectTrainingOption(strPlayerId, strTier, strCountUnits)
   );
 end;
 
--- Вопрос, чтобы избежать случайного клика
+-- пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function questionSelectTrainingOption(playerId, levelUnit, countUnits)
   print "questionSelectTrainingOption"
 
@@ -216,7 +216,7 @@ function handleTouchShowPoints(strPlayerId)
   );
 end;
 
---Инициализация объекта для показа очков
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function initShowPointsObjects(playerId)
   print "initShowPointsObjects"
 
@@ -235,12 +235,16 @@ function initShowPointsObjects(playerId)
    Trigger(OBJECT_TOUCH_TRIGGER, unit.name, 'handleTouchShowPoints('..playerId..')');
 end;
 
--- Новый скриптовый тренинг
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function prepareForHavenTraining(playerId)
   print "prepareForHavenTraining"
 
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   SetObjectPosition(mainHeroName, PLAYERS_TO_POSITION[playerId].x, PLAYERS_TO_POSITION[playerId].y);
+
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+    addHeroMovePoints(mainHeroName)
+  end
 
   local rotate = playerId == PLAYER_1 and 0 or 3.14;
   MoveCameraForPlayers(playerId, PLAYERS_TO_POSITION[playerId].x, PLAYERS_TO_POSITION[playerId].y, GROUND, 50, 3.14, rotate, 0, 0, 1);

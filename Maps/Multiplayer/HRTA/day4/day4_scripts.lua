@@ -212,6 +212,10 @@ function prepareForChoiceEnemy(playerId)
   local opponentMainHeroName = PLAYERS_MAIN_HERO_PROPS[opponentPlayerId].name;
   local opponentRaceId = RESULT_HERO_LIST[opponentPlayerId].raceId;
 
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+    addHeroMovePoints(mainHeroName)
+  end
+
   -- ������ �������� �� ���������
   local NEUTRAL_PLAYERS = {
     [PLAYER_1] = PLAYER_3,
@@ -319,6 +323,10 @@ function getCountResourcesForMiniArts(playerId)
 
     result = result + MAAHIR_BONUS_RESOURCES;
   end;
+
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+    addHeroMovePoints(mainHeroName)
+  end
 
   return result;
 end;
