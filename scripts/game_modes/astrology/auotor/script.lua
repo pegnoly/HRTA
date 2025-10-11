@@ -218,6 +218,9 @@ astrology_auotor_mode = {
         end
 
         if count then
+            if creature == CREATURE_DEFENDER or creature == CREATURE_STONE_DEFENDER then
+                count = 126
+            end
             RemoveObject(object)
             Hero.CreatureInfo.Add(hero, creature, count)
         end
