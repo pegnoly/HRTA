@@ -4,8 +4,8 @@ end
 
 astrology_nargott_mode = {
     gold_ranges = {
-        { min = 139842, max = 151499 },
-        { min = 172454, max = 187484 }
+        { min = 80454, max = 90484 },
+        { min = 165454, max = 175484 }
     },
 
     generated_gold = -1,
