@@ -122,6 +122,16 @@ astrology_auotor_mode = {
         }
     },
 
+    pregenerated_creatures = {
+        [PLAYER_1] = {},
+        [PLAYER_2] = {}
+    },
+
+    pregenerated_artifacts = {
+        [PLAYER_1] = {},
+        [PLAYER_2] = {}
+    },
+
     heroes_coordinates = {
         [PLAYER_1] = {},
         [PLAYER_2] = {},
@@ -169,6 +179,35 @@ astrology_auotor_mode = {
         end
     end,
 
+    PregenerateCreatures = 
+    function ()
+        for player = PLAYER_1, PLAYER_2 do
+            for tier = 1, 7 do
+                local race = Random.FromTable(range_generator.FromTop(TOWN_HEAVEN, TOWN_STRONGHOLD))
+                local creature = Random.FromTable(astrology_auotor_mode.actual_creatures_to_give[race][tier])
+                astrology_auotor_mode.pregenerated_creatures[player][tier] = creature
+            end
+        end
+    end,
+
+    PregenerateArtifacts = 
+    function ()
+        for player = PLAYER_1, PLAYER_2 do
+            for class = ARTF_CLASS_MINOR, ARTF_CLASS_RELIC do
+                local level = class - 1
+                local possible_arts = list_iterator.FilterMap(ALL_ARTS_LIST, function (data)
+                    local level = %level
+                    if (data.level == level) then
+                        return data.id
+                    end
+                    return nil
+                end)
+                local art_to_give = Random.FromTable(possible_arts)
+                astrology_auotor_mode.pregenerated_artifacts[player][class] = art_to_give
+            end
+        end
+    end,
+
     SpawnCreatureBoxes =
     function (player)
         for tier = 1, 7 do
@@ -205,8 +244,7 @@ astrology_auotor_mode = {
 
     GiveCreatures = 
     function (hero, object, tier)
-        local race = Random.FromTable(range_generator.FromTop(TOWN_HEAVEN, TOWN_STRONGHOLD))
-        local creature = Random.FromTable(astrology_auotor_mode.actual_creatures_to_give[race][tier])
+        local creature = astrology_auotor_mode.pregenerated_creatures[GetObjectOwner(hero)][tier]
         local count
         for _, race_data in UNITS do
             for _, unit_data in race_data do
@@ -228,17 +266,9 @@ astrology_auotor_mode = {
 
     GiveArtifact =
     function (hero, object, class)
-        local level = class - 1
-        local possible_arts = list_iterator.FilterMap(ALL_ARTS_LIST, function (data)
-            local level = %level
-            if (data.level == level) then
-                return data.id
-            end
-            return nil
-        end)
-        local art_to_give = Random.FromTable(possible_arts)
+        local art_to_give = astrology_auotor_mode.pregenerated_artifacts[GetObjectOwner(hero)][class]
         RemoveObject(object)
-        Art.Distribution.Give(hero, art_to_give, 1)
+        Art.Distribution.Give(hero, art_to_give)
     end,
 
     TransferToSpecialDay = 
@@ -287,6 +317,8 @@ NewDayEvent.AddListener("HRTA_astrology_auotor_mode_show_selected_listener",
 function (day)
     if day == astrology_core.start_day and game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR  then
         startThread(astrology_auotor_mode.Init)
+        startThread(astrology_auotor_mode.PregenerateCreatures)
+        startThread(astrology_auotor_mode.PregenerateArtifacts)
         for player = PLAYER_1, PLAYER_2 do
            startThread(MCCS_MessageBoxForPlayers, player, astrology_core.path.."auotor_week_desc.txt")
         end
