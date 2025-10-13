@@ -218,7 +218,7 @@ function SetWarfogBehaviour(on_land, on_sea, player)
 end
 
 --- Отображает отлетающее от объекта сообщение
----@param message string путь к файлу сообщения
+---@param message string|table путь к файлу сообщения
 ---@param object string скриптовое имя объекта
 ---@param player PlayerID id игрока, для которого показывается сообщение(по умолчанию -1 - для всех игроков)
 ---@param time number время, на которое появляется сообщение
