@@ -375,20 +375,37 @@ function perkRecruitment(playerId)
 
   stash[1], stash[2], stash[3], stash[4], stash[5], stash[6], stash[7] = GetHeroCreaturesTypes(mainHeroName);
   
-  for _, armyId in stash do
-    for _, dictUnit in UNITS[raceId] do
-      if armyId == dictUnit.id and dictUnit.lvl < 4 then
-        local unitInTown = RESULT_ARMY_INTO_TOWN[playerId][dictUnit.lvl];
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+    for _, unit in stash do
+      for i, race_data in UNITS do
+        for j, unit_data in race_data do
+          if unit_data.id == unit and unit_data.lvl <=3  then
+            local count_to_add = floor(unit_data.kol * RECRUIMENT_COEF)
+            AddHeroCreatures(mainHeroName, unit, count_to_add)
+          end
+        end 
+      end
+    end
+  else
+    for _, armyId in stash do
+      for _, dictUnit in UNITS[raceId] do
+        if armyId == dictUnit.id and dictUnit.lvl < 4 then
+          local unitInTown = RESULT_ARMY_INTO_TOWN[playerId][dictUnit.lvl];
 
-        AddHeroCreatures(mainHeroName, dictUnit.id, floor(unitInTown.count * RECRUIMENT_COEF));
+          AddHeroCreatures(mainHeroName, dictUnit.id, floor(unitInTown.count * RECRUIMENT_COEF));
+        end;
       end;
     end;
-  end;
+  end
 end;
 
 --����������
 function perkDiplomacy(playerId)
   print "perkDiplomacy"
+
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+    return
+  end
   
   local raceId = RESULT_HERO_LIST[playerId].raceId;
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
