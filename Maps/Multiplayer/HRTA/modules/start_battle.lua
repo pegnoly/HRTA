@@ -380,7 +380,11 @@ function perkRecruitment(playerId)
       for i, race_data in UNITS do
         for j, unit_data in race_data do
           if unit_data.id == unit and unit_data.lvl <=3  then
-            local count_to_add = floor(unit_data.kol * RECRUIMENT_COEF)
+            local count = unit_data.kol
+            if unit == CREATURE_DEFENDER or unit == CREATURE_STONE_DEFENDER then
+              count = 126
+            end
+            local count_to_add = floor(count * RECRUIMENT_COEF)
             AddHeroCreatures(mainHeroName, unit, count_to_add)
           end
         end 
@@ -403,10 +407,6 @@ end;
 function perkDiplomacy(playerId)
   print "perkDiplomacy"
 
-  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
-    return
-  end
-  
   local raceId = RESULT_HERO_LIST[playerId].raceId;
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   -- ����������� ���������� ������ �� ������
@@ -512,9 +512,19 @@ function perkDiplomacy(playerId)
         isExistAlt = not nil
       end;
     end;
-    local unitInTown = RESULT_ARMY_INTO_TOWN[playerId][dictUnitsWizard[wizardId]];
-    local resultCount = rounding(unitInTown.count * DIPLOMACY_COEF);
-    if (isExist and  isExistAlt) then
+    local resultCount
+    if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+      for _, unit_data in UNITS[raceId] do
+        if unit_data.id == wizardId then
+          resultCount = rounding(unit_data.kol * DIPLOMACY_COEF)
+          break
+        end
+      end
+    else
+      local unitInTown = RESULT_ARMY_INTO_TOWN[playerId][dictUnitsWizard[wizardId]];
+      resultCount = rounding(unitInTown.count * DIPLOMACY_COEF);
+    end
+    if (isExist and  isExistAlt and resultCount) then
 
       if GetHeroCreatures(mainHeroName, wizardId) >= GetHeroCreatures(mainHeroName, altWizardId) then
         AddHeroCreatures(mainHeroName, wizardId, resultCount);
@@ -524,12 +534,12 @@ function perkDiplomacy(playerId)
       return nil
     end;
     
-    if isExist then
+    if isExist and resultCount then
       AddHeroCreatures(mainHeroName, wizardId, resultCount);
       return nil
     end;
     
-    if isExistAlt then
+    if isExistAlt and resultCount then
       AddHeroCreatures(mainHeroName, altWizardId, resultCount);
       return nil
     end;
@@ -1250,10 +1260,14 @@ function runRaceSpecial(playerId)
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   local raceId = RESULT_HERO_LIST[playerId].raceId;
 
-  if raceId == RACES.HAVEN then
-  -- ���� ���� � ��������� (����� ������������ �� ���� ���)
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
     replaceUnitInHero(mainHeroName, CREATURE_GRIFFIN, CREATURE_ROYAL_GRIFFIN);
-  end;
+  else
+    if raceId == RACES.HAVEN then
+    -- ���� ���� � ��������� (����� ������������ �� ���� ���)
+      replaceUnitInHero(mainHeroName, CREATURE_GRIFFIN, CREATURE_ROYAL_GRIFFIN);
+    end;
+  end
 end;
 
 -- ����� � ������ ���������
