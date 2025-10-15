@@ -5,11 +5,11 @@ doFile(PATH_TO_DAY3_SCRIPTS.."day3_constants.lua");
 doFile(PATH_TO_DAY3_SCRIPTS.."day3_common.lua");
 sleep(1);
 
--- Точка входа в модуль
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function day3()
   print "day3"
 
-  CLEAR_CHOSING_STAGE(); -- удаление иконок героев
+  CLEAR_CHOSING_STAGE(); -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
   addHeroesToPlayers();
   setInfityMoveRegions();
@@ -26,18 +26,18 @@ function day3()
   doFile(PATH_TO_DAY3_SCRIPTS.."buy_hero/buy_hero_scripts.lua");
 end;
 
--- Установка контроля над стартовыми воздушками
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function controlInitialCreaturesThread()
   print "controlInitialCreaturesThread"
 
   while GetDate(DAY) < 5 do
-    -- Убираем из армии героев
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     for _, playerId in PLAYER_ID_TABLE do
       local playerData = RESULT_HERO_LIST[playerId];
 
       for indexHero, heroName in playerData.heroes do
 
-        -- берем зарезервированных героев для игроков
+        -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         local reservedHeroName = getReservedHeroName(playerId, heroName);
 
         local s1,s2 = GetHeroCreaturesTypes(reservedHeroName);
@@ -49,7 +49,7 @@ function controlInitialCreaturesThread()
         end;
       end;
       
-      -- Убираем из города
+      -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
       local town = MAP_PLAYER_TO_TOWNNAME[playerId];
       
       local countAirElemental = GetObjectCreatures(town, CREATURE_AIR_ELEMENTAL);
@@ -63,7 +63,7 @@ function controlInitialCreaturesThread()
   end;
 end;
 
--- Добавление героев игрокам
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function addHeroesToPlayers()
   print "addHeroesToPlayers"
   
@@ -91,17 +91,18 @@ function addHeroesToPlayers()
       
       local coords = INITIAL_HERO_COORDINATES[playerId][indexHero];
 
-      
-      -- берем зарезервированных героев для игроков
-      local reservedHeroName = getReservedHeroName(playerId, heroName);
+            local reservedHeroName = getReservedHeroName(playerId, heroName);
 
       print(reservedHeroName)
       DeployReserveHero(reservedHeroName, coords.x, coords.y, GROUND);
+      if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+        astrology_auotor_mode.heroes_coordinates[playerId][reservedHeroName] = { x = coords.x, y = coords.y }
+      end
     end;
   end;
 end;
 
--- Установка героям начальных свойств
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function setHeroesInitialProperties()
   print "setHeroesInitialProperties"
 
@@ -109,14 +110,14 @@ function setHeroesInitialProperties()
     local playerData = RESULT_HERO_LIST[playerId];
 
     for indexHero, heroName in playerData.heroes do
-      -- берем зарезервированных героев для игроков
+      -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       local reservedHeroName = getReservedHeroName(playerId, heroName);
       local heroMana = GetHeroStat(reservedHeroName, STAT_MANA_POINTS);
       
       ChangeHeroStat(reservedHeroName, STAT_MANA_POINTS, 0 - heroMana);
       LockMinHeroSkillsAndAttributes(reservedHeroName);
 
-      -- Герою из таверны даем 5 мувов, чтоб мог себя выкупить
+      -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ 5 пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       if indexHero == 3 then
         removeHeroMovePoints(reservedHeroName);
         ChangeHeroStat(reservedHeroName, STAT_MOVE_POINTS, 500);
@@ -134,13 +135,13 @@ function setHeroesInitialProperties()
   SetObjectPosition(Djovanni, 42, 24);
   MoveCameraForPlayers(PLAYER_2, 42, 24, GROUND, 50, 1.57, 3.14, 0, 0, 1);
 
-  -- Непонятно, зачем выдавать им эти перки?)
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ?)
   GiveHeroSkill(Biara, PERK_DEMONIC_FIRE);
   GiveHeroSkill(Biara, HERO_SKILL_SNATCH);
   GiveHeroSkill(Djovanni, HERO_SKILL_SNATCH);
 end;
 
--- Изменение игровых зон обоих игроков
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function changePlayersArea()
   print "changePlayersArea"
   
@@ -162,16 +163,14 @@ function changePlayersArea()
   SetRegionBlocked ('block4', 1);
 end;
 
---Проверка кастомных режимов игры
 function checkCustomGameMode()
   print "checkNoMentorStatus"
-  if CUSTOM_GAME_MODE_NO_MENTOR == 1 then
+  -- #6 РЎРµС‚Р°Рї РѕС‚РєР»СЋС‡РµРЅРёСЏ РјРµРЅС‚РѕСЂР° РґР»СЏ РЅРµРґРµР»Рё РЎРёС‚РёСЃР°
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_SITHIS then
     closeMentorObject()
   end;
 end;
 
-
--- Маппинг ИД расы на ее наименование
 MAP_CREATURE_TO_NAME = {
   PATH_TO_DAY3_MESSAGES.."message_mage1_1.txt",
   PATH_TO_DAY3_MESSAGES.."message_mage1_2.txt",
@@ -182,7 +181,7 @@ MAP_CREATURE_TO_NAME = {
 }
 
 
---закрытие объектов - ментор, ментор-хелпер и обелиск(покупка баз)
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ)
 function closeMentorObject()
   print "closeMentorObject"
   
@@ -191,10 +190,10 @@ function closeMentorObject()
   SetObjectPosition('mage3', 51, 9);
   SetObjectPosition('mage4', 57, 9);
 
-  SetObjectPosition('gremlin1', 58, 80);
-  SetObjectPosition('gremlin2', 58, 14);
+  -- SetObjectPosition('gremlin1', 58, 80);
+  -- SetObjectPosition('gremlin2', 58, 14);
   
-  for _, creature in {"mage1", 'mage2', 'gremlin1', 'mage3', 'mage4', 'gremlin2'} do
+  for _, creature in {"mage1", 'mage2', 'mage3', 'mage4'} do
       SetObjectEnabled(creature, nil)
       SetDisabledObjectMode(creature, DISABLED_INTERACT)
       Trigger(OBJECT_TOUCH_TRIGGER, creature,  'messageCreatureNoMentor');
@@ -203,7 +202,7 @@ function closeMentorObject()
 end;
 
 
--- Сообщение у существ закрывающих Ментора
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function messageCreatureNoMentor(heroName)
   print "messageCreatureNoMentor"
   
@@ -216,7 +215,7 @@ function messageCreatureNoMentor(heroName)
 end;
 
 
--- Отображение иконок выбранного списка героев у оппонента
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function setEnemyHeroPosters()
   print "setEnemyHeroPosters"
 
@@ -253,7 +252,7 @@ function setEnemyHeroPosters()
   end;
 end;
 
--- Установка триггеров на регионы, дающие бесконечные очки передвижения
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function setInfityMoveRegions()
   print "setInfityMoveRegions"
   
@@ -287,5 +286,5 @@ function setInfityMoveRegions()
   end;
 end;
 
--- Точка входа
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 day3();

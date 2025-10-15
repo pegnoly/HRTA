@@ -1,27 +1,29 @@
 doFile(GetMapDataPath().."day3/town_building/town_building_constants.lua");
 sleep(1);
 
--- Скрипты отчевающие за отстройку городов игроков и наполнением их
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 function buildingTown()
   print "buildingTown"
 
   for _, playerId in PLAYER_ID_TABLE do
     local raceId = RESULT_HERO_LIST[playerId].raceId;
     local townName = MAP_PLAYER_TO_TOWNNAME[playerId];
-    
-    -- Превращает города в города выбранных рас
     transformPlayersTown(townName, raceId);
-    SetObjectOwner(townName, playerId);
+
     setTownMaximumLevel(townName, raceId);
-    setArmyIntoTown(townName, raceId, playerId);
+    -- #6 РІ РјРѕРґРµ РђСѓС‚РѕСЂР° РіРѕСЂРѕРґР° РЅРµ РґРѕР»Р¶РЅС‹ РЅР°СЃС‚СЂР°РёРІР°С‚СЊСЃСЏ РїРѕ РґРµС„РѕР»С‚Сѓ
+    if not (game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR) then
+      SetObjectOwner(townName, playerId);
+      setArmyIntoTown(townName, raceId, playerId);
+    end 
   end;
 end;
 
--- Изменение переданного города на город переданной расы
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function transformPlayersTown(townName, raceId)
   print "transformPlayersTown"
 
-  -- Соотношение расы к ее городу
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   local MAP_RACE_TO_TOWN = {
     [RACES.HAVEN] = TOWN_HEAVEN,
     [RACES.INFERNO] = TOWN_INFERNO,
@@ -36,7 +38,7 @@ function transformPlayersTown(townName, raceId)
   TransformTown(townName, MAP_RACE_TO_TOWN[raceId]);
 end;
 
--- Отстройка максимального lvl для города
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ lvl пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function setTownMaximumLevel(townName, raceId)
   print "setTownMaximumLevel"
 
@@ -78,25 +80,25 @@ function setTownMaximumLevel(townName, raceId)
   end;
 end;
 
--- Установка армий в городе игрока
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function setArmyIntoTown(townName, raceId, playerId)
   print "setArmyIntoTown"
 
-  -- Генерация войск
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   generateArmy(playerId, raceId);
   
-  -- Заполнение города войсками
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   pushArmyToTown(townName, playerId, raceId);
 end;
 
--- Установка армий в город
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 function pushArmyToTown(townName, playerId, raceId)
   print "pushArmyToTown"
 
   for unitLevel = 1, 7 do
     local unit = RESULT_ARMY_INTO_TOWN[playerId][unitLevel];
 
-    --Кастоманый мод Смутное время
+    --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
     if CUSTOM_GAME_MODE_TROUBLED_TIME == 1 then
       if unitLevel == CUSTOM_GAME_MODE_TROUBLED_TIME_TIER then
@@ -112,12 +114,12 @@ function tierUnitDelete()
 
 end;
 
--- Получение случайного значения -1 или 1
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ -1 пїЅпїЅпїЅ 1
 function getRandomPlusOrMinusOne()
   return random(2) == 0 and -1 or 1;
 end;
 
--- Получение количества юнитов
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function getCountUnitByLevel(playerId, raceId, unitLevel)
   print "getCountUnitByLevel"
 
@@ -142,7 +144,7 @@ function getCountUnitByLevel(playerId, raceId, unitLevel)
   return intg(count);
 end;
 
--- Получение ценовой погрешности юнита
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function getPriceUnitByLevel(raceId, unitLevel, countUnits)
   print "getPriceUnitByLevel"
 
@@ -156,7 +158,7 @@ function getPriceUnitByLevel(raceId, unitLevel, countUnits)
   return countUnits * oneUnitPrice - defaultUnitCount * oneUnitPrice;
 end;
 
--- Корректировка количества войск
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function adjustmentArmyCount(playerId, raceId)
   print "adjustmentArmyCount"
 
@@ -164,8 +166,8 @@ function adjustmentArmyCount(playerId, raceId)
   local priceAllButFirst = getAllPriceButFirst(playerId, raceId);
   local unitLevel = 7;
 
-  -- Если сгенерировалась слишком много войск,
-  -- уменьшаем их количество до стоимости менее 5% от первого тира
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ,
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 5% пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   if priceAllButFirst > tenPercentFullPriceFirstLvlUnit then
     while unitLevel > 1 do
       local unit = RESULT_ARMY_INTO_TOWN[playerId][unitLevel];
@@ -178,22 +180,22 @@ function adjustmentArmyCount(playerId, raceId)
 
       unitLevel = unitLevel - 1;
 
-      -- Идем по еще одному кругу, если
+      -- пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ
       if unitLevel == 1 then
         unitLevel = 6;
       end;
 
       priceAllButFirst = getAllPriceButFirst(playerId, raceId);
 
-      -- Завершаем балансировку, если достигли баланса
+      -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       if priceAllButFirst < tenPercentFullPriceFirstLvlUnit then
         unitLevel = 1;
       end;
     end;
   end;
 
-  -- Если сгенерировалась слишком мало войск,
-  -- увеличиваем их количество до стоимости менее 5% от первого тира
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ,
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 5% пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   if priceAllButFirst < (-tenPercentFullPriceFirstLvlUnit) then
     while unitLevel > 1 do
       local unit = RESULT_ARMY_INTO_TOWN[playerId][unitLevel];
@@ -206,14 +208,14 @@ function adjustmentArmyCount(playerId, raceId)
 
       unitLevel = unitLevel - 1;
 
-      -- Идем по еще одному кругу, если
+      -- пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ
       if unitLevel == 1 then
         unitLevel = 6;
       end;
 
       priceAllButFirst = getAllPriceButFirst(playerId, raceId);
 
-      -- Завершаем балансировку, если достигли баланса
+      -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       if priceAllButFirst < (-tenPercentFullPriceFirstLvlUnit) then
         unitLevel = 1;
       end;
@@ -221,7 +223,7 @@ function adjustmentArmyCount(playerId, raceId)
   end;
 end;
 
--- Получение суммы погрешностей всех юнитов, кроме первого тира
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function getAllPriceButFirst(playerId, raceId)
   print "getAllPriceButFirst"
 
@@ -234,7 +236,7 @@ function getAllPriceButFirst(playerId, raceId)
   return price;
 end;
 
--- Получение итогового юнита
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function getResultUnit(playerId, raceId, unitLevel)
   print "getResultUnit"
   
@@ -244,13 +246,13 @@ function getResultUnit(playerId, raceId, unitLevel)
   };
 end;
 
--- Генерация определенного количества существ в замке
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 function generateArmy(playerId, raceId)
   print "generateArmy"
 
   for unitLevel = 7, 1, -1 do
     if unitLevel == 1 then
-      -- балансировка количества войск
+      -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
       adjustmentArmyCount(playerId, raceId);
     end;
 
@@ -258,5 +260,5 @@ function generateArmy(playerId, raceId)
   end;
 end;
 
--- Точка входа
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 buildingTown();

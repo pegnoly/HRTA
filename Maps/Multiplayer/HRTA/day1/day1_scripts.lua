@@ -1,6 +1,6 @@
--- Скрипт, выполняющийся при загрузке карты сразу же, в первый день
+-- пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
--- Путь до текущей папки
+-- пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 PATH_TO_DAY1_MODULE = GetMapDataPath().."day1/";
 PATH_TO_DAY1_MESSAGES = PATH_TO_DAY1_MODULE.."messages/";
 
@@ -8,7 +8,7 @@ doFile(PATH_TO_DAY1_MODULE.."day1_constants.lua");
 doFile(PATH_TO_DAY1_MODULE.."day1_utils.lua");
 sleep(1)
 
--- Определение режима хотсит
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function detectHotseatStatus()
   print "detectHotseatStatus"
   
@@ -19,25 +19,25 @@ end;
 
 
 
--- Точка входа для выполнения скриптов модулю
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function day1()
   print "day1"
 
   detectHotseatStatus();
 
-  -- Получерк
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if GAME_MODE.HALF then
     doFile(PATH_TO_DAY1_MODULE.."choice_of_races/half.lua");
   end;
-  -- Простой выбор
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   if GAME_MODE.SIMPLE_CHOOSE then
     doFile(PATH_TO_DAY1_MODULE.."choice_of_races/simple.lua");
   end;
-  -- Быстрый черк
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   if GAME_MODE.MATCHUPS then
     doFile(PATH_TO_DAY1_MODULE.."choice_of_races/matchups.lua");
   end;
-  -- Микс черк
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   if GAME_MODE.MIX then
     removeHeroMovePoints(Biara);
     removeHeroMovePoints(Djovanni);
@@ -51,7 +51,7 @@ function day1()
   ShowFlyingSign(PATH_TO_DAY1_MESSAGES.."skip_day1.txt", Djovanni, 2, 5.0);
 end;
 
--- Память о создателях
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function setAuthorMapsDescription()
   print "setAuthorMapsDescription"
 
@@ -61,7 +61,7 @@ function setAuthorMapsDescription()
   OverrideObjectTooltipNameAndDescription('tari_map', PATH_TO_DAY1_MESSAGES.."tari_name.txt", PATH_TO_DAY1_MESSAGES.."tari_desc.txt");
 end;
 
--- Информация о победителях турниров
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function objectsWothInformation()
   print "objectsWothInformation"
   
@@ -71,5 +71,5 @@ function objectsWothInformation()
 
 end;
 
--- Точка входа в модуль
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 day1();

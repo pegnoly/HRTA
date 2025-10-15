@@ -1,6 +1,6 @@
--- Модуль подготовки и инициализации битвы
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
--- Соотношение ручного перечисления школ магии на внутреигровой
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 MAP_CUSTOM_SKILL_TO_INNER = {
   [TYPE_MAGICS.LIGHT] = SKILL_LIGHT_MAGIC,
   [TYPE_MAGICS.DARK] = SKILL_DARK_MAGIC,
@@ -10,17 +10,17 @@ MAP_CUSTOM_SKILL_TO_INNER = {
   [TYPE_MAGICS.WARCRIES] = HERO_SKILL_DEMONIC_RAGE,
 };
 
--- Общий Бонус здоровья перед битвой
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 All_BONUS_HITPOINTS = {
   [PLAYER_1] = 0,
   [PLAYER_2] = 0,
 };
 
--- Имеется ли заклинание в текущем наборе игрока
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function getSpellHasInPlayerSet(playerId, spellId)
 --  print "getSpellHasInPlayerSet"
 
-  -- Номер набора заклинаний
+  -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local spellSetNumber = mod(PLAYERS_GENERATED_SPELLS[playerId].countResetSpells, 2) + 1;
   local spellSet = PLAYERS_GENERATED_SPELLS[playerId].spells[spellSetNumber];
 
@@ -33,11 +33,11 @@ function getSpellHasInPlayerSet(playerId, spellId)
   return nil;
 end;
 
--- Имеется ли руна в текущем наборе игрока
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function getRunesHasInPlayerSet(playerId, runeId)
 --  print "getRunesHasInPlayerSet"
 
-  -- Номер набора рун
+  -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
   local runesSetNumber = mod(PLAYERS_GENERATED_SPELLS[playerId].countResetRunes, 2) + 1;
   local runesSet = PLAYERS_GENERATED_SPELLS[playerId].runes[runesSetNumber];
 
@@ -50,7 +50,7 @@ function getRunesHasInPlayerSet(playerId, runeId)
   return nil;
 end;
 
--- ВОсполняем ману
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function refreshPlayerMana(playerId)
   print "refreshPlayerMana"
 
@@ -59,7 +59,7 @@ function refreshPlayerMana(playerId)
   ChangeHeroStat(mainHeroName, STAT_MANA_POINTS, 1000);
 end;
 
--- Обучение ГГ игрока всем доступным заклинаниям
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function teachMainHeroSpells(playerId)
   print "teachMainHeroSpells"
 
@@ -102,7 +102,7 @@ function teachMainHeroSpells(playerId)
         end;
       end;
 
-      -- Руны
+      -- пїЅпїЅпїЅпїЅ
       if skillId == TYPE_MAGICS.RUNES then
         local playerHasRune = getRunesHasInPlayerSet(playerId, spellData.id);
 
@@ -121,7 +121,7 @@ function teachMainHeroSpells(playerId)
         end;
       end;
 
-      -- Кличи
+      -- пїЅпїЅпїЅпїЅпїЅ
       if skillId == TYPE_MAGICS.WARCRIES then
         local playerHasSpell = getSpellHasInPlayerSet(playerId, spellData.id);
 
@@ -132,7 +132,7 @@ function teachMainHeroSpells(playerId)
     end;
   end;
 
-  -- Заклы как стартовый бонус
+  -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   local bonusSpells = PLAYERS_GENERATED_SPELLS[playerId].bonus_spells;
 
   for _, spellData in bonusSpells do
@@ -140,7 +140,7 @@ function teachMainHeroSpells(playerId)
   end;
 end;
 
--- Генерим сид
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 function generateSeed()
   print "generateSeed"
 
@@ -153,7 +153,7 @@ function generateSeed()
 	consoleCmd([[@SetGameVar('combat_prng_seed', 'return {]] .. concat(t, ',') .. [[}')]])
 end;
 
--- Прокидываем данные об игроках в боевые скрипты
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function saveHeroesInfoInToBattle()
   print "saveHeroesInfoInToBattle"
 
@@ -164,13 +164,13 @@ function saveHeroesInfoInToBattle()
 
     append(customConsoleCommand, '["' .. mainHeroName .. '"]={');
 
-    -- уровень --
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ --
 		append(customConsoleCommand, 'level=' .. GetHeroLevel(mainHeroName) .. ',')
 
-		-- удача --
+		-- пїЅпїЅпїЅпїЅпїЅ --
 		append(customConsoleCommand, 'luck=' .. GetHeroStat(mainHeroName, STAT_LUCK) .. ',')
 
-		-- артефакты --
+		-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ --
 		append(customConsoleCommand, 'ArtSet={')
     for artset = 0, 9 do
       local artsetlevel = GetArtifactSetItemsCount(mainHeroName, artset, 1)
@@ -180,7 +180,7 @@ function saveHeroesInfoInToBattle()
     end
     append(customConsoleCommand, '},')
 
-		-- навыки и умения --
+		-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ --
 		append(customConsoleCommand, 'skills={')
 		for skill = 1, 220 do
 			local mastery = GetHeroSkillMastery(mainHeroName, skill)
@@ -197,7 +197,7 @@ function saveHeroesInfoInToBattle()
 	consoleCmd(concat(customConsoleCommand))
 end;
 
--- Получение ИД случайной фракции, не совпадающей с фракциями игроков
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function getOtherRandomRaceId()
   print "getOtherRandomRaceId"
 
@@ -211,7 +211,7 @@ function getOtherRandomRaceId()
        and raceId ~= player1RaceId
        and raceId ~= player2RaceId;
   
-    -- Убираем фраки с общими землями
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     if (player1RaceId == RACES.HAVEN or player2RaceId == RACES.HAVEN or player1RaceId == RACES.SYLVAN or player2RaceId == RACES.SYLVAN) then
       if (raceId == RACES.SYLVAN or raceId == RACES.HAVEN) then
         isAllowRace = nil;
@@ -228,7 +228,7 @@ function getOtherRandomRaceId()
   return resultRaceIdTable[randomIndex];
 end;
 
--- Проверка наличия героев на родных землях и насильное передвижение на нейтральную
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function checkAndMoveHeroFromFrendlyField()
   print "checkAndMoveHeroFromFrendlyField"
 
@@ -252,12 +252,12 @@ function checkAndMoveHeroFromFrendlyField()
   local opponentHeroName = PLAYERS_MAIN_HERO_PROPS[opponentPlayerId].name;
   local opponentPlayerRaceId = RESULT_HERO_LIST[opponentPlayerId].raceId;
     
-  -- Нибросу не запрещаем находиться на его родной поляне
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if choiseDictHeroName == HEROES.JAZAZ then
     return nil;
   end;
 
-  -- С нахождением пути можно безобразничать как угодно
+  -- пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(choiseHeroName, PERK_PATHFINDING) and not HasHeroSkill(opponentHeroName, PERK_PATHFINDING) then
     return nil;
   end;
@@ -300,7 +300,7 @@ function checkAndMoveHeroFromFrendlyField()
   end;
 end;
 
--- Менторство
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function skillMentoring(heroName)
   print "skillMentoring"
 
@@ -312,7 +312,7 @@ function skillMentoring(heroName)
   WarpHeroExp(heroName, GetHeroStat(heroName, STAT_EXPERIENCE) + needExp);
 end;
 
--- Ученый
+-- пїЅпїЅпїЅпїЅпїЅпїЅ
 function perkScholar(playerId)
   print "perkScholar"
 
@@ -327,7 +327,7 @@ function perkScholar(playerId)
     TYPE_MAGICS.SUMMON,
   };
 
-  -- Дает все заклинания 1-2 уровней, известные оппоненту
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1-2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   for _, customSkillId in MAGIC_SCHOOL_TABLE do
     local skillSpellSet = SPELLS[customSkillId];
 
@@ -340,7 +340,7 @@ function perkScholar(playerId)
     end;
   end;
   
-  -- Передаем все заклинания 1-2 уровней, известные выпавшим героям
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1-2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   for _, customSkillId in MAGIC_SCHOOL_TABLE do
     local skillSpellSet = SPELLS[customSkillId];
 
@@ -348,7 +348,7 @@ function perkScholar(playerId)
       local heroes = GetPlayerHeroes(playerId);
       
       for heroesIndex, heroesName in heroes do
-        -- Кроме Биары и ГГ
+        -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ
         if heroesIndex ~= 0
           and heroesName ~= mainHeroName
           and KnowHeroSpell(heroesName, spellData.id)
@@ -362,37 +362,54 @@ function perkScholar(playerId)
   end;
 end;
 
--- Сбор войск
+-- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function perkRecruitment(playerId)
   print "perkRecruitment"
 
   local raceId = RESULT_HERO_LIST[playerId].raceId;
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
-  -- Коэффициент добавления юнитов из города
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   local RECRUIMENT_COEF = 0.1
 
   local stash = {};
 
   stash[1], stash[2], stash[3], stash[4], stash[5], stash[6], stash[7] = GetHeroCreaturesTypes(mainHeroName);
   
-  for _, armyId in stash do
-    for _, dictUnit in UNITS[raceId] do
-      if armyId == dictUnit.id and dictUnit.lvl < 4 then
-        local unitInTown = RESULT_ARMY_INTO_TOWN[playerId][dictUnit.lvl];
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+    for _, unit in stash do
+      for i, race_data in UNITS do
+        for j, unit_data in race_data do
+          if unit_data.id == unit and unit_data.lvl <=3  then
+            local count = unit_data.kol
+            if unit == CREATURE_DEFENDER or unit == CREATURE_STONE_DEFENDER then
+              count = 126
+            end
+            local count_to_add = floor(count * RECRUIMENT_COEF)
+            AddHeroCreatures(mainHeroName, unit, count_to_add)
+          end
+        end 
+      end
+    end
+  else
+    for _, armyId in stash do
+      for _, dictUnit in UNITS[raceId] do
+        if armyId == dictUnit.id and dictUnit.lvl < 4 then
+          local unitInTown = RESULT_ARMY_INTO_TOWN[playerId][dictUnit.lvl];
 
-        AddHeroCreatures(mainHeroName, dictUnit.id, floor(unitInTown.count * RECRUIMENT_COEF));
+          AddHeroCreatures(mainHeroName, dictUnit.id, floor(unitInTown.count * RECRUIMENT_COEF));
+        end;
       end;
     end;
-  end;
+  end
 end;
 
---Дипломатия
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function perkDiplomacy(playerId)
   print "perkDiplomacy"
-  
+
   local raceId = RESULT_HERO_LIST[playerId].raceId;
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
-  -- Коэффициент добавления юнитов из города
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   local DIPLOMACY_COEF = 0.251
 
   local stash = {};
@@ -495,9 +512,19 @@ function perkDiplomacy(playerId)
         isExistAlt = not nil
       end;
     end;
-    local unitInTown = RESULT_ARMY_INTO_TOWN[playerId][dictUnitsWizard[wizardId]];
-    local resultCount = rounding(unitInTown.count * DIPLOMACY_COEF);
-    if (isExist and  isExistAlt) then
+    local resultCount
+    if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+      for _, unit_data in UNITS[raceId] do
+        if unit_data.id == wizardId then
+          resultCount = rounding(unit_data.kol * DIPLOMACY_COEF)
+          break
+        end
+      end
+    else
+      local unitInTown = RESULT_ARMY_INTO_TOWN[playerId][dictUnitsWizard[wizardId]];
+      resultCount = rounding(unitInTown.count * DIPLOMACY_COEF);
+    end
+    if (isExist and  isExistAlt and resultCount) then
 
       if GetHeroCreatures(mainHeroName, wizardId) >= GetHeroCreatures(mainHeroName, altWizardId) then
         AddHeroCreatures(mainHeroName, wizardId, resultCount);
@@ -507,12 +534,12 @@ function perkDiplomacy(playerId)
       return nil
     end;
     
-    if isExist then
+    if isExist and resultCount then
       AddHeroCreatures(mainHeroName, wizardId, resultCount);
       return nil
     end;
     
-    if isExistAlt then
+    if isExistAlt and resultCount then
       AddHeroCreatures(mainHeroName, altWizardId, resultCount);
       return nil
     end;
@@ -520,7 +547,7 @@ function perkDiplomacy(playerId)
 
 end;
 
--- Лесной лидер
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function perkFeatForestGuardEmblem(heroName)
   print "perkFeatForestGuardEmblem"
   local BONUS_VALUE = 15;
@@ -532,7 +559,7 @@ function perkFeatForestGuardEmblem(heroName)
   end;
 end;
 
--- Защити всех нас
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 function perkDefendUsAll(heroName)
   print "perkDefendUsAll"
   local BONUS_VALUE = 30;
@@ -544,7 +571,7 @@ function perkDefendUsAll(heroName)
   end;
 end;
 
--- Преданность машин
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function perkFeatMarchOfTheMachines(heroName)
   print "perkFeatMarchOfTheMachines"
   local heroLevel = GetHeroLevel(heroName);
@@ -557,7 +584,7 @@ function perkFeatMarchOfTheMachines(heroName)
   end;
 end;
 
--- Заброшенные шахты
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function perkMineDeath(heroName)
   print "perkMineDeath"
   local heroLevel = GetHeroLevel(heroName);
@@ -570,7 +597,7 @@ function perkMineDeath(heroName)
   end;
 end;
 
--- Власть над машинами
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function perkFeatRemoveControl(heroName)
   print "perkFeatRemoveControl"
 
@@ -584,21 +611,21 @@ function perkFeatRemoveControl(heroName)
 
   local hasMachines = nil;
   
-  --проверка на наличия боевых машин
+  --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   for machineId = 1, 4 do
     if HasHeroWarMachine(opponentHeroName, machineId) and machineId ~= 2 then
       hasMachines = not nil;
     end;
   end;
   
-  --выдача балисты
+  --пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if not hasMachines then
     GiveHeroWarMachine(opponentHeroName, 1);
   end;
 
 end;
 
--- Обитаемые шахты (old)
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (old)
 function perk_MineDeathOld(heroName)
   print "perk_MineDeathOld"
   local BONUS_VALUE = 5;
@@ -610,39 +637,39 @@ function perk_MineDeathOld(heroName)
 
 end;
 
--- Вестник смерти
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function perkMessengerOfDeath(heroName)
   print("perkMessengerOfDeath")
 
-  -- Получаем имя основного героя и его оппонента
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local playerId = GetPlayerFilter(GetObjectOwner(heroName))
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name
 
   local opponentPlayerId = PLAYERS_OPPONENT[playerId]
   local opponentHeroName = PLAYERS_MAIN_HERO_PROPS[opponentPlayerId].name
 
-  -- Получаем мораль героя и оппонента
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local HeroMoral = GetHeroStat(mainHeroName, STAT_MORALE)
-  local halfHeroMoral = floor(HeroMoral / 2) -- Округление вниз
+  local halfHeroMoral = floor(HeroMoral / 2) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
   local enemyMoral = GetHeroStat(opponentHeroName, STAT_MORALE)
 
-  -- Дебаг-вывод для проверки значений
+  -- пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   print("------------")
   print("Hero Morale: ", HeroMoral)
   print("Half Hero Morale: ", halfHeroMoral)
   print("Opponent Morale (before): ", enemyMoral)
 
-  -- Уменьшаем мораль противника на половину морали героя
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   ChangeHeroStat(opponentHeroName, STAT_MORALE, -halfHeroMoral)
 
-  -- Получаем обновлённое значение морали противника
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   local newEnemyMoral = GetHeroStat(opponentHeroName, STAT_MORALE)
   print("Opponent Morale (after): ", newEnemyMoral)
 end
 
 
--- Запуск скриптовых умений героя
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function checkAndRunHeroPerks(playerId)
   print "checkAndRunHeroPerks"
 
@@ -650,52 +677,52 @@ function checkAndRunHeroPerks(playerId)
   local opponentPlayerId = PLAYERS_OPPONENT[playerId];
   local opponentHeroName = PLAYERS_MAIN_HERO_PROPS[opponentPlayerId].name;
   
-  -- Менторство
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, HERO_SKILL_MENTORING) then
     skillMentoring(mainHeroName);
   end;
 
-  -- Ученый
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, PERK_SCHOLAR) then
     perkScholar(playerId);
   end;
 
-  -- Сбор войск
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, PERK_RECRUITMENT) then
     perkRecruitment(playerId);
   end;
   
-  -- Дипломатия
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, PERK_DIPLOMACY) then
     perkDiplomacy(playerId);
   end;
   
-  --Вестник смерти
+  --пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, NECROMANCER_FEAT_HERALD_OF_DEATH) then
     perkMessengerOfDeath(mainHeroName);
   end;
   
-  -- Преданность машин (выдача големов)
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
   if HasHeroSkill(mainHeroName, WIZARD_FEAT_ARTIFICIAL_GLORY) then
     perkFeatMarchOfTheMachines(mainHeroName);
   end;
   
-  -- Власть над машинами
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, WIZARD_FEAT_REMOTE_CONTROL) then
     perkFeatRemoveControl(mainHeroName);
   end;
   
-  -- Лесной лидер
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, RANGER_FEAT_FOREST_GUARD_EMBLEM) then
     perkFeatForestGuardEmblem(mainHeroName);
   end;
   
-  -- Защити нас всех
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, HERO_SKILL_DEFEND_US_ALL) then
     perkDefendUsAll(mainHeroName);
   end;
 
-  -- Сумерки
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, NECROMANCER_FEAT_TWILIGHT) then
     ChangeHeroStat(mainHeroName, STAT_KNOWLEDGE, 5);
     ChangeHeroStat(mainHeroName, STAT_MANA_POINTS, 30);
@@ -704,7 +731,7 @@ function checkAndRunHeroPerks(playerId)
     ChangeHeroStat(mainHeroName, STAT_MORALE, -1);
   end;
   
-  -- Тайный ритуал
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, PERK_DARK_RITUAL) then
 
     local dictHeroName = getDictionaryHeroName(mainHeroName);
@@ -716,28 +743,28 @@ function checkAndRunHeroPerks(playerId)
     ChangeHeroStat(mainHeroName, STAT_KNOWLEDGE, -20);
   end;
 
-  -- Сопротивление
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, WIZARD_FEAT_SEAL_OF_PROTECTION) then
     All_BONUS_HITPOINTS[playerId] = All_BONUS_HITPOINTS[playerId] + 8;
   end;
 
-  -- Выносливость
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, HERO_SKILL_BODYBUILDING) then
     All_BONUS_HITPOINTS[playerId] = All_BONUS_HITPOINTS[playerId] + 5;
   end;
 
-  -- Мародерство
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, HERO_SKILL_SNATCH) then
 
     GiveHeroBattleBonus(opponentHeroName, HERO_BATTLE_BONUS_SPEED, -1);
   end;
 
-  -- Родные земли
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, KNIGHT_FEAT_ROAD_HOME) then
     GiveHeroBattleBonus(mainHeroName, HERO_BATTLE_BONUS_SPEED, 1);
   end;
 
-  -- Сила против магии
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, HERO_SKILL_MIGHT_OVER_MAGIC) then
     ChangeHeroStat(mainHeroName, STAT_SPELL_POWER, 2);
     if frac(GetHeroStat(mainHeroName, STAT_SPELL_POWER) / 2) == 0.5 then
@@ -745,13 +772,13 @@ function checkAndRunHeroPerks(playerId)
     end;
   end;
   
-    -- Обитаемые шахты
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, DEMON_FEAT_EXPLODING_CORPSES) then
     --perkMineDeathOld(mainHeroName);
     perkMineDeath(mainHeroName);
   end;
 
-  -- Чувство стихий
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, NECROMANCER_FEAT_ABSOLUTE_FEAR) then
     local townName = MAP_PLAYER_TO_TOWNNAME[playerId];
 
@@ -763,7 +790,7 @@ function checkAndRunHeroPerks(playerId)
   local leadershipLevel = GetHeroSkillMastery(mainHeroName, SKILL_LEADERSHIP);
 
 
-  -- некролидерство
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 --  if raceId == RACES.NECROPOLIS and leadershipLevel > 0 then
 --    local opponentPlayerId = PLAYERS_OPPONENT[playerId];
 --    local opponentRaceId = RESULT_HERO_LIST[opponentPlayerId].raceId;
@@ -781,7 +808,7 @@ function checkAndRunHeroPerks(playerId)
 --  end;
   
 
-  -- управление машинами
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if GetHeroSkillMastery(mainHeroName, SKILL_WAR_MACHINES) > 0 then
     GiveHeroWarMachine(mainHeroName, WAR_MACHINE_BALLISTA);
     GiveHeroWarMachine(mainHeroName, WAR_MACHINE_FIRST_AID_TENT);
@@ -789,7 +816,7 @@ function checkAndRunHeroPerks(playerId)
     ChangeHeroStat(mainHeroName, STAT_LUCK, -1); ChangeHeroStat(mainHeroName, STAT_LUCK, 1);
   end;
 
- -- Путь войны
+ -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     if HasHeroSkill(mainHeroName, HERO_SKILL_PATH_OF_WAR) then
 
       if PLAYERS_USE_PATH_OF_WAR_BONUS[playerId] == 'POW1' then
@@ -800,7 +827,7 @@ function checkAndRunHeroPerks(playerId)
         ChangeHeroStat(mainHeroName, STAT_SPELL_POWER, 1)
         ChangeHeroStat(mainHeroName, STAT_KNOWLEDGE, 1)
         
-        --восстановить ману
+        --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
         ChangeHeroStat(mainHeroName, STAT_KNOWLEDGE, 100);
         if HasHeroSkill(mainHeroName, HERO_SKILL_BARBARIAN_INTELLIGENCE) or HasHeroSkill(mainHeroName, PERK_INTELLIGENCE) then
           ChangeHeroStat(mainHeroName, STAT_MANA_POINTS, 15);
@@ -815,7 +842,7 @@ function checkAndRunHeroPerks(playerId)
         GiveHeroBattleBonus(mainHeroName, HERO_BATTLE_BONUS_LUCK, 1);
         GiveHeroBattleBonus(mainHeroName, HERO_BATTLE_BONUS_MORALE, 1);
       end;
-      -- руна
+      -- пїЅпїЅпїЅпїЅ
       if PLAYERS_USE_PATH_OF_WAR_BONUS[playerId] == 'POW3' then
 
         local dontKnowSpell = {}
@@ -825,7 +852,7 @@ function checkAndRunHeroPerks(playerId)
           if skillId == TYPE_MAGICS.RUNES then
             for _, spellData in skillSpellSet do
 
-              -- Инга
+              -- пїЅпїЅпїЅпїЅ
  --             if dictHeroName == HEROES.UNA and spellData.level == 3 then
 --                if not KnowHeroSpell(mainHeroName, spellData.id) then
  --                 dontKnowSpell[length(dontKnowSpell) + 1] = spellData.id
@@ -847,7 +874,7 @@ function checkAndRunHeroPerks(playerId)
           TeachHeroSpell(mainHeroName, spellTeach);
         end
       end;
-      -- выдача заклинания 4
+      -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 4
     if PLAYERS_USE_PATH_OF_WAR_BONUS[playerId] == 'POW4' then
     local mapSchoolList = {
         [SKILL_LIGHT_MAGIC] = TYPE_MAGICS.LIGHT,
@@ -903,7 +930,7 @@ function checkAndRunHeroPerks(playerId)
 
     end;
 
-  -- ангел-хранитель
+  -- пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, 99) then
     local ANGEL_MAP = {
       [CREATURE_ANGEL] = CREATURE_GOBLIN_TRAPPER,
@@ -915,7 +942,7 @@ function checkAndRunHeroPerks(playerId)
     end;
   end;
 
-  -- солдатская удача
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 --  if HasHeroSkill(mainHeroName, PERK_LUCKY_STRIKE) then
 --    local MAP_UNIT_ON_UNIT_WITH_LUCKY_STRIKE = {
 --      [CREATURE_SUCCUBUS_SEDUCER] = CREATURE_IMP,
@@ -935,7 +962,7 @@ function checkAndRunHeroPerks(playerId)
 --    end;
 --  end;
   
-  -- Заклинания за "Бесшумный преследователь"
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 --  if HasHeroSkill(mainHeroName, RANGER_FEAT_DISGUISE_AND_RECKON) then
 --    if raceId == RACES.STRONGHOLD then
 --      TeachHeroSpell(mainHeroName, SPELL_WARCRY_FEAR_MY_ROAR);
@@ -949,7 +976,7 @@ function checkAndRunHeroPerks(playerId)
 --      TeachHeroSpell(mainHeroName, SPELL_FORGETFULNESS);
 --    end;
 --  end;
- --Выдача элемов разных за Огненных воинов
+ --пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill (mainHeroName, DEMON_FEAT_FIRE_AFFINITY) then
     TeachHeroSpell(mainHeroName, 376);
     TeachHeroSpell(mainHeroName, 377);
@@ -959,13 +986,13 @@ function checkAndRunHeroPerks(playerId)
   end;
 
 
- --Выдача Поднятия мертвых за Повелитель жизни
+ --пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill (mainHeroName, PERK_MASTER_OF_ANIMATION) then
     TeachHeroSpell(mainHeroName, 42);
   
   end;
 
-      -- Выдача случайного спела за тайны хаоса
+      -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, WARLOCK_FEAT_SECRETS_OF_DESTRUCTION) then
 
     local dontKnowDestructiveSpell = {}
@@ -990,7 +1017,7 @@ function checkAndRunHeroPerks(playerId)
     
   end;
 
-     -- Выдача случайного т3 заклинания за Тайное откровение
+     -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ3 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, RANGER_FEAT_INSIGHTS) then
     local dontKnowSpellTier3 = {}
     for skillId, skillSpellSet in SPELLS do
@@ -1011,7 +1038,7 @@ function checkAndRunHeroPerks(playerId)
   
 end;
 
--- Спеца кигана
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function kiganSpec(heroName)
   print "kiganSpec"
 
@@ -1026,7 +1053,7 @@ function kiganSpec(heroName)
   end;
 end;
 
---Для определения Дьяволов с Солдатки у Орландо (удалено)
+--пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 function getOrlandoCreature(heroName)
   local creatureDevilsList = {CREATURE_DEVIL, CREATURE_ARCH_DEMON, CREATURE_FRIGHTFUL_NIGHTMARE};
   local maxCountDevilId = nil;
@@ -1047,7 +1074,7 @@ function getOrlandoCreature(heroName)
 end;
 
 
--- Специализация Вайшана (удалена)
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 function vaishanSpec(heroName)
   print "vaishanSpec"
 
@@ -1061,7 +1088,7 @@ function vaishanSpec(heroName)
   end;
 end;
 
--- Специализация Эрин
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function eruinaSpec(heroName)
   print "eruinaSpec"
 
@@ -1075,19 +1102,19 @@ function eruinaSpec(heroName)
   end;
 end;
 
--- Специализация Инги
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function specInga(heroName)
   print "specInga"
   
-  -- За сколько уровней ИНГА учит руну
+  -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   local ingaLevel = GetHeroLevel(heroName);
 
-    -- Формируем итоговый список рун для изучения
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     local teachRuneTableOneTwo = {250,249,252,251};
     local teachRuneTableThree = {250,249,253,256,252,251};
     local teachRuneTableFour = {250,249,253,256,252,251,254,258};
 
-    -- Обучаем героя новым рунам
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     for _, RuneId in teachRuneTableOneTwo do
       TeachHeroSpell(heroName, RuneId);
     end;
@@ -1107,7 +1134,7 @@ function specInga(heroName)
 
 end;
 
--- Отслеживание спецы Валерия
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function specValeriaTread(heroName)
   print "specValeriaTread"
 
@@ -1129,34 +1156,34 @@ function specValeriaTread(heroName)
   end;
 end;
 
--- Запуск скриптовых специализаций героев
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function runHeroSpecialization(playerId)
   print "runHeroSpecialization"
 
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   local dictHeroName = getDictionaryHeroName(mainHeroName);
 
-  -- Инга
+  -- пїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.UNA then
     specInga(mainHeroName);
   end;
   
-  -- Валерия
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.RED_HEAVEN_HERO then
     specValeriaTread(mainHeroName);
   end;
 
-  -- Киган
+  -- пїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.KIGAN then
     kiganSpec(mainHeroName);
   end;
   
-  -- Эрин
+  -- пїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.ERUINA then
     eruinaSpec(mainHeroName);
   end;
   
-  -- Таланар
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.NADAUR then
     local MAP_REPLACE_UNIT = {
       [45] = 46,
@@ -1172,7 +1199,7 @@ function runHeroSpecialization(playerId)
     end;
   end;
 
-  -- Файдаэн
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.HEAM then
     local MAP_REPLACE_UNIT = {
       [47] = 62,
@@ -1186,7 +1213,7 @@ function runHeroSpecialization(playerId)
     end;
   end;
   
-  -- Дункан
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.DUNCAN then
     local MAP_REPLACE_UNIT = {
       [3] = 4,
@@ -1198,7 +1225,7 @@ function runHeroSpecialization(playerId)
     end;
   end;
 
-  -- Вульфстен
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.WULFSTAN then
     local MAP_REPLACE_UNIT = {
       [98] = 99,
@@ -1210,13 +1237,17 @@ function runHeroSpecialization(playerId)
     end;
   end;
 
-  -- Марбас
+  if dictHeroName == HEROES.GROK then
+    GiveHeroBattleBonus(mainHeroName, HERO_BATTLE_BONUS_SPEED, 1);
+  end
+
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.MARDER then
     local marbasHpBonus = round(0.4 * GetHeroLevel(mainHeroName));
     All_BONUS_HITPOINTS[playerId] = All_BONUS_HITPOINTS[playerId] + marbasHpBonus;
   end;
 
-  -- Куджин
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ
   if dictHeroName == HEROES.KUJIN then
     local townName = MAP_PLAYER_TO_TOWNNAME[playerId];
 
@@ -1229,13 +1260,17 @@ function runRaceSpecial(playerId)
   local mainHeroName = PLAYERS_MAIN_HERO_PROPS[playerId].name;
   local raceId = RESULT_HERO_LIST[playerId].raceId;
 
-  if raceId == RACES.HAVEN then
-  -- фикс бага с грифонами (Когда приземляется за поле боя)
+  if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
     replaceUnitInHero(mainHeroName, CREATURE_GRIFFIN, CREATURE_ROYAL_GRIFFIN);
-  end;
+  else
+    if raceId == RACES.HAVEN then
+    -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ)
+      replaceUnitInHero(mainHeroName, CREATURE_GRIFFIN, CREATURE_ROYAL_GRIFFIN);
+    end;
+  end
 end;
 
--- Бонус с короны лидерства
+-- пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function crownOfLeader(heroName)
   print "crownOfLeader"
 
@@ -1247,12 +1282,12 @@ function crownOfLeader(heroName)
   units[1], units[2], units[3], units[4], units[5], units[6], units[7] = GetHeroCreaturesTypes(heroName);
 
   local SPECIAL_UNIT_LIST = {
-    CREATURE_FRIGHTFUL_NIGHTMARE, -- Архдьявол с солдаткой
-    CREATURE_ARCHANGEL, -- Арх с солдаткой
-    CREATURE_GOBLIN_TRAPPER, -- Арх с Хранителя
-    CREATURE_MASTER_GENIE, -- Арх с Хранителя с солдаткой
-    CREATURE_ARCH_MAGI, -- Шторм с солдаткой
-    CREATURE_WAR_UNICORN --Серафим с солдаткой
+    CREATURE_FRIGHTFUL_NIGHTMARE, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    CREATURE_ARCHANGEL, -- пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    CREATURE_GOBLIN_TRAPPER, -- пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    CREATURE_MASTER_GENIE, -- пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    CREATURE_ARCH_MAGI, -- пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    CREATURE_WAR_UNICORN --пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   };
 
   local unitsNotRepeat = {};
@@ -1275,12 +1310,24 @@ function crownOfLeader(heroName)
   for _, unitId in unitsNotRepeat do
     if unitId > 0 then
       local countRepeatSpecial = 0;
-      for _, unitData in UNITS[raceId] do
-        if unitData.lvl == 7 and unitId == unitData.id then
-          countRepeatSpecial = countRepeatSpecial + 1
-          AddHeroCreatures(heroName, unitId, CROWN_OF_LEADER_BONUS);
+
+      if game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR then
+        for race = RACES.HAVEN, RACES.STRONGHOLD do
+          for _, unitData in UNITS[race] do
+            if unitData.lvl == 7 and unitId == unitData.id then
+              countRepeatSpecial = countRepeatSpecial + 1
+              AddHeroCreatures(heroName, unitId, CROWN_OF_LEADER_BONUS);
+            end;
+          end;
+        end
+      else
+        for _, unitData in UNITS[raceId] do
+          if unitData.lvl == 7 and unitId == unitData.id then
+            countRepeatSpecial = countRepeatSpecial + 1
+            AddHeroCreatures(heroName, unitId, CROWN_OF_LEADER_BONUS);
+          end;
         end;
-      end;
+      end
        
       for _, specialUnitId in SPECIAL_UNIT_LIST do
         if unitId == specialUnitId and countRepeatSpecial == 0 then
@@ -1291,7 +1338,7 @@ function crownOfLeader(heroName)
   end;
 end;
 
--- Получение существа героем перед боем
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function giveCreatureTier(heroName, num, lvl)
   print "giveCreatureTier"
 
@@ -1331,7 +1378,7 @@ function giveCreatureTier(heroName, num, lvl)
   end;
 end;
 
--- Если у героя есть скриптованные арты - активируем их
+-- пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 function runScriptingArtifacts(playerId)
   print "runScriptingArtifacts"
 
@@ -1342,44 +1389,44 @@ function runScriptingArtifacts(playerId)
   local opponentRaceId = RESULT_HERO_LIST[opponentPlayerId].raceId;
   local opponentHeroName = PLAYERS_MAIN_HERO_PROPS[opponentPlayerId].name;
 
-  -- Корона Лидерства
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasArtefact(mainHeroName, ARTIFACT_CROWN_OF_LEADER, 1) then
     crownOfLeader(mainHeroName);
   end;
 
-  -- посох преисподней
+  -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasArtefact(mainHeroName, 7, 1) then
     GiveHeroBattleBonus(opponentHeroName, HERO_BATTLE_BONUS_INITIATIVE, -1);
   end;
 
-  -- воля ургаша
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if raceId == RACES.INFERNO and HasArtefact(mainHeroName, ARTIFACT_NIGHTMARISH_RING, 1) and HasArtefact(mainHeroName, ARTIFACT_HELM_OF_CHAOS, 1) then
     local townName = MAP_PLAYER_TO_TOWNNAME[playerId];
 
     UpgradeTownBuilding(townName, TOWN_BUILDING_INFERNO_INFERNAL_LOOM);
   end;
 
-  -- сет объятия смерти
+  -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   if HasArtefact(mainHeroName, 7, 1) and HasArtefact(mainHeroName, 33, 1) then
     GiveHeroBattleBonus(opponentHeroName, HERO_BATTLE_BONUS_LUCK, -1);
     GiveHeroBattleBonus(opponentHeroName, HERO_BATTLE_BONUS_MORALE, -1);
   end;
 
-  -- свиток маны
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   if HasArtefact(mainHeroName, 10, 1) then
     ChangeHeroStat(mainHeroName, STAT_KNOWLEDGE, 50);
     ChangeHeroStat(mainHeroName, STAT_MANA_POINTS, 25);
     ChangeHeroStat(mainHeroName, STAT_KNOWLEDGE, -50);
   end;
 
-  -- кольцо грешников
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if HasArtefact(mainHeroName, 70, 1) then
     local artCount = GetHeroArtifactsCount(mainHeroName, 70, 1);
 
     GiveHeroBattleBonus(opponentHeroName, HERO_BATTLE_BONUS_LUCK, -(artCount*3));
   end;
 
-  -- Сет гномов
+  -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   local countDwarfSet = GetArtifactSetItemsCount(mainHeroName, 5, 1);
 
   if countDwarfSet > 1 then
@@ -1388,7 +1435,7 @@ function runScriptingArtifacts(playerId)
 
   end;
   
-  -- Сет дракона 8
+  -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 8
   local countDragfSet = GetArtifactSetItemsCount(mainHeroName, ARTIFACT_SET_DRAGONISH, 1);
 
   if countDragfSet > 7 then
@@ -1398,7 +1445,7 @@ function runScriptingArtifacts(playerId)
   
 end;
 
--- Общий бонус здоровья
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function runAllHpBonus(playerId)
   print("runAllHpBonus")
   
@@ -1414,7 +1461,7 @@ end;
 function runScouting(playerId)
   print("runScouting")
 
-  -- Переменные для названий файлов
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   local scoutingBeforeBattleFile = PATH_TO_MODULES_MESSAGES.."scouting_before_the_battle.txt"
   local preparationOnFile = PATH_TO_MODULES_MESSAGES.."preparationOn.txt"
   local preparationOffFile = PATH_TO_MODULES_MESSAGES.."preparationOff.txt"
@@ -1438,7 +1485,7 @@ function runScouting(playerId)
   local opponentPlayerId = PLAYERS_OPPONENT[playerId]
   local opponentHeroName = PLAYERS_MAIN_HERO_PROPS[opponentPlayerId].name
 
-  -- Проверка наличия умения разведки у героя
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
   if HasHeroSkill(mainHeroName, PERK_SCOUTING) then
 
     local preparationOpponent = HasHeroSkill(opponentHeroName, HERO_SKILL_PREPARATION)
@@ -1460,7 +1507,7 @@ function runScouting(playerId)
          countModSpeed = countModSpeed + 1
     end
 
-    -- Передача путей к файлам в сообщение
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     MessageBoxForPlayers(playerId, {
       scoutingBeforeBattleFile;
       speedModifiers = countModSpeed,
@@ -1476,7 +1523,7 @@ function runScouting(playerId)
 end
 
 
--- Механическая подготовка и запуск битвы
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function runBattle()
   print "runBattle"
   
@@ -1485,7 +1532,7 @@ function runBattle()
   
   local choisePlayerId = getSelectedBattlefieldPlayerId();
 
-  -- Прогружаем боевые только у красного игрока скрипты
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   StartCombat(PLAYERS_MAIN_HERO_PROPS[PLAYER_1].name, nil, 1, 1, 1, '/scripts/RTA_TestExecutionThread.(Script).xdb#xpointer(/Script)')
 
   sleep(5);
@@ -1517,8 +1564,8 @@ function runBattle()
     ["Hero2_StartBonus"] = PLAYER_STARTED_BONUSES[PLAYER_2],
     ["Hero1_Mentoring"] = MENTOR_USAGE_COUNTER.players_value[PLAYER_1],
     ["Hero2_Mentoring"] = MENTOR_USAGE_COUNTER.players_value[PLAYER_2],
-    -- Скорее всего нужно добавить генерацию уникальных id с сайта для регистрации карт
-    -- Во избежания использования библиотеки злоумышленниками для незарегистрированных карт
+    -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ id пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     ["MapType"] = 'HRTA',
     ["MapVersion"] = MapVersion,
 
@@ -1527,7 +1574,7 @@ function runBattle()
 --  composeHeroesDataBeforeFight(p1MainHeroName, p2MainHeroName);
 --  composeCustomData(customData);
 --  Trigger(COMBAT_RESULTS_TRIGGER, 'composeDataAfterBattle');
-  -- ASHA (ОТКЛЮЧЕНА)
+  -- ASHA (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 
   while IsHeroAlive(p1MainHeroName) and IsHeroAlive(p2MainHeroName) do
     if choisePlayerId == PLAYER_2 then
@@ -1540,7 +1587,7 @@ function runBattle()
   end;
 end;
 
--- Проверяем ход героя (хотсит) и убираем у него мувы
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ) пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function removeMainHeroMovePoints(playerId)
   while HOTSEAT_STATUS and GetCurrentPlayer() ~= playerId do sleep() end;
   

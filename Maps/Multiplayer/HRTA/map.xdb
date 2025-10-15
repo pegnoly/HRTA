@@ -31204,8 +31204,8 @@
 		<Item href="#n:inline(AdvMapArtifact)" id="item_DBDE9E5C-5FB8-46D1-A0CD-B911F113AA78">
 			<AdvMapArtifact>
 				<Pos>
-					<x>3</x>
-					<y>56</y>
+					<x>9</x>
+					<y>59</y>
 					<z>0</z>
 				</Pos>
 				<Rot>0</Rot>
@@ -31916,8 +31916,8 @@
 		<Item href="#n:inline(AdvMapArtifact)" id="item_11EF4D95-F7D4-4410-ACC9-BC9700BACEE8">
 			<AdvMapArtifact>
 				<Pos>
-					<x>5</x>
-					<y>56</y>
+					<x>11</x>
+					<y>59</y>
 					<z>0</z>
 				</Pos>
 				<Rot>0</Rot>
@@ -34285,12 +34285,12 @@
 		<Item href="#n:inline(AdvMapTown)" id="item_80F3AAAC-744E-438B-9595-5FCD93FA380C">
 			<AdvMapTown>
 				<Pos>
-					<x>15</x>
-					<y>54</y>
+					<x>30</x>
+					<y>29</y>
 					<z>0</z>
 				</Pos>
 				<Rot>0</Rot>
-				<Floor>0</Floor>
+				<Floor>1</Floor>
 				<Name>acatown</Name>
 				<CombatScript/>
 				<pointLights/>
@@ -44863,6 +44863,384 @@
 				<RandomShiftRadius>0</RandomShiftRadius>
 				<untransferable>false</untransferable>
 			</AdvMapArtifact>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_009B3EB9-B46D-48C9-852F-5292175D8DE5">
+			<AdvMapTreasure>
+				<Pos>
+					<x>4</x>
+					<y>10</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p1t1</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_1EA60258-0607-4D07-B4C6-6CBA2AD53B0C">
+			<AdvMapTreasure>
+				<Pos>
+					<x>5</x>
+					<y>10</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p1t2</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_7D483A86-17D9-4B68-81E2-4FA9E4CB0260">
+			<AdvMapTreasure>
+				<Pos>
+					<x>6</x>
+					<y>10</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p1t3</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_95C13052-A327-47AA-953C-AA3B65FFA290">
+			<AdvMapTreasure>
+				<Pos>
+					<x>7</x>
+					<y>10</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p1t4</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_2945839F-B0EB-4C01-B5B3-75348FAEEA30">
+			<AdvMapTreasure>
+				<Pos>
+					<x>8</x>
+					<y>10</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p1t5</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_6A546BC0-F454-462A-880C-1C89A7D7B92A">
+			<AdvMapTreasure>
+				<Pos>
+					<x>9</x>
+					<y>10</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p1t6</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_AEF67B1E-0AC7-45D7-BB0C-0F5DA8F51F52">
+			<AdvMapTreasure>
+				<Pos>
+					<x>10</x>
+					<y>10</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p1t7</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_F41919A5-4EA9-4C36-935F-6641DB3DE712">
+			<AdvMapTreasure>
+				<Pos>
+					<x>4</x>
+					<y>8</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p2t1</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_55109D05-5A3B-4A5B-A9DA-E31058A12F94">
+			<AdvMapTreasure>
+				<Pos>
+					<x>5</x>
+					<y>8</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p2t2</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_EABD4EFF-C86A-4FF4-8C0D-394CE59EF312">
+			<AdvMapTreasure>
+				<Pos>
+					<x>6</x>
+					<y>8</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p2t3</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_3A06D1F9-DE5C-448C-9EAD-A21FCFE72973">
+			<AdvMapTreasure>
+				<Pos>
+					<x>7</x>
+					<y>8</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p2t4</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_6D29F906-CFA2-4CB1-9049-CE7574CDD15E">
+			<AdvMapTreasure>
+				<Pos>
+					<x>8</x>
+					<y>8</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p2t5</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_9BEF0E24-367D-49FE-9F3D-3C0872230048">
+			<AdvMapTreasure>
+				<Pos>
+					<x>9</x>
+					<y>8</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p2t6</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_ADF0D141-A2C7-49B5-85A0-661E691099C4">
+			<AdvMapTreasure>
+				<Pos>
+					<x>10</x>
+					<y>8</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p2t7</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_5C116600-B908-43F2-BF24-34DB80B7C950">
+			<AdvMapTreasure>
+				<Pos>
+					<x>5</x>
+					<y>10</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_creature_p1t2</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorCreatureChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_EE7BE53E-0515-4961-A19C-A3C86E199B75">
+			<AdvMapTreasure>
+				<Pos>
+					<x>13</x>
+					<y>9</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_art_p1t1</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorArtifactChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_A2717B2C-26C6-4AC7-A579-9E2ED2BB6B42">
+			<AdvMapTreasure>
+				<Pos>
+					<x>13</x>
+					<y>8</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_art_p1t2</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorArtifactChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_F277E334-56DC-40A6-80D7-0DC840FD308A">
+			<AdvMapTreasure>
+				<Pos>
+					<x>13</x>
+					<y>7</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_art_p1t3</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorArtifactChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_60A54C0A-9F7C-49D8-B530-0A98A25530D6">
+			<AdvMapTreasure>
+				<Pos>
+					<x>15</x>
+					<y>9</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_art_p2t1</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorArtifactChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_17172582-FE76-4B86-A2D1-60866CE745EC">
+			<AdvMapTreasure>
+				<Pos>
+					<x>15</x>
+					<y>8</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_art_p2t2</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorArtifactChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_F878687E-0F26-4DCC-9DAC-5E2AFEA74931">
+			<AdvMapTreasure>
+				<Pos>
+					<x>15</x>
+					<y>7</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>auotor_art_p2t3</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/AuotorArtifactChest.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
 		</Item>
 	</objects>
 	<Resources>
@@ -74806,8 +75184,84 @@
 		</Primary>
 		<Secondary>
 			<Common>
-				<Objectives/>
-				<DieInWeekWithoutTowns>true</DieInWeekWithoutTowns>
+				<Objectives>
+					<Item>
+						<Name>HIDDEN</Name>
+						<CaptionFileRef href=""/>
+						<ObscureCaptionFileRef href=""/>
+						<DescriptionFileRef href=""/>
+						<ProgressCommentsFileRef/>
+						<Kind>OBJECTIVE_KIND_MANUAL</Kind>
+						<Parameters/>
+						<Timeout>-1</Timeout>
+						<Holdout>-1</Holdout>
+						<CheckDelay>-1</CheckDelay>
+						<Dependencies/>
+						<InstantVictory>false</InstantVictory>
+						<TargetGlance>
+							<Target>
+								<Type>ADV_TARGET_NONE</Type>
+								<Name/>
+								<Coords>
+									<FloorID>0</FloorID>
+									<cell>
+										<x>0</x>
+										<y>0</y>
+									</cell>
+								</Coords>
+							</Target>
+							<Radius>10</Radius>
+							<Duration>5000</Duration>
+						</TargetGlance>
+						<Award>
+							<Type>AWARD_NONE</Type>
+							<Experience>0</Experience>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<Attribute>HERO_ATTRIB_DEFENCE</Attribute>
+							<AttributeAmount>0</AttributeAmount>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<SpellID>SPELL_NONE</SpellID>
+							<ArmySlot>
+								<Creature>CREATURE_UNKNOWN</Creature>
+								<Count>0</Count>
+							</ArmySlot>
+							<SpellPoints>0</SpellPoints>
+							<Morale>0</Morale>
+							<Luck>0</Luck>
+							<SkillWithMastery>
+								<Mastery>MASTERY_NONE</Mastery>
+								<SkillID>HERO_SKILL_NONE</SkillID>
+							</SkillWithMastery>
+						</Award>
+						<TakeContribution>false</TakeContribution>
+						<CanUncomplete>false</CanUncomplete>
+						<IsInitialyActive>false</IsInitialyActive>
+						<IsInitialyVisible>false</IsInitialyVisible>
+						<IsHidden>true</IsHidden>
+						<Ignore>false</Ignore>
+						<ShowCompleted>false</ShowCompleted>
+						<NeedComplete>false</NeedComplete>
+						<StateChangeTrigger>
+							<Action>
+								<FunctionName/>
+							</Action>
+						</StateChangeTrigger>
+						<SoundActivated/>
+						<SoundComplete/>
+						<SoundFailed/>
+						<AllowMultipleActivations>true</AllowMultipleActivations>
+						<AllowMultipleCompletions>true</AllowMultipleCompletions>
+					</Item>
+				</Objectives>
+				<DieInWeekWithoutTowns>false</DieInWeekWithoutTowns>
 			</Common>
 			<PlayerSpecific>
 				<Item>
