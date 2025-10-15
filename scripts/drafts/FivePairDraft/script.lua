@@ -1,3 +1,6 @@
+-----------------------
+-- Пятичерк
+
 while not drafts_core do
     sleep()
 end
@@ -8,25 +11,57 @@ end
 PLAYER_BARGAINS_VOTE_YES = 1
 PLAYER_BARGAINS_VOTE_NO = 2
 
+---@alias BargainsUsageType
+---|`BARGAINS_TYPE_WITH_BARGAINS`
+---|`BARGAINS_TYPE_WITHOUT_BARGAINS`
 BARGAINS_TYPE_WITH_BARGAINS = 1
 BARGAINS_TYPE_WITHOUT_BARGAINS = 2
 
 five_pair_draft = {
     path = "/Text/HRTA/drafts/FivePairDraft/",
+    
+    ---@type string
+    -- Префикс имен объектов, используемых в драфте 
     entities_prefix = "5draft_",
+
+    ---@type number
+    -- Число матчапов для генерации
     matchups_count = 5,
+
+    ---@type number
+    -- Максимально число зеркалок для генерации
     max_mirrors_count = 1,
 
+    ---@type table<PlayerID, BargainsVoteType>
+    -- Результаты голосования за торги для игроков
     players_bargains_votes = {},
-    voted_bargains_type = nil,
-    removed_matchups_ids = {},
 
+    ---@type BargainsUsageType
+    -- Статус выбора торгов
+    voted_bargains_type = nil,
+
+    ---@type number[]
+    -- Число матчапов для вычерка по очереди игроков
     matchups_remove_queue = {1, 2, 1},
+
+    ---@type number
+    -- Текущее положение очереди вычеркиваний
     matchups_remove_queue_position = 1,
+
+    ---@type PlayerID
+    -- Текущий игрок, вычеркивающий пару
     current_player_removing_matchup = PLAYER_1,
+
+    ---@type number
+    -- Число пар, которые нужно вычеркнуть для завершения драфта
     max_pairs_to_remove = 4,
+
+    ---@type number[]
+    -- Номера вычеркнутых в ходе драфта пар
     removed_pairs = {},
 
+    ---@type table<number, table<PlayerID, Position[]>>
+    -- Позиции, в которых должны быть размещены пары для черка
     matchups_generation_points = {
         {
             [PLAYER_1] = { 
@@ -80,9 +115,13 @@ five_pair_draft = {
         },
     },
 
+    ---@type DraftPairModel[]
+    -- Список сгенерированных пар для черка
     generated_pairs_data = {},
 
     GeneratePairs = 
+    --- Генерирует случайные пары для драфта
+    ---@return DraftPairModel [] pairs
     function ()
         local generated_pairs, pairs_count, mirrors_count = {}, 0, 0
         local races = range_generator.FromTop(TOWN_HEAVEN, TOWN_STRONGHOLD)
@@ -120,8 +159,16 @@ five_pair_draft = {
             end
             pairs_count = pairs_count + 1
             generated_pairs[pairs_count] = { [1] = selected_race, [2] = possible_matchup }
+            races = list_iterator.Filter(races, function (r)
+                local selected_race = %selected_race
+                if selected_race == r then
+                    return nil
+                end
+                return 1
+            end)
             sleep()
         end
+        ---@type DraftPairModel[]
         local final_generated_pairs_info = {}
         for i, pair in generated_pairs do
             local first_player_creature = drafts_core.town_representations[pair[1]]
@@ -138,7 +185,7 @@ five_pair_draft = {
                 [PLAYER_2] = {
                     five_pair_draft.entities_prefix.."p"..i.."_p"..PLAYER_2.."_u1",
                     five_pair_draft.entities_prefix.."p"..i.."_p"..PLAYER_2.."_u2"
-                }
+                },
             }
         end
 
@@ -154,11 +201,11 @@ five_pair_draft = {
     end,
 
     PlaceMatchups = 
-    --- 
-    ---@param player PlayerID
-    ---@param first_creature CreatureID
-    ---@param second_creature CreatureID
-    ---@param matchup_number number
+    -- Генерирует существ, представляющих собой фракции в матчапах для игрока
+    ---@param player PlayerID Игрок
+    ---@param first_creature CreatureID Первое существо в паре
+    ---@param second_creature CreatureID Второе существо в паре
+    ---@param matchup_number number Номер матчапа
     function (player, first_creature, second_creature, matchup_number)
         local pair_first_creature_name = five_pair_draft.entities_prefix.."p"..matchup_number.."_p"..player.."_u1"
         local pair_second_creature_name = five_pair_draft.entities_prefix.."p"..matchup_number.."_p"..player.."_u2"
@@ -166,8 +213,8 @@ five_pair_draft = {
         local x2, y2, f2 = RegionToPoint(pair_second_creature_name)
         local rot1 = five_pair_draft.matchups_generation_points[matchup_number][player][player == PLAYER_1 and 1 or 2].rot
         local rot2 = five_pair_draft.matchups_generation_points[matchup_number][player][player == PLAYER_1 and 2 or 1].rot
-        CreateMonster(pair_first_creature_name, first_creature, 1, x1, y1, f1, MONSTER_MOOD_FRIENDLY, MONSTER_COURAGE_ALWAYS_JOIN, rot1)
-        CreateMonster(pair_second_creature_name, second_creature, 1, x2, y2, f2, MONSTER_MOOD_FRIENDLY, MONSTER_COURAGE_ALWAYS_JOIN, rot2)
+        CreateMonster(pair_first_creature_name, first_creature, 1, x1, y1, f1, MONSTER_MOOD_FRIENDLY, MONSTER_COURAGE_ALWAYS_JOIN, rot1 or 0)
+        CreateMonster(pair_second_creature_name, second_creature, 1, x2, y2, f2, MONSTER_MOOD_FRIENDLY, MONSTER_COURAGE_ALWAYS_JOIN, rot2 or 0)
         while not (IsObjectExists(pair_first_creature_name) and IsObjectExists(pair_second_creature_name)) do
             sleep()
         end
@@ -177,6 +224,7 @@ five_pair_draft = {
     end,
 
     CheckPlayerBargainsVote = 
+    --- Проверяет статус выбора режима торгов для игроков
     function ()
         while not (five_pair_draft.players_bargains_votes[PLAYER_1] and five_pair_draft.players_bargains_votes[PLAYER_2]) do
             sleep()
@@ -206,6 +254,7 @@ five_pair_draft = {
     end,
 
     MovePairs = 
+    --- Перемещает заранее сгенерированные пары на их необходимые позиции для драфта
     function ()
         for i, pair in five_pair_draft.generated_pairs_data do
             local this_pair_units, n = {}, 0
@@ -225,6 +274,9 @@ five_pair_draft = {
     end,
 
     SetupPairUnitsTouch = 
+    -- Назначает необходимые триггеры касания существам в паре 
+    ---@param units string[] Скриптовые имена юнитов в паре
+    ---@param pair_number number Номер пары
     function (units, pair_number)
         for _, unit in units do
             Touch.SetFunction(unit, "_touch", 
@@ -248,11 +300,13 @@ five_pair_draft = {
     end,
 
     StartPairRemoving =
+    --- Стартует непосредственно процесс вычеркивания
     function ()
         unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(five_pair_draft.current_player_removing_matchup), MOVE_THREAD_TYPE_UNLIM)
     end,
 
     GiveTurnToNextPlayer = 
+    --- Передает ход следующему игроку для вычеркивания
     function ()
         local next_player = PLAYER_3 - five_pair_draft.current_player_removing_matchup
         unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(five_pair_draft.current_player_removing_matchup), MOVE_THREAD_TYPE_NO_MOVES)
@@ -262,8 +316,8 @@ five_pair_draft = {
     end,
 
     FinishDraft = 
+    --- Завершает драфт. Определяет выбранную пару и переносит игроков в некст стадию в зависимости от статуса выбора торгов.
     function ()
-        print"Draft finished"
         local selected_pair_index = range_generator.FromTop(1, 5, function (index)
             if not contains(five_pair_draft.removed_pairs, index) then
                 return 1

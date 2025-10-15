@@ -53,7 +53,10 @@ single_heroes_draft = {
 
     -- Текущая стадия драфта
     ---@type SingleHeroDraftPhase
-    current_phase = SINGLE_HERO_DRAFT_PHASE_PICK,
+    current_phase = SINGLE_HERO_DRAFT_PHASE_BAN,
+
+    ---@type number
+    current_phase_actions_count = 0,
 
     -- Сообщения, вызываемые при разных действиях игроков в процессе драфта
     ---@type table<DraftActionType, string>
@@ -95,6 +98,9 @@ single_heroes_draft = {
     -- Последовательность банов/пиков
     ---@type CompletedDraftAction []
     draft_actions_queue = {},
+
+    ---@type table<PlayerID, 1|nil>
+    draft_finished_for_player = {},
 
     Init =
     function ()
@@ -277,7 +283,12 @@ single_heroes_draft = {
         end
         local prev_drafter = single_heroes_draft.current_drafter
         local new_drafter = PLAYER_3 - single_heroes_draft.current_drafter
-        single_heroes_draft.current_phase = 3 - single_heroes_draft.current_phase
+
+        single_heroes_draft.current_phase_actions_count = single_heroes_draft.current_phase_actions_count + 1
+        if single_heroes_draft.current_phase_actions_count == 2 then
+            single_heroes_draft.current_phase_actions_count = 0
+            single_heroes_draft.current_phase = 3 - single_heroes_draft.current_phase 
+        end
 
         local draft_finished_for_curr_drafter = single_heroes_draft.CheckDraftCanBeContinuedForSide(new_drafter)
         local draft_finished_for_prev_drafter = single_heroes_draft.CheckDraftCanBeContinuedForSide(prev_drafter)
@@ -298,6 +309,9 @@ single_heroes_draft = {
     ---@param drafter PlayerID Игрок, для которого производится проверка
     ---@return 1|nil can_be_continued Драфт может продолжаться/нет
     function (drafter)
+        if single_heroes_draft.draft_finished_for_player[drafter] then
+            return nil
+        end
         local heroes_picked = length(single_heroes_draft.picked_heroes[drafter])
         local heroes_left = length(single_heroes_draft.heroes_left_in_set[drafter])
         if heroes_picked == single_heroes_draft.heroes_count_to_finish then
@@ -317,8 +331,10 @@ single_heroes_draft = {
     ---@param drafter PlayerID Игрок, для которого завершается драфт
     ---@param reason DraftFinishReason Причина завершения драфта
     function (drafter, reason)
+        single_heroes_draft.draft_finished_for_player[drafter] = 1
         if reason == DRAFT_FINISH_REASON_ALL_PICKED then
-            for _, hero in single_heroes_draft.heroes_left_in_set[drafter] do
+            for i, hero in single_heroes_draft.heroes_left_in_set[drafter] do
+                print("Heroes left in set: ", single_heroes_draft.heroes_left_in_set[drafter])
                 if hero then
                     local hero_data = single_heroes_draft.generated_heroes_data[hero]
                     StopVisualEffects(hero_data.player_portait.."_fx")
@@ -368,7 +384,7 @@ single_heroes_draft = {
             end
         end
 
-        startThread(towns_setup.Init)
+        -- startThread(towns_setup.Init)
 
         asha.AddGlobalField("DraftActions", "["..list_iterator.Concat(
             list_iterator.FilterMap(single_heroes_draft.draft_actions_queue,

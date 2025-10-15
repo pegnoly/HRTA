@@ -108,9 +108,9 @@ function CommonMapLoadingThread()
   sleep()
   --
   --! THIS IS ONLY DEACTIVATED WHILE GAME CONTAINS BOTH OLD AND NEW CODE
-  -- startThread(AdvMapThreads.AddHeroesThread)
-  -- startThread(AdvMapThreads.RemoveHeroesThread)
-  -- startThread(AdvMapThreads.CombatResultsThread)
+  startThread(AdvMapThreads.AddHeroesThread)
+  startThread(AdvMapThreads.RemoveHeroesThread)
+  startThread(AdvMapThreads.CombatResultsThread)
   startThread(AdvMapThreads.NewDayThread)
   --!
   -- startThread(PostCombatFixInit)

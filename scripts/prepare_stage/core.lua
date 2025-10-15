@@ -45,7 +45,7 @@ function (day)
             SetObjectOwner("player_"..player.."_main_town", player)
             startThread(prepare_stage_core.SpawnHeroes, player)
             unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(player), MOVE_THREAD_TYPE_UNLIM)
-            startThread(army_generation.Setup)
+            -- startThread(army_generation.Setup)
         end
     end
 end)

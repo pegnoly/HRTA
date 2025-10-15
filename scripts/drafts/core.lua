@@ -1,26 +1,27 @@
 -- Общая логика для всех черков
-
 while not DRAFT_TYPE_FIVE and asha do
     sleep()
 end
-
-print"Ok"
 
 drafts_core = {
 
     path = "/Text/HRTA/drafts/",
 
+    ---@type table<TownType, CreatureID>
+    -- Определяет, какое существо генерируется для представления фракции в черках
     town_representations = {
-        [TOWN_HEAVEN] = CREATURE_SWORDSMAN,
+        [TOWN_HEAVEN] = CREATURE_FOOTMAN,
         [TOWN_INFERNO] = CREATURE_SUCCUBUS_SEDUCER,
-        [TOWN_NECROMANCY] = CREATURE_VAMPIRE_LORD,
+        [TOWN_NECROMANCY] = CREATURE_VAMPIRE,
         [TOWN_PRESERVE] = CREATURE_SHARP_SHOOTER,
-        [TOWN_DUNGEON] = CREATURE_BLOOD_WITCH,
-        [TOWN_ACADEMY] = CREATURE_ARCH_MAGI,
-        [TOWN_FORTRESS] = CREATURE_FLAME_MAGE,
-        [TOWN_STRONGHOLD] = CREATURE_ORCCHIEF_EXECUTIONER
+        [TOWN_DUNGEON] = CREATURE_WITCH,
+        [TOWN_ACADEMY] = CREATURE_MAGI,
+        [TOWN_FORTRESS] = CREATURE_RUNE_MAGE,
+        [TOWN_STRONGHOLD] = CREATURE_ORCCHIEF_BUTCHER
     },
 
+    ---@type table<TownType, table<string>>
+    -- Списки героев, доступных для фракций
     heroes_pool = {
         [TOWN_HEAVEN] = {
             "Orrin",
@@ -108,7 +109,7 @@ drafts_core = {
         },
         [TOWN_STRONGHOLD] = {
             "Hero1",
-            "Hero2",
+            -- "Hero2",
             "Hero3",
             "Hero4",
             "Hero6",
@@ -125,7 +126,7 @@ drafts_core = {
     --- Старт любого драфта - записать тип драфта в Асху, убрать мувы героев, вывести сообщение о скипе
     ---@param day number
     function (day)
-        if day == DRAFTS_SKIP_DAY then
+        if day == DRAFTS_SKIP_DAY and drafts_core.GetDraftType() == DRAFT_TYPE_FIVE then
             startThread(map_utils.RemoveDraftsPlaceCrystals)
             asha.AddGlobalField("DraftType", drafts_core.GetDraftType())
             for player = PLAYER_1, PLAYER_2 do
@@ -137,7 +138,7 @@ drafts_core = {
     end,
 
     GetDraftType = 
-    --- Возвращает выбранный тип драфта
+    --- Возвращает текущий тип драфта в игре
     ---@return DraftType result
     function ()
         local result = GetDifficulty() + 1

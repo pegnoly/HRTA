@@ -129,26 +129,26 @@ do
 end
 
 --! THIS MUST BE RETURNED IN ACTUAL REWRITE BUT NOW NOT WORKING
--- do
---   local oldShowFlyingSign = ShowFlyingSign
---   --- Адаптированный под мультиплеер ShowFlyingSign
---   ---@param msg string путь к сообщению
---   ---@param object string объект, над которым будет выведено сообщение\
---   ---@param player PlayerID номер игрока
---   ---@param time number время вывода
---   function ShowFlyingSign(msg, object, player, time)
---     if IsHeroAlive(object) then
---       object = GetHeroTown(object) or object
---     end
---     if GetCurrentPlayer() ~= -1 then
---       while GetCurrentPlayer() ~= player do
---         sleep()
---       end
---     end
---     %oldShowFlyingSign(msg, object, player, time)
---     UnblockGame()
---   end
--- end
+do
+  local oldShowFlyingSign = ShowFlyingSign
+  --- Адаптированный под мультиплеер ShowFlyingSign
+  ---@param msg string путь к сообщению
+  ---@param object string объект, над которым будет выведено сообщение\
+  ---@param player PlayerID номер игрока
+  ---@param time number время вывода
+  function ShowFlyingSign(msg, object, player, time)
+    if IsHeroAlive(object) then
+      object = GetHeroTown(object) or object
+    end
+    if GetCurrentPlayer() ~= -1 then
+      while GetCurrentPlayer() ~= player do
+        sleep()
+      end
+    end
+    %oldShowFlyingSign(msg, object, player, time)
+    UnblockGame()
+  end
+end
 
 --- MCCS-адаптированный StartCombat
 ---@param hero string герой, начавший битву

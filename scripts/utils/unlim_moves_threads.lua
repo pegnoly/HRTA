@@ -34,6 +34,7 @@ unlim_moves_threads = {
 MapLoadingEvent.AddListener("HRTA_start_move_remove_listener",
 function ()
     for _, hero in GetObjectNamesByType("HERO") do
+        print("Hero start move remove ", hero)
         ChangeHeroStat(hero, STAT_MOVE_POINTS, -100000)
     end
 end)

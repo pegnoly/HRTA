@@ -1,55 +1,55 @@
--- Файл предназначен для хранение общеигровых фиксированных данных: например тип черка
+-- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
--- ИД выбранной сложности игры
+-- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 local DIFFICULTY = GetDifficulty();
 
--- NOTE: Почему то результат вычислений это 0 или 1, но при этом все равно корректно работает в условия
--- Маппинг сложности игры на черк
+-- NOTE: пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ 0 пїЅпїЅпїЅ 1, пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 GAME_MODE = {
-  -- Простой выбор (REKRUT)
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (REKRUT)
   SIMPLE_CHOOSE = DIFFICULTY == DIFFICULTY_EASY,
-  -- Черк матчапов (VOIN)
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (VOIN)
   MATCHUPS = DIFFICULTY == DIFFICULTY_NORMAL,
-  -- Получерк (VETERAN)
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (VETERAN)
   HALF = DIFFICULTY == DIFFICULTY_HARD,
-  -- Микс черк (GEROI)
-  MIX = DIFFICULTY == DIFFICULTY_HEROIC,
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (GEROI)
+  MIX = nil,
 };
 
--- Выбран ли режим хотсит
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 HOTSEAT_STATUS = nil;
 
 
---Кастомные режимы игры
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 CUSTOM_GAME_MODE_NO_MENTOR = nil;
 CUSTOM_GAME_MODE_AUCTION = nil;
 CUSTOM_GAME_MODE_ONLY_CHERK_SINGLE_HEROES = nil;
 CUSTOM_GAME_MODE_ONLY_MIRROR = nil;
 CUSTOM_GAME_MODE_TROUBLED_TIME = nil;
 CUSTOM_GAME_MODE_TROUBLED_TIME_TIER = nil;
--- Кастомное перечисление рас, за неимением такого по умолчанию
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 RACES = {
-  -- Орден Порядка
+  -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   HAVEN = 0,
-  -- Инферно
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   INFERNO = 1,
-  -- Некрополис
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   NECROPOLIS = 2,
-  -- Лесной Союз
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   SYLVAN = 3,
-  -- Акадения Волшебства
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   ACADEMY = 4,
-  -- Лига Теней
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   DUNGEON = 5,
-  -- Северные Кланы
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   FORTRESS = 6,
-  -- Великая Орда
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   STRONGHOLD = 7,
-  -- Нейтральные юниты
+  -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   NEUTRAL = 8,
 };
 
--- Перечень типов школ магии
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 TYPE_MAGICS = {
   LIGHT = 0,
   DARK = 1,
@@ -59,88 +59,88 @@ TYPE_MAGICS = {
   WARCRIES = 5,
 };
 
--- Перечень всех заклинаний
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 SPELLS = {
   [TYPE_MAGICS.LIGHT] = {
-    { level = 1, id = 23  }, -- божественная сила
-    { level = 1, id = 29  }, -- уклонение
-    { level = 1, id = 280 }, -- регенерация
-    { level = 2, id = 25  }, -- каменная кожа
-    { level = 2, id = 24  }, -- ускорение
-    { level = 3, id = 28  }, -- карающий удар
-    { level = 3, id = 26  }, -- снятие чар
-    { level = 4, id = 32  }, -- телепорт
-    { level = 4, id = 31  }, -- антимагия
-    --{ level = 4, id = 281 }, -- божественная месть
-    { level = 5, id = 48  }, -- воскрешение
-    --{ level = 5, id = 35  }, -- святое слово
+    { level = 1, id = 23  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    { level = 1, id = 29  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 1, id = 280 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 25  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    { level = 2, id = 24  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 3, id = 28  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    { level = 3, id = 26  }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+    { level = 4, id = 32  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 4, id = 31  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    --{ level = 4, id = 281 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    { level = 5, id = 48  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    --{ level = 5, id = 35  }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   },
   [TYPE_MAGICS.DARK] = {
-    { level = 1, id = 11  }, -- ослабление
-    { level = 1, id = 12  }, -- замедление
-    { level = 2, id = 13  }, -- разрушающий луч
-    { level = 2, id = 14  }, -- чума
-    { level = 3, id = 15  }, -- немощность
-    { level = 3, id = 17  }, -- рассеяность
---    { level = 3, id = 277 }, -- скорбь
-    { level = 4, id = 19  }, -- ослепление
-    { level = 4, id = 278 }, -- вампиризм
-    { level = 5, id = 18  }, -- берсерк
-    { level = 5, id = 20  }, -- подчинение
-    --{ level = 5, id = 21  }, -- нечестивое слово
+    { level = 1, id = 11  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 1, id = 12  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 13  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+    { level = 2, id = 14  }, -- пїЅпїЅпїЅпїЅ
+    { level = 3, id = 15  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 3, id = 17  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+--    { level = 3, id = 277 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 4, id = 19  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 4, id = 278 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 5, id = 18  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 5, id = 20  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    --{ level = 5, id = 21  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   },
   [TYPE_MAGICS.DESTRUCTIVE] = {
-    { level = 1, id = 237 }, -- каменные шипы
-    { level = 1, id = 1   }, -- магическая стрела
-    { level = 2, id = 4   }, -- ледяная глыба
-    { level = 2, id = 3   }, -- молния
-    { level = 2, id = 236 }, -- стена огня
-    { level = 3, id = 6   }, -- кольцо холода
-    { level = 3, id = 5   }, -- огненный шар
-    { level = 4, id = 7   }, -- цепь молний
-    { level = 4, id = 8   }, -- метеоритный дождь
-    { level = 5, id = 279 }, -- останавливающий холод
-    { level = 5, id = 9   }, -- шок земли
-    { level = 5, id = 10  }, -- армагеддон
+    { level = 1, id = 237 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    { level = 1, id = 1   }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 4   }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 3   }, -- пїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 236 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    { level = 3, id = 6   }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 3, id = 5   }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+    { level = 4, id = 7   }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 4, id = 8   }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    { level = 5, id = 279 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    { level = 5, id = 9   }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    { level = 5, id = 10  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   },
   [TYPE_MAGICS.SUMMON] = {
-    { level = 1, id = 2   }, -- волшебный кулак
-    { level = 1, id = 38  }, -- огненная ловушка
-    { level = 2, id = 39  }, -- призыв осиного роя
-    { level = 2, id = 282 }, -- кристалл тайного
-    { level = 3, id = 284 }, -- стена мечей
-    { level = 3, id = 42  }, -- поднятие мертвых
-    { level = 3, id = 40  }, -- создание фантома
-    --{ level = 3, id = 41  }, -- землетрясение
-    { level = 4, id = 43  }, -- призыв элементалей
-    { level = 4, id = 283 }, -- призыв улья
-    { level = 5, id = 235 }, -- призыв феникса
-    { level = 5, id = 34  }, -- небесный щит
+    { level = 1, id = 2   }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    { level = 1, id = 38  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 39  }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+    { level = 2, id = 282 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 3, id = 284 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    { level = 3, id = 42  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 3, id = 40  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    --{ level = 3, id = 41  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 4, id = 43  }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 4, id = 283 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    { level = 5, id = 235 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 5, id = 34  }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
   },
   [TYPE_MAGICS.RUNES] = {
-    { level = 1, id = 249 }, -- руна энергии
-    { level = 1, id = 250 }, -- руна берсеркерства
-    { level = 2, id = 251 }, -- руна магического надзора
-    { level = 2, id = 252 }, -- руна экзорзизма
-    { level = 3, id = 253 }, -- руна стихийной невосприимчивости
-    { level = 3, id = 256 }, -- руна неосязаемости
-    { level = 4, id = 254 }, -- руна громового раската
-    { level = 4, id = 257 }, -- руна воскрешения
-    { level = 5, id = 258 }, -- руна драконьего обличья
-    { level = 5, id = 255 }, -- руна боевой ярости
+    { level = 1, id = 249 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 1, id = 250 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 251 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 252 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 3, id = 253 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 3, id = 256 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 4, id = 254 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 4, id = 257 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 5, id = 258 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    { level = 5, id = 255 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
   },
   [TYPE_MAGICS.WARCRIES] = {
-    { level = 1, id = 290}, -- объединяющий клич
-    { level = 1, id = 291}, -- зов крови
-    { level = 2, id = 292}, -- слово вождя
-    { level = 2, id = 293}, -- устрашающий рык
-    { level = 3, id = 294}, -- боевой клич
-    { level = 3, id = 295}, -- ярость орды
+    { level = 1, id = 290}, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    { level = 1, id = 291}, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 292}, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    { level = 2, id = 293}, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+    { level = 3, id = 294}, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    { level = 3, id = 295}, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   }
 };
 
------------------- ГЕРОИ, ИСПОЛЬЗУЮЩИЕСЯ В КАРТЕ ------------------------
+------------------ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ ------------------------
 HEROES_BY_RACE = {
   [RACES.HAVEN] = {
 	  { name = "Orrin",           txt = "haven/heroDugal.txt",    dsc = "/Text/Game/Heroes/Specializations/Haven/Archer_Commander/Description.txt",   [PLAYER_1] = {{ red_icon = "hero_1_1_1", blue_icon = "hero_1_1_2" },   { red_icon = "hero_1_1_5", blue_icon = "hero_1_1_6" }},            [PLAYER_2] = {{ red_icon = "hero_1_1_3", blue_icon = "hero_1_1_4" },   { red_icon = "hero_1_1_7", blue_icon = "hero_1_1_8" }} },
@@ -255,133 +255,133 @@ HEROES_BY_RACE = {
   }
 };
 
--- Биара (герой красного)
+-- пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 Biara = GetPlayerHeroes(PLAYER_1)[0]
--- Джованни (герой синего)
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)
 Djovanni = GetPlayerHeroes(PLAYER_2)[0]
 
--- Итоговый список расы и героев для игры
--- Служит для передачи значения для начала прокачки
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 RESULT_HERO_LIST = {
   [PLAYER_1] = {
     raceId = nil,
-    -- Список героев, выданных игроку (3)
+    -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (3)
     heroes = {},
-    -- Список героев после черков (5)
+    -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (5)
     choised_heroes = {},
   },
   [PLAYER_2] = {
     raceId = nil,
-    -- Список героев, выданных игроку (3)
+    -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (3)
     heroes = {},
-    -- Список героев после черков (5)
+    -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (5)
     choised_heroes = {},
   },
 };
 
--- Все свойства главных героев игроков
--- Заполняется на этапе обучения героев
+-- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 PLAYERS_MAIN_HERO_PROPS = {
   [PLAYER_1] = {
     name = nil,
-    -- Список снимаемых артефактов на моменты изменения статов
+    -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     removedHeroArtIdList = {},
-    -- Стартовые статы героя (до прокачки)
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
     start_stats = {
       [STAT_ATTACK] = 0,
       [STAT_DEFENCE] = 0,
       [STAT_SPELL_POWER] = 0,
       [STAT_KNOWLEDGE] = 0
     },
-    -- Статы, полученные за уровни с рассовым распределением
+    -- пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     stats = {
       [STAT_ATTACK] = 0,
       [STAT_DEFENCE] = 0,
       [STAT_SPELL_POWER] = 0,
       [STAT_KNOWLEDGE] = 0
     },
-    -- Статы, которые были получены за навыки
+    -- пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     stats_for_skills = {
       [STAT_ATTACK] = 0,
       [STAT_DEFENCE] = 0,
       [STAT_SPELL_POWER] = 0,
       [STAT_KNOWLEDGE] = 0
     },
-    -- Дополнительные статы с образования разделенные на уровни
-    -- разбил на уровни для удобства отката
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     learning = {
       [1] = nil,
       [2] = nil,
       [3] = nil,
     },
-    -- текущий уровень образования
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     current_learning_level = 0,
-    -- Покупаемые статы
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     buy_stats = {
       [STAT_ATTACK] = 0,
       [STAT_DEFENCE] = 0,
       [STAT_SPELL_POWER] = 0,
       [STAT_KNOWLEDGE] = 0
     },
-    -- Количество купленных статов
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     count_buy_stats = 0,
   },
   [PLAYER_2] = {
     name = nil,
-    -- Список снимаемых артефактов на моменты изменения статов
+    -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     removedHeroArtIdList = {},
-    -- Стартовые статы героя (до прокачки)
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
     start_stats = {
       [STAT_ATTACK] = 0,
       [STAT_DEFENCE] = 0,
       [STAT_SPELL_POWER] = 0,
       [STAT_KNOWLEDGE] = 0
     },
-    -- Статы, полученные за уровни с рассовым распределением
+    -- пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     stats = {
       [STAT_ATTACK] = 0,
       [STAT_DEFENCE] = 0,
       [STAT_SPELL_POWER] = 0,
       [STAT_KNOWLEDGE] = 0
     },
-    -- Статы, которые были получены за навыки
+    -- пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     stats_for_skills = {
       [STAT_ATTACK] = 0,
       [STAT_DEFENCE] = 0,
       [STAT_SPELL_POWER] = 0,
       [STAT_KNOWLEDGE] = 0
     },
-    -- Дополнительные статы с образования разделенные на уровни
-    -- разбил на уровни для удобства отката
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     learning = {
       [1] = nil,
       [2] = nil,
       [3] = nil,
     },
-    -- текущий уровень образования
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     current_learning_level = 0,
-    -- Покупаемые статы
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     buy_stats = {
       [STAT_ATTACK] = 0,
       [STAT_DEFENCE] = 0,
       [STAT_SPELL_POWER] = 0,
       [STAT_KNOWLEDGE] = 0
     },
-    -- Количество купленных статов
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     count_buy_stats = 0,
   },
 };
 
--- Таблица ИД всех игроков
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 PLAYER_ID_TABLE = { PLAYER_1, PLAYER_2 };
 
--- Соотношение ИД игрока к ИД его соперника
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 PLAYERS_OPPONENT = {
   [PLAYER_1] = PLAYER_2,
   [PLAYER_2] = PLAYER_1,
 };
 
--- Список начальных навыков и/или школ для каждого героя
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 INITIAL_HERO_SKILLS = {
   Orrin = { SKILL_OFFENCE, PERK_ARCHERY },
   Sarge = { SKILL_OFFENCE, PERK_HOLY_CHARGE },
@@ -479,7 +479,7 @@ INITIAL_HERO_SKILLS = {
   Quroq = { HERO_SKILL_VOICE, HERO_SKILL_VOICE_OF_RAGE },
 };
 
--- Соотношение словарного названия героя с названия героев, выданных игрокам
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 MAPPING_HERO_NAME_TO_PLAYERS_HERO_NAME = {
     { dictName = "Orrin", reservedNames = { "Orrin", "Orrin2" } },
     { dictName = "Sarge", reservedNames = { "Sarge", "Sarge2" } },
@@ -578,14 +578,14 @@ MAPPING_HERO_NAME_TO_PLAYERS_HERO_NAME = {
     { dictName = "Quroq", reservedNames = { "Quroq", "Quroq2" } },
 };
 
--- Уровни ценности артефактов (Потом, наверно, пригодится)
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 ARTS_LEVELS = {
   MINOR = 0,
   MAJOR = 1,
   RELIC = 2
 };
 
--- Позиция артефакта в инвентаре
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ART_POSITION = {
   RING = 1,
   HEAD = 2,
@@ -598,145 +598,145 @@ ART_POSITION = {
   BACK = 9,
 };
 
--- Список всех доступных артефактов
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ALL_ARTS_LIST = {
-  { id = 1,  level = ARTS_LEVELS.MINOR, position = ART_POSITION.WEAPON,  price = 5000 }, --меч мощи
-  { id = 90, level = ARTS_LEVELS.MINOR, position = ART_POSITION.WEAPON,  price = 6500 }, -- на грани равновесия
-  { id = 8,  level = ARTS_LEVELS.MINOR, position = ART_POSITION.BAG,     price = 4000 }, -- клевер
-  { id = 87, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BAG,     price = 6000 }, -- колода таро
-  { id = 27, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BOOTS,   price = 5000 }, -- сапоги магической защиты
-  -- { id = 34, level = ARTS_LEVELS.MINOR, position = ART_POSITION.HEAD, price = 6000 }, -- тюрбан просвещенности
-  { id = 66, level = ARTS_LEVELS.MINOR, position = ART_POSITION.HEAD,    price = 6000 }, -- шлем хаоса
-  { id = 64, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BODY,    price = 6000 }, -- туника из плоти
-  { id = 14, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BODY,    price = 5000 }, -- нагрудник мощи
-  { id = 80, level = ARTS_LEVELS.MINOR, position = ART_POSITION.WEAPON,  price = 5000 }, -- палочка новичка
+  { id = 1,  level = ARTS_LEVELS.MINOR, position = ART_POSITION.WEAPON,  price = 5000 }, --пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 90, level = ARTS_LEVELS.MINOR, position = ART_POSITION.WEAPON,  price = 6500 }, -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 8,  level = ARTS_LEVELS.MINOR, position = ART_POSITION.BAG,     price = 4000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 87, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BAG,     price = 6000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 27, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BOOTS,   price = 5000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  -- { id = 34, level = ARTS_LEVELS.MINOR, position = ART_POSITION.HEAD, price = 6000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 66, level = ARTS_LEVELS.MINOR, position = ART_POSITION.HEAD,    price = 6000 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  { id = 64, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BODY,    price = 6000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  { id = 14, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BODY,    price = 5000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 80, level = ARTS_LEVELS.MINOR, position = ART_POSITION.WEAPON,  price = 5000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-  { id = 84, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BACK,    price = 4500 }, -- защитные покровы
-  { id = 20, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 6000 }, -- кольцо от молний
-  { id = 60, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 5000 }, -- пояс элементалей
-  { id = 16, level = ARTS_LEVELS.MINOR, position = ART_POSITION.NECK,    price = 4000 }, -- ошейник льва
-  { id = 55, level = ARTS_LEVELS.MINOR, position = ART_POSITION.HEAD,    price = 5000 }, -- шлем некроманта
-  { id = 10, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BAG,     price = 5000 }, -- свиток маны
-  { id = 56, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BODY,    price = 6000 }, -- доспех бесстрашия
-  { id = 85, level = ARTS_LEVELS.MINOR, position = ART_POSITION.WEAPON,  price = 6000 }, -- гномий молот
-  { id = 65, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 7000 }, -- кольцо предостережения
-  { id = 62, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BACK,    price = 7000 }, -- плащ силанны
-  { id = 93, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 6000 }, -- кольцо изгнания
+  { id = 84, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BACK,    price = 4500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 20, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 6000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 60, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 5000 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 16, level = ARTS_LEVELS.MINOR, position = ART_POSITION.NECK,    price = 4000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 55, level = ARTS_LEVELS.MINOR, position = ART_POSITION.HEAD,    price = 5000 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 10, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BAG,     price = 5000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 56, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BODY,    price = 6000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 85, level = ARTS_LEVELS.MINOR, position = ART_POSITION.WEAPON,  price = 6000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  { id = 65, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 7000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 62, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BACK,    price = 7000 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 93, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 6000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-  -- { id = 86, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BAG,  price = 6500 }, -- руна пламени
-  -- { id = 61, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BOOTS,  price = 8000 }, -- изумрудные туфли
-  -- { id = 32, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BACK,   price = 8000 }, -- накидка феникса
---  { id = 70, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 4000 }, -- кольцо грешников
+  -- { id = 86, level = ARTS_LEVELS.MINOR, position = ART_POSITION.BAG,  price = 6500 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  -- { id = 61, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BOOTS,  price = 8000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  -- { id = 32, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BACK,   price = 8000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+--  { id = 70, level = ARTS_LEVELS.MINOR, position = ART_POSITION.RING,    price = 4000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-  { id = 31, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BACK,      price = 8000 }, -- накидка льва
-  { id = 95, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BACK,      price = 8000 }, -- колчан единорога
-  { id = 4,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 8000 }, -- лук единорога
-  { id = 63, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.RING,      price = 8000 }, --кольцо неудачи (проклятое кольцо)
-  { id = 21, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.RING,      price = 8000 }, -- кольцо жизненной силы
-  { id = 25, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BAG,       price = 8000 }, -- золотая подкова
-  { id = 58, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 8000 }, -- лунный клинок
+  { id = 31, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BACK,      price = 8000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 95, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BACK,      price = 8000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 4,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 8000 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 63, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.RING,      price = 8000 }, --пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)
+  { id = 21, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.RING,      price = 8000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 25, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BAG,       price = 8000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 58, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 8000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-  -- { id = 35, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BODY,   price = 6500 }, -- кольчуга просвещенности
-  { id = 9,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 10000 }, -- ледяной щит
-  { id = 88, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.HEAD,      price = 9000 }, -- корона лидерства
-  { id = 41, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.HEAD,      price = 9500 }, -- шлем дракона
-  { id = 39, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BACK,      price = 9500 }, -- мантия дракона
-  { id = 5,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 9500 }, -- трезубец титанов
-  { id = 18, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.NECK,      price = 9500 }, -- ледяной кулон
+  -- { id = 35, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BODY,   price = 6500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 9,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 10000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+  { id = 88, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.HEAD,      price = 9000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 41, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.HEAD,      price = 9500 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 39, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BACK,      price = 9500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 5,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 9500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 18, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.NECK,      price = 9500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
   
-  { id = 81, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 10000 }, -- рунный топор
-  { id = 2,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 11000 },  -- секира горного короля
-  { id = 74, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 10000 }, -- дубина орка
-  { id = 75, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 10000 }, -- щит орка
+  { id = 81, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 10000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  { id = 2,  level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 11000 },  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 74, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 10000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 75, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 10000 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
-  { id = 37, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 10500 }, -- щит дракона
-  { id = 38, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BOOTS,     price = 10500 }, -- поножи дракона
-  { id = 82, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BODY,      price = 10000 }, -- рунная упряжь
-  { id = 36, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BODY,      price = 10500 }, -- доспех дракона
-  { id = 23, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.RING,      price = 10500 }, -- кольцо сломленного духа
-  { id = 19, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.NECK,      price = 10000 }, -- ожерелье победы
-  { id = 40, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.NECK,      price = 10500 }, -- ожерелье дракона
-  { id = 45, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 10000 }, -- посох сар-иссы
-  { id = 67, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.NECK,      price = 10000 }, -- кулон поглощения
-  { id = 50, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.HEAD,      price = 11000 }, -- шлем гномов
+  { id = 37, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.SHILD,     price = 10500 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 38, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BOOTS,     price = 10500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 82, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BODY,      price = 10000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 36, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.BODY,      price = 10500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 23, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.RING,      price = 10500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 19, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.NECK,      price = 10000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 40, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.NECK,      price = 10500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 45, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.WEAPON,    price = 10000 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ
+  { id = 67, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.NECK,      price = 10000 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 50, level = ARTS_LEVELS.MAJOR, position = ART_POSITION.HEAD,      price = 11000 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
   
-  { id = 48, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BODY,      price = 12000 }, -- кираса гномов
-  { id = 51, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 12000 }, -- щит гномов
-  { id = 42, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,      price = 12000 }, -- кольцо дракона
-  { id = 43, level = ARTS_LEVELS.RELIC, position = ART_POSITION.WEAPON,    price = 12500 }, -- меч дракона
-  { id = 17, level = ARTS_LEVELS.RELIC, position = ART_POSITION.NECK,      price = 12000 }, -- ожерелье коготь
-  { id = 59, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,      price = 13000 }, -- кольцо стремительности
-  { id = 57, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BOOTS,     price = 12500 }, -- сапоги скорости
-  { id = 46, level = ARTS_LEVELS.RELIC, position = ART_POSITION.HEAD,      price = 12000 }, -- корона сар-иссы
+  { id = 48, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BODY,      price = 12000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 51, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 12000 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 42, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,      price = 12000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 43, level = ARTS_LEVELS.RELIC, position = ART_POSITION.WEAPON,    price = 12500 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 17, level = ARTS_LEVELS.RELIC, position = ART_POSITION.NECK,      price = 12000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 59, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,      price = 13000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 57, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BOOTS,     price = 12500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 46, level = ARTS_LEVELS.RELIC, position = ART_POSITION.HEAD,      price = 12000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ
 
-  { id = 68, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BOOTS,     price = 13500 }, -- сандали святого
-  { id = 49, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BOOTS,     price = 13500 }, -- поножи гномов
-  { id = 11, level = ARTS_LEVELS.RELIC, position = ART_POSITION.HEAD,      price = 14000 }, -- корона льва
-  { id = 47, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,      price = 14000 }, -- кольцо сар-иссы
-  { id = 7,  level = ARTS_LEVELS.RELIC, position = ART_POSITION.WEAPON,    price = 14000 }, -- посох преисподней (кандалы неизбежности)
-  { id = 33, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BACK,      price = 17000 }, -- плащ смерти
-  { id = 44, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BODY,      price = 17000 }, -- халат сар-иссы
-  { id = 71, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 17000 }, -- том силы (амулет некроманта)
-  { id = 83, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BAG,       price = 18000 }, -- череп маркела
-  { id = 76, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 18000 }, -- том хаоса
-  { id = 79, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 18000 }, -- том призыва
-  { id = 77, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 18000 }, -- том света
-  { id = 13, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BODY,      price = 22000 }, -- доспех забытого
-  { id = 78, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 24000 }, -- том тьмы
-  -- { id = 91, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,   price = 20000 }, -- кольцо машин
-  -- { id = 15, level = ARTS_LEVELS.RELIC, position = ART_POSITION.NECK,   price = 15000 }, -- кулон мастерства
-  -- { id = 6, level = ARTS_LEVELS.RELIC, position = ART_POSITION.WEAPON,  price = 35000 }, -- посох преисподней
-  -- { id = 89, level = ARTS_LEVELS.RELIC, position = ART_POSITION.HEAD,   price = 26000 }, -- маска справедливости
-  -- { id = 69, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BACK,   price = 16000 }, -- плащ сандро
-  -- { id = 22, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,   price = 30000 }, -- кольцо скорости
+  { id = 68, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BOOTS,     price = 13500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 49, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BOOTS,     price = 13500 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 11, level = ARTS_LEVELS.RELIC, position = ART_POSITION.HEAD,      price = 14000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  { id = 47, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,      price = 14000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ
+  { id = 7,  level = ARTS_LEVELS.RELIC, position = ART_POSITION.WEAPON,    price = 14000 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+  { id = 33, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BACK,      price = 17000 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 44, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BODY,      price = 17000 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ
+  { id = 71, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 17000 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+  { id = 83, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BAG,       price = 18000 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 76, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 18000 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  { id = 79, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 18000 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 77, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 18000 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  { id = 13, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BODY,      price = 22000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  { id = 78, level = ARTS_LEVELS.RELIC, position = ART_POSITION.SHILD,     price = 24000 }, -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  -- { id = 91, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,   price = 20000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  -- { id = 15, level = ARTS_LEVELS.RELIC, position = ART_POSITION.NECK,   price = 15000 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  -- { id = 6, level = ARTS_LEVELS.RELIC, position = ART_POSITION.WEAPON,  price = 35000 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  -- { id = 89, level = ARTS_LEVELS.RELIC, position = ART_POSITION.HEAD,   price = 26000 }, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  -- { id = 69, level = ARTS_LEVELS.RELIC, position = ART_POSITION.BACK,   price = 16000 }, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  -- { id = 22, level = ARTS_LEVELS.RELIC, position = ART_POSITION.RING,   price = 30000 }, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 };
 
--- Перечисление всех героев
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 HEROES = {
-  ELLESHAR = 'Elleshar',               -- Винраэль
-  NATHANIEL = 'Nathaniel',             -- Эллайна
-  UNA = 'Una',                         -- Инга
-  DUNCAN ='Duncan',                    -- Дункан
-  NIKOLAS = 'Nikolas',                 -- Николас
-  ABERRAR = 'Aberrar',                 -- Золтан
-  VEGEYR = 'Vegeyr',                   -- Свея
-  RED_HEAVEN_HERO = 'RedHeavenHero03', -- Валерия
-  ALARIC = 'Alaric',                   -- Аларик
-  ROLF = 'Rolf',                       -- Ролф
-  ALMEGIR = 'Almegir',                 -- Ирбет
-  MAAHIR = 'Maahir',                   -- Маахир
-  CYRUS = 'Cyrus',                     -- Сайрус
-  BEREIN = 'Berein',                   -- Маркел
-  TAN = 'Tan',                         -- Джалиб
-  NARHIZ = 'Razzak',                   -- Нархиз
-  ILDAR = 'Ildar',                     -- Аларон
-  JAZAZ = 'Jazaz',                     -- Ниброс
-  BREM = 'Brem',                       -- Рутгер
-  SHADWYN = 'Shadwyn',                 -- Илайя
-  KIGAN = 'Hero9',                     -- Киган
-  ORLANDO = 'Orlando',                 -- Орландо
-  BRAND = 'Brand',                     -- Бранд
-  NADAUR = 'Nadaur',                   -- Таланар
-  HEAM = 'Heam',                       -- Файдаэн
-  ERUINA = 'Eruina',                   -- Эрин
-  FERIGL = 'Ferigl',                   -- Соргал
-  WULFSTAN = 'Wulfstan',               -- Вульфстен
-  GROK = 'Grok',                       -- Грок
-  MARDER = 'Marder',                   -- Марбас
-  KUJIN = 'Kujin',                     -- Куджин
-  VAYSHAN = 'Ohtarig',                 -- Вайшан
-  QUROQ = 'Quroq'                      -- Курак
+  ELLESHAR = 'Elleshar',               -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  NATHANIEL = 'Nathaniel',             -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  UNA = 'Una',                         -- пїЅпїЅпїЅпїЅ
+  DUNCAN ='Duncan',                    -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  NIKOLAS = 'Nikolas',                 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  ABERRAR = 'Aberrar',                 -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  VEGEYR = 'Vegeyr',                   -- пїЅпїЅпїЅпїЅ
+  RED_HEAVEN_HERO = 'RedHeavenHero03', -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  ALARIC = 'Alaric',                   -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  ROLF = 'Rolf',                       -- пїЅпїЅпїЅпїЅ
+  ALMEGIR = 'Almegir',                 -- пїЅпїЅпїЅпїЅпїЅ
+  MAAHIR = 'Maahir',                   -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  CYRUS = 'Cyrus',                     -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  BEREIN = 'Berein',                   -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  TAN = 'Tan',                         -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  NARHIZ = 'Razzak',                   -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  ILDAR = 'Ildar',                     -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  JAZAZ = 'Jazaz',                     -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  BREM = 'Brem',                       -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  SHADWYN = 'Shadwyn',                 -- пїЅпїЅпїЅпїЅпїЅ
+  KIGAN = 'Hero9',                     -- пїЅпїЅпїЅпїЅпїЅ
+  ORLANDO = 'Orlando',                 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  BRAND = 'Brand',                     -- пїЅпїЅпїЅпїЅпїЅ
+  NADAUR = 'Nadaur',                   -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  HEAM = 'Heam',                       -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  ERUINA = 'Eruina',                   -- пїЅпїЅпїЅпїЅ
+  FERIGL = 'Ferigl',                   -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  WULFSTAN = 'Wulfstan',               -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  GROK = 'Grok',                       -- пїЅпїЅпїЅпїЅ
+  MARDER = 'Marder',                   -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  KUJIN = 'Kujin',                     -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  VAYSHAN = 'Ohtarig',                 -- пїЅпїЅпїЅпїЅпїЅпїЅ
+  QUROQ = 'Quroq'                      -- пїЅпїЅпїЅпїЅпїЅ
 };
 
 
--- Соотношение игроков к подконтрольным им городам
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 MAP_PLAYER_TO_TOWNNAME = {
   [PLAYER_1] = 'RANDOMTOWN1',
   [PLAYER_2] = 'RANDOMTOWN2',
 }
 
--- Сгенерированный набор заклинаний для
--- 2 Набора основных заклинаний для возможности покупки второго набора
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+-- 2 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 PLAYERS_GENERATED_SPELLS = {
   [PLAYER_1] = {
     countResetSpells = 0,
@@ -768,15 +768,15 @@ PLAYERS_GENERATED_SPELLS = {
   },
 };
 
--- Список сгенерированных войск в городах игроков
--- Индекс юнита равен его уровню
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 RESULT_ARMY_INTO_TOWN = {
   [PLAYER_1] = {},
   [PLAYER_2] = {},
 };
 
 
--- Список юнитов, для генерации в городе
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 UNITS = {
   [RACES.NEUTRAL] = {
     { kol = 80, id =113, price1 =  150, power =  355, lvl = 1 },
@@ -975,8 +975,8 @@ UNITS = {
   }
 };
 
--- Количество опыта, необходимое для достижения необходимого уровня от первого
--- Значения из мануала
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 TOTAL_EXPERIENCE_BY_LEVEL = {
   0,                      -- 1
   1000,                   -- 2
@@ -1020,7 +1020,7 @@ TOTAL_EXPERIENCE_BY_LEVEL = {
   1215939194              -- 40
 };
 
--- Количество использования ментора игроками
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 MENTOR_USAGE_COUNTER = {
   players_value = {
     [PLAYER_1] = 0,
@@ -1032,8 +1032,8 @@ MENTOR_USAGE_COUNTER = {
   end,
 };
 
--- Список сгенерированных войск в городах игроков
--- Индекс юнита равен его уровню
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 RESULT_ARMY_INTO_TOWN = {
   [PLAYER_1] = {},
   [PLAYER_2] = {},

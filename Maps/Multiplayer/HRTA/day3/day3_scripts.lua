@@ -9,13 +9,15 @@ sleep(1);
 function day3()
   print "day3"
 
-  CLEAR_CHOSING_STAGE(); -- �������� ������ ������
+  if drafts_core.GetDraftType() ~= DRAFT_TYPE_FIVE then
+    CLEAR_CHOSING_STAGE(); -- �������� ������ ������
+    addHeroesToPlayers();
+    startThread(controlInitialCreaturesThread);
+    setHeroesInitialProperties();
+    setEnemyHeroPosters();
+  end 
 
-  addHeroesToPlayers();
   setInfityMoveRegions();
-  startThread(controlInitialCreaturesThread);
-  setHeroesInitialProperties();
-  setEnemyHeroPosters();
   changePlayersArea();
   checkCustomGameMode();
   doFile(PATH_TO_DAY3_SCRIPTS.."spells_generate/spells_generate_scripts.lua");

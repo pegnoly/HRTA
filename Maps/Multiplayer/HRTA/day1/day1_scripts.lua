@@ -47,8 +47,8 @@ function day1()
   setAuthorMapsDescription();
   objectsWothInformation();
   
-  ShowFlyingSign(PATH_TO_DAY1_MESSAGES.."skip_day1.txt", Biara, 1, 5.0);
-  ShowFlyingSign(PATH_TO_DAY1_MESSAGES.."skip_day1.txt", Djovanni, 2, 5.0);
+  -- ShowFlyingSign(PATH_TO_DAY1_MESSAGES.."skip_day1.txt", Biara, 1, 5.0);
+  -- ShowFlyingSign(PATH_TO_DAY1_MESSAGES.."skip_day1.txt", Djovanni, 2, 5.0);
 end;
 
 -- ������ � ����������
