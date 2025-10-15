@@ -59,42 +59,10 @@ spells_generation_core = {
             },
             count = 5
         }
-    }   
+    },
 
     ---@type table<TownType, table<MagicLineType, SpellSchoolType>>
     lines_by_races = {
-        [TOWN_HEAVEN] = {
-            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_LIGHT,
-            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DARK
-        },
-        [TOWN_INFERNO] = {
-            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
-            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
-        },
-        [TOWN_INFERNO] = {
-            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
-            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
-        },
-        [TOWN_INFERNO] = {
-            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
-            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
-        },
-        [TOWN_INFERNO] = {
-            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
-            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
-        },
-        [TOWN_INFERNO] = {
-            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
-            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
-        },
-        [TOWN_INFERNO] = {
-            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
-            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
-        },
-        [TOWN_INFERNO] = {
-            [FIRST_MAGIC_LINE] = MAGIC_SCHOOL_DARK,
-            [SECOND_MAGIC_LINE] = MAGIC_SCHOOL_DESTRUCTIVE
-        },
     },
 
 
