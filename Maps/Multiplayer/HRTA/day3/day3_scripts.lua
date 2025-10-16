@@ -11,20 +11,20 @@ function day3()
 
   if drafts_core.GetDraftType() ~= DRAFT_TYPE_FIVE then
     CLEAR_CHOSING_STAGE(); -- �������� ������ ������
-    addHeroesToPlayers();
-    startThread(controlInitialCreaturesThread);
-    setHeroesInitialProperties();
-    setEnemyHeroPosters();
-    doFile(PATH_TO_DAY3_SCRIPTS.."spells_generate/spells_generate_scripts.lua");
-    doFile(PATH_TO_DAY3_SCRIPTS.."start_bonus/start_bonus_scripts.lua");
-    doFile(PATH_TO_DAY3_SCRIPTS.."set_initial_resources/set_initial_resources_scripts.lua");
-    doFile(PATH_TO_DAY3_SCRIPTS.."start_learning/start_learning_scripts.lua");
-    doFile(PATH_TO_DAY3_SCRIPTS.."buy_hero/buy_hero_scripts.lua");
   end 
 
+  addHeroesToPlayers();
+  startThread(controlInitialCreaturesThread);
+  setHeroesInitialProperties();
+  setEnemyHeroPosters();
   setInfityMoveRegions();
   changePlayersArea();
   checkCustomGameMode();
+  doFile(PATH_TO_DAY3_SCRIPTS.."spells_generate/spells_generate_scripts.lua");
+  doFile(PATH_TO_DAY3_SCRIPTS.."start_bonus/start_bonus_scripts.lua");
+  doFile(PATH_TO_DAY3_SCRIPTS.."set_initial_resources/set_initial_resources_scripts.lua");
+  doFile(PATH_TO_DAY3_SCRIPTS.."start_learning/start_learning_scripts.lua");
+  doFile(PATH_TO_DAY3_SCRIPTS.."buy_hero/buy_hero_scripts.lua");
   doFile(PATH_TO_DAY3_SCRIPTS.."town_building/town_building_scripts.lua");
 end;
 
