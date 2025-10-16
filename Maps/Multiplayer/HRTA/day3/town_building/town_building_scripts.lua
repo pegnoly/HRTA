@@ -5,18 +5,36 @@ sleep(1);
 function buildingTown()
   print "buildingTown"
 
-  for _, playerId in PLAYER_ID_TABLE do
-    local raceId = RESULT_HERO_LIST[playerId].raceId;
-    local townName = MAP_PLAYER_TO_TOWNNAME[playerId];
-    transformPlayersTown(townName, raceId);
+  if drafts_core.GetDraftType() ~= DRAFT_TYPE_FIVE then --! remove this when other drafts are reworked
+    for _, playerId in PLAYER_ID_TABLE do
+      local raceId = RESULT_HERO_LIST[playerId].raceId;
+      local townName = MAP_PLAYER_TO_TOWNNAME[playerId];
+      transformPlayersTown(townName, raceId);
 
-    setTownMaximumLevel(townName, raceId);
-    -- #6 в моде Аутора города не должны настраиваться по дефолту
-    if not (game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR) then
-      SetObjectOwner(townName, playerId);
-      setArmyIntoTown(townName, raceId, playerId);
-    end 
-  end;
+      setTownMaximumLevel(townName, raceId);
+      -- #6 в моде Аутора города не должны настраиваться по дефолту
+      if not (game_modes_core.current_mode == GAME_MODE_ASTROLOGY and astrology_core.current_week == ASTROLOGY_WEEK_AUOTOR) then
+        SetObjectOwner(townName, playerId);
+        setArmyIntoTown(townName, raceId, playerId);
+      end 
+    end;
+  else
+    for player = PLAYER_1, PLAYER_2 do
+      local race = players_utils.GetPlayerSelectedRace(player)
+      local town = "RANDOMTOWN"..player
+      local map_town_to_race = {
+        [TOWN_HEAVEN] = RACES.HAVEN,
+        [TOWN_INFERNO] = RACES.INFERNO,
+        [TOWN_NECROMANCY] = RACES.NECROPOLIS,
+        [TOWN_PRESERVE] = RACES.SYLVAN,
+        [TOWN_ACADEMY] = RACES.ACADEMY,
+        [TOWN_DUNGEON] = RACES.DUNGEON,
+        [TOWN_FORTRESS] = RACES.FORTRESS,
+        [TOWN_STRONGHOLD] = RACES.STRONGHOLD
+      }
+      startThread(setArmyIntoTown, town, map_town_to_race[race], player)
+    end
+  end
 end;
 
 -- ��������� ����������� ������ �� ����� ���������� ����

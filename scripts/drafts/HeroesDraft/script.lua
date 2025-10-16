@@ -2,8 +2,6 @@ while not drafts_core do
     sleep()
 end
 
-consoleCmd("game_writelog 1")
-
 single_heroes_draft = {
 
     path = "/Text/HRTA/drafts/SingleHeroDraft/",
@@ -29,6 +27,7 @@ single_heroes_draft = {
         [TOWN_STRONGHOLD] = {}
     },
 
+    ---@type table<PlayerID, Position>
     -- тайлы, с которых начинается генерация портретов
     generation_start_points = {
         [PLAYER_1] = { x = 31, y = 85 },
@@ -88,18 +87,12 @@ single_heroes_draft = {
         [PLAYER_2] = {}
     },
 
-    -- Действия, разрешенные игроку на данной стадии драфта
-    ---@type table<DraftActionType, number>
-    this_phase_allowed_actions = {
-        [HERO_PICKED_FOR_OPP] = 1,
-        [HERO_SELF_PICKED] = 1
-    },
-
     -- Последовательность банов/пиков
     ---@type CompletedDraftAction []
     draft_actions_queue = {},
 
     ---@type table<PlayerID, 1|nil>
+    -- Статус завершения драфта для игроков
     draft_finished_for_player = {},
 
     Init =
@@ -278,9 +271,6 @@ single_heroes_draft = {
     MoveToNextTurn =
     --- Вызывается при завершении каждого действия в ходе драфта, определяет следующее действие
     function ()
-        for action, _ in single_heroes_draft.this_phase_allowed_actions do
-            single_heroes_draft.this_phase_allowed_actions[action] = nil
-        end
         local prev_drafter = single_heroes_draft.current_drafter
         local new_drafter = PLAYER_3 - single_heroes_draft.current_drafter
 
@@ -334,7 +324,6 @@ single_heroes_draft = {
         single_heroes_draft.draft_finished_for_player[drafter] = 1
         if reason == DRAFT_FINISH_REASON_ALL_PICKED then
             for i, hero in single_heroes_draft.heroes_left_in_set[drafter] do
-                print("Heroes left in set: ", single_heroes_draft.heroes_left_in_set[drafter])
                 if hero then
                     local hero_data = single_heroes_draft.generated_heroes_data[hero]
                     StopVisualEffects(hero_data.player_portait.."_fx")
@@ -384,7 +373,7 @@ single_heroes_draft = {
             end
         end
 
-        -- startThread(towns_setup.Init)
+        startThread(towns_setup.Init)
 
         asha.AddGlobalField("DraftActions", "["..list_iterator.Concat(
             list_iterator.FilterMap(single_heroes_draft.draft_actions_queue,
@@ -401,7 +390,7 @@ single_heroes_draft = {
 
 NewDayEvent.AddListener("HRTA_single_heroes_draft_generate_portaits_listener",
 function (day)
-    if day == DRAFTS_SKIP_DAY then
+    if day == DRAFTS_SKIP_DAY and drafts_core.GetDraftType() == DRAFT_TYPE_FIVE then
         startThread(single_heroes_draft.PregenerateSets)
     end
 end)

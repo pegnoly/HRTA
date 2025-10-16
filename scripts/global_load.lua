@@ -17,7 +17,7 @@ doFile('/scripts/drafts/HeroesDraft/script.lua')
 doFile('/scripts/prepare_stage/types.lua')
 doFile('/scripts/prepare_stage/core.lua')
 
--- doFile('/scripts/prepare_stage/towns_setup/script.lua')
+doFile('/scripts/prepare_stage/towns_setup/script.lua')
 -- doFile('/scripts/prepare_stage/army_generation/script.lua')
 
 -- Режимы игры

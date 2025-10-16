@@ -40,9 +40,9 @@ prepare_stage_core = {
 
 NewDayEvent.AddListener("HRTA_prepare_stage_init_listener",
 function (day)
-    if day == PREPARE_STAGE_LEVELING_DAY then
+    if day == PREPARE_STAGE_LEVELING_DAY and drafts_core.GetDraftType() == DRAFT_TYPE_FIVE then
         for player = PLAYER_1, PLAYER_2 do
-            SetObjectOwner("player_"..player.."_main_town", player)
+            SetObjectOwner("RANDOMTOWN"..player, player) -- !player_#_main_town
             startThread(prepare_stage_core.SpawnHeroes, player)
             unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(player), MOVE_THREAD_TYPE_UNLIM)
             -- startThread(army_generation.Setup)
