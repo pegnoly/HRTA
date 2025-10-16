@@ -10,6 +10,10 @@ game_modes_core = {
 
     TouchActivator = 
     function (hero, object)
+        if GetDate(DAY) ~= 1 then
+            startThread(MCCS_MessageBoxForPlayers, PLAYER_1, game_modes_core.path.."cant_select.txt")
+            return
+        end
         if astrology_core.Select(hero, object) then
             game_modes_core.current_mode = GAME_MODE_ASTROLOGY
             -- GAME_MODE.MIX = 1
