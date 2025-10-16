@@ -26,7 +26,8 @@ function (day)
             sleep()
         end
         for player = PLAYER_1, PLAYER_2 do
-           startThread(MCCS_MessageBoxForPlayers, player, {astrology_core.path.."nargott_week_desc.txt"; gold_amount = astrology_nargott_mode.generated_gold})
+            local selected_msg = astrology_core.week_was_hand_selected and astrology_core.path.."week_was_selected_by_player.txt" or "blank.txt"
+            startThread(MCCS_MessageBoxForPlayers, player, {astrology_core.path.."nargott_week_desc.txt"; selected_by = selected_msg, gold_amount = astrology_nargott_mode.generated_gold})
         end
     end
 end)

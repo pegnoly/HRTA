@@ -11,6 +11,8 @@ astrology_core = {
 
     path = "/Text/HRTA/GameModes/Astrology/",
 
+    week_was_hand_selected = nil,
+
     ---@type table<AstrologyModeWeekType, string>
     week_type_messages = {
         [ASTROLOGY_WEEK_NARGOTT] = "nargott_week_desc",
@@ -49,6 +51,7 @@ astrology_core = {
                 local select_msg = astrology_core.path.."select_"..astrology_core.week_type_names[week].."_week.txt"
                 if MCCS_QuestionBoxForPlayers(GetObjectOwner(hero), select_msg) then
                     astrology_core.current_week = week
+                    astrology_core.week_was_hand_selected = 1
                     Trigger(CUSTOM_ABILITY_TRIGGER, nil)
                     ControlHeroCustomAbility(hero, CUSTOM_ABILITY_2, CUSTOM_ABILITY_NOT_PRESENT)
                     ShowFlyingSign(
