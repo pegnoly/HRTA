@@ -371,6 +371,9 @@ single_heroes_draft = {
                 end)
                 prepare_stage_core.tavern_heroes_by_player[player] = Random.FromTable(heroes_left)
             end
+
+            RESULT_HERO_LIST[player].choised_heroes = selected_heroes
+            RESULT_HERO_LIST[player].raceId = backward_compatibility.MapTownToHRTARace(players_utils.GetPlayerSelectedRace(player))
         end
 
         startThread(towns_setup.Init)

@@ -22,17 +22,8 @@ function buildingTown()
     for player = PLAYER_1, PLAYER_2 do
       local race = players_utils.GetPlayerSelectedRace(player)
       local town = "RANDOMTOWN"..player
-      local map_town_to_race = {
-        [TOWN_HEAVEN] = RACES.HAVEN,
-        [TOWN_INFERNO] = RACES.INFERNO,
-        [TOWN_NECROMANCY] = RACES.NECROPOLIS,
-        [TOWN_PRESERVE] = RACES.SYLVAN,
-        [TOWN_ACADEMY] = RACES.ACADEMY,
-        [TOWN_DUNGEON] = RACES.DUNGEON,
-        [TOWN_FORTRESS] = RACES.FORTRESS,
-        [TOWN_STRONGHOLD] = RACES.STRONGHOLD
-      }
-      startThread(setArmyIntoTown, town, map_town_to_race[race], player)
+      local converted_race = backward_compatibility.MapTownToHRTARace(race)
+      startThread(setArmyIntoTown, town, converted_race, player)
     end
   end
 end;
