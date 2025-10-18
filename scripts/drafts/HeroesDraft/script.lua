@@ -359,6 +359,8 @@ single_heroes_draft = {
         PREPARE_STAGE_FIGHT_DAY = GetDate(DAY) + 4
         
         for player = PLAYER_1, PLAYER_2 do
+            -- RESULT_HERO_LIST[player].choised_heroes = single_heroes_draft.picked_heroes[player]
+            -- ! remove this +1, it is only needed to be compatible with current format of draft result
             local selected_heroes = list_iterator.TakeRandom(single_heroes_draft.picked_heroes[player], prepare_stage_core.active_heroes_count)
             prepare_stage_core.heroes_by_player[player] = selected_heroes
             if players_utils.GetPlayerSelectedRace(player) ~= players_utils.GetPlayerSelectedRace(PLAYER_3 - player) then
@@ -372,8 +374,8 @@ single_heroes_draft = {
                 prepare_stage_core.tavern_heroes_by_player[player] = Random.FromTable(heroes_left)
             end
 
-            RESULT_HERO_LIST[player].choised_heroes = selected_heroes
-            RESULT_HERO_LIST[player].raceId = backward_compatibility.MapTownToHRTARace(players_utils.GetPlayerSelectedRace(player))
+            -- RESULT_HERO_LIST[player].heroes = selected_heroes
+            -- RESULT_HERO_LIST[player].raceId = backward_compatibility.MapTownToHRTARace(players_utils.GetPlayerSelectedRace(player))
         end
 
         startThread(towns_setup.Init)
@@ -415,5 +417,6 @@ function (day)
         PREPARE_STAGE_SPECIAL_DAY = 3
         PREPARE_STAGE_PREFIGHT_DAY = 4
         PREPARE_STAGE_FIGHT_DAY = 5
+        startThread(spells_generation_core.PregenerateSpells)
     end
 end)

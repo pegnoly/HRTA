@@ -383,6 +383,10 @@ function table.insert(t, value, pos)
 	t[pos] = value
 end
 
+---comment
+---@generic T
+---@param t table
+---@param v `T`
 function table.push(t, v)
 	local i = length(t) + 1
 	t[i] = v

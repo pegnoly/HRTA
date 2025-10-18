@@ -1,5 +1,6 @@
+-- doFile(GetMapDataPath()..'constants.lua');
 doFile('/scripts/testing/core.lua')
-doFile('/scripts/backward_compatibility/script.lua')
+-- doFile('/scripts/backward_compatibility/script.lua')
 -- Технические функции
 doFile('/scripts/utils/unlim_moves_threads.lua')
 doFile('/scripts/utils/player.lua')
@@ -18,16 +19,17 @@ doFile('/scripts/prepare_stage/types.lua')
 doFile('/scripts/prepare_stage/core.lua')
 
 doFile('/scripts/prepare_stage/towns_setup/script.lua')
--- doFile('/scripts/prepare_stage/army_generation/script.lua')
+doFile('/scripts/prepare_stage/army_generation/script.lua')
+doFile('/scripts/prepare_stage/spells_generation/core.lua')
 
 -- Режимы игры
-doFile('/scripts/game_modes/types.lua')
-doFile('/scripts/game_modes/core.lua')
+-- doFile('/scripts/game_modes/types.lua')
+-- doFile('/scripts/game_modes/core.lua')
 
--- Астрология
-doFile('/scripts/game_modes/astrology/types.lua')
-doFile('/scripts/game_modes/astrology/core.lua')
-doFile('/scripts/game_modes/astrology/nargott/script.lua')
-doFile('/scripts/game_modes/astrology/sithis/script.lua')
-doFile('/scripts/game_modes/astrology/auotor/script.lua')
-doFile('/scripts/game_modes/astrology/arhydevi/script.lua')
+-- -- Астрология
+-- doFile('/scripts/game_modes/astrology/types.lua')
+-- doFile('/scripts/game_modes/astrology/core.lua')
+-- doFile('/scripts/game_modes/astrology/nargott/script.lua')
+-- doFile('/scripts/game_modes/astrology/sithis/script.lua')
+-- doFile('/scripts/game_modes/astrology/auotor/script.lua')
+-- doFile('/scripts/game_modes/astrology/arhydevi/script.lua')

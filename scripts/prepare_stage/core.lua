@@ -42,10 +42,17 @@ NewDayEvent.AddListener("HRTA_prepare_stage_init_listener",
 function (day)
     if day == PREPARE_STAGE_LEVELING_DAY and drafts_core.GetDraftType() == DRAFT_TYPE_FIVE then
         for player = PLAYER_1, PLAYER_2 do
-            SetObjectOwner("RANDOMTOWN"..player, player) -- !player_#_main_town
+            SetObjectOwner("player_"..player.."_main_town", player)
             startThread(prepare_stage_core.SpawnHeroes, player)
             unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(player), MOVE_THREAD_TYPE_UNLIM)
-            -- startThread(army_generation.Setup)
+            for _, hero in single_heroes_draft.picked_heroes[player] do
+                local hero_data = single_heroes_draft.generated_heroes_data[hero]
+                StopVisualEffects(hero_data.player_portait.."_fx")
+                StopVisualEffects(hero_data.opponent_portrait.."_fx")
+                Object.RemoveSelection(hero_data.player_portait, hero_data.opponent_portrait)
+            end
+            startThread(army_generation.Setup)
+            startThread(spells_generation_core.PlaceSpells)
         end
     end
 end)

@@ -418,7 +418,7 @@
 				</Pos>
 				<Rot>6.51683e-007</Rot>
 				<Floor>0</Floor>
-				<Name>RANDOMTOWN1</Name>
+				<Name>player_1_main_town</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/RandomTown.xdb#xpointer(/AdvMapTownShared)"/>
@@ -643,7 +643,7 @@
 				</Pos>
 				<Rot>3.1416</Rot>
 				<Floor>0</Floor>
-				<Name>RANDOMTOWN2</Name>
+				<Name>player_2_main_town</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/RandomTown.xdb#xpointer(/AdvMapTownShared)"/>
@@ -45810,6 +45810,906 @@
 				<Rot>0</Rot>
 				<Floor>1</Floor>
 				<Name>placeholder_8_p2_opp</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_11">
+			<AdvMapTreasure>
+				<Pos>
+					<x>4</x>
+					<y>4</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_11</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_12">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_12</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_13">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_13</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_14">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_14</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_15">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_15</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_16">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_16</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_17">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_17</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_18">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_18</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_19">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_19</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_110">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_110</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_111">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_111</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_112">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_112</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_113">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_113</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_114">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_114</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_115">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_115</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_116">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_116</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_117">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_117</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_118">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_118</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_119">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_119</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_120">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_120</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_121">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_121</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_122">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_122</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_123">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_123</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_124">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_124</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_125">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_125</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_21">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_21</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_22">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_22</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_23">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_23</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_24">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_24</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_25">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_25</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_26">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_26</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_27">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_27</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_28">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_28</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_29">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_29</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_210">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_210</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_211">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_211</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_212">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_212</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_213">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_213</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_214">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_214</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_215">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_215</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_216">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_216</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_217">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_217</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_218">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_218</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_219">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_219</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_220">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_220</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_221">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_221</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_222">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_222</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_223">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_223</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_224">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_224</Name>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>
+				<IsCustom>false</IsCustom>
+				<Amount>0</Amount>
+				<MessageFileRef href=""/>
+			</AdvMapTreasure>
+		</Item>
+		<Item href="#n:inline(AdvMapTreasure)" id="item_PH_spell_225">
+			<AdvMapTreasure>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>-10</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name>placeholder_spell_225</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/Soulstone.(AdvMapTreasureShared).xdb#xpointer(/AdvMapTreasureShared)"/>

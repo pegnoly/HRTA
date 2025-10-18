@@ -93,7 +93,7 @@ towns_setup = {
     --- Входная точка настройки городов
     function ()
         for player = PLAYER_1, PLAYER_2 do
-            local town = "RANDOMTOWN"..player --!"player_"..player.."_main_town"
+            local town = "player_"..player.."_main_town"
             local race = players_utils.GetPlayerSelectedRace(player)
             startThread(towns_setup.SetupTown, town, race)
         end

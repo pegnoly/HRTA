@@ -9,6 +9,9 @@ players_utils = {
     end,
 
     GetPlayerSelectedRace = 
+    ---comment
+    ---@param player PlayerID
+    ---@return TownType
     function (player)
         local result = players_utils.races[player]
         return result

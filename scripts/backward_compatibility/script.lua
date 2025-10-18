@@ -1,3 +1,7 @@
+while not RACES do
+    sleep()
+end
+
 backward_compatibility = {
 
     map_town_to_race = {
