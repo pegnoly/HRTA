@@ -1,5 +1,6 @@
+-- Типы линеек спеллов
 ---@alias MagicLineType
----|`FIRST_MAIN_LINE`
+---|`FIRST_MAIN_LINE` 
 ---|`SECOND_MAIN_LINE`
 ---|`THIRD_MAIN_LINE`
 ---|`FIRST_ADDITIONAL_LINE`
@@ -12,10 +13,14 @@ FIRST_ADDITIONAL_LINE = 4
 SECOND_ADDITIONAL_LINE = 5
 THIRD_ADDITIONAL_LINE = 6
 
+-- Дефолтный минимальный уровень спеллов в доп линейке
 ADDITIONAL_LINE_DEFAULT_MIN_LEVEL = 1
+-- Дефолтный максимальный уровень спеллов в доп линейке
 ADDITIONAL_LINE_DEFAULT_MAX_LEVEL = 3
 
 spells_generation_core = {
+    ---@type table<SpellSchoolType, number[]>
+    -- Доступные для генерации спеллы
     allowed_spells = {
         [MAGIC_SCHOOL_DESTRUCTIVE] = {
             SPELL_MAGIC_ARROW, SPELL_STONE_SPIKES,
@@ -48,6 +53,7 @@ spells_generation_core = {
     },
 
     ---@type table<MagicLineType, table<PlayerID, Position>>
+    -- Позиции на карте, с которых начинается генерация эффектов линеек спеллов
     lines_positions = {
         [FIRST_MAIN_LINE] = {
             [PLAYER_1] = { x = 33, y = 87 },
@@ -63,21 +69,17 @@ spells_generation_core = {
         },
         [FIRST_ADDITIONAL_LINE] = {
             [PLAYER_1] = { x = 38, y = 87 },
-            [PLAYER_2] = { x = 44, y = 20 }
+            [PLAYER_2] = { x = 39, y = 22 }
         },
         [SECOND_ADDITIONAL_LINE] = {
             [PLAYER_1] = { x = 38, y = 88 },
-            [PLAYER_2] = { x = 39, y = 22 }
+            [PLAYER_2] = { x = 39, y = 21 }
         },
         [THIRD_ADDITIONAL_LINE] = {
             [PLAYER_1] = { x = 33, y = 89 },
             [PLAYER_2] = { x = 44, y = 20 }
         }
     },
-
-    current_placeholder_in_use = {[PLAYER_1] = 0, [PLAYER_2] = 0},
-    
-    spells_already_in_use = {[PLAYER_1] = {}, [PLAYER_2] = {}},
 
     ---@type table<TownType, table<MagicLineType, MagicLineModel>>
     lines_by_races = {
@@ -107,7 +109,7 @@ spells_generation_core = {
         },
         [TOWN_DUNGEON] = {
             [FIRST_MAIN_LINE] = { school = MAGIC_SCHOOL_DESTRUCTIVE, count = 5 },
-            [SECOND_MAIN_LINE] = { school = MAGIC_SCHOOL_DESTRUCTIVE, count = 5 },
+            [SECOND_MAIN_LINE] = { school = MAGIC_SCHOOL_SUMMONING, count = 5 },
             [FIRST_ADDITIONAL_LINE] = { schools = {MAGIC_SCHOOL_SUMMONING, MAGIC_SCHOOL_DARK}, count = 2 },
             [SECOND_ADDITIONAL_LINE] = { schools = {MAGIC_SCHOOL_SUMMONING, MAGIC_SCHOOL_DARK}, count = 1 },
             [THIRD_ADDITIONAL_LINE] = { schools = {MAGIC_SCHOOL_SUMMONING, MAGIC_SCHOOL_DARK, MAGIC_SCHOOL_DESTRUCTIVE, MAGIC_SCHOOL_LIGHT}, count = 3 },
@@ -123,16 +125,13 @@ spells_generation_core = {
             [SECOND_ADDITIONAL_LINE] = { schools = {MAGIC_SCHOOL_SUMMONING, MAGIC_SCHOOL_DARK}, count = 1 },
         },
         [TOWN_STRONGHOLD] = {
-            [FIRST_MAIN_LINE] = { school = MAGIC_SCHOOL_WARCRIES, count = 3}
+            [FIRST_MAIN_LINE] = { school = MAGIC_SCHOOL_WARCRIES, count = 3, space = 2}
         }
     },
 
-    ---@type table<PlayerID, MagicLineEntry[]>
-    generated_entries = {[PLAYER_1] = {}, [PLAYER_2] = {}},
-
-    GetSpellsPool =
-    ---comment
-    ---@param model MagicLineModel
+    CreateSpellsPool =
+    -- Производит список спеллов для генерации
+    ---@param model MagicLineModel Модель данных о линейке спеллов
     ---@return table pool
     function (model)
         local pool = {}
@@ -141,22 +140,24 @@ spells_generation_core = {
                 pool = list_iterator.Join(pool, spells_generation_core.allowed_spells[school])
             end
         else
-            pool = spells_generation_core.allowed_spells[model.school] 
+            pool = spells_generation_core.allowed_spells[model.school]
+            print("<color=red>Pool for model ", model, " is ", pool)
         end
         return pool
     end,
 
     GetRandomUnusedSpellOfLevel = 
     -- Генерирует случайный, еще не задействованный спелл указанного уровня
-    ---@param player PlayerID
-    ---@param spells number[]
-    ---@param level number
+    ---@param player PlayerID Id игрока, для которого генерируется спелл
+    ---@param spells_pool number[] Спеллы, из которых совершается выбор при генерации
+    ---@param level number Уровень спелла для генерации
+    ---@param used_spells number [] Спеллы, уже задействованные в генерации
     ---@return number spell
-    function (player, spells, level)
-        local possible_spells = list_iterator.Filter(spells, function (s)
+    function (player, spells_pool, level, used_spells)
+        local possible_spells = list_iterator.Filter(spells_pool, function (s)
             local l = %level
-            local p = %player
-            if Spell.Params.Level(s) == l and (not contains(spells_generation_core.spells_already_in_use[p], s)) then
+            local sp = %used_spells
+            if Spell.Params.Level(s) == l and (not contains(sp, s)) then
                 return 1
             end
             return nil
@@ -167,18 +168,19 @@ spells_generation_core = {
 
     GetRandomUnusedSpellFromLevelRange = 
     -- Генерирует случайный, еще не задействованный спелл из диапазона уровней
-    ---@param player PlayerID
-    ---@param spells number []
-    ---@param min_level number
-    ---@param max_level number
+    ---@param player PlayerID Id игрока, для которого генерируется спелл
+    ---@param spells_pool number [] Спеллы, из которых совершается выбор при генерации
+    ---@param min_level number Минимальный уровень спеллов для генерации
+    ---@param max_level number Максимальный уровень спеллов для генерации
+    ---@param used_spells number [] Спеллы, уже задействованные в генерации
     ---@return number spell
-    function (player, spells, min_level, max_level)
-        local possible_spells = list_iterator.Filter(spells, function (s)
+    function (player, spells_pool, min_level, max_level, used_spells)
+        local possible_spells = list_iterator.Filter(spells_pool, function (s)
             local min_lvl = %min_level
             local max_lvl = %max_level
-            local p = %player
+            local sp = %used_spells
             local lvl = Spell.Params.Level(s)
-            if (lvl >= min_lvl and lvl <= max_lvl) and (not contains(spells_generation_core.spells_already_in_use[p], s)) then
+            if (lvl >= min_lvl and lvl <= max_lvl) and (not contains(sp, s)) then
                 return 1
             end
             return nil
@@ -187,98 +189,11 @@ spells_generation_core = {
         return spell
     end,
 
-    ConfigureSpellEntry = 
-    ---comment
-    ---@param player PlayerID
-    ---@param line MagicLineType
-    ---@param spell number
-    ---@param index number
-    function (player, line, spell, index)
-        spells_generation_core.current_placeholder_in_use[player] = spells_generation_core.current_placeholder_in_use[player] + 1
-        local placeholder_name = "placeholder_spell_"..player..""..spells_generation_core.current_placeholder_in_use[player]
-        local base_pos = spells_generation_core.lines_positions[line][player]
-        ---@type MagicLineEntry
-        local entry_data = {
-            placeholder = placeholder_name,
-            spell = spell,
-            position = {
-                x = base_pos.x + ((index - 1) * (player == PLAYER_1 and 1 or -1)),
-                y = base_pos.y
-            }
-        }
-        table.push(spells_generation_core.generated_entries[player], entry_data)
-    end,
-
-    GenerateMainMagicLine =
-    ---comment
-    ---@param player PlayerID
-    ---@param line MagicLineType
-    ---@param model MagicLineModel
-    function (player, line, model)
-        local pool = spells_generation_core.GetSpellsPool(model)
-        local current_level = 1
-        for index = 1, model.count do
-            local spell = spells_generation_core.GetRandomUnusedSpellOfLevel(player, pool, current_level)
-            table.push(spells_generation_core.spells_already_in_use[player], spell)
-            spells_generation_core.ConfigureSpellEntry(player, line, spell, index)
-            current_level = current_level + 1
-        end
-    end,
-
-    GenerateAdditionalMagicLine =
-    ---comment
-    ---@param player PlayerID
-    ---@param line MagicLineType
-    ---@param model MagicLineModel
-    function (player, line, model)
-        local pool = spells_generation_core.GetSpellsPool(model)
-        local min_level = model.min_lvl or ADDITIONAL_LINE_DEFAULT_MIN_LEVEL
-        local max_level = model.max_lvl or ADDITIONAL_LINE_DEFAULT_MAX_LEVEL
-        for index = 1, model.count do
-            local spell = spells_generation_core.GetRandomUnusedSpellFromLevelRange(player, pool, min_level, max_level)
-            table.push(spells_generation_core.spells_already_in_use[player], spell)
-            spells_generation_core.ConfigureSpellEntry(player, line, spell, index)
-        end
-    end,
-
-    PregenerateSpells = 
+    Init = 
     function ()
-        for player = PLAYER_1, PLAYER_2 do
-            local race = players_utils.GetPlayerSelectedRace(player)
-            ---@param line MagicLineType
-            ---@param model MagicLineModel
-            for line, model in spells_generation_core.lines_by_races[race] do
-                if line >= FIRST_MAIN_LINE and line <= THIRD_MAIN_LINE then
-                    spells_generation_core.GenerateMainMagicLine(player, line, model)
-                else
-                    spells_generation_core.GenerateAdditionalMagicLine(player, line, model)
-                end
-            end
-        end
-        print(spells_generation_core.generated_entries[PLAYER_1])
-    end,
-
-    PlaceSpells = 
-    function ()
-        for player = PLAYER_1, PLAYER_2 do
-            startThread(spells_generation_core.PlaceSpellsPool, player)
-        end
-    end,
-
-    PlaceSpellsPool =
-    function (player)
-        ---@param entry MagicLineEntry
-        for _, entry in spells_generation_core.generated_entries[player] do
-            startThread(spells_generation_core.PlaceSpellEntry, entry)
-        end
-    end,
-
-    PlaceSpellEntry =
-    ---comment
-    ---@param entry MagicLineEntry
-    function (entry)
-        local effect = "/Effects/Spells/"..entry.spell.."/active.(Effect).xdb#xpointer(/Effect)"
-        SetObjectPosition(entry.placeholder, entry.position.x, entry.position.y, GROUND)
-        PlayVisualEffect(effect, entry.placeholder)
+        local academy_second_school = Random.FromTable({MAGIC_SCHOOL_DARK, MAGIC_SCHOOL_LIGHT, MAGIC_SCHOOL_DESTRUCTIVE})
+        local academy_third_school = Random.FromTable_IgnoreValue(academy_second_school, {MAGIC_SCHOOL_DARK, MAGIC_SCHOOL_LIGHT, MAGIC_SCHOOL_DESTRUCTIVE})
+        spells_generation_core.lines_by_races[TOWN_ACADEMY][SECOND_MAIN_LINE] = { school = academy_second_school, count = 5 }
+        spells_generation_core.lines_by_races[TOWN_ACADEMY][THIRD_MAIN_LINE] = { school = academy_third_school, count = 5 }
     end
 }

@@ -422,7 +422,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[48] = {
+	[379] = {
         name = "text/game/spells/combat/spell_summon_elementals_air/name.txt",
         desc = "text/game/spells/combat/spell_summon_elementals_air/long_description.txt",
         icon = "textures/interface/combatarena/faces/neutral/ico_air_elemental_128.xdb",
@@ -431,7 +431,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[49] = {
+	[378] = {
         name = "text/game/spells/combat/spell_summon_elementals_earth/name.txt",
         desc = "text/game/spells/combat/spell_summon_elementals_earth/long_description.txt",
         icon = "textures/interface/combatarena/faces/neutral/ico_earth_elemental_128.xdb",
@@ -440,7 +440,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[50] = {
+	[376] = {
         name = "text/game/spells/combat/spell_summon_elementals_fire/name.txt",
         desc = "text/game/spells/combat/spell_summon_elementals_fire/long_description.txt",
         icon = "textures/interface/combatarena/faces/neutral/ico_fire_elemental_128.xdb",
@@ -449,7 +449,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[51] = {
+	[377] = {
         name = "text/game/spells/combat/spell_summon_elementals_water/name.txt",
         desc = "text/game/spells/combat/spell_summon_elementals_water/long_description.txt",
         icon = "textures/interface/combatarena/faces/neutral/ico_water_elemental_128.xdb",
@@ -458,7 +458,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[52] = {
+	[48] = {
         name = "text/game/spells/combat/resurrect/name.txt",
         desc = "text/game/spells/combat/resurrect/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_resurrect.xdb",
@@ -467,7 +467,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[53] = {
+	[49] = {
         name = "text/game/spells/adventure/summon_boat/name.txt",
         desc = "text/game/spells/adventure/summon_boat/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_summonboat.xdb",
@@ -476,7 +476,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[54] = {
+	[50] = {
         name = "text/game/spells/adventure/dimensiondoor/name.txt",
         desc = "text/game/spells/adventure/dimensiondoor/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_dimensionaldoor.xdb",
@@ -485,7 +485,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[55] = {
+	[51] = {
         name = "text/game/spells/adventure/town_portal/name.txt",
         desc = "text/game/spells/adventure/town_portal/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_townportal.xdb",
@@ -494,7 +494,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[56] = {
+	[52] = {
         name = "text/game/spells/hero_special_abilities/encourage/name.txt",
         desc = "text/game/spells/hero_special_abilities/encourage/long_description.txt",
         icon = "textures/specialabilities/encourage.(texture).xdb",
@@ -503,7 +503,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[57] = {
+	[53] = {
         name = "text/game/spells/hero_special_abilities/holycharge/name.txt",
         desc = "text/game/spells/hero_special_abilities/holycharge/long_description.txt",
         icon = "textures/specialabilities/holy_charge.(texture).xdb",
@@ -512,7 +512,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[58] = {
+	[54] = {
         name = "text/game/spells/hero_special_abilities/prayer/name.txt",
         desc = "text/game/spells/hero_special_abilities/prayer/long_description.txt",
         icon = "textures/specialabilities/prayer.(texture).xdb",
@@ -521,7 +521,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[59] = {
+	[55] = {
         name = "text/game/debugspells/debugteleport/name.txt",
         desc = "text/game/debugspells/debugteleport/long_description.txt",
         icon = "textures/spellbook______2618/spell_debugteleport.xdb",
@@ -530,7 +530,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[60] = {
+	[56] = {
         name = "text/game/skills/unique/gating/demonicstrike/name.txt",
         desc = "text/game/skills/unique/gating/demonicstrike/description.txt",
         icon = "textures/specialabilities/demonic_strike.(texture).xdb",
@@ -539,7 +539,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[61] = {
+	[57] = {
         name = "text/game/skills/unique/gating/consumecorpse/name.txt",
         desc = "text/game/skills/unique/gating/consumecorpse/description.txt",
         icon = "textures/specialabilities/consume_corpse.(texture).xdb",
@@ -548,7 +548,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[62] = {
+	[58] = {
         name = "text/game/spells/hero_special_abilities/spiritlink/name.txt",
         desc = "text/game/spells/hero_special_abilities/spiritlink/description.txt",
         icon = "textures/specialabilities/spirit_link.(texture).xdb",
@@ -557,7 +557,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[63] = {
+	[59] = {
         name = "text/game/spells/hero_special_abilities/deathscream/name.txt",
         desc = "text/game/spells/hero_special_abilities/deathscream/long_description.txt",
         icon = "textures/specialabilities/death_scream.(texture).xdb",
@@ -566,7 +566,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[64] = {
+	[60] = {
         name = "text/game/skills/unique/avenger/snipedead/name.txt",
         desc = "text/game/skills/unique/avenger/snipedead/description.txt",
         icon = "textures/heroscreen/perks/avenger_snipedead.xdb",
@@ -575,7 +575,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[65] = {
+	[61] = {
         name = "text/game/skills/unique/avenger/multishot/name.txt",
         desc = "text/game/skills/unique/avenger/multishot/description.txt",
         icon = "textures/specialabilities/multishot.(texture).xdb",
@@ -584,7 +584,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[66] = {
+	[62] = {
         name = "text/game/skills/unique/avenger/imbuearrow/name.txt",
         desc = "text/game/skills/unique/avenger/imbuearrow/description.txt",
         icon = "textures/specialabilities/imbue_arrow.(texture).xdb",
@@ -593,7 +593,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[67] = {
+	[63] = {
         name = "text/game/spells/hero_special_abilities/magicbond/name.txt",
         desc = "text/game/spells/hero_special_abilities/magicbond/long_description.txt",
         icon = "textures/specialabilities/magic_bond.(texture).xdb",
@@ -602,7 +602,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[68] = {
+	[64] = {
         name = "text/game/skills/unique/artificer/meltartifact/name.txt",
         desc = "text/game/skills/unique/artificer/meltartifact/description.txt",
         icon = "textures/specialabilities/melt_artifact.(texture).xdb",
@@ -611,7 +611,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[69] = {
+	[65] = {
         name = "text/game/skills/common/sorcery/counterspell/name.txt",
         desc = "text/game/skills/common/sorcery/counterspell/description.txt",
         icon = "textures/specialabilities/counterspell.(texture).xdb",
@@ -620,7 +620,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[70] = {
+	[66] = {
         name = "text/game/spells/hero_special_abilities/unsummon/name.txt",
         desc = "text/game/spells/hero_special_abilities/unsummon/long_description.txt",
         icon = "textures/specialabilities/unsummon.(texture).xdb",
@@ -629,7 +629,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[71] = {
+	[67] = {
         name = "text/game/spells/hero_special_abilities/darkritual/name.txt",
         desc = "text/game/spells/hero_special_abilities/darkritual/long_description.txt",
         icon = "textures/specialabilities/dark_ritual.(texture).xdb",
@@ -638,7 +638,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[72] = {
+	[68] = {
         name = "text/game/skills/common/offence/1/name.txt",
         desc = "text/game/skills/common/offence/1/description.txt",
         icon = "textures/heroscreen/skills/offence_1.xdb",
@@ -647,7 +647,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[73] = {
+	[69] = {
         name = "text/game/skills/common/offence/2/name.txt",
         desc = "text/game/skills/common/offence/2/description.txt",
         icon = "textures/heroscreen/skills/offence_2.xdb",
@@ -656,7 +656,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[74] = {
+	[70] = {
         name = "text/game/skills/common/offence/3/name.txt",
         desc = "text/game/skills/common/offence/3/description.txt",
         icon = "textures/heroscreen/skills/offence_3.xdb",
@@ -665,7 +665,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[75] = {
+	[71] = {
         name = "text/game/skills/common/offence/archery/name.txt",
         desc = "text/game/skills/common/offence/archery/description.txt",
         icon = "textures/heroscreen/perks/offence_archery.xdb",
@@ -674,7 +674,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[76] = {
+	[72] = {
         name = "text/game/skills/common/offence/frenzy/name.txt",
         desc = "text/game/skills/common/offence/frenzy/description.txt",
         icon = "textures/heroscreen/perks/offence_frenzy.xdb",
@@ -683,7 +683,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[77] = {
+	[73] = {
         name = "text/game/skills/common/defence/1/name.txt",
         desc = "text/game/skills/common/defence/1/description.txt",
         icon = "textures/heroscreen/skills/defence_1.xdb",
@@ -692,7 +692,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[78] = {
+	[74] = {
         name = "text/game/skills/common/defence/2/name.txt",
         desc = "text/game/skills/common/defence/2/description.txt",
         icon = "textures/heroscreen/skills/defence_2.xdb",
@@ -701,7 +701,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[79] = {
+	[75] = {
         name = "text/game/skills/common/defence/3/name.txt",
         desc = "text/game/skills/common/defence/3/description.txt",
         icon = "textures/heroscreen/skills/defence_3.xdb",
@@ -710,7 +710,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[80] = {
+	[76] = {
         name = "text/game/skills/common/defence/protection/name.txt",
         desc = "text/game/skills/common/defence/protection/description.txt",
         icon = "textures/heroscreen/perks/defence_protection.xdb",
@@ -719,7 +719,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[81] = {
+	[77] = {
         name = "text/game/skills/common/defence/evasion/name.txt",
         desc = "text/game/skills/common/defence/evasion/description.txt",
         icon = "textures/heroscreen/perks/defence_evasion.xdb",
@@ -728,7 +728,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[82] = {
+	[78] = {
         name = "text/game/skills/common/defence/toughness/name.txt",
         desc = "text/game/skills/common/defence/toughness/description.txt",
         icon = "textures/heroscreen/perks/defence_toughness.xdb",
@@ -737,7 +737,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[83] = {
+	[79] = {
         name = "text/game/skills/common/luck/1/name.txt",
         desc = "text/game/skills/common/luck/1/description.txt",
         icon = "textures/heroscreen/skills/luck_1.xdb",
@@ -746,7 +746,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[84] = {
+	[80] = {
         name = "text/game/skills/common/luck/2/name.txt",
         desc = "text/game/skills/common/luck/2/description.txt",
         icon = "textures/heroscreen/skills/luck_2.xdb",
@@ -755,7 +755,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[85] = {
+	[81] = {
         name = "text/game/skills/common/luck/3/name.txt",
         desc = "text/game/skills/common/luck/3/description.txt",
         icon = "textures/heroscreen/skills/luck_3.xdb",
@@ -764,7 +764,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[86] = {
+	[82] = {
         name = "text/game/skills/common/luck/resistance/name.txt",
         desc = "text/game/skills/common/luck/resistance/description.txt",
         icon = "textures/heroscreen/perks/luck_resistance.xdb",
@@ -773,7 +773,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[87] = {
+	[83] = {
         name = "text/game/skills/common/luck/luckystrike/name.txt",
         desc = "text/game/skills/common/luck/luckystrike/description.txt",
         icon = "textures/heroscreen/perks/luck_luckystrike.xdb",
@@ -782,7 +782,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[88] = {
+	[84] = {
         name = "text/game/skills/common/leadership/1/name.txt",
         desc = "text/game/skills/common/leadership/1/description.txt",
         icon = "textures/heroscreen/skills/leadership_1.xdb",
@@ -791,7 +791,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[89] = {
+	[85] = {
         name = "text/game/skills/common/leadership/2/name.txt",
         desc = "text/game/skills/common/leadership/2/description.txt",
         icon = "textures/heroscreen/skills/leadership_2.xdb",
@@ -800,7 +800,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[90] = {
+	[86] = {
         name = "text/game/skills/common/leadership/3/name.txt",
         desc = "text/game/skills/common/leadership/3/description.txt",
         icon = "textures/heroscreen/skills/leadership_3.xdb",
@@ -809,7 +809,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[91] = {
+	[87] = {
         name = "text/game/skills/common/warmachines/1/name.txt",
         desc = "text/game/skills/common/warmachines/1/description.txt",
         icon = "textures/heroscreen/skills/warmachines_1.xdb",
@@ -818,7 +818,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[92] = {
+	[88] = {
         name = "text/game/skills/common/warmachines/2/name.txt",
         desc = "text/game/skills/common/warmachines/2/description.txt",
         icon = "textures/heroscreen/skills/warmachines_2.xdb",
@@ -827,7 +827,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[93] = {
+	[89] = {
         name = "text/game/skills/common/warmachines/3/name.txt",
         desc = "text/game/skills/common/warmachines/3/description.txt",
         icon = "textures/heroscreen/skills/warmachines_3.xdb",
@@ -836,7 +836,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[94] = {
+	[90] = {
         name = "text/game/skills/common/warmachines/firstaid/name.txt",
         desc = "text/game/skills/common/warmachines/firstaid/description.txt",
         icon = "textures/heroscreen/perks/warmachines_firstaid.xdb",
@@ -845,7 +845,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[95] = {
+	[380] = {
         name = "text/game/skills/common/warmachines/tripleballista/name.txt",
         desc = "text/game/skills/common/warmachines/tripleballista/description.txt",
         icon = "textures/heroscreen/feats/knight/warmachines_fastballista.xdb",
@@ -854,7 +854,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[96] = {
+	[91] = {
         name = "text/game/skills/common/warmachines/ballista/name.txt",
         desc = "text/game/skills/common/warmachines/ballista/description.txt",
         icon = "textures/heroscreen/perks/warmachine_ballista.xdb",
@@ -863,7 +863,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[97] = {
+	[92] = {
         name = "text/game/skills/common/warmachines/catapult/name.txt",
         desc = "text/game/skills/common/warmachines/catapult/description.txt",
         icon = "textures/heroscreen/perks/warmachine_catapult.xdb",
@@ -872,7 +872,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[98] = {
+	[93] = {
         name = "text/game/skills/unique/gating/demonicfire/name.txt",
         desc = "text/game/skills/unique/gating/demonicfire/description.txt",
         icon = "textures/heroscreen/perks/gating_demonicfire.xdb",
@@ -881,7 +881,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[99] = {
+	[94] = {
         name = "",
         desc = "",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -890,7 +890,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[100] = {
+	[95] = {
         name = "",
         desc = "",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -899,7 +899,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[101] = {
+	[96] = {
         name = "text/game/skills/common/destructivemagic/ancientsmithy/name.txt",
         desc = "text/game/skills/common/destructivemagic/ancientsmithy/description.txt",
         icon = "textures/heroscreen/feats/knight/destructivemagic_ancientsmithy.xdb",
@@ -908,7 +908,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[102] = {
+	[97] = {
         name = "text/game/skills/common/lightmagic/fireprotection/name.txt",
         desc = "text/game/skills/common/lightmagic/fireprotection/description.txt",
         icon = "textures/heroscreen/feats/demon_lord/demonic_fireprotection.xdb",
@@ -917,7 +917,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[103] = {
+	[98] = {
         name = "text/game/heroes/specializations/haven/jouster/name.txt",
         desc = "text/game/heroes/specializations/haven/jouster/description.txt",
         icon = "textures/heroscreen/specializations/haven/jouster.xdb",
@@ -926,7 +926,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[104] = {
+	[99] = {
         name = "text/game/heroes/specializations/haven/squire/name.txt",
         desc = "text/game/heroes/specializations/haven/squire/description.txt",
         icon = "textures/heroscreen/specializations/haven/squire.xdb",
@@ -935,7 +935,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[105] = {
+	[100] = {
         name = "text/game/heroes/specializations/haven/archer_commander/name.txt",
         desc = "text/game/heroes/specializations/haven/archer_commander/description.txt",
         icon = "textures/heroscreen/specializations/haven/archer_commander.xdb",
@@ -944,7 +944,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[106] = {
+	[101] = {
         name = "text/game/heroes/specializations/haven/infantry_commander/name.txt",
         desc = "text/game/heroes/specializations/haven/infantry_commander/description.txt",
         icon = "textures/heroscreen/specializations/haven/infantry_commander.xdb",
@@ -953,7 +953,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[107] = {
+	[102] = {
         name = "text/game/heroes/specializations/haven/griffon_commander/name.txt",
         desc = "text/game/heroes/specializations/haven/griffon_commander/description.txt",
         icon = "textures/heroscreen/specializations/haven/griffon_commander.xdb",
@@ -962,7 +962,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[108] = {
+	[103] = {
         name = "text/game/heroes/specializations/haven/artilleryman/name.txt",
         desc = "text/game/heroes/specializations/haven/artilleryman/description.txt",
         icon = "textures/heroscreen/specializations/haven/artilleryman.xdb",
@@ -971,7 +971,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[109] = {
+	[104] = {
         name = "text/game/heroes/specializations/inferno/furious/name.txt",
         desc = "text/game/heroes/specializations/inferno/furious/description.txt",
         icon = "textures/heroscreen/specializations/inferno/furious.xdb",
@@ -980,7 +980,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[110] = {
+	[105] = {
         name = "text/game/heroes/specializations/inferno/bombardier/name.txt",
         desc = "text/game/heroes/specializations/inferno/bombardier/description.txt",
         icon = "textures/heroscreen/specializations/inferno/bombardier.xdb",
@@ -989,7 +989,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[111] = {
+	[106] = {
         name = "text/game/heroes/specializations/inferno/impregnable/name.txt",
         desc = "text/game/heroes/specializations/inferno/impregnable/description.txt",
         icon = "textures/heroscreen/specializations/inferno/impregnable.xdb",
@@ -998,7 +998,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[112] = {
+	[107] = {
         name = "text/game/heroes/specializations/inferno/flagbearer_of_darkness/name.txt",
         desc = "text/game/heroes/specializations/inferno/flagbearer_of_darkness/description.txt",
         icon = "textures/heroscreen/specializations/inferno/flagbearer_of_darkness.xdb",
@@ -1007,7 +1007,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[113] = {
+	[108] = {
         name = "text/game/heroes/specializations/inferno/breeder/name.txt",
         desc = "text/game/heroes/specializations/inferno/breeder/description.txt",
         icon = "textures/heroscreen/specializations/inferno/breeder.xdb",
@@ -1016,7 +1016,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[114] = {
+	[109] = {
         name = "text/game/heroes/specializations/inferno/temptress/name.txt",
         desc = "text/game/heroes/specializations/inferno/temptress/description.txt",
         icon = "textures/heroscreen/specializations/inferno/temptress.xdb",
@@ -1025,7 +1025,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[115] = {
+	[110] = {
         name = "text/game/heroes/specializations/preserve/blade_master/name.txt",
         desc = "text/game/heroes/specializations/preserve/blade_master/description.txt",
         icon = "textures/heroscreen/specializations/preserve/blade_master.xdb",
@@ -1034,7 +1034,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[116] = {
+	[111] = {
         name = "text/game/heroes/specializations/preserve/hunter/name.txt",
         desc = "text/game/heroes/specializations/preserve/hunter/description.txt",
         icon = "textures/heroscreen/specializations/preserve/hunter.xdb",
@@ -1043,7 +1043,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[117] = {
+	[112] = {
         name = "text/game/heroes/specializations/preserve/unicorn_trainer/name.txt",
         desc = "text/game/heroes/specializations/preserve/unicorn_trainer/description.txt",
         icon = "textures/heroscreen/specializations/preserve/unicorn_trainer.xdb",
@@ -1052,7 +1052,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[118] = {
+	[113] = {
         name = "text/game/heroes/specializations/preserve/elven_fury/name.txt",
         desc = "text/game/heroes/specializations/preserve/elven_fury/description.txt",
         icon = "textures/heroscreen/specializations/preserve/elven_fury.xdb",
@@ -1061,7 +1061,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[119] = {
+	[114] = {
         name = "text/game/heroes/specializations/preserve/forest_guardian/name.txt",
         desc = "text/game/heroes/specializations/preserve/forest_guardian/description.txt",
         icon = "textures/heroscreen/specializations/preserve/forest_guardian.xdb",
@@ -1070,7 +1070,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[120] = {
+	[115] = {
         name = "text/game/heroes/specializations/necropolis/zombie_leader/name.txt",
         desc = "text/game/heroes/specializations/necropolis/zombie_leader/description.txt",
         icon = "textures/heroscreen/specializations/necropolis/zombie_leader.xdb",
@@ -1079,7 +1079,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[121] = {
+	[116] = {
         name = "text/game/heroes/specializations/necropolis/vamipre_princess/name.txt",
         desc = "text/game/heroes/specializations/necropolis/vamipre_princess/description.txt",
         icon = "textures/heroscreen/specializations/necropolis/vampire_princess.xdb",
@@ -1088,7 +1088,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[122] = {
+	[117] = {
         name = "text/game/heroes/specializations/necropolis/empiric/name.txt",
         desc = "text/game/heroes/specializations/necropolis/empiric/description.txt",
         icon = "textures/heroscreen/specializations/necropolis/empiric.xdb",
@@ -1097,7 +1097,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[123] = {
+	[118] = {
         name = "text/game/heroes/specializations/necropolis/soulhunter/name.txt",
         desc = "text/game/heroes/specializations/necropolis/soulhunter/description.txt",
         icon = "textures/heroscreen/specializations/necropolis/soulhunter.xdb",
@@ -1106,7 +1106,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[124] = {
+	[119] = {
         name = "text/game/heroes/specializations/academy/master_of_elements/name.txt",
         desc = "text/game/heroes/specializations/academy/master_of_elements/description.txt",
         icon = "textures/heroscreen/specializations/academy/master_of_elements.xdb",
@@ -1115,7 +1115,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[125] = {
+	[120] = {
         name = "text/game/heroes/specializations/academy/artisan/name.txt",
         desc = "text/game/heroes/specializations/academy/artisan/description.txt",
         icon = "textures/heroscreen/specializations/academy/artisan.xdb",
@@ -1124,7 +1124,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[126] = {
+	[121] = {
         name = "text/game/heroes/specializations/academy/machinist/name.txt",
         desc = "text/game/heroes/specializations/academy/machinist/description.txt",
         icon = "textures/heroscreen/specializations/academy/machinist.xdb",
@@ -1133,7 +1133,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[127] = {
+	[122] = {
         name = "text/game/heroes/specializations/academy/mentor/name.txt",
         desc = "text/game/heroes/specializations/academy/mentor/description.txt",
         icon = "textures/heroscreen/specializations/academy/mentor.xdb",
@@ -1142,7 +1142,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[128] = {
+	[123] = {
         name = "text/game/heroes/specializations/dungeon/prudent/name.txt",
         desc = "text/game/heroes/specializations/dungeon/prudent/description.txt",
         icon = "textures/heroscreen/specializations/dungeon/prudent.xdb",
@@ -1151,7 +1151,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[129] = {
+	[124] = {
         name = "text/game/heroes/specializations/dungeon/evasive/name.txt",
         desc = "text/game/heroes/specializations/dungeon/evasive/description.txt",
         icon = "textures/heroscreen/specializations/dungeon/evasive.xdb",
@@ -1160,7 +1160,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[130] = {
+	[125] = {
         name = "text/game/heroes/specializations/dungeon/lizard_breeder/name.txt",
         desc = "text/game/heroes/specializations/dungeon/lizard_breeder/description.txt",
         icon = "textures/heroscreen/specializations/dungeon/lizard_breeder.xdb",
@@ -1169,7 +1169,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[131] = {
+	[126] = {
         name = "text/game/heroes/specializations/dungeon/matron_salvo/name.txt",
         desc = "text/game/heroes/specializations/dungeon/matron_salvo/description.txt",
         icon = "textures/heroscreen/specializations/dungeon/matron_salvo.xdb",
@@ -1178,7 +1178,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[132] = {
+	[127] = {
         name = "text/game/heroes/specializations/dungeon/savage/name.txt",
         desc = "text/game/heroes/specializations/dungeon/savage/description.txt",
         icon = "textures/heroscreen/specializations/dungeon/savage.xdb",
@@ -1187,7 +1187,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[133] = {
+	[128] = {
         name = "text/game/heroes/specializations/dungeon/seducer/name.txt",
         desc = "text/game/heroes/specializations/dungeon/seducer/description.txt",
         icon = "textures/heroscreen/specializations/dungeon/seducer.xdb",
@@ -1196,7 +1196,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[134] = {
+	[129] = {
         name = "text/game/heroes/specializations/dungeon/slaveholder/name.txt",
         desc = "text/game/heroes/specializations/dungeon/slaveholder/description.txt",
         icon = "textures/heroscreen/specializations/dungeon/slaveholder.xdb",
@@ -1205,7 +1205,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[135] = {
+	[130] = {
         name = "text/game/towns/specializations/offence_+_1/name.txt",
         desc = "text/game/towns/specializations/offence_+_1/description.txt",
         icon = "textures/heroscreen/skills/offence_1.xdb",
@@ -1214,7 +1214,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[136] = {
+	[131] = {
         name = "text/game/towns/specializations/offence_-_1/name.txt",
         desc = "text/game/towns/specializations/offence_-_1/description.txt",
         icon = "textures/heroscreen/skills/offence_1.xdb",
@@ -1223,7 +1223,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[137] = {
+	[132] = {
         name = "text/game/towns/specializations/defence_+_1/name.txt",
         desc = "text/game/towns/specializations/defence_+_1/description.txt",
         icon = "textures/heroscreen/skills/defence_1.xdb",
@@ -1232,7 +1232,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[138] = {
+	[133] = {
         name = "text/game/towns/specializations/defence_-_1/name.txt",
         desc = "text/game/towns/specializations/defence_-_1/description.txt",
         icon = "textures/heroscreen/skills/defence_1.xdb",
@@ -1241,7 +1241,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[139] = {
+	[134] = {
         name = "text/game/towns/specializations/offence_defence_+_1/name.txt",
         desc = "text/game/towns/specializations/offence_defence_+_1/description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1250,7 +1250,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[140] = {
+	[135] = {
         name = "text/game/towns/specializations/offence_defence_-_1/name.txt",
         desc = "text/game/towns/specializations/offence_defence_-_1/description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1259,7 +1259,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[141] = {
+	[136] = {
         name = "text/game/towns/specializations/offence_+_2/name.txt",
         desc = "text/game/towns/specializations/offence_+_2/description.txt",
         icon = "textures/heroscreen/skills/offence_2.xdb",
@@ -1268,7 +1268,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[142] = {
+	[137] = {
         name = "text/game/towns/specializations/offence_-_2/name.txt",
         desc = "text/game/towns/specializations/offence_-_2/description.txt",
         icon = "textures/heroscreen/skills/offence_2.xdb",
@@ -1277,7 +1277,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[143] = {
+	[138] = {
         name = "text/game/towns/specializations/defence_+_2/name.txt",
         desc = "text/game/towns/specializations/defence_+_2/description.txt",
         icon = "textures/heroscreen/skills/defence_2.xdb",
@@ -1286,7 +1286,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[144] = {
+	[139] = {
         name = "text/game/towns/specializations/defence_-_2/name.txt",
         desc = "text/game/towns/specializations/defence_-_2/description.txt",
         icon = "textures/heroscreen/skills/defence_2.xdb",
@@ -1295,7 +1295,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[145] = {
+	[140] = {
         name = "text/game/towns/specializations/offence_defence_+_2/name.txt",
         desc = "text/game/towns/specializations/offence_defence_+_2/description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1304,7 +1304,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[146] = {
+	[141] = {
         name = "text/game/towns/specializations/offence_defence_-_2/name.txt",
         desc = "text/game/towns/specializations/offence_defence_-_2/description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1313,7 +1313,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[147] = {
+	[142] = {
         name = "text/game/towns/specializations/luck_+_1/name.txt",
         desc = "text/game/towns/specializations/luck_+_1/description.txt",
         icon = "textures/heroscreen/heroparam/luckpic.xdb",
@@ -1322,7 +1322,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[148] = {
+	[143] = {
         name = "text/game/towns/specializations/luck_-_1/name.txt",
         desc = "text/game/towns/specializations/luck_-_1/description.txt",
         icon = "textures/heroscreen/heroparam/luckpic.xdb",
@@ -1331,7 +1331,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[149] = {
+	[144] = {
         name = "text/game/towns/specializations/morale_+_1/name.txt",
         desc = "text/game/towns/specializations/morale_+_1/description.txt",
         icon = "textures/heroscreen/heroparam/yawpic.xdb",
@@ -1340,7 +1340,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[150] = {
+	[145] = {
         name = "text/game/towns/specializations/morale_-_1/name.txt",
         desc = "text/game/towns/specializations/morale_-_1/description.txt",
         icon = "textures/heroscreen/heroparam/yawpic.xdb",
@@ -1349,7 +1349,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[151] = {
+	[146] = {
         name = "text/game/towns/specializations/elven_capital/name.txt",
         desc = "text/game/towns/specializations/elven_capital/description.txt",
         icon = "textures/heroscreen/specializations/haven/suzerain.xdb",
@@ -1358,7 +1358,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[152] = {
+	[147] = {
         name = "text/game/towns/specializations/walls/name.txt",
         desc = "text/game/towns/specializations/walls/description.txt",
         icon = "textures/heroscreen/skills/warmachines_1.xdb",
@@ -1367,7 +1367,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[153] = {
+	[148] = {
         name = "text/game/towns/specializations/towers/name.txt",
         desc = "text/game/towns/specializations/towers/description.txt",
         icon = "textures/heroscreen/skills/warmachines_2.xdb",
@@ -1376,7 +1376,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[154] = {
+	[149] = {
         name = "text/game/spells/towneffects/uholytemple/name.txt",
         desc = "text/game/spells/towneffects/uholytemple/description.txt",
         icon = "ui/common/icons/spell_buff_icons/unholytemple.(texture).xdb",
@@ -1385,7 +1385,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[155] = {
+	[150] = {
         name = "text/game/spells/towneffects/darkguardian/name.txt",
         desc = "text/game/spells/towneffects/darkguardian/description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1394,7 +1394,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[156] = {
+	[151] = {
         name = "text/game/spells/towneffects/sparklingfountain/name.txt",
         desc = "text/game/spells/towneffects/sparklingfountain/description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1403,7 +1403,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[157] = {
+	[152] = {
         name = "text/game/spells/towneffects/dietyoffire/name.txt",
         desc = "text/game/spells/towneffects/dietyoffire/description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1412,7 +1412,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[158] = {
+	[153] = {
         name = "text/game/spells/towneffects/infernalloom/name.txt",
         desc = "text/game/spells/towneffects/infernalloom/description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1421,7 +1421,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[159] = {
+	[154] = {
         name = "text/game/creatures/creature_abilities/battle_dive/battle_dive_name.txt",
         desc = "text/game/creatures/creature_abilities/battle_dive/battle_dive_desc.txt",
         icon = "textures/interface/combatarena/faces/heaven/ico_royalgriffin_32.xdb",
@@ -1430,7 +1430,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[160] = {
+	[155] = {
         name = "text/game/creatures/creature_abilities/battle_dive/battle_dive_name.txt",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/haven/",
@@ -1439,7 +1439,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[161] = {
+	[156] = {
         name = "text/game/spells/creature_abilities/haven/layhands/name.txt",
         desc = "",
         icon = "textures/refmaps/negx.xdb",
@@ -1448,7 +1448,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[162] = {
+	[157] = {
         name = "text/game/spells/creature_abilities/haven/resurrectallies/name.txt",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/haven/",
@@ -1457,7 +1457,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[163] = {
+	[158] = {
         name = "text/game/spells/creature_abilities/haven/scatter_shot/name.txt",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/haven/",
@@ -1466,7 +1466,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[164] = {
+	[159] = {
         name = "text/game/spells/creature_abilities/inferno/gating/name.txt",
         desc = "text/game/spells/creature_abilities/inferno/gating/description.txt",
         icon = "textures/specialabilities/gating.(texture).xdb",
@@ -1475,7 +1475,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[165] = {
+	[160] = {
         name = "text/game/spells/creature_abilities/inferno/fear/name.txt",
         desc = "text/game/spells/creature_abilities/inferno/fear/description.txt",
         icon = "textures/spellbook______2618/spelleffects/spell_fear.xdb",
@@ -1484,7 +1484,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[166] = {
+	[161] = {
         name = "text/game/spells/creature_abilities/inferno/summon_balor/name.txt",
         desc = "text/game/spells/creature_abilities/inferno/summon_balor/description.txt",
         icon = "textures/specialabilities/balor_summoning.(texture).xdb",
@@ -1493,7 +1493,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[167] = {
+	[162] = {
         name = "text/game/spells/creature_abilities/inferno/explosion/name.txt",
         desc = "text/game/spells/creature_abilities/inferno/explosion/description.txt",
         icon = "textures/specialabilities/explosion.(texture).xdb",
@@ -1502,7 +1502,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = 1
     },
-	[168] = {
+	[163] = {
         name = "text/game/debugspells/debugteleport/name.txt",
         desc = "text/game/debugspells/debugteleport/long_description.txt",
         icon = "textures/spellbook______2618/spell_debugteleport.xdb",
@@ -1511,7 +1511,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[169] = {
+	[164] = {
         name = "text/game/debugspells/debugteleport/name.txt",
         desc = "text/game/debugspells/debugteleport/long_description.txt",
         icon = "textures/spellbook______2618/spell_debugteleport.xdb",
@@ -1520,7 +1520,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[170] = {
+	[165] = {
         name = "",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/inferno/",
@@ -1529,7 +1529,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[171] = {
+	[166] = {
         name = "",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/inferno/",
@@ -1538,7 +1538,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[172] = {
+	[167] = {
         name = "text/game/spells/creature_abilities/necropolis/life_drain/name.txt",
         desc = "text/game/spells/creature_abilities/necropolis/life_drain/long_description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1547,7 +1547,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[173] = {
+	[168] = {
         name = "text/game/spells/creature_abilities/necropolis/mana_drain/name.txt",
         desc = "text/game/spells/creature_abilities/necropolis/mana_drain/long_description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1556,7 +1556,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[174] = {
+	[169] = {
         name = "text/game/spells/creature_abilities/necropolis/death_cloud/name.txt",
         desc = "text/game/spells/creature_abilities/necropolis/death_cloud/long_description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1565,7 +1565,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[175] = {
+	[170] = {
         name = "text/game/spells/creature_abilities/necropolis/harm_touch/name.txt",
         desc = "text/game/spells/creature_abilities/necropolis/harm_touch/long_description.txt",
         icon = "textures/refmaps/negx.xdb",
@@ -1574,7 +1574,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[176] = {
+	[171] = {
         name = "text/game/spells/creature_abilities/preserve/mana_feed/name.txt",
         desc = "text/game/spells/creature_abilities/preserve/mana_feed/long_description.txt",
         icon = "textures/specialabilities/mana_feed.(texture).xdb",
@@ -1583,7 +1583,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[177] = {
+	[172] = {
         name = "gamemechanics/spell/creature_abilities/preserve/text/game/spells/creature_abilities/preserve/entanglingroots/name.txt",
         desc = "gamemechanics/spell/creature_abilities/preserve/text/game/spells/creature_abilities/preserve/entanglingroots/long_description.txt",
         icon = "ui/common/icons/spell_buff_icons/entangling_roots.(texture).xdb",
@@ -1592,7 +1592,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[178] = {
+	[173] = {
         name = "text/game/spells/creature_abilities/academy/repairname.txt",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/academy/",
@@ -1601,7 +1601,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[179] = {
+	[174] = {
         name = "text/game/spells/creature_abilities/academy/randomcastdarkname.txt",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/academy/",
@@ -1610,7 +1610,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[180] = {
+	[175] = {
         name = "text/game/spells/creature_abilities/academy/randomcastlightdarkname.txt",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/academy/",
@@ -1619,7 +1619,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[181] = {
+	[176] = {
         name = "text/game/spells/creature_abilities/academy/dash/name.txt",
         desc = "text/game/spells/creature_abilities/academy/dash/long_description.txt",
         icon = "gamemechanics/spell/creature_abilities/academy/",
@@ -1628,7 +1628,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[182] = {
+	[177] = {
         name = "text/game/debugspells/debugteleport/name.txt",
         desc = "text/game/debugspells/debugteleport/long_description.txt",
         icon = "textures/spellbook______2618/spell_debugteleport.xdb",
@@ -1637,7 +1637,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[183] = {
+	[178] = {
         name = "text/game/spells/hero_special_abilities/remotecontrol/name.txt",
         desc = "text/game/spells/hero_special_abilities/remotecontrol/long_description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1646,7 +1646,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[184] = {
+	[179] = {
         name = "text/game/spells/hero_special_abilities/armorcrushing/name.txt",
         desc = "text/game/spells/hero_special_abilities/armorcrushing/long_description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -1655,7 +1655,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[185] = {
+	[180] = {
         name = "text/game/spells/creature_abilities/dungeon/poisoneffectname.txt",
         desc = "text/game/spells/creature_abilities/dungeon/poisoneffectdescription.txt",
         icon = "ui/common/icons/spell_buff_icons/poisonous_attack.(texture).xdb",
@@ -1664,7 +1664,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[186] = {
+	[181] = {
         name = "",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/dungeon/",
@@ -1673,10 +1673,55 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[187] = {
+	[182] = {
         name = "text/game/spells/creature_abilities/dungeon/regenerationeffect.txt",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/dungeon/",
+        school = MAGIC_SCHOOL_SPECIAL,
+        level = 0,
+        is_aimed = 1,
+        is_area = nil
+    },
+	[183] = {
+        name = "text/game/debugspells/debugteleport/name.txt",
+        desc = "text/game/debugspells/debugteleport/long_description.txt",
+        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
+        school = MAGIC_SCHOOL_SPECIAL,
+        level = 0,
+        is_aimed = 1,
+        is_area = nil
+    },
+	[184] = {
+        name = "text/game/spells/creature_abilities/neutrals/frostbreathname.txt",
+        desc = "text/game/spells/creature_abilities/neutrals/frostbreathdescription.txt",
+        icon = "gamemechanics/spell/creature_abilities/neutrals/",
+        school = MAGIC_SCHOOL_SPECIAL,
+        level = 0,
+        is_aimed = 1,
+        is_area = nil
+    },
+	[185] = {
+        name = "text/game/debugspells/debugteleport/name.txt",
+        desc = "text/game/debugspells/debugteleport/long_description.txt",
+        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
+        school = MAGIC_SCHOOL_SPECIAL,
+        level = 0,
+        is_aimed = 1,
+        is_area = nil
+    },
+	[186] = {
+        name = "text/game/debugspells/debugteleport/name.txt",
+        desc = "text/game/debugspells/debugteleport/long_description.txt",
+        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
+        school = MAGIC_SCHOOL_SPECIAL,
+        level = 0,
+        is_aimed = 1,
+        is_area = nil
+    },
+	[187] = {
+        name = "text/game/debugspells/debugteleport/name.txt",
+        desc = "text/game/debugspells/debugteleport/long_description.txt",
+        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
         school = MAGIC_SCHOOL_SPECIAL,
         level = 0,
         is_aimed = 1,
@@ -1692,9 +1737,9 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_area = nil
     },
 	[189] = {
-        name = "text/game/spells/creature_abilities/neutrals/frostbreathname.txt",
-        desc = "text/game/spells/creature_abilities/neutrals/frostbreathdescription.txt",
-        icon = "gamemechanics/spell/creature_abilities/neutrals/",
+        name = "text/game/spells/creature_abilities/war_machines/firstaid/name.txt",
+        desc = "text/game/spells/creature_abilities/war_machines/firstaid/long_description.txt",
+        icon = "textures/effects/test/spelltest_firstaid_heal.xdb",
         school = MAGIC_SCHOOL_SPECIAL,
         level = 0,
         is_aimed = 1,
@@ -1737,9 +1782,9 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_area = nil
     },
 	[194] = {
-        name = "text/game/spells/creature_abilities/war_machines/firstaid/name.txt",
-        desc = "text/game/spells/creature_abilities/war_machines/firstaid/long_description.txt",
-        icon = "textures/effects/test/spelltest_firstaid_heal.xdb",
+        name = "text/game/debugspells/debugteleport/name.txt",
+        desc = "text/game/debugspells/debugteleport/long_description.txt",
+        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
         school = MAGIC_SCHOOL_SPECIAL,
         level = 0,
         is_aimed = 1,
@@ -1773,51 +1818,6 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_area = nil
     },
 	[198] = {
-        name = "text/game/debugspells/debugteleport/name.txt",
-        desc = "text/game/debugspells/debugteleport/long_description.txt",
-        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
-        school = MAGIC_SCHOOL_SPECIAL,
-        level = 0,
-        is_aimed = 1,
-        is_area = nil
-    },
-	[199] = {
-        name = "text/game/debugspells/debugteleport/name.txt",
-        desc = "text/game/debugspells/debugteleport/long_description.txt",
-        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
-        school = MAGIC_SCHOOL_SPECIAL,
-        level = 0,
-        is_aimed = 1,
-        is_area = nil
-    },
-	[200] = {
-        name = "text/game/debugspells/debugteleport/name.txt",
-        desc = "text/game/debugspells/debugteleport/long_description.txt",
-        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
-        school = MAGIC_SCHOOL_SPECIAL,
-        level = 0,
-        is_aimed = 1,
-        is_area = nil
-    },
-	[201] = {
-        name = "text/game/debugspells/debugteleport/name.txt",
-        desc = "text/game/debugspells/debugteleport/long_description.txt",
-        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
-        school = MAGIC_SCHOOL_SPECIAL,
-        level = 0,
-        is_aimed = 1,
-        is_area = nil
-    },
-	[202] = {
-        name = "text/game/debugspells/debugteleport/name.txt",
-        desc = "text/game/debugspells/debugteleport/long_description.txt",
-        icon = "textures/spellbook______2618/spell_debugteleport.xdb",
-        school = MAGIC_SCHOOL_SPECIAL,
-        level = 0,
-        is_aimed = 1,
-        is_area = nil
-    },
-	[203] = {
         name = "text/game/spells/hero_special_abilities/sunfire/name.txt",
         desc = "text/game/spells/hero_special_abilities/sunfire/description.txt",
         icon = "gamemechanics/spell/hero_abilities/ranger/",
@@ -1826,7 +1826,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[204] = {
+	[199] = {
         name = "text/game/spells/hero_special_abilities/soilburn/name.txt",
         desc = "text/game/spells/hero_special_abilities/soilburn/description.txt",
         icon = "gamemechanics/spell/hero_abilities/ranger/",
@@ -1835,7 +1835,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[205] = {
+	[200] = {
         name = "text/game/heroes/specializations/necropolis/avatarofdeath/name.txt",
         desc = "text/game/heroes/specializations/necropolis/avatarofdeath/description.txt",
         icon = "ui/h5a2/icons/heroes_specializations/avatarofdeath.(texture).xdb",
@@ -1844,7 +1844,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[206] = {
+	[201] = {
         name = "text/game/spells/combat/effectfrozen/name.txt",
         desc = "",
         icon = "ui/common/icons/spell_buff_icons/frosen.(texture).xdb",
@@ -1853,7 +1853,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[207] = {
+	[202] = {
         name = "text/game/spells/combat/effectfire/name.txt",
         desc = "",
         icon = "ui/common/icons/spell_buff_icons/fire.(texture).xdb",
@@ -1862,7 +1862,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[208] = {
+	[203] = {
         name = "text/game/spells/combat/seduce/seducing_name.txt",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/inferno/",
@@ -1871,7 +1871,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[209] = {
+	[204] = {
         name = "text/game/heroes/specializations/stronghold/demonhunter/name.txt",
         desc = "text/game/heroes/specializations/stronghold/demonhunter/description.txt",
         icon = "gamemechanics/spell/hero_skills/specializations/stronghold/",
@@ -1880,7 +1880,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[210] = {
+	[205] = {
         name = "text/game/creatures/creature_abilities/fire_shield/fire_shield_name.txt",
         desc = "",
         icon = "textures/spellbook______2618/spelleffects/spell_effect_fire.xdb",
@@ -1889,7 +1889,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[211] = {
+	[206] = {
         name = "text/game/spells/combat/necromancersartfseteffect/name.txt",
         desc = "",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -1898,7 +1898,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[212] = {
+	[207] = {
         name = "text/game/skills/common/defence/chillingbones/name.txt",
         desc = "text/game/skills/common/defence/chillingbones/description.txt",
         icon = "textures/heroscreen/feats/necromancer/defense_chillingbones.(texture).xdb",
@@ -1907,7 +1907,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[213] = {
+	[208] = {
         name = "text/game/debugspells/debugteleport/name.txt",
         desc = "text/game/debugspells/debugteleport/long_description.txt",
         icon = "textures/spellbook______2618/spell_debugteleport.xdb",
@@ -1916,7 +1916,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[214] = {
+	[209] = {
         name = "text/game/spells/creature_abilities/common/enraged/name.txt",
         desc = "text/game/spells/creature_abilities/common/enraged/long_description.txt",
         icon = "textures/spellbook______2618/creatureabilities/enrage.(texture).xdb",
@@ -1925,7 +1925,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[215] = {
+	[210] = {
         name = "text/game/spells/combat/mass_curse/name.txt",
         desc = "text/game/spells/combat/mass_curse/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_curse.xdb",
@@ -1934,7 +1934,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[216] = {
+	[211] = {
         name = "text/game/spells/combat/mass_disrupting_ray/name.txt",
         desc = "text/game/spells/combat/mass_disrupting_ray/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_disruptingray.xdb",
@@ -1943,7 +1943,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[217] = {
+	[212] = {
         name = "text/game/spells/combat/mass_slow/name.txt",
         desc = "text/game/spells/combat/mass_slow/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_slow.xdb",
@@ -1952,7 +1952,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[218] = {
+	[213] = {
         name = "text/game/spells/combat/mass_forgetfulness/name.txt",
         desc = "text/game/spells/combat/mass_forgetfulness/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_forgetfulness.xdb",
@@ -1961,7 +1961,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[219] = {
+	[214] = {
         name = "text/game/spells/combat/mass_plague/name.txt",
         desc = "text/game/spells/combat/mass_plague/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_plague.xdb",
@@ -1970,7 +1970,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[220] = {
+	[215] = {
         name = "text/game/spells/combat/mass_weakness/name.txt",
         desc = "text/game/spells/combat/mass_weakness/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_weakness.xdb",
@@ -1979,7 +1979,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[221] = {
+	[216] = {
         name = "text/game/spells/combat/mass_bless/name.txt",
         desc = "text/game/spells/combat/mass_bless/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_bless.xdb",
@@ -1988,7 +1988,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[222] = {
+	[217] = {
         name = "text/game/spells/combat/mass_dispel/name.txt",
         desc = "text/game/spells/combat/mass_dispel/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_dispel.xdb",
@@ -1997,7 +1997,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[223] = {
+	[218] = {
         name = "text/game/spells/combat/mass_stoneskin/name.txt",
         desc = "text/game/spells/combat/mass_stoneskin/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_stoneskin.xdb",
@@ -2006,7 +2006,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[224] = {
+	[219] = {
         name = "text/game/spells/combat/mass_deflect_arrows/name.txt",
         desc = "text/game/spells/combat/mass_deflect_arrows/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_deflectarrows.xdb",
@@ -2015,7 +2015,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[225] = {
+	[220] = {
         name = "text/game/spells/combat/mass_bloodlust/name.txt",
         desc = "text/game/spells/combat/mass_bloodlust/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_bloodlust.xdb",
@@ -2024,7 +2024,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[226] = {
+	[221] = {
         name = "text/game/spells/combat/mass_haste/name.txt",
         desc = "text/game/spells/combat/mass_haste/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_haste.xdb",
@@ -2033,7 +2033,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[227] = {
+	[222] = {
         name = "text/game/spells/creature_abilities/academy/calllightning_name.txt",
         desc = "",
         icon = "textures/spellbook______2618/spells/spell_lightningbolt.xdb",
@@ -2042,7 +2042,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[228] = {
+	[223] = {
         name = "text/game/spells/combat/empoweredmagic_arrow/name.txt",
         desc = "text/game/spells/combat/empoweredmagic_arrow/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_magicarrow.xdb",
@@ -2051,7 +2051,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[229] = {
+	[224] = {
         name = "text/game/spells/combat/empoweredmagic_fist/name.txt",
         desc = "text/game/spells/combat/empoweredmagic_fist/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_magicfist.xdb",
@@ -2060,7 +2060,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[230] = {
+	[225] = {
         name = "text/game/spells/combat/empoweredlightning_bolt/name.txt",
         desc = "text/game/spells/combat/empoweredlightning_bolt/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_lightningbolt.xdb",
@@ -2069,7 +2069,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[231] = {
+	[226] = {
         name = "text/game/spells/combat/empoweredice_bolt/name.txt",
         desc = "text/game/spells/combat/empoweredice_bolt/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_ice_bolt.xdb",
@@ -2078,7 +2078,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[232] = {
+	[227] = {
         name = "text/game/spells/combat/empoweredfireball/name.txt",
         desc = "text/game/spells/combat/empoweredfireball/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_fireball.xdb",
@@ -2087,7 +2087,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[233] = {
+	[228] = {
         name = "text/game/spells/combat/empoweredfrost_ring/name.txt",
         desc = "text/game/spells/combat/empoweredfrost_ring/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_frostring.xdb",
@@ -2096,7 +2096,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[234] = {
+	[229] = {
         name = "text/game/spells/combat/empoweredchain_lightning/name.txt",
         desc = "text/game/spells/combat/empoweredchain_lightning/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_chainlightning.xdb",
@@ -2105,7 +2105,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[235] = {
+	[230] = {
         name = "text/game/spells/combat/empoweredmeteor_shower/name.txt",
         desc = "text/game/spells/combat/empoweredmeteor_shower/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_meteorshower.xdb",
@@ -2114,7 +2114,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[236] = {
+	[231] = {
         name = "text/game/spells/combat/empoweredimplosion/name.txt",
         desc = "text/game/spells/combat/empoweredimplosion/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_implosion.xdb",
@@ -2123,7 +2123,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[237] = {
+	[232] = {
         name = "text/game/spells/combat/empoweredarmageddon/name.txt",
         desc = "text/game/spells/combat/empoweredarmageddon/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_armageddon.xdb",
@@ -2132,7 +2132,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[238] = {
+	[233] = {
         name = "text/game/spells/combat/empoweredstonespikes/name.txt",
         desc = "text/game/spells/combat/empoweredstonespikes/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_stonespikes.xdb",
@@ -2141,7 +2141,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[239] = {
+	[234] = {
         name = "text/game/spells/adventure/summon_creatures/name.txt",
         desc = "text/game/spells/adventure/summon_creatures/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_summoncreatures.xdb",
@@ -2150,7 +2150,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[240] = {
+	[235] = {
         name = "text/game/spells/combat/conjurephoenix/name.txt",
         desc = "text/game/spells/combat/conjurephoenix/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_conjurephoenix.xdb",
@@ -2159,7 +2159,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[241] = {
+	[236] = {
         name = "text/game/spells/combat/firewall/name.txt",
         desc = "text/game/spells/combat/firewall/long_description.txt",
         icon = "ui/h5a2/icons/spells/firewall.(texture).xdb",
@@ -2168,7 +2168,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[242] = {
+	[237] = {
         name = "text/game/spells/combat/stonespikes/name.txt",
         desc = "text/game/spells/combat/stonespikes/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_stonespikes.xdb",
@@ -2177,7 +2177,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[243] = {
+	[238] = {
         name = "text/game/spells/combat/uber_chain_lightning/name.txt",
         desc = "text/game/spells/combat/uber_chain_lightning/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_chainlightning.xdb",
@@ -2186,7 +2186,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[244] = {
+	[239] = {
         name = "text/game/spells/combat/bigbossfirewall/name.txt",
         desc = "text/game/spells/combat/bigbossfirewall/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_firewall.xdb",
@@ -2195,7 +2195,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[245] = {
+	[240] = {
         name = "text/game/spells/hero_special_abilities/timeshift/name.txt",
         desc = "text/game/heroes/specializations/academy/time_shifter/description.txt",
         icon = "textures/heroscreen/specializations/academy/timeshift.xdb",
@@ -2204,7 +2204,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[246] = {
+	[241] = {
         name = "text/game/spells/combat/guardianangel/name.txt",
         desc = "text/game/spells/combat/guardianangel/long_description.txt",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -2213,7 +2213,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[247] = {
+	[242] = {
         name = "",
         desc = "",
         icon = "gamemechanics/spell/adventure_spells/",
@@ -2222,7 +2222,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[248] = {
+	[243] = {
         name = "",
         desc = "",
         icon = "gamemechanics/spell/adventure_spells/",
@@ -2231,7 +2231,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[249] = {
+	[244] = {
         name = "text/game/spells/creature_abilities/dwarf/woundeffect/name.txt",
         desc = "",
         icon = "ui/h5a1/icons/abilites/creatures_abilites/128x128/wound.(texture).xdb",
@@ -2240,7 +2240,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[250] = {
+	[245] = {
         name = "text/game/spells/creature_abilities/dwarf/berserkerrage/name.txt",
         desc = "text/game/spells/creature_abilities/dwarf/berserkerrage/long_description.txt",
         icon = "ui/h5a1/icons/abilites/creatures_abilites/128x128/berserkerrage.(texture).xdb",
@@ -2249,7 +2249,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[251] = {
+	[246] = {
         name = "text/game/spells/creature_abilities/dwarf/markoffireeffect/name.txt",
         desc = "",
         icon = "ui/h5a1/icons/abilites/creatures_abilites/128x128/mark_of_fire.(texture).xdb",
@@ -2258,7 +2258,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[252] = {
+	[247] = {
         name = "text/game/spells/creature_abilities/dwarf/stormbolt/name.txt",
         desc = "text/game/spells/creature_abilities/dwarf/stormbolt/long_description.txt",
         icon = "ui/h5a1/icons/abilites/heroes_abillites/128x128/stormcaller.(texture).xdb",
@@ -2267,7 +2267,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[253] = {
+	[248] = {
         name = "text/game/creatures/creature_abilities/magma_shield/magma_shield_name.txt",
         desc = "",
         icon = "gamemechanics/spell/creature_abilities/dwarf/",
@@ -2276,7 +2276,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[254] = {
+	[249] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofchargetext.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofchargedesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_charge.(texture).xdb",
@@ -2285,7 +2285,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[255] = {
+	[250] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofberserkingname.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofberserkingdesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_berserking.(texture).xdb",
@@ -2294,7 +2294,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[256] = {
+	[251] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofmagiccontrolname.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofmagiccontroldesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_magic_control.(texture).xdb",
@@ -2303,7 +2303,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[257] = {
+	[252] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofexorcismname.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofexorcismdesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_exorcism.(texture).xdb",
@@ -2312,7 +2312,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[258] = {
+	[253] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofelementalimmunityname.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofelementalimmunitydesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_elemental_immunity.(texture).xdb",
@@ -2321,7 +2321,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[259] = {
+	[254] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofstunningname.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofstunningdesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_stunning.(texture).xdb",
@@ -2330,7 +2330,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[260] = {
+	[255] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofbattleragename.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofbattleragedesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_battlerage.(texture).xdb",
@@ -2339,7 +2339,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[261] = {
+	[256] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofethrealnessname.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofethrealnessdesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_etherealness.(texture).xdb",
@@ -2348,7 +2348,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[262] = {
+	[257] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofrevivename.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofrevivedesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_revive.(texture).xdb",
@@ -2357,7 +2357,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[263] = {
+	[258] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/runeofdragonformname.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/runeofdragonformdesc.txt",
         icon = "ui/h5a1/icons/magic/runemagic/runes128/rune_of_dragonform.(texture).xdb",
@@ -2366,7 +2366,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[264] = {
+	[259] = {
         name = "text/game/skills/unique/runelore/refreshrune/name.txt",
         desc = "text/game/skills/unique/runelore/refreshrune/description.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/refresh_rune.(texture).xdb",
@@ -2375,7 +2375,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[265] = {
+	[260] = {
         name = "text/game/heroes/specializations/fortress/border_guard/name.txt",
         desc = "text/game/heroes/specializations/fortress/border_guard/description.txt",
         icon = "ui/h5a1/icons/abilites/heroes_abillites/128x128/border_guard.(texture).xdb",
@@ -2384,7 +2384,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[266] = {
+	[261] = {
         name = "text/game/heroes/specializations/fortress/axe_master/name.txt",
         desc = "text/game/heroes/specializations/fortress/axe_master/description.txt",
         icon = "ui/h5a1/icons/abilites/heroes_abillites/128x128/axe_master.(texture).xdb",
@@ -2393,7 +2393,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[267] = {
+	[262] = {
         name = "text/game/heroes/specializations/fortress/rider/name.txt",
         desc = "text/game/heroes/specializations/fortress/rider/description.txt",
         icon = "ui/h5a1/icons/abilites/heroes_abillites/128x128/rider.(texture).xdb",
@@ -2402,7 +2402,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[268] = {
+	[263] = {
         name = "text/game/heroes/specializations/fortress/magister/name.txt",
         desc = "text/game/heroes/specializations/fortress/magister/description.txt",
         icon = "ui/h5a1/icons/abilites/heroes_abillites/128x128/magister.(texture).xdb",
@@ -2411,7 +2411,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[269] = {
+	[264] = {
         name = "text/game/heroes/specializations/fortress/defender/name.txt",
         desc = "text/game/heroes/specializations/fortress/defender/description.txt",
         icon = "ui/h5a1/icons/abilites/heroes_abillites/128x128/defender_ability.(texture).xdb",
@@ -2420,7 +2420,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[270] = {
+	[265] = {
         name = "text/game/skills/common/luck/dwarvenluck/name.txt",
         desc = "text/game/skills/common/luck/dwarvenluck/description.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/dwarven_luck.(texture).xdb",
@@ -2429,7 +2429,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[271] = {
+	[266] = {
         name = "text/game/skills/common/offence/offensiveformation/name.txt",
         desc = "text/game/skills/common/offence/offensiveformation/description.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/offensive_formation.(texture).xdb",
@@ -2438,7 +2438,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[272] = {
+	[267] = {
         name = "text/game/skills/common/defence/defensiveformation/name.txt",
         desc = "text/game/skills/common/defence/defensiveformation/description.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/defencive_formation.(texture).xdb",
@@ -2447,7 +2447,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[273] = {
+	[268] = {
         name = "text/game/skills/common/sorcery/distract/name.txt",
         desc = "text/game/skills/common/sorcery/distract/description.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/distract.(texture).xdb",
@@ -2456,7 +2456,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[274] = {
+	[269] = {
         name = "text/game/skills/unique/runelore/absoluteprotection/name.txt",
         desc = "text/game/skills/unique/runelore/absoluteprotection/description.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/rune_of_absolute_protection.(texture).xdb",
@@ -2465,7 +2465,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[275] = {
+	[270] = {
         name = "text/game/skills/common/destructivemagic/setafire/name.txt",
         desc = "text/game/skills/common/destructivemagic/setafire/description.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/set_afire.(texture).xdb",
@@ -2474,7 +2474,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[276] = {
+	[271] = {
         name = "text/game/creatures/creature_abilities/agility/name.txt",
         desc = "text/game/creatures/creature_abilities/agility/description.txt",
         icon = "ui/h5a2/icons/creatures_abilites/agility.(texture).xdb",
@@ -2483,7 +2483,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[277] = {
+	[272] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/spelleffectfinerunename.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/spelleffectfinerunedesc.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/fine_rune.(texture).xdb",
@@ -2492,7 +2492,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[278] = {
+	[273] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/spelleffectstrongrunename.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/spelleffectstrongrunedesc.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/strong_rune.(texture).xdb",
@@ -2501,7 +2501,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[279] = {
+	[274] = {
         name = "text/game/creatures/creature_abilities/battle_frenzy/name.txt",
         desc = "text/game/creatures/creature_abilities/battle_frenzy/description.txt",
         icon = "gamemechanics/spell/creature_abilities/haven/renegates/battlefrenzy.(texture).xdb",
@@ -2510,7 +2510,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[280] = {
+	[275] = {
         name = "gamemechanics/spell/combat_spells/runicmagic/effectrunicattunement.txt",
         desc = "gamemechanics/spell/combat_spells/runicmagic/effectrunicattunementdesc.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/runic_attunement.(texture).xdb",
@@ -2519,7 +2519,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[281] = {
+	[276] = {
         name = "text/game/heroes/specializations/dungeon/masterofinitiative/name.txt",
         desc = "text/game/heroes/specializations/dungeon/masterofinitiative/description.txt",
         icon = "textures/heroscreen/specializations/dungeon/prudent.xdb",
@@ -2528,7 +2528,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[282] = {
+	[277] = {
         name = "gamemechanics/spell/combat_spells/darkmagic/sorrow/sorrowname.txt",
         desc = "gamemechanics/spell/combat_spells/darkmagic/sorrow/sorrowdesc.txt",
         icon = "ui/h5a2/icons/spells/sorrow.(texture).xdb",
@@ -2537,7 +2537,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[283] = {
+	[278] = {
         name = "text/game/spells/combat/vampirism/name.txt",
         desc = "text/game/spells/combat/vampirism/long_description.txt",
         icon = "ui/h5a2/icons/spells/vampirism.(texture).xdb",
@@ -2546,7 +2546,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[284] = {
+	[279] = {
         name = "text/game/spells/combat/deepfreeze/name.txt",
         desc = "text/game/spells/combat/deepfreeze/long_description.txt",
         icon = "ui/h5a2/icons/spells/deep_freeze.(texture).xdb",
@@ -2555,7 +2555,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[285] = {
+	[280] = {
         name = "text/game/spells/combat/regeneration/name.txt",
         desc = "text/game/spells/combat/regeneration/long_description.txt",
         icon = "ui/h5a2/icons/spells/regeneration.(texture).xdb",
@@ -2564,7 +2564,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[286] = {
+	[281] = {
         name = "text/game/spells/combat/divinevengeance/name.txt",
         desc = "text/game/spells/combat/divinevengeance/long_description.txt",
         icon = "ui/h5a2/icons/spells/divine_vengeance.(texture).xdb",
@@ -2573,7 +2573,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[287] = {
+	[282] = {
         name = "text/game/spells/combat/arcanecrystal/name.txt",
         desc = "text/game/spells/combat/arcanecrystal/long_description.txt",
         icon = "ui/h5a2/icons/spells/arcane_crystal.(texture).xdb",
@@ -2582,7 +2582,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[288] = {
+	[283] = {
         name = "text/game/spells/combat/summonhive/name.txt",
         desc = "text/game/spells/combat/summonhive/long_description.txt",
         icon = "ui/h5a2/icons/spells/summon_hive.(texture).xdb",
@@ -2591,7 +2591,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[289] = {
+	[284] = {
         name = "text/game/spells/combat/bladebarrier/name.txt",
         desc = "text/game/spells/combat/bladebarrier/long_description.txt",
         icon = "ui/h5a2/icons/spells/blade_barrier.(texture).xdb",
@@ -2600,7 +2600,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[290] = {
+	[285] = {
         name = "text/game/spells/combat/meteor_shower/name.txt",
         desc = "text/game/spells/combat/meteor_shower/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_meteorshower.xdb",
@@ -2609,7 +2609,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[291] = {
+	[286] = {
         name = "text/game/skills/common/defence/preparation/name.txt",
         desc = "text/game/skills/common/defence/preparation/description.txt",
         icon = "ui/h5a1/icons/abilites/heroes_abillites/128x128/preparation.(texture).xdb",
@@ -2618,7 +2618,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[292] = {
+	[287] = {
         name = "text/game/spells/hero_special_abilities/exploding_corpses/name.txt",
         desc = "",
         icon = "gamemechanics/spell/hero_skills/unique/gating/",
@@ -2627,7 +2627,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[293] = {
+	[288] = {
         name = "text/game/spells/combat/effectstunned/name.txt",
         desc = "",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -2636,7 +2636,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[294] = {
+	[289] = {
         name = "text/game/spells/towneffects/blazinganvil/name.txt",
         desc = "text/game/spells/towneffects/blazinganvil/description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -2645,7 +2645,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[295] = {
+	[290] = {
         name = "text/game/spells/hero_special_abilities/warcry_rallingcry/name.txt",
         desc = "text/game/spells/hero_special_abilities/warcry_rallingcry/description.txt",
         icon = "ui/h5a2/icons/spells/warcry/ralling_cry.(texture).xdb",
@@ -2654,7 +2654,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[296] = {
+	[291] = {
         name = "text/game/spells/hero_special_abilities/warcry_callofblood/name.txt",
         desc = "text/game/spells/hero_special_abilities/warcry_callofblood/description.txt",
         icon = "ui/h5a2/icons/spells/warcry/call_of_blood_ability.(texture).xdb",
@@ -2663,7 +2663,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[297] = {
+	[292] = {
         name = "text/game/spells/hero_special_abilities/warcry_wordofthechief/name.txt",
         desc = "text/game/spells/hero_special_abilities/warcry_wordofthechief/description.txt",
         icon = "ui/h5a2/icons/spells/warcry/word_of_the_chief.(texture).xdb",
@@ -2672,7 +2672,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[298] = {
+	[293] = {
         name = "text/game/spells/hero_special_abilities/warcry_fearmyroar/name.txt",
         desc = "text/game/spells/hero_special_abilities/warcry_fearmyroar/description.txt",
         icon = "ui/h5a2/icons/spells/warcry/fear_my_roar_ability.(texture).xdb",
@@ -2681,7 +2681,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[299] = {
+	[294] = {
         name = "text/game/spells/hero_special_abilities/warcry_battlecry/name.txt",
         desc = "text/game/spells/hero_special_abilities/warcry_battlecry/description.txt",
         icon = "ui/h5a2/icons/spells/warcry/battlecry_ability.(texture).xdb",
@@ -2690,7 +2690,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[300] = {
+	[295] = {
         name = "text/game/spells/hero_special_abilities/warcry_shoutofmany/name.txt",
         desc = "text/game/spells/hero_special_abilities/warcry_shoutofmany/description.txt",
         icon = "ui/h5a2/icons/spells/warcry/shout_of_many_ability.(texture).xdb",
@@ -2699,7 +2699,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[301] = {
+	[296] = {
         name = "text/game/spells/creature_abilities/stronghold/venomeffectname.txt",
         desc = "text/game/spells/creature_abilities/stronghold/venomeffectdescription.txt",
         icon = "ui/common/icons/spell_buff_icons/poisonous_attack.(texture).xdb",
@@ -2708,7 +2708,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[302] = {
+	[297] = {
         name = "text/game/spells/combat/lionartifactdemoralized/name.txt",
         desc = "text/game/spells/combat/lionartifactdemoralized/long_description.txt",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -2717,7 +2717,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[303] = {
+	[298] = {
         name = "text/game/spells/combat/empowereddeepfreeze/name.txt",
         desc = "text/game/spells/combat/empowereddeepfreeze/long_description.txt",
         icon = "ui/h5a2/icons/spells/deep_freeze.(texture).xdb",
@@ -2726,7 +2726,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[304] = {
+	[299] = {
         name = "text/game/spells/combat/sacrifice/name.txt",
         desc = "text/game/spells/combat/sacrifice/long_description.txt",
         icon = "ui/h5a2/icons/creatures_abilites/sacrifice_goblin.(texture).xdb",
@@ -2735,7 +2735,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[305] = {
+	[300] = {
         name = "text/game/creatures/creature_abilities/swallow_goblin/name.txt",
         desc = "text/game/creatures/creature_abilities/swallow_goblin/description.txt",
         icon = "gamemechanics/spell/creature_abilities/stronghold/",
@@ -2744,7 +2744,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[306] = {
+	[301] = {
         name = "text/game/creatures/creature_abilities/set_snares/name.txt",
         desc = "text/game/creatures/creature_abilities/set_snares/description.txt",
         icon = "gamemechanics/spell/creature_abilities/stronghold/",
@@ -2753,7 +2753,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[307] = {
+	[302] = {
         name = "text/game/spells/creature_abilities/stronghold/demonragelevel1/name.txt",
         desc = "gamemechanics/spell/creature_abilities/stronghold/text/game/spells/creature_abilities/stronghold/demonragelevel1/description.txt",
         icon = "gamemechanics/spell/creature_abilities/stronghold/",
@@ -2762,7 +2762,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[308] = {
+	[303] = {
         name = "text/game/spells/creature_abilities/stronghold/demonragelevel2/name.txt",
         desc = "gamemechanics/spell/creature_abilities/stronghold/text/game/spells/creature_abilities/stronghold/demonragelevel2/description.txt",
         icon = "gamemechanics/spell/creature_abilities/stronghold/",
@@ -2771,7 +2771,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[309] = {
+	[304] = {
         name = "text/game/spells/creature_abilities/stronghold/demonragelevel3/name.txt",
         desc = "gamemechanics/spell/creature_abilities/stronghold/text/game/spells/creature_abilities/stronghold/demonragelevel3/description.txt",
         icon = "gamemechanics/spell/creature_abilities/stronghold/",
@@ -2780,7 +2780,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[310] = {
+	[305] = {
         name = "text/game/skills/unique/demonicrage/powerfullblow/name.txt",
         desc = "text/game/skills/unique/demonicrage/powerfullblow/description.txt",
         icon = "ui/h5a2/icons/heroes_skills/blood_rage/powerfull_blow_ability.(texture).xdb",
@@ -2789,7 +2789,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[311] = {
+	[306] = {
         name = "text/game/skills/common/leadership/battleelation/name.txt",
         desc = "text/game/skills/common/leadership/battleelation/description.txt",
         icon = "gamemechanics/spell/hero_skills/feats/barbarian/",
@@ -2798,7 +2798,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[312] = {
+	[307] = {
         name = "text/game/skills/common/luck/luckofthebarbarian/name.txt",
         desc = "text/game/skills/common/luck/luckofthebarbarian/description.txt",
         icon = "gamemechanics/spell/hero_skills/feats/barbarian/",
@@ -2807,7 +2807,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[313] = {
+	[308] = {
         name = "text/game/skills/barbarianspec/summoningmagic/deathtononexistent/name.txt",
         desc = "text/game/skills/barbarianspec/summoningmagic/deathtononexistent/description.txt",
         icon = "gamemechanics/spell/hero_skills/feats/barbarian/",
@@ -2816,7 +2816,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[314] = {
+	[309] = {
         name = "text/game/skills/unique/demonicrage/mightovermagic/name.txt",
         desc = "text/game/skills/unique/demonicrage/mightovermagic/description.txt",
         icon = "gamemechanics/spell/hero_skills/feats/barbarian/",
@@ -2825,7 +2825,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[315] = {
+	[310] = {
         name = "text/game/heroes/specializations/stronghold/grimfighter/name.txt",
         desc = "text/game/heroes/specializations/stronghold/grimfighter/description.txt",
         icon = "gamemechanics/spell/hero_skills/specializations/stronghold/",
@@ -2834,7 +2834,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[316] = {
+	[311] = {
         name = "text/game/heroes/specializations/stronghold/centaurmistress/name.txt",
         desc = "text/game/heroes/specializations/stronghold/centaurmistress/description.txt",
         icon = "gamemechanics/spell/hero_skills/specializations/stronghold/",
@@ -2843,7 +2843,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[317] = {
+	[312] = {
         name = "text/game/heroes/specializations/stronghold/wyverntamer/name.txt",
         desc = "text/game/heroes/specializations/stronghold/wyverntamer/description.txt",
         icon = "gamemechanics/spell/hero_skills/specializations/stronghold/",
@@ -2852,7 +2852,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[318] = {
+	[313] = {
         name = "text/game/heroes/specializations/stronghold/orcelder/name.txt",
         desc = "text/game/heroes/specializations/stronghold/orcelder/description.txt",
         icon = "gamemechanics/spell/hero_skills/specializations/stronghold/",
@@ -2861,7 +2861,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[319] = {
+	[314] = {
         name = "text/game/heroes/specializations/stronghold/blooddrinker/name.txt",
         desc = "text/game/heroes/specializations/stronghold/blooddrinker/description.txt",
         icon = "gamemechanics/spell/hero_skills/specializations/stronghold/",
@@ -2870,7 +2870,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[320] = {
+	[315] = {
         name = "text/game/heroes/specializations/stronghold/goblinking/name.txt",
         desc = "text/game/heroes/specializations/stronghold/goblinking/description.txt",
         icon = "gamemechanics/spell/hero_skills/specializations/stronghold/",
@@ -2879,7 +2879,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[321] = {
+	[316] = {
         name = "text/game/spells/creature_abilities/necropolis/death_wail/name.txt",
         desc = "text/game/spells/creature_abilities/necropolis/death_wail/long_description.txt",
         icon = "textures/test/nopicture.xdb",
@@ -2888,7 +2888,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = 1
     },
-	[322] = {
+	[317] = {
         name = "text/game/spells/creature_abilities/dungeon/invisibility/name.txt",
         desc = "text/game/spells/creature_abilities/dungeon/invisibility/description.txt",
         icon = "ui/h5a2/icons/abilities/invisibility_special_ability.(texture).xdb",
@@ -2897,7 +2897,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[323] = {
+	[318] = {
         name = "text/game/spells/combat/scavenger/name.txt",
         desc = "text/game/spells/combat/scavenger/long_description.txt",
         icon = "gamemechanics/spell/creature_abilities/stronghold/",
@@ -2906,7 +2906,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[324] = {
+	[319] = {
         name = "text/game/spells/combat/syphon_mana/name.txt",
         desc = "text/game/spells/combat/syphon_mana/description.txt",
         icon = "ui/h5a2/icons/abilities/siphon_mana_special_ability.(texture).xdb",
@@ -2915,7 +2915,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[325] = {
+	[320] = {
         name = "text/game/spells/creature_abilities/inferno/leap/name.txt",
         desc = "text/game/spells/creature_abilities/inferno/leap/description.txt",
         icon = "ui/h5a2/icons/abilities/leap_special_ability.(texture).xdb",
@@ -2924,7 +2924,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[326] = {
+	[321] = {
         name = "text/game/spells/combat/summonother/name.txt",
         desc = "text/game/spells/combat/summonother/long_description.txt",
         icon = "ui/h5a2/icons/abilities/summon_other_special_ability.(texture).xdb",
@@ -2933,7 +2933,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[327] = {
+	[322] = {
         name = "text/game/spells/creature_abilities/dungeon/incinerate/name.txt",
         desc = "text/game/spells/creature_abilities/dungeon/incinerate/long_description.txt",
         icon = "gamemechanics/spell/creature_abilities/dungeon/",
@@ -2942,7 +2942,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[328] = {
+	[323] = {
         name = "text/game/spells/creature_abilities/preserve/treeantunion/name.txt",
         desc = "text/game/spells/creature_abilities/preserve/treeantunion/long_description.txt",
         icon = "gamemechanics/spell/creature_abilities/preserve/",
@@ -2951,7 +2951,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[329] = {
+	[324] = {
         name = "text/game/spells/combat/ammo_steal/name.txt",
         desc = "text/game/spells/combat/ammo_steal/long_description.txt",
         icon = "gamemechanics/spell/creature_abilities/necropolis/",
@@ -2960,7 +2960,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[330] = {
+	[325] = {
         name = "text/game/spells/combat/order_of_the_chief/name.txt",
         desc = "text/game/spells/combat/order_of_the_chief/long_description.txt",
         icon = "gamemechanics/spell/creature_abilities/stronghold/",
@@ -2969,7 +2969,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[331] = {
+	[326] = {
         name = "text/game/spells/creature_abilities/stronghold/defilemagic/name.txt",
         desc = "text/game/spells/creature_abilities/stronghold/defilemagic/description.txt",
         icon = "gamemechanics/spell/creature_abilities/stronghold/",
@@ -2978,7 +2978,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[332] = {
+	[327] = {
         name = "text/game/creatures/creature_abilities/bearroar/name.txt",
         desc = "text/game/creatures/creature_abilities/bearroar/description.txt",
         icon = "ui/h5a2/icons/creatures_abilites/bearroar.(texture).xdb",
@@ -2987,7 +2987,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[333] = {
+	[328] = {
         name = "text/game/spells/combat/seduce/name.txt",
         desc = "text/game/spells/combat/seduce/long_description.txt",
         icon = "ui/h5a2/icons/abilities/seduce_special_ability.(texture).xdb",
@@ -2996,7 +2996,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[334] = {
+	[329] = {
         name = "text/game/spells/combat/rage_of_the_forest/name.txt",
         desc = "text/game/spells/combat/rage_of_the_forest/long_description.txt",
         icon = "ui/h5a2/icons/creatures_abilites/rage_of_the_forest.(texture).xdb",
@@ -3005,7 +3005,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[335] = {
+	[330] = {
         name = "text/game/spells/creature_abilities/academy/sabotage/name.txt",
         desc = "text/game/spells/creature_abilities/academy/sabotage/description.txt",
         icon = "gamemechanics/spell/creature_abilities/academy/",
@@ -3014,7 +3014,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[336] = {
+	[331] = {
         name = "text/game/creatures/creature_abilities/harpoon_strike/name.txt",
         desc = "text/game/creatures/creature_abilities/harpoon_strike/description.txt",
         icon = "gamemechanics/spell/creature_abilities/dwarf/",
@@ -3023,7 +3023,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[337] = {
+	[332] = {
         name = "text/game/creatures/creature_abilities/luck_gambler/name.txt",
         desc = "text/game/creatures/creature_abilities/luck_gambler/description.txt",
         icon = "ui/h5a2/icons/creatures_abilites/gamble.(texture).xdb",
@@ -3032,7 +3032,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[338] = {
+	[333] = {
         name = "text/game/creatures/creature_abilities/power_feed/name.txt",
         desc = "text/game/creatures/creature_abilities/power_feed/description.txt",
         icon = "ui/h5a2/icons/abilities/power_feed_special_ability.(texture).xdb",
@@ -3041,7 +3041,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[339] = {
+	[334] = {
         name = "text/game/creatures/creature_abilities/presence_of_the_storm/name.txt",
         desc = "text/game/creatures/creature_abilities/presence_of_the_storm/description.txt",
         icon = "gamemechanics/reftables/ghostmode/cursetex.(texture).xdb",
@@ -3050,7 +3050,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[340] = {
+	[335] = {
         name = "text/game/creatures/creature_abilities/liquid_flame/name.txt",
         desc = "text/game/creatures/creature_abilities/liquid_flame/description.txt",
         icon = "gamemechanics/spell/creature_abilities/dwarf/",
@@ -3059,7 +3059,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[341] = {
+	[336] = {
         name = "text/game/creatures/creature_abilities/sleeping_strike/name.txt",
         desc = "text/game/creatures/creature_abilities/sleeping_strike/description.txt",
         icon = "gamemechanics/spell/creature_abilities/necropolis/",
@@ -3068,7 +3068,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[342] = {
+	[337] = {
         name = "text/game/creatures/creature_abilities/prepared_position/name.txt",
         desc = "text/game/creatures/creature_abilities/prepared_position/description.txt",
         icon = "gamemechanics/spell/creature_abilities/dwarf/",
@@ -3077,7 +3077,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[343] = {
+	[338] = {
         name = "text/game/creatures/creature_abilities/battle_rage/name.txt",
         desc = "text/game/creatures/creature_abilities/battle_rage/description.txt",
         icon = "gamemechanics/spell/creature_abilities/dwarf/",
@@ -3086,7 +3086,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[344] = {
+	[339] = {
         name = "text/game/spells/creature_abilities/stronghold/unlucky/name.txt",
         desc = "text/game/spells/creature_abilities/stronghold/unlucky/description.txt",
         icon = "gamemechanics/spell/creature_abilities/stronghold/",
@@ -3095,7 +3095,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[345] = {
+	[340] = {
         name = "text/game/creatures/creature_abilities/horror_of_death/name.txt",
         desc = "text/game/creatures/creature_abilities/horror_of_death/description.txt",
         icon = "gamemechanics/spell/creature_abilities/necropolis/",
@@ -3104,7 +3104,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[346] = {
+	[341] = {
         name = "text/game/creatures/creature_abilities/immunity_to_air/immunity_to_air_name.txt",
         desc = "",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -3113,7 +3113,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[347] = {
+	[342] = {
         name = "text/game/creatures/creature_abilities/immunity_to_fire/immunity_to_fire_name.txt",
         desc = "",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -3122,7 +3122,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[348] = {
+	[343] = {
         name = "text/game/creatures/creature_abilities/immunity_to_water/immunity_to_water_name.txt",
         desc = "",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -3131,7 +3131,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[349] = {
+	[344] = {
         name = "text/game/creatures/creature_abilities/immunity_to_earth/immunity_to_earth_name.txt",
         desc = "",
         icon = "gamemechanics/spell/spelllikeeffects/",
@@ -3140,7 +3140,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[350] = {
+	[345] = {
         name = "text/game/creatures/creature_abilities/flamestrike/name.txt",
         desc = "text/game/creatures/creature_abilities/flamestrike/description.txt",
         icon = "gamemechanics/reftables/ghostmode/cursetex.(texture).xdb",
@@ -3149,7 +3149,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[351] = {
+	[346] = {
         name = "text/game/creatures/creature_abilities/pack_dive/name.txt",
         desc = "text/game/creatures/creature_abilities/pack_dive/description.txt",
         icon = "ui/h5a1/icons/creatures/regenerats/64x64/battlegriffin.(texture).xdb",
@@ -3158,7 +3158,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[352] = {
+	[347] = {
         name = "text/game/creatures/creature_abilities/pack_dive/name.txt",
         desc = "text/game/creatures/creature_abilities/pack_dive/description.txt",
         icon = "ui/h5a1/icons/creatures/regenerats/64x64/battlegriffin.(texture).xdb",
@@ -3167,7 +3167,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[357] = {
+	[348] = {
         name = "gamemechanics/spell/script_abilities/custom1/abil_name.txt",
         desc = "gamemechanics/spell/script_abilities/custom1/abil_desc.txt",
         icon = "gamemechanics/spell/script_abilities/custom1/icon.xdb",
@@ -3176,7 +3176,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[369] = {
+	[349] = {
         name = "gamemechanics/spell/script_abilities/custom2/abil_name.txt",
         desc = "gamemechanics/spell/script_abilities/custom2/abil_desc.txt",
         icon = "gamemechanics/spell/script_abilities/custom2/icon.xdb",
@@ -3185,7 +3185,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[370] = {
+	[350] = {
         name = "gamemechanics/spell/script_abilities/custom3/abil_name.txt",
         desc = "gamemechanics/spell/script_abilities/custom3/abil_desc.txt",
         icon = "gamemechanics/spell/script_abilities/custom3/icon.xdb",
@@ -3194,7 +3194,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[376] = {
+	[351] = {
         name = "gamemechanics/spell/script_abilities/custom4/abil_name.txt",
         desc = "gamemechanics/spell/script_abilities/custom4/abil_desc.txt",
         icon = "gamemechanics/spell/script_abilities/custom4/icon.xdb",
@@ -3203,7 +3203,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = nil,
         is_area = nil
     },
-	[377] = {
+	[352] = {
         name = "text/game/spells/creature_abilities/war_machines/firstaid/name.txt",
         desc = "text/game/spells/creature_abilities/war_machines/firstaid/long_description.txt",
         icon = "textures/effects/test/spelltest_firstaid_heal.xdb",
@@ -3212,7 +3212,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = 1
     },
-	[378] = {
+	[357] = {
         name = "text/game/spells/combat/empoweredwaspswarm/name.txt",
         desc = "text/game/spells/combat/wasp_swarm/long_description.txt",
         icon = "textures/spellbook______2618/spells/spell_waspswarm.xdb",
@@ -3221,7 +3221,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[379] = {
+	[370] = {
         name = "gamemechanics/spell/new_spell_effects/effectdamageice/effectdamageicename.txt",
         desc = "",
         icon = "gamemechanics/spell/new_spell_effects/effectdamageice/",
@@ -3230,7 +3230,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[380] = {
+	[356] = {
         name = "text/game/skills/common/offence/chillingsteel/name.txt",
         desc = "",
         icon = "gamemechanics/spell/new_spell_effects/effectcoldsteel/",
@@ -3239,7 +3239,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[381] = {
+	[384] = {
         name = "text/game/skills/common/luck/deadluck/name.txt",
         desc = "",
         icon = "gamemechanics/spell/new_spell_effects/effectdeadluck/",
@@ -3266,7 +3266,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[384] = {
+	[369] = {
         name = "gamemechanics/spell/new_spell_effects/effectdamagefire/effectdamagefirename.txt",
         desc = "",
         icon = "gamemechanics/spell/new_spell_effects/effectdamagefire/",
@@ -3275,7 +3275,7 @@ MCCS_SPELL_GENERATED_TABLE = {
         is_aimed = 1,
         is_area = nil
     },
-	[385] = {
+	[381] = {
         name = "text/game/skills/common/warmachines/runicmachines/name.txt",
         desc = "text/game/skills/common/warmachines/runicmachines/description.txt",
         icon = "ui/h5a1/icons/abilites/skills/128x128/runic_machines.(texture).xdb",

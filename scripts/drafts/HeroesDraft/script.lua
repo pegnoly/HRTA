@@ -407,16 +407,17 @@ function (day)
             sleep()
         end
         for player = PLAYER_1, PLAYER_2 do
-            local race = Random.FromTable(range_generator.FromTop(TOWN_HEAVEN, TOWN_STRONGHOLD))
+            local race = test_env.races[player] and test_env.races[player] or Random.FromTable(range_generator.FromTop(TOWN_HEAVEN, TOWN_STRONGHOLD))
             players_utils.races[player] = race
             local heroes = list_iterator.TakeRandom(single_heroes_draft.pregenerated_sets[race][player], 2)
             prepare_stage_core.heroes_by_player[player] = heroes
             startThread(towns_setup.Init)
         end
+        spells_generation_core.Init()
         PREPARE_STAGE_LEVELING_DAY = 2
         PREPARE_STAGE_SPECIAL_DAY = 3
         PREPARE_STAGE_PREFIGHT_DAY = 4
         PREPARE_STAGE_FIGHT_DAY = 5
-        startThread(spells_generation_core.PregenerateSpells)
+        startThread(spells_generation.PregenerateSpells)
     end
 end)

@@ -52,7 +52,7 @@ function (day)
                 Object.RemoveSelection(hero_data.player_portait, hero_data.opponent_portrait)
             end
             startThread(army_generation.Setup)
-            startThread(spells_generation_core.PlaceSpells)
+            startThread(spells_generation.PlaceSpells)
         end
     end
 end)
