@@ -6,7 +6,7 @@
 	<ATBBaseTime>100000</ATBBaseTime>
 	<RumorCost>100</RumorCost>
 	<adventure>
-		<BaseHeroMovement>25000</BaseHeroMovement>
+		<BaseHeroMovement>2500</BaseHeroMovement>
 		<BaseHeroLookRange>1</BaseHeroLookRange>
 		<MinCreatureSpeed>3</MinCreatureSpeed>
 		<MaxCreatureSpeed>8</MaxCreatureSpeed>
