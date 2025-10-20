@@ -1,3 +1,7 @@
+---@alias MoveThreadType
+---| `MOVE_THREAD_TYPE_DEFAULT`
+---| `MOVE_THREAD_TYPE_UNLIM`
+---| `MOVE_THREAD_TYPE_NO_MOVES`
 MOVE_THREAD_TYPE_DEFAULT = 1
 MOVE_THREAD_TYPE_UNLIM = 2
 MOVE_THREAD_TYPE_NO_MOVES = 3
@@ -26,8 +30,12 @@ unlim_moves_threads = {
     end,
 
     UpdateMoveThreadType = 
+    ---comment
+    ---@param hero string
+    ---@param type MoveThreadType
     function (hero, type)
-        consoleCmd("@unlim_moves_threads.heroes_states['"..hero.."'] = "..type.."")
+        -- consoleCmd("@unlim_moves_threads.heroes_states['"..hero.."'] = "..type.."")
+        unlim_moves_threads.heroes_states[hero] = type
     end
 }
 
@@ -40,7 +48,7 @@ end)
 
 AddHeroEvent.AddListener("HRTA_unlim_move_thread_add_hero_listener",
 function (hero)
-    consoleCmd("@unlim_moves_threads.heroes_states['"..hero.."'] = MOVE_THREAD_TYPE_DEFAULT") -- nival interactive
+    consoleCmd("@unlim_moves_threads.heroes_states['"..hero.."'] = MOVE_THREAD_TYPE_NO_MOVES") -- nival interactive
     startThread(unlim_moves_threads.UnlimMoveThread, hero)
     startThread(unlim_moves_threads.NoMovesThread, hero)
 end)

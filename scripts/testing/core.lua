@@ -1,4 +1,4 @@
-IS_TEST_MODE = 1
+IS_TEST_MODE = 0
 
 test_env = {
     races = {
