@@ -191,8 +191,16 @@ spells_generation_core = {
 
     Init = 
     function ()
-        local academy_second_school = Random.FromTable({MAGIC_SCHOOL_DARK, MAGIC_SCHOOL_LIGHT, MAGIC_SCHOOL_DESTRUCTIVE})
-        local academy_third_school = Random.FromTable_IgnoreValue(academy_second_school, {MAGIC_SCHOOL_DARK, MAGIC_SCHOOL_LIGHT, MAGIC_SCHOOL_DESTRUCTIVE})
+        local academy_additional_schools = {MAGIC_SCHOOL_DARK, MAGIC_SCHOOL_LIGHT, MAGIC_SCHOOL_DESTRUCTIVE}
+        local academy_second_school = Random.FromTable(academy_additional_schools)
+        academy_additional_schools = list_iterator.Filter(academy_additional_schools, function (s)
+            local as = %academy_second_school
+            if s == as then
+                return nil
+            end
+            return 1
+        end)
+        local academy_third_school = Random.FromTable(academy_additional_schools)
         spells_generation_core.lines_by_races[TOWN_ACADEMY][SECOND_MAIN_LINE] = { school = academy_second_school, count = 5 }
         spells_generation_core.lines_by_races[TOWN_ACADEMY][THIRD_MAIN_LINE] = { school = academy_third_school, count = 5 }
     end

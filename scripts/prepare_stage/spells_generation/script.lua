@@ -110,13 +110,10 @@ spells_generation = {
     ---@param entry MagicLineEntry
     ---@param player PlayerID
     function (entry, player)
-        print("<color=red>Placing spell ", entry.spell, " for player ", player)
         if player == PLAYER_2 then -- nival 
             SetObjectRotation(entry.placeholder, 180)
         end
         local effect = "/Effects/Spells/"..entry.spell.."/active.(Effect).xdb#xpointer(/Effect)"
-        print("<color=red>Effect: <color=yellow>", effect)
-        print("<color=red>Name: <color=yellow>", Spell.Params.Name(entry.spell))
         SetObjectPosition(entry.placeholder, entry.position.x, entry.position.y, GROUND)
         PlayVisualEffect(effect, entry.placeholder)
         Touch.DisableObject(entry.placeholder, DISABLED_DEFAULT, Spell.Params.Name(entry.spell))

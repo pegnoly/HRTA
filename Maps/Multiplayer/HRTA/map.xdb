@@ -1999,7 +1999,7 @@
 				</Pos>
 				<Rot>6.28318</Rot>
 				<Floor>0</Floor>
-				<Name>arena</Name>
+				<Name>leveling_place_1</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/Arena.(AdvMapBuildingShared).xdb#xpointer(/AdvMapBuildingShared)"/>
@@ -2045,7 +2045,7 @@
 				</Pos>
 				<Rot>3.14159</Rot>
 				<Floor>0</Floor>
-				<Name>magiya</Name>
+				<Name>leveling_place_2</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/H5A2/SacrificeAltar.xdb#xpointer(/AdvMapBuildingShared)"/>

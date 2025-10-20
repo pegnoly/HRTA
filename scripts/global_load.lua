@@ -22,6 +22,8 @@ doFile('/scripts/prepare_stage/towns_setup/script.lua')
 doFile('/scripts/prepare_stage/army_generation/script.lua')
 doFile('/scripts/prepare_stage/spells_generation/core.lua')
 doFile('/scripts/prepare_stage/spells_generation/script.lua')
+doFile('/scripts/prepare_stage/leveling/core.lua')
+doFile('/scripts/prepare_stage/leveling/script.lua')
 
 -- Режимы игры
 -- doFile('/scripts/game_modes/types.lua')
