@@ -140,6 +140,7 @@ auction = {
     end,
 
     UpdateRaceObjects =
+    -- Обновляет положение объектов, представляющих текущие фракции для торга
     ---@param player PlayerID
     function (player)
         local player_objects = auction.player_race_objects[player]
@@ -161,6 +162,7 @@ auction = {
     end,
 
     TouchMainPostament =
+    -- Вызывается при касании объекта для завершения торгов
     ---@param hero string
     function (hero, _)
         local player = GetObjectOwner(hero)
@@ -170,25 +172,24 @@ auction = {
                 MessageQueue.AddMessage(player, auction.path.."skipped.txt", hero, 5.0)
                 MessageQueue.AddMessage(3 - player, auction.path.."opponent_skipped.txt", players_utils.GetPlayerDefaultHero(3 - player), 8.0)
                 startThread(auction.GiveTurnToNextPlayer)
-            end
-        end
-        if auction.last_action == AUCTION_ACTION_BID then
-            if MCCS_QuestionBoxForPlayers(player, auction.path.."wanna_agree_with_bid.txt") then
-                startThread(auction.FinishBid, player)
+                return
             end
         else
-            if MCCS_QuestionBoxForPlayers(player, auction.path.."wanna_finish_bid.txt") then
+            local message = auction.last_action == AUCTION_ACTION_BID and "wanna_agree_with_bid" or "wanna_finish_bid"
+            if MCCS_QuestionBoxForPlayers(player, auction.path..message..".txt") then
                 startThread(auction.FinishBid, player)
+                return
             end
         end
     end,
 
     TouchGoldObject =
+    -- Вызывается при касании объекта для повышения ставки
     ---@param hero string
     ---@param bid_index number
     function (hero, bid_index)
         local amount = auction.bid_amounts[bid_index]
-        if MCCS_QuestionBoxForPlayers(GetObjectOwner(hero), {auction.path.."wanna_increase_bid.txt"; amount = amount}) then
+        -- if MCCS_QuestionBoxForPlayers(GetObjectOwner(hero), {auction.path.."wanna_increase_bid.txt"; amount = amount}) then
             auction.last_action = AUCTION_ACTION_BID
             auction.current_bid = auction.current_bid + amount
             local tr, to = auction.player_races[PLAYER_2], auction.player_race_objects[PLAYER_2]
@@ -222,7 +223,7 @@ auction = {
                 startThread(auction.UpdateRaceObjects, p)
             end
             startThread(auction.GiveTurnToNextPlayer)
-        end
+        -- end
     end,
 
     GiveTurnToNextPlayer =
