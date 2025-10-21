@@ -1,3 +1,6 @@
+--- Торги. Main.
+--- 
+
 ---@alias AuctionActionType
 ---| `AUCTION_ACTION_BID`
 ---| `AUCTION_ACTION_SKIP`
@@ -9,32 +12,40 @@ auction = {
     path = "Text/HRTA/drafts/Auction/",
 
     ---@type table<PlayerID, Position>
+    -- Позиции, в которые ставятся мейн герои игроков при начале торга
     player_heroes_initial_positions = {
         [PLAYER_1] = { x = 35, y = 87 },
         [PLAYER_2] = { x = 42, y = 22 }
     },
 
     ---@type table<PlayerID, Position>
+    -- Позиции, начиная с которых размещаются объекты, отвечающие за повышение ставки
     gold_positions = {
         [PLAYER_1] = { x = 34, y = 88 },
         [PLAYER_2] = { x = 41, y = 23 }
     },
 
     ---@type table<PlayerID, Position>
+    -- Позиции, в которых размещаются объекты для соглашения с торгом
     postament_positions = {
         [PLAYER_1] = { x = 34, y = 86 },
         [PLAYER_2] = { x = 41, y = 21 }
     },
 
+    ---@type number[]
+    -- Размер в торга в зависимости от номера объекта
     bid_amounts = { 500, 1000, 2000 },
 
     ---@type TownType[]
+    -- Текущие фракции игроков
     player_races = {},
 
     ---@type table<PlayerID, string[]>
+    -- Объекты, представляющие текущее распределение фракций при торге
     player_race_objects = {},
 
     ---@type table<PlayerID, AuctionPlayerRaceObject>
+    -- Позиции, в которых размещаются объекты, представляющие распределение фракций
     player_race_objects_positions = {
         [PLAYER_1] = {
             self = { x = 32, y = 87 },
@@ -47,19 +58,22 @@ auction = {
     },
 
     ---@type PlayerID
+    -- Текущий игрок, совершающий ставку
     current_active_player = PLAYER_1,
 
     ---@type AuctionActionType
+    -- Последнее действие, совершенное игроками
     last_action = nil,
 
     ---@type number
+    -- Текущий размер ставки
     current_bid = 0,
 
     ---@type table<PlayerID, number>
+    -- Золото игроков по итогам торгов
     final_gold_amount = {[PLAYER_1] = 0, [PLAYER_2] = 0},
 
     SetupHero =
-    ---comment
     ---@param player PlayerID
     function (player)
         local hero = players_utils.GetPlayerDefaultHero(player)
@@ -95,6 +109,8 @@ auction = {
     end,
 
     SetupGoldObject =
+    ---@param player PlayerID
+    ---@param bid_index number
     function (player, bid_index)
         local name = "auction_gold_"..player..""..bid_index
         local shift = bid_index - 1
@@ -111,7 +127,6 @@ auction = {
     end,
 
     SetupRaceObjects =
-    ---comment
     ---@param player PlayerID
     ---@param pair_model DraftPairModel
     function (player, pair_model)
@@ -125,6 +140,7 @@ auction = {
     end,
 
     UpdateRaceObjects =
+    ---@param player PlayerID
     function (player)
         local player_objects = auction.player_race_objects[player]
         local pos = auction.player_race_objects_positions[player]
@@ -145,6 +161,7 @@ auction = {
     end,
 
     TouchMainPostament =
+    ---@param hero string
     function (hero, _)
         local player = GetObjectOwner(hero)
         if not auction.last_action then
@@ -167,7 +184,6 @@ auction = {
     end,
 
     TouchGoldObject =
-    ---comment
     ---@param hero string
     ---@param bid_index number
     function (hero, bid_index)
