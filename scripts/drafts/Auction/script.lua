@@ -1,3 +1,9 @@
+---@alias AuctionActionType
+---| `AUCTION_ACTION_BID`
+---| `AUCTION_ACTION_SKIP`
+AUCTION_ACTION_BID = 1
+AUCTION_ACTION_SKIP = 2
+
 auction = {
 
     path = "Text/HRTA/drafts/Auction/",
@@ -43,10 +49,16 @@ auction = {
     ---@type PlayerID
     current_active_player = PLAYER_1,
 
+    ---@type AuctionActionType
+    last_action = AUCTION_ACTION_BID,
+
     ---@type number
     current_bid = 0,
 
-    SetupHero = 
+    ---@type table<PlayerID, number>
+    final_gold_amount = {[PLAYER_1] = 0, [PLAYER_2] = 0},
+
+    SetupHero =
     ---comment
     ---@param player PlayerID
     function (player)
@@ -133,8 +145,26 @@ auction = {
     end,
 
     TouchMainPostament =
-    function (hero, object)
-
+    function (hero, _)
+        local player = GetObjectOwner(hero)
+        if auction.last_action == AUCTION_ACTION_BID then
+            if MCCS_QuestionBoxForPlayers(player, auction.path.."wanna_skip_bid.txt") then
+                auction.last_action = AUCTION_ACTION_SKIP
+                MessageQueue.AddMessage(player, auction.path.."skipped.txt", hero, 5.0)
+                MessageQueue.AddMessage(3 - player, auction.path.."opponent_skipped.txt", players_utils.GetPlayerDefaultHero(3 - player), 8.0)
+                startThread(auction.GiveTurnToNextPlayer)
+            end
+        else
+            if MCCS_QuestionBoxForPlayers(player, auction.path.."wanna_finish_bid.txt") then
+                auction.final_gold_amount[player] = -auction.current_bid
+                auction.final_gold_amount[3 - player] = auction.current_bid
+                players_utils.races[player] = auction.player_races[player]
+                players_utils.races[3 - player] = auction.player_races[3 - player]
+                auction.ClearBids()
+                sleep(5)
+                single_heroes_draft.Init()
+            end
+        end
     end,
 
     TouchGoldObject =
@@ -144,24 +174,58 @@ auction = {
     function (hero, bid_index)
         local amount = auction.bid_amounts[bid_index]
         if MCCS_QuestionBoxForPlayers(GetObjectOwner(hero), {auction.path.."wanna_increase_bid.txt"; amount = amount}) then
+            auction.last_action = AUCTION_ACTION_BID
             auction.current_bid = auction.current_bid + amount
             local tr, to = auction.player_races[PLAYER_2], auction.player_race_objects[PLAYER_2]
             auction.player_races[PLAYER_2] = auction.player_races[PLAYER_1]
             auction.player_races[PLAYER_1] = tr
             auction.player_race_objects[PLAYER_2] = auction.player_race_objects[PLAYER_1]
             auction.player_race_objects[PLAYER_1] = to
-            for player = PLAYER_1, PLAYER_2 do
-                startThread(auction.UpdateRaceObjects, player)
-                MessageQueue.AddMessage(player, {auction.path.."current_bid.txt"; bid_amount = amount, bid_total = auction.current_bid}, hero, 10.0)
+
+            local player = GetObjectOwner(hero)
+            MessageQueue.AddMessage(player, {
+                auction.path.."current_bid.txt";
+                color1 = RACE_COLORS[auction.player_races[player]],
+                race1 = RACE_NAMES[auction.player_races[player]],
+                bid_amount1 = -auction.current_bid,
+                color2 = RACE_COLORS[auction.player_races[3 - player]],
+                race2 = RACE_NAMES[auction.player_races[3 - player]],
+                bid_amount2 = auction.current_bid,
+            }, hero, 10.0)
+            MessageQueue.AddMessage(3 - player, {
+                auction.path.."opponent_increased_bid.txt";
+                amount = amount,
+                color1 = RACE_COLORS[auction.player_races[3 - player]],
+                race1 = RACE_NAMES[auction.player_races[3 - player]],
+                bid_amount1 = auction.current_bid,
+                color2 = RACE_COLORS[auction.player_races[player]],
+                race2 = RACE_NAMES[auction.player_races[player]],
+                bid_amount2 = -auction.current_bid,
+            }, players_utils.GetPlayerDefaultHero(3 - player), 10.0)
+
+            for p = PLAYER_1, PLAYER_2 do
+                startThread(auction.UpdateRaceObjects, p)
             end
             startThread(auction.GiveTurnToNextPlayer)
         end
     end,
 
-    GiveTurnToNextPlayer = 
+    GiveTurnToNextPlayer =
     function ()
         unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(auction.current_active_player), MOVE_THREAD_TYPE_NO_MOVES)
         auction.current_active_player = 3 - auction.current_active_player
         unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(auction.current_active_player), MOVE_THREAD_TYPE_UNLIM)
+    end,
+
+    ClearBids = 
+    function ()
+        for player = PLAYER_1, PLAYER_2 do
+            for i = 1, 3 do
+                local name = "auction_gold_"..player..""..i
+                RemoveObject(name)
+            end
+            Object.RemoveTable(auction.player_race_objects[player])
+            RemoveObject("auction_postament_"..player)
+        end
     end
 }

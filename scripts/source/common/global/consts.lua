@@ -16,16 +16,26 @@ defaultDifficulty = GetDifficulty() + 1
 
 diffCoeffs = {0.55, 1, 1.3, 1.75}
 
-RACE_COLORS = 
-{
-	[0] = "/Text/Default/RaceColors/Heaven.txt";
-	"/Text/Default/RaceColors/Preserve.txt",
-	"/Text/Default/RaceColors/Academy.txt",
-	"/Text/Default/RaceColors/Dungeon.txt",
-	"/Text/Default/RaceColors/Necropolis.txt",
-	"/Text/Default/RaceColors/Inferno.txt",
-	"/Text/Default/RaceColors/Fortress.txt",
-  "/Text/Default/RaceColors/Stronghold.txt"
+RACE_COLORS = {
+  [0] = "/Text/Default/RaceColors/haven.txt";
+  "/Text/Default/RaceColors/preserve.txt",
+  "/Text/Default/RaceColors/academy.txt",
+  "/Text/Default/RaceColors/dungeon.txt",
+  "/Text/Default/RaceColors/necropolis.txt",
+  "/Text/Default/RaceColors/inferno.txt",
+  "/Text/Default/RaceColors/fortress.txt",
+  "/Text/Default/RaceColors/stronghold.txt"
+}
+
+RACE_NAMES = {
+  [0] = "/Text/Default/RaceNames/haven.txt";
+  "/Text/Default/RaceNames/preserve.txt",
+  "/Text/Default/RaceNames/academy.txt",
+  "/Text/Default/RaceNames/dungeon.txt",
+  "/Text/Default/RaceNames/necropolis.txt",
+  "/Text/Default/RaceNames/inferno.txt",
+  "/Text/Default/RaceNames/fortress.txt",
+  "/Text/Default/RaceNames/stronghold.txt"
 }
 
 function len(t)

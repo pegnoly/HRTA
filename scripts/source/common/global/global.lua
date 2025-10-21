@@ -19,7 +19,7 @@ Global =
     '<color=FFFF1212>', 
     '<color=FFEF4B04>', 
     '<color=FFFFEC01>'
-  }
+  },
 }
 
 function len(t)
