@@ -50,7 +50,7 @@ auction = {
     current_active_player = PLAYER_1,
 
     ---@type AuctionActionType
-    last_action = AUCTION_ACTION_BID,
+    last_action = nil,
 
     ---@type number
     current_bid = 0,
@@ -147,22 +147,21 @@ auction = {
     TouchMainPostament =
     function (hero, _)
         local player = GetObjectOwner(hero)
-        if auction.last_action == AUCTION_ACTION_BID then
+        if not auction.last_action then
             if MCCS_QuestionBoxForPlayers(player, auction.path.."wanna_skip_bid.txt") then
                 auction.last_action = AUCTION_ACTION_SKIP
                 MessageQueue.AddMessage(player, auction.path.."skipped.txt", hero, 5.0)
                 MessageQueue.AddMessage(3 - player, auction.path.."opponent_skipped.txt", players_utils.GetPlayerDefaultHero(3 - player), 8.0)
                 startThread(auction.GiveTurnToNextPlayer)
             end
+        end
+        if auction.last_action == AUCTION_ACTION_BID then
+            if MCCS_QuestionBoxForPlayers(player, auction.path.."wanna_agree_with_bid.txt") then
+                startThread(auction.FinishBid, player)
+            end
         else
             if MCCS_QuestionBoxForPlayers(player, auction.path.."wanna_finish_bid.txt") then
-                auction.final_gold_amount[player] = -auction.current_bid
-                auction.final_gold_amount[3 - player] = auction.current_bid
-                players_utils.races[player] = auction.player_races[player]
-                players_utils.races[3 - player] = auction.player_races[3 - player]
-                auction.ClearBids()
-                sleep(5)
-                single_heroes_draft.Init()
+                startThread(auction.FinishBid, player)
             end
         end
     end,
@@ -215,6 +214,19 @@ auction = {
         unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(auction.current_active_player), MOVE_THREAD_TYPE_NO_MOVES)
         auction.current_active_player = 3 - auction.current_active_player
         unlim_moves_threads.UpdateMoveThreadType(players_utils.GetPlayerDefaultHero(auction.current_active_player), MOVE_THREAD_TYPE_UNLIM)
+    end,
+
+    FinishBid = 
+    -- Завершает торг, переводит драфт в стадию пика героев
+    ---@param player PlayerID
+    function (player)
+        auction.final_gold_amount[player] = -auction.current_bid
+        auction.final_gold_amount[3 - player] = auction.current_bid
+        players_utils.races[player] = auction.player_races[player]
+        players_utils.races[3 - player] = auction.player_races[3 - player]
+        auction.ClearBids()
+        sleep(5)
+        single_heroes_draft.Init()
     end,
 
     ClearBids = 
