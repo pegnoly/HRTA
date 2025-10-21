@@ -327,8 +327,7 @@ five_pair_draft = {
         local selected_pair = five_pair_draft.generated_pairs_data[selected_pair_index]
         asha.AddGlobalField("RemovedMatchups", "["..list_iterator.Concat(five_pair_draft.removed_pairs, ",").."]")
         if five_pair_draft.voted_bargains_type == BARGAINS_TYPE_WITH_BARGAINS then
-            Object.RemoveTable(selected_pair[PLAYER_2])
-            startThread(auction.Init, {selected_pair.first_race, selected_pair.second_race}, selected_pair[PLAYER_1])
+            startThread(auction.Init, selected_pair)
         else
             players_utils.races[PLAYER_1] = selected_pair.first_race
             players_utils.races[PLAYER_2] = selected_pair.second_race

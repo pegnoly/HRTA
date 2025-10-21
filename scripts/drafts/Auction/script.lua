@@ -3,15 +3,21 @@ auction = {
     path = "Text/HRTA/drafts/Auction/",
 
     ---@type table<PlayerID, Position>
+    player_heroes_initial_positions = {
+        [PLAYER_1] = { x = 35, y = 87 },
+        [PLAYER_2] = { x = 42, y = 22 }
+    },
+
+    ---@type table<PlayerID, Position>
     gold_positions = {
         [PLAYER_1] = { x = 34, y = 88 },
-        [PLAYER_2] = { x = 43, y = 23, rot = 180 }
+        [PLAYER_2] = { x = 41, y = 23 }
     },
 
     ---@type table<PlayerID, Position>
     postament_positions = {
         [PLAYER_1] = { x = 34, y = 86 },
-        [PLAYER_2] = { x = 41, y = 21, rot = 180 }
+        [PLAYER_2] = { x = 41, y = 21 }
     },
 
     bid_amounts = { 500, 1000, 2000 },
@@ -19,7 +25,7 @@ auction = {
     ---@type TownType[]
     player_races = {},
 
-    ---@type string[]
+    ---@type table<PlayerID, string[]>
     player_race_objects = {},
 
     ---@type table<PlayerID, AuctionPlayerRaceObject>
@@ -29,8 +35,8 @@ auction = {
             opp = { x = 38, y = 87 }
         },
         [PLAYER_2] = {
-            self = { x = 32, y = 87 },
-            opp = { x = 38, y = 87 }
+            self = { x = 39, y = 22 },
+            opp = { x = 45, y = 22 }
         }
     },
 
@@ -39,6 +45,20 @@ auction = {
 
     ---@type number
     current_bid = 0,
+
+    SetupHero = 
+    ---comment
+    ---@param player PlayerID
+    function (player)
+        local hero = players_utils.GetPlayerDefaultHero(player)
+        local pos = auction.player_heroes_initial_positions[player]
+        SetObjectPosition(hero, pos.x, pos.y, GROUND)
+        if player == auction.current_active_player then
+            unlim_moves_threads.UpdateMoveThreadType(hero, MOVE_THREAD_TYPE_UNLIM)
+        else
+            unlim_moves_threads.UpdateMoveThreadType(hero, MOVE_THREAD_TYPE_NO_MOVES)
+        end
+    end,
 
     SetupPostaments =
     ---@param player PlayerID
@@ -65,10 +85,9 @@ auction = {
     SetupGoldObject =
     function (player, bid_index)
         local name = "auction_gold_"..player..""..bid_index
-        local shift = player == PLAYER_1 and bid_index - 1 or -(bid_index - 1)
+        local shift = bid_index - 1
         local pos = auction.gold_positions[player]
-        pos.x = pos.x + shift
-        SetObjectPosition(name, pos.x, pos.y, GROUND)
+        SetObjectPosition(name, pos.x + shift, pos.y, GROUND)
         if pos.rot then
             SetObjectRotation(name, pos.rot)
         end
@@ -79,30 +98,37 @@ auction = {
         end)
     end,
 
+    SetupRaceObjects =
+    ---comment
+    ---@param player PlayerID
+    ---@param pair_model DraftPairModel
+    function (player, pair_model)
+        auction.player_races[player] = player == PLAYER_1 and pair_model.first_race or pair_model.second_race
+        auction.player_race_objects[player] = pair_model[player]
+        for _, object in auction.player_race_objects[player] do
+            SetObjectRotation(object, 0)
+            Touch.RemoveFunctions(object)
+        end
+        startThread(auction.UpdateRaceObjects, player)
+    end,
+
     UpdateRaceObjects =
     function (player)
-        local player_object = auction.player_race_objects[player]
-        local opp_object = auction.player_race_objects[3 - player]
+        local player_objects = auction.player_race_objects[player]
         local pos = auction.player_race_objects_positions[player]
-        SetObjectPosition(player_object, pos.self.x, pos.self.y, GROUND)
-        SetObjectPosition(opp_object, pos.opp.x, pos.opp.y, GROUND)
+        SetObjectPosition(player_objects[1], pos.self.x, pos.self.y, GROUND)
+        SetObjectPosition(player_objects[2], pos.opp.x, pos.opp.y, GROUND)
     end,
 
     Init =
-    function (races, objects)
+    -- Мейн функция инициализации торгов
+    ---@param pair_model DraftPairModel
+    function (pair_model)
         for player = PLAYER_1, PLAYER_2 do
-            auction.player_races[player] = races[player]
-            auction.player_race_objects[player] = objects[player]
+            auction.SetupHero(player)
             startThread(auction.SetupPostaments, player)
             startThread(auction.SetupGoldObjects, player)
-            startThread(auction.UpdateRaceObjects, player)
-
-            local hero = players_utils.GetPlayerDefaultHero(player)
-            if player == auction.current_active_player then
-                unlim_moves_threads.UpdateMoveThreadType(hero, MOVE_THREAD_TYPE_UNLIM)
-            else
-                unlim_moves_threads.UpdateMoveThreadType(hero, MOVE_THREAD_TYPE_NO_MOVES)
-            end
+            startThread(auction.SetupRaceObjects, player, pair_model)
         end
     end,
 
@@ -126,7 +152,7 @@ auction = {
             auction.player_race_objects[PLAYER_1] = to
             for player = PLAYER_1, PLAYER_2 do
                 startThread(auction.UpdateRaceObjects, player)
-                startThread(MCCS_MessageBoxForPlayers, player, {auction.path.."current_bid.txt"; bid_amount = amount, bid_total = auction.current_bid})
+                MessageQueue.AddMessage(player, {auction.path.."current_bid.txt"; bid_amount = amount, bid_total = auction.current_bid}, hero, 10.0)
             end
             startThread(auction.GiveTurnToNextPlayer)
         end
